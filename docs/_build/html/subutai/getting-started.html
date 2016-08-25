@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting started &mdash; Subutai and Hub User Guide 4.0.3 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="author" title="About these documents"
+              href="../about.html"/>
+    <link rel="top" title="Subutai and Hub User Guide 4.0.3 documentation" href="../index.html"/>
+        <link rel="next" title="Test" href="../test.html"/>
+        <link rel="prev" title="About Projects" href="../about.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Subutai and Hub User Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                4.0.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Subutai</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-your-peer">Setting up your peer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#autobuild-usage">Autobuild usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deploying-subutai-management-server">Deploying Subutai Management server</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../test.html">Test</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hub</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hub/getting-started.html">Hub</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Subutai and Hub User Guide</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Getting started</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/subutai/getting-started.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setting-up-your-peer">
+<h2>Setting up your peer<a class="headerlink" href="#setting-up-your-peer" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>Autobuild script provides different build options, such as building snaps, creating preconfigured virtual machines and exporting .ova and .box files. There are different pre-requirements for each of these options. To simply build snap packages, you only need Snappy-tools installed on your Ubuntu.
+To install it, run:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">snappy</span><span class="o">-</span><span class="n">dev</span><span class="o">/</span><span class="n">tools</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">snappy</span><span class="o">-</span><span class="n">tools</span>
+</pre></div>
+</div>
+<p>If you want not just build snaps, but also automatically create preconfigured virtual machines with installed Subutai on it, you should have VirtualBox with Snappy template imported and sshpass utility.
+Install VirtualBox and sshpass:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">virtualbox</span> <span class="n">sshpass</span>
+</pre></div>
+</div>
+<p><strong>VirtualBox requires virtualization support enabled on your CPU</strong>. If you don&#8217;t know what is it and how to enable it, <a class="reference external" href="http://askubuntu.com/a/256853">read</a> the askubuntu answer</p>
+<p>Download the <a class="reference external" href="https://cdn.subut.ai:8338/kurjun/rest/file/get?name=snappy.ova">snappy template</a>. Double-click on snappy.ova and you&#8217;ll see import dialogue. You can customize VM&#8217;s configuration according to your hardware, but, do not change disks configuration. Please make sure, that network bridge configuration is set to existing in your system network interface. Also, you should check &#8220;Reinitialize the MAC address of all network cards&#8221; and finish by clicking &#8220;Import&#8221;.</p>
+<p><strong>Do not start snappy virtual machine - this is a templates for your test servers</strong></p>
+<p>After this you should clone Snappy Subutai repo:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">subutai</span><span class="o">-</span><span class="n">io</span><span class="o">/</span><span class="n">subos</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>When it&#8217;s done, you&#8217;ll have all necessary files to work with Subutai Social. Directory &#8220;main&#8221; contains separated packages of Subutai and &#8220;autobuild.sh&#8221; script.</p>
+</div>
+<div class="section" id="autobuild-usage">
+<h3>Autobuild usage<a class="headerlink" href="#autobuild-usage" title="Permalink to this headline">¶</a></h3>
+<p>As we stated before, autobuild can work in different modes. To change build modes you should specify following flags:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">b</span> <span class="o">|</span> <span class="o">--</span><span class="n">build</span>    <span class="n">build</span> <span class="n">snap</span> <span class="n">package</span>
+<span class="o">-</span><span class="n">v</span> <span class="o">|</span> <span class="o">--</span><span class="n">vm</span>   <span class="n">create</span> <span class="ow">and</span> <span class="n">run</span> <span class="n">preconfigured</span> <span class="n">virtual</span> <span class="n">machine</span>
+<span class="o">-</span><span class="n">t</span> <span class="o">|</span> <span class="o">--</span><span class="n">tag</span>  <span class="n">this</span> <span class="n">flag</span> <span class="ow">is</span> <span class="n">used</span> <span class="k">with</span> <span class="s2">&quot;-v&quot;</span> <span class="n">option</span> <span class="n">to</span> <span class="n">specify</span> <span class="n">VM</span><span class="s1">&#39;s VLAN tag. This is needed to build more than one Subutai peer in the same LAN</span>
+<span class="o">-</span><span class="n">e</span> <span class="o">|</span> <span class="o">--</span><span class="n">export</span>   <span class="n">export</span> <span class="n">ova</span> <span class="ow">or</span> <span class="n">box</span> <span class="n">image</span> <span class="k">with</span> <span class="n">Subutai</span> <span class="n">Social</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Autobuild script stores all generated files in &#8221;../export&#8221; directory, i.e. next to main repository directory</p>
+</div>
+<p>Examples:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">autobuild</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">b</span> <span class="n">build</span> <span class="n">Subutai</span> <span class="n">snap</span> <span class="n">package</span> <span class="n">that</span> <span class="n">can</span> <span class="n">be</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">Snappy</span> <span class="n">Ubuntu</span>
+<span class="o">./</span><span class="n">autobuild</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">v</span> <span class="n">start</span> <span class="n">new</span> <span class="n">virtual</span> <span class="n">machine</span> <span class="k">with</span> <span class="n">installed</span> <span class="n">Subutai</span> <span class="n">package</span><span class="p">,</span> <span class="n">default</span> <span class="n">VLAN</span> <span class="n">tag</span> <span class="ow">is</span> <span class="mi">2</span>
+<span class="o">./</span><span class="n">autobuild</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">e</span> <span class="n">box</span> <span class="n">create</span> <span class="n">Subutai</span> <span class="n">vagrant</span> <span class="n">box</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="deploying-subutai-management-server">
+<h3>Deploying Subutai Management server<a class="headerlink" href="#deploying-subutai-management-server" title="Permalink to this headline">¶</a></h3>
+<p>Once you have virtual machine prepared with &#8221;./autobuild.sh -v&#8221; command, you can deploy management server on it simply by running:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">subutai</span> <span class="kn">import</span> <span class="nn">management</span>
+</pre></div>
+</div>
+<p>and after few minutes your own Subutai management server will be ready to serve.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../test.html" class="btn btn-neutral float-right" title="Test" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../about.html" class="btn btn-neutral" title="About Projects" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Subutai Social.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'4.0.3',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
