@@ -34,6 +34,7 @@ Contents:
 
    subutai/getting-started
    p2p/p2p
+   subutai/build-template
 
 .. _hub-section:
 
