@@ -33,6 +33,7 @@ Contents:
    :caption: Subutai
 
    subutai/getting-started
+   subutai/agent
    p2p/p2p
    subutai/build-template
 
