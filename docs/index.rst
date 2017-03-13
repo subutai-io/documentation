@@ -21,6 +21,9 @@ Contents:
    :caption: General
 
    about
+   team
+   roadmap
+   contribution
 
 .. _subutai-section:
 
@@ -29,7 +32,7 @@ Contents:
    :caption: Subutai
 
    subutai/getting-started
-   test
+   p2p/p2p
 
 .. _hub-section:
 
