@@ -24,6 +24,7 @@ Contents:
    team
    roadmap
    contribution
+   glossary
 
 .. _subutai-section:
 
