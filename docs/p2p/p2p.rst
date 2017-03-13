@@ -27,7 +27,7 @@ However, simply running `go build` will work too.
 Running
 ^^^^^^^^^^^^
 
-.. note:: MacOS and Windows Operating Systems require additional software. For MacOS a `TUN/TAP <http://tuntaposx.sourceforge.net/>` driver should be installed. On Windows, `TAP-Windows NDIS-6 <https://openvpn.net/index.php/open-source/downloads.html>` from OpenVPN suite should be installed.
+.. note:: MacOS and Windows Operating Systems require additional software. For MacOS a `TUN/TAP <http://tuntaposx.sourceforge.net/>`_ driver should be installed. On Windows, `TAP-Windows NDIS-6 <https://openvpn.net/index.php/open-source/downloads.html>`_ from OpenVPN suite should be installed.
 
 p2p application is divided to two parts: daemon and client. Daemon is a special mode, which should be started as root::
 
