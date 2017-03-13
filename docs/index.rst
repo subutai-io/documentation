@@ -34,7 +34,10 @@ Contents:
 
    subutai/getting-started
    subutai/agent
-   p2p/p2p
+   subutai/p2p
+   subutai/network
+   subutai/containers
+   subutai/cotnainer-backup
    subutai/build-template
 
 .. _hub-section:

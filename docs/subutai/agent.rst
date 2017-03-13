@@ -1,6 +1,9 @@
 Subutai Agent
 =============
 
+Overview
+--------
+
 The **Subutai Social Agent** performs low level operations on **Resource Hosts**.
 
 It communicates with a **Management Server**, and executes the required commands to control LXC containers.
@@ -132,3 +135,137 @@ When new containers are cloned and started, each container stores its state in t
 So if a container was started, after system restart the Subutai Agent will start all containers that were active. Stopped containers will be kept in the stopped state.
 
 A special protection mechanism is used to restore system to its intended state. If a container is broken, the Subutai Agent tries to restore its state 5 times with some delay. If not successful, the container is marked as broken and future restore operations are abandoned the broken container.
+
+Agent Commands
+--------------
+
+.. _subutai-agent-attach:
+
+attach
+^^^^^^
+
+``attach [options] <container name>`` - attach to container
+
+Options::
+
+    --clear, -c     attach with clear environment 
+    --x86, -x       use x86 personality
+    --regular, -r   connect as regular user
+
+Example::
+
+    subutai attach container1
+
+Description:
+
+Allows user to use container's TTY. ``<container name>`` - should be available 
+running Subutai container, otherwise command will return error message and 
+non-zero exit code. This command is **not fully implemented**, please use 
+lxc-attach <container name> command instead.
+
+backup
+^^^^^^
+
+batch
+^^^^^^^^
+
+.. _subutai-agent-clone:
+
+clone
+^^^^^
+
+``clone [options] <template> <container>`` - clone Subutai container
+
+Options::
+
+    --ipaddr, -i "<IPv4>/<mask> <vlan tag>"             set container IP address and VLAN
+    --env, -e <string id>                               set environment id for container
+    --token, -t <string token>                          token to verify with MH
+
+Examples::
+
+    subutai clone master container1
+    subutai clone -i "192.168.0.200/24 10" zabbix z1
+
+Description:
+
+The clone command creates new ``<container>`` from a Subutai ``<template>``. 
+If the specified template argument is not deployed in system, Subutai first tries to import it, and if import succeeds, it then continues to clone from the imported template image. By default, clone will use the NAT-ed network interface with IP address received from the Subutai DHCP server, but this behavior can be changed with command options described below.
+
+If ``-i`` option is defined, separate bridge interface will be created in 
+specified VLAN and new container will receive static IP address.
+
+Option ``-e`` writes the environment ID string inside new container. 
+Option ``-t`` is intended to check the origin of new container creation 
+request during environment build. This is one of the security checks which 
+makes sure that each container creation request is authorized by registered user.
+
+The clone options are not intended for manual use: unless you're confident 
+about what you're doing. Use default clone format without additional options 
+to create Subutai containers.
+
+cleanup
+^^^^^^^^
+
+config
+^^^^^^^^
+
+daemon
+^^^^^^^^
+
+demote
+^^^^^^^^
+
+destroy
+^^^^^^^^
+
+export
+^^^^^^^^
+
+hostname
+^^^^^^^^
+
+info
+^^^^^^^^
+
+import
+^^^^^^^^
+
+list
+^^^^^^^^
+
+metrics
+^^^^^^^^
+
+p2p
+^^^^^^^^
+
+promote
+^^^^^^^^
+
+proxy
+^^^^^^^^
+
+quota
+^^^^^^^^
+
+rename
+^^^^^^^^
+
+restore
+^^^^^^^^
+
+start
+^^^^^^^^
+
+stop
+^^^^^^^^
+
+tunnel
+^^^^^^^^
+
+update
+^^^^^^^^
+
+vxlan
+^^^^^^^^
