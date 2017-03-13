@@ -12,17 +12,17 @@ Usage
 Building from source
 ^^^^^^^^^^^^
 
-p2p can be built simple by running ``make`` command under GNU/Linux. On other platform you can use `go build` command. Make sure p2p dependencies installed first by running::
+p2p can be built simple by running ``make`` command under GNU/Linux. On other platform you can use ``go build`` command. Make sure p2p dependencies installed first by running::
 
     go get
 
-By default, running `make` command on Linux will produce binaries for Windows and MacOS as well. If you don't need them, simple run::
+By default, running ``make`` command on Linux will produce binaries for Windows and MacOS as well. If you don't need them, simple run::
 
     make linux
 
-However, simply running `go build` will work too. 
+However, simply running ``go build`` will work too. 
 
-.. note:: If you're building p2p with `go build` command, running `p2p version` will not display proper version, which is always based on latest tag
+.. note:: If you're building p2p with ``go build`` command, running ``p2p version`` will not display proper version, which is always based on latest tag
 
 Running
 ^^^^^^^
@@ -54,20 +54,23 @@ Here is a list of supported arguments::
 
     -dev <NAME> will create TAP-interface with provided name
     -dht <HOST:PORT> will use specified DHT server
-    -fwd flag will force p2p to disable discovery of nearby hosts and will use proxy to pass traffic. This will make your connection much slower in a case when proxy is overloaded.
+    -fwd flag will force p2p to disable discovery of nearby hosts and will use proxy to pass 
+        traffic. This will make your connection much slower in a case when proxy is overloaded.
     -mac <HW_ADDR> - created TAP-interface will have provided hardware address
     -port <PORT> - p2p will listen to this port for incoming connections
     -ports <MIN-MAX> - p2p will use specified range of ports for communication
-    -ttl <KEYTIME> - specified AES-key will be used before specified timestamp. Note, that this is not Time-To-Live!
+    -ttl <KEYTIME> - specified AES-key will be used before specified timestamp. Note, that 
+        this is not Time-To-Live!
 
 To stop p2p connection you should use ``p2p stop -hash <HASH>`` command with a hash of network you wish to stop. If you have multiple networks you want to stop - you should run this command multiple times for each hash. This will also remove network entry from save file and network will not be restored after daemon restart.
 
 Modifying network behaviour
 """""""""""""""""""""""""""
 
-You can use set command to modify particular network. You should specify hash of target network by providing hash argument. For example, if you want to set log level for network test-hash you should run the following command: ``p2p -set -hash test-hash -log DEBUG``. Available log levels is *TRACE*, *DEBUG, *INFO, *WARNING, *ERROR*
+You can use set command to modify particular network. You should specify hash of target network by providing hash argument. For example, if you want to set log level for network test-hash you should run the following command: ``p2p -set -hash test-hash -log DEBUG``. Available log levels is *TRACE*, *DEBUG, *INFO, *WARNING*, *ERROR*.
 
 Also, set can be used to update crypto-key (for example, you may want to add some new AES-key, that will be used after current key become obsolete)::
+
     p2p set -hash test-hash -key MYNEWAESKEY -ttl TIMESTAMP 
     
 Command above will add provided key to a queue of keys.
@@ -79,9 +82,14 @@ There is a set of commands available, that can be used to know status of p2p net
 
 p2p show displays overall information about network or about particular network/peer::
 
-    p2p show will display information about active networks: TAP Interface MAC address, IP of TAP interface and hash
-    p2p show -hash <HASH> will display information about specified network in a form of table with information about peers: Peer ID, IP, Endpoint IP and MAC address
-    p2p show -check <IP> will display integration status with particular peer. Also it will return zero exit code if peer was integrated into network (it is known to our p2p client) or non-zero exit code if it's not
+    p2p show will display information about active networks: TAP Interface MAC 
+        address, IP of TAP interface and hash
+    p2p show -hash <HASH> will display information about specified network in 
+        a form of table with information about peers: Peer ID, IP, Endpoint IP 
+        and MAC address
+    p2p show -check <IP> will display integration status with particular peer. 
+        Also it will return zero exit code if peer was integrated into network 
+        (it is known to our p2p client) or non-zero exit code if it's not
 
 p2p status is another useful command that display status of all peers know to p2p client with parser-friendly information structure. Much like ``p2p show -hash <HASH>``, but with some additional details, like latest error from peer communication
 
