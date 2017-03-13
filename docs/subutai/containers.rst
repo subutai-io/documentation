@@ -51,7 +51,7 @@ All other underlying operations, consistency and security checks, hierarchy
 preparation will be performed automatically and as a result, after a few 
 minutes (or seconds, depends on Internet connection bandwidth) template will 
 be deployed in system. After message about successful finish, template is 
-ready to be :ref:`subutai-agent-clone`d: ``subutai clone ceph c1``.
+ready to be cloned (see :ref:`subutai-agent-clone`): ``subutai clone ceph c1``.
 
 New Subutai template can be built on top of existing one; they will be called child and parent accordingly. This hierarchy allows anyone easily create its own template without doubts about properly configured base system. Besides, it gives big advantage in disc space usage: deployment of 10 containers with Hadoop requires only one root template, whereas 10 running instances will be just copy-on-write "clones" of this template.
 
