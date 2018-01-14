@@ -54,6 +54,7 @@ Vagrant.configure("2") do |config|
     pip install --upgrade pip
     pip install --upgrade virtualenv
     pip install sphinx sphinx-autobuild recommonmark
+    pip install sphinx_rtd_theme
 
     # Before exiting in privileged mode setup iptables and routing
     # sphinx-autobuild does not listen on all interface just localhost
