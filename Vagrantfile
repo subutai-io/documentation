@@ -63,7 +63,7 @@ Vagrant.configure("2") do |config|
   SHELL
 
   config.vm.provision 'shell', privileged: false, inline: <<-SHELL
-    cd /vagrant/docs;
+    cd /vagrant;
     nohup sphinx-autobuild . _build/html vagrant &
   SHELL
 end
