@@ -73,7 +73,6 @@ Vagrant.configure("2") do |config|
     apt-get install -y libreoffice ruby ruby-dev zlib1g-dev
     gem install word-to-markdown
 
-
     # Before exiting in privileged mode setup iptables and routing
     # sphinx-autobuild does not listen on all interface just localhost
     sysctl -w net.ipv4.conf.enp0s8.route_localnet=1
@@ -162,7 +161,9 @@ Vagrant.configure("2") do |config|
     # This will dump into /readthedocs if the folder in gdocs is named readthedocs
     gdrive download --recursive --force --path / $GDRIVE_RTD_ROOT
 
-    cd /readthedocs;
+    # Convert Word to Markdown and generate the RTD site with auto build daemon
+    cd /readthedocs
+    ./convert.sh
     nohup sphinx-autobuild . _build/html vagrant &
   SHELL
 end

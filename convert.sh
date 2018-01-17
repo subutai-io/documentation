@@ -1,8 +1,8 @@
 #!/bin/bash
 
-for gdoc in "`find . -type f -regex '.*\.docx'`"; do
-  echo "gdoc = $gdoc"
+for gdoc in `find . -type f -regex '.*\.docx'`; do
   mdfile="$(echo $gdoc | sed -e 's/\.docx$/\.md/')"
-  echo "w2m $gdoc"' > '$mdfile
+  echo "Converting $gdoc to markdown ..."
+  w2m "$gdoc" > "$mdfile"
 done
 
