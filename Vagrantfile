@@ -61,7 +61,7 @@ Vagrant.configure("2") do |config|
     pip install sphinx_rtd_theme
 
     # Get the google drive client
-    wget 'https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download' -O /usr/local/bin/gdrive
+    wget 'https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download' -O /usr/local/bin/gdrive >/dev/null 2>&1
     chmod +x /usr/local/bin/gdrive
 
     # Before exiting in privileged mode setup iptables and routing
@@ -87,7 +87,7 @@ Vagrant.configure("2") do |config|
     puts 'every vagrant up commands.'
   else
     config.vm.provision 'file',
-      source: "#{ENV['GDRIVE_TOKEN_FILE']}", 
+      source: File.expand_path(ENV['GDRIVE_TOKEN_FILE']), 
       destination: '/tmp/token_v2.json'
   end
 
@@ -106,9 +106,15 @@ Vagrant.configure("2") do |config|
       mv /tmp/token_v2.json $HOME/.gdrive
       gdrive about
     else
-      echo 'Google drive client not initialized. Setup token file and reprovision.'
-      echo 'Will not attempt site generation or start autobuild daemon.'
-      echo 'Existing with non-zero status."
+      echo 'Google drive client could not initialize.'
+      echo
+      echo 'Setup bearer token file and re-provision with vagrant.'
+      echo 'Will NOT attempt site generation or start sphinx auto '
+      echo 'build daemon. See the following wiki for more information:'
+      echo
+      echo 'https://github.com/subutai-io/docs/wiki/Using-the-Vagrant-VM'
+      echo
+      echo 'Existing with non-zero status.'
       exit 1
     fi
 
