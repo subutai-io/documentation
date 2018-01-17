@@ -1,36 +1,36 @@
 [submodule "docs/modules/packer.wiki"]
-	path = Project/packer
+	path = Projects/packer
 	url = https://github.com/subutai-io/packer.wiki.git
 [submodule "docs/modules/vagrant.wiki"]
-	path = Project/vagrant
+	path = Projects/vagrant
 	url = https://github.com/subutai-io/vagrant.wiki.git
 [submodule "docs/modules/snap.wiki"]
-	path = Project/snap
+	path = Projects/snap
 	url = https://github.com/subutai-io/snap.wiki.git
 [submodule "docs/modules/agent.wiki"]
-	path = Project/agent
+	path = Projects/agent
 	url = https://github.com/subutai-io/agent.wiki.git
 [submodule "docs/modules/tray.wiki"]
-	path = Project/tray
+	path = Projects/tray
 	url = https://github.com/subutai-io/tray.wiki.git
 [submodule "docs/modules/p2p.wiki"]
-	path = Project/p2p
+	path = Projects/p2p
 	url = https://github.com/subutai-io/p2p.wiki.git
 [submodule "docs/modules/browsers.wiki"]
-	path = Project/browsers
+	path = Projects/browsers
 	url = https://github.com/subutai-io/browsers.wiki.git
 [submodule "docs/modules/base.wiki"]
-	path = Project/base
+	path = Projects/base
 	url = https://github.com/subutai-io/base.wiki.git
 [submodule "docs/modules/gorjun.wiki"]
-	path = Project/gorjun
+	path = Projects/gorjun
 	url = https://github.com/subutai-io/gorjun.wiki.git
 [submodule "docs/modules/plugins.wiki"]
-	path = Project/plugins
+	path = Projects/plugins
 	url = https://github.com/subutai-io/plugins.wiki.git
 [submodule "docs/modules/subutai-router.wiki"]
-	path = Project/subutai-router
+	path = Projects/subutai-router
 	url = https://github.com/subutai-io/subutai-router.wiki.git
 [submodule "docs/modules/ansible.wiki"]
-	path = Project/ansible
+	path = Projects/ansible
 	url = https://github.com/subutai-io/ansible.wiki.git
