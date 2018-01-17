@@ -1,3 +1,4 @@
 .vagrant
 .vscode
+*.docx
 _build
