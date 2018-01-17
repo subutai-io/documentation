@@ -3,7 +3,7 @@ docs_port = 8000
 
 Vagrant.configure("2") do |config|
   config.vm.box = "subutai/stretch"
-
+  config.vm.synced_folder ".", "/readthedocs", disabled: false
   config.vm.network "forwarded_port", guest: 8000, host: 8000, auto_correct: true
 
   config.vm.provision 'shell',
@@ -27,30 +27,34 @@ Vagrant.configure("2") do |config|
     echo 'Using '$ACNG_URL' and '$APPROX_URL' for deb pkg caching'
     echo 'Acquire::http::Proxy "'$ACNG_URL'";' > /etc/apt/apt.conf.d/02proxy
 
-    echo "Finding nearest apt mirror even when caching (not everything gets cached)"
-    apt-get -y update
-    apt-get install -y netselect-apt
-    country=`curl -s ipinfo.io | grep country | awk -F ':' '{print $2}' | sed -e 's/[", ]//g'`
-    if [ "KG" = "$country" ]; then
-      country='KZ'
-    fi
+    if [ -f sources.list ]; then
+      echo "Nearest mirror already set."
+    else
+      echo "Finding nearest apt mirror even when caching (not everything gets cached)"
+      apt-get -y update
+      apt-get install -y netselect-apt
+      country=`curl -s ipinfo.io | grep country | awk -F ':' '{print $2}' | sed -e 's/[", ]//g'`
+      if [ "KG" = "$country" ]; then
+        country='KZ'
+      fi
 
-    netselect-apt -c $country &> /dev/null
-    if [ ! "$?" = "0" ]; then
-      netselect-apt -c US &> /dev/null
-    fi
+      netselect-apt -c $country &> /dev/null
+      if [ ! "$?" = "0" ]; then
+        netselect-apt -c US &> /dev/null
+      fi
 
-    if [ -f "sources.list" ]; then
-      rm /etc/apt/sources.list
+      if [ -f "sources.list" ]; then
+        rm /etc/apt/sources.list
 
-      while read line; do
-        if [ -n "$(echo $line | egrep '^#.*')" -o -z "$(echo $line | grep '^deb .*')" ]; then
-          continue;
-        fi
+        while read line; do
+          if [ -n "$(echo $line | egrep '^#.*')" -o -z "$(echo $line | grep '^deb .*')" ]; then
+            continue;
+          fi
 
-        echo "$line non-free" >> /etc/apt/sources.list;
-        echo "$line non-free" | sed -e 's/deb /deb-src /' >> /etc/apt/sources.list;
-      done < sources.list
+          echo "$line non-free" >> /etc/apt/sources.list;
+          echo "$line non-free" | sed -e 's/deb /deb-src /' >> /etc/apt/sources.list;
+        done < sources.list
+      fi
     fi
 
     apt-get -y update
@@ -63,6 +67,12 @@ Vagrant.configure("2") do |config|
     # Get the google drive client
     wget 'https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download' -O /usr/local/bin/gdrive >/dev/null 2>&1
     chmod +x /usr/local/bin/gdrive
+
+    # This is huge, need libre office and ruby
+    echo "Brace yourself this could take a while: libreoffice and word to markdown ruby install"
+    apt-get install -y libreoffice ruby ruby-dev zlib1g-dev
+    gem install word-to-markdown
+
 
     # Before exiting in privileged mode setup iptables and routing
     # sphinx-autobuild does not listen on all interface just localhost
@@ -118,7 +128,41 @@ Vagrant.configure("2") do |config|
       exit 1
     fi
 
-    cd /vagrant;
+    if [ -z "$GDRIVE_RTD_ROOT" ]; then
+      echo 'Looks like you do not have your GDRIVE_RTD_ROOT'
+      echo 'environment variable set. Searching for any folder'
+      echo 'in your Google Drive named readthedocs:'
+      echo
+
+      GDRIVE_RTD_ROOT="$(gdrive list | grep readthedocs | cut -d' ' -f1)"
+      if [ -n "$GDRIVE_RTD_ROOT" ]; then
+        echo 'Found it! Using folder named 'readthedocs' with ID '$GDRIVE_RTD_ROOT
+        echo 'Make these messages go away by adding the following to your profile:'
+        echo 
+        echo "export GDRIVE_RTD_ROOT='$GDRIVE_RTD_ROOT'"
+        echo
+      else 
+        echo "Could not find any folder named 'readthedocs'. Please make sure"
+        echo "to rename the root used to readthedocs. Exiting with non-zero status."
+        echo 1
+      fi
+    else
+      echo "GDRIVE_RTD_ROOT set to $GDRIVE_RTD_ROOT, checking folder name ..."
+      FOLDER="$(gdrive list | grep $GDRIVE_RTD_ROOT | awk '{print $2}')"
+      echo "GDRIVE_RTD_ROOT folder name = $FOLDER"
+      if [ "$FOLDER" != "readthedocs" ]; then
+        echo "The folder name associated with your GDRIVE_RTD_ROOT id is not"
+        echo "named readthedocs. It is named '$FOLDER' instead. Please make"
+        echo "sure you used the correct folder ID, or your folder is renamed."
+        echo "It MUST be named 'readthedocs'. Exiting with non-zero status."
+        exit 1
+      fi
+    fi
+
+    # This will dump into /readthedocs if the folder in gdocs is named readthedocs
+    gdrive download --recursive --force --path / $GDRIVE_RTD_ROOT
+
+    cd /readthedocs;
     nohup sphinx-autobuild . _build/html vagrant &
   SHELL
 end
