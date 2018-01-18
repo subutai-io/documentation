@@ -57,21 +57,36 @@ Vagrant.configure("2") do |config|
       fi
     fi
 
-    apt-get -y update
-    apt-get install -y git python python-pip python-dev build-essential
-    pip install --upgrade pip
-    pip install --upgrade virtualenv
-    pip install sphinx sphinx-autobuild recommonmark
-    pip install sphinx_rtd_theme
+    if [ -f /root/sphinx_installed ]; then
+      echo "Python and Sphinx already installed ..."
+    else
+      apt-get -y update
+      apt-get install -y git python python-pip python-dev build-essential
+      pip install --upgrade pip
+      pip install --upgrade virtualenv
+      pip install sphinx sphinx-autobuild recommonmark
+      pip install sphinx_rtd_theme
+      touch /root/sphinx_installed
+    fi
 
-    # Get the google drive client
-    wget 'https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download' -O /usr/local/bin/gdrive >/dev/null 2>&1
-    chmod +x /usr/local/bin/gdrive
+    if [ -f /root/gdrive_installed ]; then
+      echo "GDrive already installed ..."
+    else
+      # Get the google drive client
+      wget 'https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download' -O /usr/local/bin/gdrive >/dev/null 2>&1
+      chmod +x /usr/local/bin/gdrive
+      touch /root/gdrive_installed
+    fi
 
     # This is huge, need libre office and ruby
-    echo "Brace yourself this could take a while: libreoffice and word to markdown ruby install"
-    apt-get install -y libreoffice ruby ruby-dev zlib1g-dev
-    gem install word-to-markdown
+    if [ -f /root/word2md_installed ]; then
+      echo "LibreOffice and Word-to-Markdown already installed ..."
+    else
+      echo "Brace yourself this could take a while: libreoffice and word to markdown ruby install"
+      apt-get install -y libreoffice ruby ruby-dev zlib1g-dev
+      gem install word-to-markdown
+      touch /root/word2md_installed
+    fi
 
     # Before exiting in privileged mode setup iptables and routing
     # sphinx-autobuild does not listen on all interface just localhost
@@ -111,7 +126,10 @@ Vagrant.configure("2") do |config|
     }, inline: <<-SHELL
 
     if [ -f /tmp/token_v2.json ]; then
-      mkdir $HOME/.gdrive
+      if [ ! -d $HOME/.gdrive ]; then
+        mkdir $HOME/.gdrive
+      fi
+
       mv /tmp/token_v2.json $HOME/.gdrive
       gdrive about
     else
@@ -127,43 +145,15 @@ Vagrant.configure("2") do |config|
       exit 1
     fi
 
-    if [ -z "$GDRIVE_RTD_ROOT" ]; then
-      echo 'Looks like you do not have your GDRIVE_RTD_ROOT'
-      echo 'environment variable set. Searching for any folder'
-      echo 'in your Google Drive named readthedocs:'
-      echo
-
-      GDRIVE_RTD_ROOT="$(gdrive list | grep readthedocs | cut -d' ' -f1)"
-      if [ -n "$GDRIVE_RTD_ROOT" ]; then
-        echo 'Found it! Using folder named 'readthedocs' with ID '$GDRIVE_RTD_ROOT
-        echo 'Make these messages go away by adding the following to your profile:'
-        echo 
-        echo "export GDRIVE_RTD_ROOT='$GDRIVE_RTD_ROOT'"
-        echo
-      else 
-        echo "Could not find any folder named 'readthedocs'. Please make sure"
-        echo "to rename the root used to readthedocs. Exiting with non-zero status."
-        echo 1
-      fi
-    else
-      echo "GDRIVE_RTD_ROOT set to $GDRIVE_RTD_ROOT, checking folder name ..."
-      FOLDER="$(gdrive list | grep $GDRIVE_RTD_ROOT | awk '{print $2}')"
-      echo "GDRIVE_RTD_ROOT folder name = $FOLDER"
-      if [ "$FOLDER" != "readthedocs" ]; then
-        echo "The folder name associated with your GDRIVE_RTD_ROOT id is not"
-        echo "named readthedocs. It is named '$FOLDER' instead. Please make"
-        echo "sure you used the correct folder ID, or your folder is renamed."
-        echo "It MUST be named 'readthedocs'. Exiting with non-zero status."
-        exit 1
-      fi
-    fi
+    cd /readthedocs
 
     # This will dump into /readthedocs if the folder in gdocs is named readthedocs
-    gdrive download --recursive --force --path / $GDRIVE_RTD_ROOT
+    ./download.sh
 
-    # Convert Word to Markdown and generate the RTD site with auto build daemon
-    cd /readthedocs
+    # Convert Word to Markdown
     ./convert.sh
+
+    # Generate the RTD site with auto build daemon
     nohup sphinx-autobuild . _build/html vagrant &
   SHELL
 end
