@@ -29,7 +29,7 @@
 	path = Projects/plugins
 	url = https://github.com/subutai-io/plugins.wiki.git
 [submodule "docs/modules/subutai-router.wiki"]
-	path = Projects/subutai-router
+	path = Projects/router
 	url = https://github.com/subutai-io/subutai-router.wiki.git
 [submodule "docs/modules/ansible.wiki"]
 	path = Projects/ansible
