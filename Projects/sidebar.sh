@@ -37,7 +37,6 @@ skipped=(
     [$sidebar_base]=true
 )
 
-# TODO change this after correct operation confirmed
 for mdfile in `find $PROJECT_DIR -type f -regex '.*\.md'`; do
   mdbase="$(basename $mdfile)"
 
@@ -143,8 +142,4 @@ for path in "${!uniq_paths[@]}"; do
   echo '</details>' >> $sidebar_file
   echo              >> $sidebar_file
 done
-
-
-
-
 
