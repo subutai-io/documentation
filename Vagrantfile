@@ -79,13 +79,14 @@ Vagrant.configure("2") do |config|
     fi
 
     # This is huge, need libre office and ruby
-    if [ -f /root/word2md_installed ]; then
-      echo "LibreOffice and Word-to-Markdown already installed ..."
+    if [ -f /root/converters_installed ]; then
+      echo "Converters already installed ..."
     else
       echo "Brace yourself this could take a while: libreoffice and word to markdown ruby install"
       apt-get install -y libreoffice ruby ruby-dev zlib1g-dev
       gem install word-to-markdown
-      touch /root/word2md_installed
+      apt-get install -y pandoc
+      touch /root/converters_installed
     fi
 
     # Before exiting in privileged mode setup iptables and routing

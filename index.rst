@@ -10,32 +10,35 @@ Contents:
 .. toctree::
    :maxdepth: 2
    :caption: General
+   :glob:
 
    about
-   team
-   roadmap
    contributing
-   glossary
 
 .. _subutai-section:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Subutai
+   :caption: Subutai Peer
+   :glob:
 
-   subutai/getting-started
-   subutai/agent
-   subutai/p2p
-   subutai/network
-   subutai/containers
-   subutai/cotnainer-backup
-   subutai/build-template
+   Products/Peer/*
 
 .. _hub-section:
 
 .. toctree::
    :maxdepth: 2
    :caption: Hub
+   :glob:
 
-   hub/getting-started
+   Products/Hub/*
+
+.. _projects-section:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Projects
+
+   Projects/agent/Auto-generated-REST-API.md
+   Projects/subutai-router/Design-Process-Scheduling.md
 
