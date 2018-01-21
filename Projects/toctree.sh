@@ -11,7 +11,9 @@ function fn_camel() {
 function fn_title() {
   local file=$(basename "$1")
   local no_ext=$(echo "$file" | sed 's/\.[^.]*$//')
-  fn_camel $(echo "$no_ext" | sed 's/-\|_/ /g')
+  local w_spaces=$(echo "$no_ext" | sed 's/-\|_/ /g')
+  local camel=$(fn_camel "$w_spaces")
+  echo "$camel"
 }
 
 # ARG $1: the title to generate the h1 header for
@@ -104,6 +106,7 @@ for mdfile in `find $PROJECT_DIR -type f -regex '.*\.md'`; do
   rstfile="$(echo $mdfile | sed -e 's/\.md$/\.rst/')"
   rstbase="$(basename $rstfile)"
   title="$(fn_title $rstfile)"
+  echo "[DEBUG] title = $title"
   
   # (2) start
   match=$(head -n 1 $mdfile | grep -i '# '"$title")
@@ -258,7 +261,7 @@ for path in "${!uniq_paths[@]}"; do
 
   for rstfile in "${sorted_files[@]}"; do
     rstbase="$(basename $rstfile)"
-    title="$(fn_title $title)"
+    title="$(fn_title $rstfile)"
     
     if [ "$path" == "${rst2ppath[$rstfile]}" ]; then
       entry='   '$title' <'$PROJECT_NAME/$rstbase'>'
