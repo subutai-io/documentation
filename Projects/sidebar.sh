@@ -53,7 +53,7 @@ for mdfile in `find $PROJECT_DIR -type f -regex '.*\.md'`; do
   
   base2path+=([$mdbase]=$parent_path)
 
-  if [ ! "${uniq_paths[$mdbase]}" ]; then
+  if [ ! "${uniq_paths[$parent_path]}" ]; then
     uniq_paths+=([$parent_path]=true)
   fi
 

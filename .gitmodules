@@ -34,3 +34,12 @@
 [submodule "docs/modules/ansible.wiki"]
 	path = Projects/ansible
 	url = https://github.com/subutai-io/ansible.wiki.git
+[submodule "Projects/hub"]
+	path = Projects/hub
+	url = https://github.com/subutai-io/hub
+[submodule "Projects/subutron"]
+	path = Projects/subutron
+	url = https://github.com/subutai-io/subutron.git
+[submodule "Projects/subutron.wiki"]
+	path = Projects/subutron
+	url = https://github.com/subutai-io/subutron.wiki.git

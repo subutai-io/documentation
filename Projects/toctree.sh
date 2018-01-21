@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function camel() {
+  echo "$1" | awk '{for(i=1;i<=NF;i++)sub(/./,toupper(substr($i,1,1)),$i)}1'
+}
+
 PROJECTS=/readthedocs/Projects
 PROJECT_NAME="$1"
 PROJECT_DIR="$PROJECTS/$PROJECT_NAME"
@@ -17,6 +21,7 @@ CONFIG_FILE="$(cat $PROJECT_DIR/.git | awk -F':' '{print $2}' | sed -e 's/ //g' 
 GIT_URL="$(cat $CONFIG_FILE | egrep 'url = .*github.com.*\.wiki\.git$' | awk -F'=' '{print $2}' | sed -e 's/ //g')"
 PROJECT_URL="$(echo $GIT_URL | sed -e 's/\.wiki\.git$//')"
 WIKI_URL="$PROJECT_URL/wiki"
+PROJECT_NAME_CAMEL="$(camel $PROJECT_NAME)"
 
 echo "[DEBUG] CONFIG_FILE = $CONFIG_FILE"
 echo "[DEBUG] GIT_URL = $GIT_URL"
@@ -28,7 +33,7 @@ sidebar_file="$PROJECT_DIR/$sidebar_base"
 toctree_file=$PROJECT_NAME'_toctree.rst'
 
 declare -A uniq_paths
-declare -A base2path
+declare -A rst2ppath
 declare -A skipped
 skipped=(
     [Home.md]=true
@@ -47,23 +52,48 @@ for mdfile in `find $PROJECT_DIR -type f -regex '.*\.md'`; do
     continue
   fi
 
+  no_ext="$(echo $mdbase | sed -e 's/\.md$//')"
+  rstfile="$(echo $mdfile | sed -e 's/\.md$/\.rst/')"
+  rstbase="$no_ext"'.rst'
+  title="$(echo $no_ext | sed -e 's/-/ /g')"
+  title="$(camel $title)"
+  
+  match=$(head -n 1 $mdfile | grep -i '# '"$title")
+  if [ -z "$match" ]; then
+    cp "$mdfile" "$mdfile"'.tmp'
+    echo "# $title"      > "$mdfile"
+    echo                >> "$mdfile"
+    cat "$mdfile"'.tmp' >> "$mdfile"
+    rm -f "$mdfile"'.tmp'
+  fi
+
+  echo "[DEBUG] no_ext = $no_ext"
   parent_path='/Uncategorized'
   if [ -n "$(tail -n 5 $mdfile | grep PARENT_PATH)" ]; then
     parent_path="$(tail -n 5 $mdfile | grep PARENT_PATH | awk -F':' '{print $2}' | sed -e 's/^ //g' -e 's/ $//g')"
   fi
   
-  base2path+=([$mdbase]=$parent_path)
+  rst2ppath+=([$rstfile]=$parent_path)
 
-  if [ ! "${uniq_paths[$mdbase]}" ]; then
+  if [ ! "${uniq_paths[$parent_path]}" ]; then
     uniq_paths+=([$parent_path]=true)
   fi
 
-  echo "[DEBUG] $mdbase parent_path = $parent_path"
+  echo "[DEBUG] $rstbase parent_path = $parent_path"
+  echo "[DEBUG] converting $rstbase"
+
+  pandoc --from markdown --to rst $mdfile -o $rstfile
 done
 
 echo
 echo "Generating toctree file $toctree_file"
-echo > $toctree_file
+echo                                                          > $toctree_file
+echo ".. _$PROJECT_NAME-section:"                            >> $toctree_file
+echo                                                         >> $toctree_file
+echo '.. toctree::'                                          >> $toctree_file
+echo '   :maxdepth: 2'                                       >> $toctree_file
+echo "   :caption: Subutai $PROJECT_NAME_CAMEL"              >> $toctree_file
+echo                                                         >> $toctree_file
 
 #
 # ----------------------------------------------------------------------------
@@ -75,23 +105,25 @@ echo
 echo "Processing / entries first:"
 echo
 
-declare -a sorted_bases
-for base in "${!base2path[@]}"; do
-  if [ "/" == "${base2path["$base"]}" ]; then
-    sorted_bases+=($base)
+declare -a sorted_files
+for rstfile in "${!rst2ppath[@]}"; do
+  if [ "/" == "${rst2ppath["$rstfile"]}" ]; then
+    sorted_files+=($rstfile)
   fi
 done
 
-IFS=$'\n' sorted_bases=($(sort <<<"${sorted_bases[*]}"))
-echo "Sorted bases = ${sorted_bases[@]}"
+IFS=$'\n' sorted_files=($(sort <<<"${sorted_files[*]}"))
+echo "Sorted rst files = ${sorted_files[@]}"
 
-for base in "${sorted_bases[@]}"; do
-  no_ext="$(echo $base | sed -e 's/\.md$//')"
+for rstfile in "${sorted_files[@]}"; do
+  rstbase="$(basename $rstfile)"
+  no_ext="$(echo $rstbase | sed -e 's/\.rst$//')"
   title="$(echo $no_ext | sed -e 's/-/ /g')"
-  if [ "/" == "${base2path["$base"]}" ]; then
-    entry='[**'$title'**]('$WIKI_URL/$no_ext')'
-    echo "$entry" >> $sidebar_file
-    echo          >> $sidebar_file
+  title="$(camel $title)"
+
+  if [ "/" == "${rst2ppath["$rstfile"]}" ]; then
+    entry='   '$title' <'$PROJECT_NAME/$rstbase'>'
+    echo "$entry" >> $toctree_file
     echo "[DEBUG] $base file matches path $path"
   fi
 done
@@ -115,32 +147,42 @@ for path in "${!uniq_paths[@]}"; do
   echo "Processing Path $path Entries:"
   echo
 
-  sorted_bases=()
-  for base in "${!base2path[@]}"; do
-    if [ "$path" == "${base2path["$base"]}" ]; then
-      sorted_bases+=($base)
+  sorted_files=()
+  for rstfile in "${!rst2ppath[@]}"; do
+    if [ "$path" == "${rst2ppath["$rstfile"]}" ]; then
+      sorted_files+=($rstfile)
     fi
   done
 
-  IFS=$'\n' sorted_bases=($(sort <<<"${sorted_bases[*]}"))
-  echo "Sorted bases = ${sorted_bases[@]}"
+  IFS=$'\n' sorted_files=($(sort <<<"${sorted_files[*]}"))
+  echo "Sorted rst files = ${sorted_files[@]}"
 
   rootless_path="$(echo $path | sed -e 's@^/@@')"
-  echo '<details><summary><a href='$WIKI_URL$path'><b>'$rootless_path'</b></a></summary>' >> $sidebar_file
-  echo '   ' >> $sidebar_file
+  sub_toctree_file=$rootless_path'_'$PROJECT_NAME'_toctree.rst'
 
-  for base in "${sorted_bases[@]}"; do
-    no_ext="$(echo $base | sed -e 's/\.md$//')"
+  echo
+  echo "Generating toctree file $sub_toctree_file"
+  echo                                                        > $sub_toctree_file
+  echo ".. _$rootless_path-$PROJECT_NAME-section:"           >> $sub_toctree_file
+  echo                                                       >> $sub_toctree_file
+  echo '.. toctree::'                                        >> $sub_toctree_file
+  echo '   :maxdepth: 2'                                     >> $sub_toctree_file
+  echo "   :caption: $PROJECT_NAME_CAMEL $rootless_path"     >> $sub_toctree_file
+  echo                                                       >> $sub_toctree_file
+
+  for rstfile in "${sorted_files[@]}"; do
+    rstbase="$(basename $rstfile)"
+    no_ext="$(echo $rstbase | sed -e 's/\.rst$//')"
     title="$(echo $no_ext | sed -e 's/-/ /g')"
+    title="$(camel $title)"
     
-    if [ "$path" == "${base2path[$base]}" ]; then
-      entry='['$title']('$WIKI_URL/$no_ext')'
-      echo "   $entry    " >> $sidebar_file
+    if [ "$path" == "${rst2ppath[$rstfile]}" ]; then
+      entry='   '$title' <'$PROJECT_NAME/$rstbase'>'
+      echo "$entry" >> $sub_toctree_file
       echo "[DEBUG] $base file matches path $path"
     fi
   done
 
-  echo '</details>' >> $sidebar_file
-  echo              >> $sidebar_file
+  echo              >> $sub_toctree_file
+  echo '   '$rootless_path' <'$sub_toctree_file'>' >> $toctree_file 
 done
-
