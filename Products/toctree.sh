@@ -72,12 +72,14 @@ declare -a sorted_files
 for gdocfile in `find $PRODUCT_DIR -type f -regex '.*\.docx'`; do
   gdocbase="$(basename $gdocfile)"
   rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
+  mdfile="$(echo $gdocfile | sed -e 's/\.docx$/\.md/')"
   rstbase="$(basename $rstfile)"
   title="$(fn_title $rstfile)"
   echo "[DEBUG] title = $title"
 
   echo "$(fn_header $title)" > $rstfile
-  pandoc --from docx --to rst $gdocfile -o $rstfile.tmp
+  w2m "$gdocfile" > "$mdfile"
+  pandoc --from markdown --to rst $mdfile -o $rstfile.tmp
   cat $rstfile.tmp >> $rstfile
   rm $rstfile.tmp
   sorted_files+=("$rstfile")
