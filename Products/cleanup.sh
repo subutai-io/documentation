@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # delete all rst files not tracked in git
-for rstfile in `find . -type f -regex '.*\.rst$'`; do
+for rstfile in `find . -type f -regex '.*\.\(rst\|md\)$'`; do
   if [ -n "$(git status -s $rstfile | grep '^??')" ]; then
     echo "Deleting untracked (generated) restructuredText file: $rstfile"
     rm $rstfile
