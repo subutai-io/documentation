@@ -112,7 +112,7 @@ for mdfile in `find $PROJECT_DIR -type f -regex '.*\.md'`; do
   match=$(head -n 1 $mdfile | grep -i '# '"$title")
   if [ -z "$match" ]; then
     cp "$mdfile" "$mdfile"'.tmp'
-    echo "# $title"      > "$mdfile"
+    echo '# '"$title"    > "$mdfile"
     echo                >> "$mdfile"
     cat "$mdfile"'.tmp' >> "$mdfile"
     rm -f "$mdfile"'.tmp'

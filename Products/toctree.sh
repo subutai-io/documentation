@@ -77,7 +77,7 @@ for gdocfile in `find $PRODUCT_DIR -type f -regex '.*\.docx'`; do
   title="$(fn_title $rstfile)"
   echo "[DEBUG] title = $title"
 
-  echo "$(fn_header $title)" > $rstfile
+  fn_header "$title" > $rstfile
   w2m "$gdocfile" > "$mdfile"
   pandoc --from markdown --to rst $mdfile -o $rstfile.tmp
   cat $rstfile.tmp >> $rstfile
