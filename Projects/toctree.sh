@@ -47,7 +47,7 @@ CONFIG_FILE="$(cat $PROJECT_DIR/.git | awk -F':' '{print $2}' | sed -e 's/ //g' 
 GIT_URL="$(cat $CONFIG_FILE | egrep 'url = .*github.com.*\.wiki\.git$' | awk -F'=' '{print $2}' | sed -e 's/ //g')"
 PROJECT_URL="$(echo $GIT_URL | sed -e 's/\.wiki\.git$//')"
 WIKI_URL="$PROJECT_URL/wiki"
-PROJECT_NAME_CAMEL="$(camel $PROJECT_NAME)"
+PROJECT_NAME_CAMEL="$(fn_camel $PROJECT_NAME)"
 
 echo "[DEBUG] CONFIG_FILE = $CONFIG_FILE"
 echo "[DEBUG] GIT_URL = $GIT_URL"
