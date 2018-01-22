@@ -92,7 +92,7 @@ for rstfile in "${sorted_files[@]}"; do
   rstbase="$(basename $rstfile)"
   title="$(fn_title $rstfile)"
 
-  entry='   '$title' <'$PROJECT_NAME/$rstbase'>'
+  entry='   '$title' <'$PRODUCT_NAME/$rstbase'>'
   found=$(cat $toctree_file | grep "$entry")
 
   if [ -z "$found" ]; then
