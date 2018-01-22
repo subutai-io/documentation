@@ -32,7 +32,7 @@ function fn_header() {
 
 PRODUCTS=/readthedocs/Products
 PRODUCT_NAME="$1"
-PRODUCT_DIR="$PRODUCTS/$PROJECT_NAME"
+PRODUCT_DIR="$PRODUCTS/$PRODUCT_NAME"
 toctree_file="$PRODUCT_NAME"'_toctree.rst'
 
 if [ -z "$PRODUCT_NAME" ]; then
