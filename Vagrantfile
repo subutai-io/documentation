@@ -19,13 +19,13 @@ Vagrant.configure("2") do |config|
     # Tuck these away into the environment so they're available to synchronize
     echo "GDRIVE_RTD_ROOT=$GDRIVE_RTD_ROOT" >> /etc/environment
 
-    ## Need to make this conditional
-    ACNG_URL="http://$ACNG_HOST:$ACNG_PORT"
-    APPROX_URL="http://$APPROX_HOST:$APPROX_PORT/debian/"
+    if [ -n "$ACNG_HOST" -a -n "$ACNG_PORT" ]; then
+      ACNG_URL="http://$ACNG_HOST:$ACNG_PORT"
 
-    # Apt settings
-    echo 'Using '$ACNG_URL' and '$APPROX_URL' for deb pkg caching'
-    echo 'Acquire::http::Proxy "'$ACNG_URL'";' > /etc/apt/apt.conf.d/02proxy
+      # Apt settings
+      echo 'Using '$ACNG_URL' for deb pkg caching'
+      echo 'Acquire::http::Proxy "'$ACNG_URL'";' > /etc/apt/apt.conf.d/02proxy
+    fi
 
     if [ -f sources.list ]; then
       echo "Nearest mirror already set."
