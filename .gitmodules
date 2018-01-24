@@ -49,3 +49,6 @@
 [submodule "Projects/playbooks"]
 	path = Projects/playbooks
 	url = https://github.com/subutai-io/playbooks.wiki.git
+[submodule "Projects/readthedocs"]
+	path = Projects/readthedocs
+	url = https://github.com/subutai-io/readthedocs.wiki.git
