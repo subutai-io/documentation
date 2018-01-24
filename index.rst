@@ -67,5 +67,6 @@ Join the Subutai Horde! Be part of the P2P Cloud Crowd.
    Vagrant Plugin <Projects/vagrant_toctree.rst>
    Ansible Module <Projects/ansible_toctree.rst>
    The Subutron <Projects/subutron_toctree.rst> 
+   Test Playbooks <Projects/playbooks_toctree.rst>
 
 

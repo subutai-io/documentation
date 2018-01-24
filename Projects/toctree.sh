@@ -30,15 +30,25 @@ function fn_header() {
   echo "${v// /=}"
 }
 
+function usage() {
+  echo "[ERROR] $@" >&2
+  echo
+  echo "Usage: $0 <project_name>"
+  echo
+  exit 1
+}
+
 PROJECTS=/readthedocs/Projects
 PROJECT_NAME="$1"
 PROJECT_DIR="$PROJECTS/$PROJECT_NAME"
 
 if [ -z "$PROJECT_NAME" ]; then
-  echo "[ERROR] Missing project name argument. Exiting with non-zero status."
-  echo
-  echo "Usage: $0 <project_name>"
-  echo
+  usage "Missing project name argument. Exiting with non-zero status."
+  exit 1
+fi
+
+if [ ! -d "$PROJECT_DIR" ]; then
+  usage "No such project directory exists: $PROJECT_DIR."
   exit 1
 fi
 
@@ -151,7 +161,7 @@ done
 # its toctree entry.
 #
 
-if [ -n "$(git status -s . | grep '^??' | grep $toctree_file)" ]; then
+if [ ! -f $toctree_file -o -n "$(git status -s . | grep '^??' | grep $toctree_file)" ]; then
   echo
   echo "Generating untracked toctree file $toctree_file"     
   
@@ -243,7 +253,7 @@ for path in "${!uniq_paths[@]}"; do
   rootless_path="$(echo $path | sed -e 's@^/@@')"
   sub_toctree_file=$rootless_path'_'$PROJECT_NAME'_toctree.rst'
 
-  if [ -n "$(git status -s . | grep '^??' | grep $sub_toctree_file)" ]; then
+  if [ ! -f $sub_toctree_file -o -n "$(git status -s . | grep '^??' | grep $sub_toctree_file)" ]; then
     echo
     echo "[DEBUG] Generating untracked toctree file $sub_toctree_file" 
 
