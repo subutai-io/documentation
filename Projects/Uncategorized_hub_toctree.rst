@@ -5,5 +5,3 @@
    :maxdepth: 2
    :caption: Hub Uncategorized
 
-   Issue_template <hub/issue_template.rst>
-

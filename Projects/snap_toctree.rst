@@ -7,4 +7,3 @@ Subutai Peer Snap
    :maxdepth: 2
    :caption: Subutai Snap
 
-   Uncategorized <Uncategorized_snap_toctree.rst>
