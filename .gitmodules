@@ -43,3 +43,6 @@
 [submodule "Projects/subutron.wiki"]
 	path = Projects/subutron
 	url = https://github.com/subutai-io/subutron.wiki.git
+[submodule "Projects/playbook"]
+	path = Projects/playbook
+	url = https://github.com/subutai-io/playbooks.wiki.git
