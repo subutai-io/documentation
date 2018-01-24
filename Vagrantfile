@@ -110,7 +110,7 @@ Vagrant.configure("2") do |config|
     puts 'You can also export this environment variable to permanently set it in'
     puts 'your shell profile file. Then you do not have to provide this value on'
     puts 'every vagrant up commands.'
-  elsif ARGV[1] == 'up' || ARGV[1] == 'provision' 
+    else
     config.vm.provision 'file',
       source: File.expand_path(ENV['GDRIVE_TOKEN_FILE']), 
       destination: '/tmp/token_v2.json'
