@@ -52,3 +52,6 @@
 [submodule "Projects/readthedocs"]
 	path = Projects/readthedocs
 	url = https://github.com/subutai-io/readthedocs.wiki.git
+[submodule "Projects/hackathon"]
+	path = Projects/hackathon
+	url = https://github.com/subutai-blueprints/hackathon.wiki.git
