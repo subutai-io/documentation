@@ -7,7 +7,6 @@ This repository contains software to build the united documentation for the enti
 **NOTE**: This repository uses submodules. After cloning it don't forget to run the following commands or Subutai Projects will not be incorporated into the build:
 
 ```
-git submodule init
 git submodule update
 ```
 
