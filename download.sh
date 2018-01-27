@@ -23,7 +23,7 @@ if [ -z "$GDRIVE_RTD_ROOT" ]; then
   fi
 else
   echo "GDRIVE_RTD_ROOT set to $GDRIVE_RTD_ROOT, checking folder name ..."
-  PARENT="$(gdrive list -m 100 | grep $GDRIVE_RTD_ROOT | awk '{print $2}')"
+  PARENT="$(gdrive list -m 100 -q "sharedWithMe" | grep $GDRIVE_RTD_ROOT | awk '{print $2}')"
   echo "GDRIVE_RTD_ROOT folder name = $PARENT"
   if [ "$PARENT" != "readthedocs" ]; then
 	echo "The folder name associated with your GDRIVE_RTD_ROOT id is not"
@@ -34,23 +34,56 @@ else
   fi
 fi
 
+function dl_file() {
+  local id="$1"
+
+  gdrive 'export' --force --mime 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' $id
+}
+
+function dl_dir() {
+  local parent_id="$1"
+  local query="'""$parent_id""' in parents"
+
+  # i.e. gdrive list -m 100 -q "'1GcnXGM23mCaPHBkI7l9O1gn_AEquxgyq' in parents"
+  while read line; do
+    OIFS=$IFS
+    IFS=' '
+    read id name typ date1 date2 <<< "$line"
+    IFS=$OIFS
+
+    if [ "$typ" == "dir" ]; then
+      dl_dir "$id"
+    else
+      dl_file "$id"
+    fi
+  done < <(gdrive list --absolute --no-header -m 1000 -q "$query")
+}
+
 function query() {
   local parent="$1"
-  echo "trashed = false and 'me' in owners and '"$parent"' in parents"
+  echo "trashed = false and 'me' in readers and '"$parent"' in parents"
 }
 
 cd /readthedocs
 QUERY="$(query $GDRIVE_RTD_ROOT)"
-while read line; do
-  OIFS=$IFS
-  IFS=' '
-  read id name typ date1 date2 <<< "$line"
-  IFS=$OIFS
 
-  if [ "$typ" == "dir" ]; then
-    gdrive download --no-progress --recursive --force --path /readthedocs $id
-  else
-    gdrive 'export' --force --mime 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' $id
-  fi
-done < <(gdrive list --no-header -m 1000 -q "$QUERY")
+pushd .
+dl_dir "$GDRIVE_RTD_ROOT"
+popd
+
+# while read line; do
+#  OIFS=$IFS
+#  IFS=' '
+#  read id name typ date1 date2 <<< "$line"
+#  IFS=$OIFS
+#
+#  if [ "$typ" == "dir" ]; then
+#    echo "recursively downloading directory $id"
+#    echo "gdrive download --no-progress --recursive --force --path /readthedocs $id"
+#    gdrive download --no-progress --recursive --force --path /readthedocs $id
+#  else
+#    gdrive 'export' --force --mime 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' $id
+#  fi
+#done < <(gdrive list --no-header -m 1000 -q "$QUERY")
+#
 
