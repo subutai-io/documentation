@@ -43,6 +43,10 @@ function dl_file() {
 function dl_dir() {
   local parent_id="$1"
   local query="'""$parent_id""' in parents"
+  local name=''
+  local id=''
+  local typ=''
+  
 
   # i.e. gdrive list -m 100 -q "'1GcnXGM23mCaPHBkI7l9O1gn_AEquxgyq' in parents"
   while read line; do
@@ -51,12 +55,26 @@ function dl_dir() {
     read id name typ date1 date2 <<< "$line"
     IFS=$OIFS
 
-    if [ "$typ" == "dir" ]; then
-      dl_dir "$id"
-    else
+    pushd .
+    echo "[DEBUG] PWD = $PWD, id = $id, name = $name, typ = $typ"
+
+    if [ "$typ" != "dir" ]; then
       dl_file "$id"
+      echo "[DEBUG] Finished downloading file $name"
+    else
+      if [ ! -d "$name" ]; then
+        mkdir -p "$name"
+      fi
+
+      echo "[DEBUG] Entering directory $name"
+      cd $name
+      dl_dir "$id" "$name"
+      echo "[DEBUG] Done processing directory $name"
     fi
-  done < <(gdrive list --absolute --no-header -m 1000 -q "$query")
+    popd
+    
+  done < <(gdrive list --no-header -m 1000 -q "$query")
+
 }
 
 function query() {
@@ -67,9 +85,7 @@ function query() {
 cd /readthedocs
 QUERY="$(query $GDRIVE_RTD_ROOT)"
 
-pushd .
 dl_dir "$GDRIVE_RTD_ROOT"
-popd
 
 # while read line; do
 #  OIFS=$IFS
