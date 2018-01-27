@@ -46,7 +46,7 @@ fi
 PRODUCT_NAME_CAMEL="$(head -n 1 $toctree_file | sed 's/\n//')"
 echo "[DEBUG] PRODUCT_NAME_CAMEL = $PRODUCT_NAME_CAMEL"
 
-if [ -n "$(git status -s . | grep '^??' | grep $toctree_file)" ]; then
+if [ ! -f $toctree_file -o -n "$(git status -s . | grep '^??' | grep $toctree_file)" ]; then
   echo
   echo "Generating untracked toctree file $toctree_file"     
   

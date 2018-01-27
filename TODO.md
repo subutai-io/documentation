@@ -2,7 +2,14 @@ Things to do
 ============
 
 - Resources directory not converting
+  - Articles <Articles_toctree.rst>
+  - References <References_toctree.rst>
+  - Conferences <Conferences_toctree.rst> 
+  - Testimonials <Testimonials_toctree.rst>
+
 - Top level documents
+  - Vision <vision>
+
 
 Documentation Sources
 ---------------------

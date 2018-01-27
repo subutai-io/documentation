@@ -12,9 +12,6 @@ Join the Subutai Horde! Be part of the P2P Cloud Crowd.
    about
    quick_start
    glossary
-   .. include:: toplevel_items.rst
-
-   Resources <Resources/Resources_toctree.rst>
 
 .. _2:
 
@@ -44,11 +41,7 @@ Join the Subutai Horde! Be part of the P2P Cloud Crowd.
    :maxdepth: 2
    :caption: Resources
    
-   Articles <Articles_toctree.rst>
-   References <References_toctree.rst>
-   Conferences <Conferences_toctree.rst>
-   Testimonials <Testimonials_toctree.rst>
-   Vision <vision>
+   Resources <Resources/Resources_toctree.rst>
 
 .. _5:
 

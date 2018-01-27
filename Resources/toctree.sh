@@ -34,7 +34,7 @@ RESOURCES_NAME='Resources'
 RESOURCES_DIR=/readthedocs/Resources
 toctree_file="$RESOURCES_NAME"'_toctree.rst'
 
-if [ -n "$(git status -s . | grep '^??' | grep $toctree_file)" ]; then
+if [ ! -f $toctree_file -o -n "$(git status -s . | grep '^??' | grep $toctree_file)" ]; then
   echo
   echo "Generating untracked toctree file $toctree_file"     
   
