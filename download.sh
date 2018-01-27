@@ -23,7 +23,7 @@ if [ -z "$GDRIVE_RTD_ROOT" ]; then
   fi
 else
   echo "GDRIVE_RTD_ROOT set to $GDRIVE_RTD_ROOT, checking folder name ..."
-  PARENT="$(gdrive list -m 100 -q "sharedWithMe" | grep $GDRIVE_RTD_ROOT | awk '{print $2}')"
+  PARENT="$(gdrive list -m 100 -q "sharedWithMe or 'me' in readers" | grep $GDRIVE_RTD_ROOT | awk '{print $2}')"
   echo "GDRIVE_RTD_ROOT folder name = $PARENT"
   if [ "$PARENT" != "readthedocs" ]; then
 	echo "The folder name associated with your GDRIVE_RTD_ROOT id is not"
@@ -72,7 +72,7 @@ function dl_dir() {
       echo "[DEBUG] Done processing directory $name"
     fi
     popd
-    
+
   done < <(gdrive list --no-header -m 1000 -q "$query")
 
 }
