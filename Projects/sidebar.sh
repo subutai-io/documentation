@@ -1,5 +1,10 @@
 #!/bin/bash
 
+urlencode () {
+  echo "$@" | sed 's/ /%20/g;s/!/%21/g;s/"/%22/g;s/#/%23/g;s/\$/%24/g;s/\&/%26/g
+;s/'\''/%27/g;s/(/%28/g;s/)/%29/g;s/:/%3A/g;s/\?/%3F/g'
+}
+
 PROJECTS=/readthedocs/Projects
 PROJECT_NAME="$1"
 PROJECT_DIR="$PROJECTS/$PROJECT_NAME"
@@ -87,8 +92,10 @@ echo "Sorted bases = ${sorted_bases[@]}"
 for base in "${sorted_bases[@]}"; do
   no_ext="$(echo $base | sed -e 's/\.md$//')"
   title="$(echo $no_ext | sed -e 's/-/ /g')"
+  encoded="$(urlencode $no_ext)"
+
   if [ "/" == "${base2path["$base"]}" ]; then
-    entry='[**'$title'**]('$WIKI_URL/$no_ext')'
+    entry='[**'$title'**]('$WIKI_URL/$encoded')'
     echo "$entry" >> $sidebar_file
     echo          >> $sidebar_file
     echo "[DEBUG] $base file matches path $path"
@@ -131,9 +138,10 @@ for path in "${!uniq_paths[@]}"; do
   for base in "${sorted_bases[@]}"; do
     no_ext="$(echo $base | sed -e 's/\.md$//')"
     title="$(echo $no_ext | sed -e 's/-/ /g')"
+    encoded="$(urlencode $no_ext)"
     
     if [ "$path" == "${base2path[$base]}" ]; then
-      entry='['$title']('$WIKI_URL/$no_ext')'
+      entry='['$title']('$WIKI_URL/$encoded')'
       echo "   $entry    " >> $sidebar_file
       echo "[DEBUG] $base file matches path $path"
     fi
