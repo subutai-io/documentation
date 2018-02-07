@@ -1,7 +1,7 @@
-Subutai Crypto Router
+Subutai Blockchain Router 
 =====================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Crypto Router
+   :caption: Blockchain Router 
 
