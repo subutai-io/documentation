@@ -20,7 +20,7 @@ Join the Subutai Horde! Be part of the P2P Cloud Crowd.
    :caption: Subutai Products
 
    Peer OS <Products/Peer_toctree.rst>
-   Crypto Router <Products/Router_toctree.rst>
+   Blockchain Router <Products/Router_toctree.rst>
    Hub Marketplace <Products/Hub_toctree.rst>
 
 .. _3:
