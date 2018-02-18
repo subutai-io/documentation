@@ -35,16 +35,16 @@
    :maxdepth: 2
    :caption: GitHub Projects
 
-   Hub API <Projects/hub_toctree.rst>
-   Peer Agent <Projects/agent_toctree.rst>
-   Peer Console <Projects/base_toctree.rst>
-   Peer Snap <Projects/snap_toctree.rst>
+   Bazaar API <Projects/hub_toctree.rst>
+   PeerOS Agent <Projects/agent_toctree.rst>
+   PeerOS Console <Projects/base_toctree.rst>
+   PeerOS Snap <Projects/snap_toctree.rst>
    Peer-to-Peer Daemon <Projects/p2p_toctree.rst>
-   Peer Plugins <Projects/plugins_toctree.rst>
+   PeerOS Plugins <Projects/plugins_toctree.rst>
    Router Hardware <Projects/router_toctree.rst>
-   Kurjun CDN Server <Projects/gorjun_toctree.rst>
+   CDN Server <Projects/gorjun_toctree.rst>
    Browser Plugins <Projects/browsers_toctree.rst>
-   OS Tray Clients <Projects/tray_toctree.rst>
+   Control Center <Projects/tray_toctree.rst>
    Packer Vagrant Boxes <Projects/packer_toctree.rst>
    Vagrant Plugin <Projects/vagrant_toctree.rst>
    Ansible Module <Projects/ansible_toctree.rst>
