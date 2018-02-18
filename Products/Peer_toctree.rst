@@ -1,7 +1,7 @@
-Subutai Peer OS
-===============
+Subutai PeerOS
+==============
 
 .. toctree::
    :maxdepth: 2
-   :caption: Peer OS
+   :caption: PeerOS
 

@@ -1,7 +1,7 @@
-Subutai Hub Marketplace
-=======================
+Subutai Bazaar
+==============
 
 .. toctree::
    :maxdepth: 2
-   :caption: Hub Marketplace
+   :caption: Bazaar
 
