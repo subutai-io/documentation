@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./toctree.sh Peer
+./toctree.sh PeerOS
 ./toctree.sh Router
-./toctree.sh Hub
+./toctree.sh Bazaar
 
