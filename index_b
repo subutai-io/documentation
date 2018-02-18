@@ -5,9 +5,9 @@
    :maxdepth: 2
    :caption: Subutai Products
 
-   Peer OS <Products/Peer_toctree.rst>
+   PeerOS <Products/PeerOS_toctree.rst>
    Blockchain Router <Products/Router_toctree.rst>
-   Hub Marketplace <Products/Hub_toctree.rst>
+   Bazaar <Products/Bazaar_toctree.rst>
 
 .. _3:
 
