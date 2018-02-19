@@ -52,3 +52,6 @@
 [submodule "Projects/hackathon"]
 	path = Projects/hackathon
 	url = https://github.com/subutai-blueprints/hackathon.wiki.git
+[submodule "Projects/router"]
+	path = Projects/router
+	url = https://github.com/subutai-io/blockchain-router.wiki.git
