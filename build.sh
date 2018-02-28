@@ -96,7 +96,7 @@ for rstfile in "${sorted_files[@]}"; do
   fi
 done
 
-cat ./index_b >> ./index.rst
+cat ./index_body >> ./index.rst
 make clean
 make html
 

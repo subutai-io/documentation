@@ -10,41 +10,35 @@
 [submodule "Projects/agent.wiki"]
 	path = Projects/agent
 	url = https://github.com/subutai-io/agent.wiki.git
-[submodule "Projects/tray.wiki"]
+[submodule "Projects/control-center.wiki"]
 	path = Projects/control-center
-	url = https://github.com/subutai-io/tray.wiki.git
+	url = https://github.com/subutai-io/control-center.wiki.git
 [submodule "Projects/p2p.wiki"]
 	path = Projects/p2p
 	url = https://github.com/subutai-io/p2p.wiki.git
-[submodule "Projects/browsers.wiki"]
+[submodule "Projects/browser-plugins.wiki"]
 	path = Projects/browser-plugins
-	url = https://github.com/subutai-io/browsers.wiki.git
-[submodule "Projects/base.wiki"]
+	url = https://github.com/subutai-io/browser-plugins.wiki.git
+[submodule "Projects/peer-os.wiki"]
 	path = Projects/peer-os
-	url = https://github.com/subutai-io/base.wiki.git
-[submodule "Projects/gorjun.wiki"]
+	url = https://github.com/subutai-io/peer-os.wiki.git
+[submodule "Projects/cdn.wiki"]
 	path = Projects/cdn
-	url = https://github.com/subutai-io/gorjun.wiki.git
-[submodule "Projects/plugins.wiki"]
-	path = Projects/plugins
-	url = https://github.com/subutai-io/plugins.wiki.git
+	url = https://github.com/subutai-io/cdn.wiki.git
+[submodule "Projects/peer-os-plugins.wiki"]
+	path = Projects/peer-os-plugins
+	url = https://github.com/subutai-io/peer-os-plugins.wiki.git
 [submodule "Projects/ansible.wiki"]
 	path = Projects/ansible
 	url = https://github.com/subutai-io/ansible.wiki.git
-[submodule "Projects/hub"]
+[submodule "Projects/bazaar"]
 	path = Projects/bazaar
-	url = https://github.com/subutai-io/hub
+	url = https://github.com/subutai-io/bazaar
 [submodule "Projects/subutron"]
 	path = Projects/subutron
 	url = https://github.com/subutai-io/subutron.git
-[submodule "Projects/subutron.wiki"]
-	path = Projects/subutron
-	url = https://github.com/subutai-io/subutron.wiki.git
 [submodule "Projects/playbook"]
 	path = Projects/playbook
-	url = https://github.com/subutai-io/playbooks.wiki.git
-[submodule "Projects/playbooks"]
-	path = Projects/playbooks
 	url = https://github.com/subutai-io/playbooks.wiki.git
 [submodule "Projects/readthedocs"]
 	path = Projects/readthedocs
