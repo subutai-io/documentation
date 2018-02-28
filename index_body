@@ -37,14 +37,14 @@
 
    Bazaar API <Projects/bazaar_toctree.rst>
    PeerOS Agent <Projects/agent_toctree.rst>
-   PeerOS Console <Projects/peer_os_toctree.rst>
+   PeerOS Console <Projects/peer-os_toctree.rst>
    PeerOS Snap <Projects/snap_toctree.rst>
    Peer-to-Peer Daemon <Projects/p2p_toctree.rst>
    PeerOS Plugins <Projects/peer-os-plugins_toctree.rst>
    Router Hardware <Projects/router_toctree.rst>
    CDN Server <Projects/cdn_toctree.rst>
-   Browser Plugins <Projects/browser_plugins_toctree.rst>
-   Control Center <Projects/control_center_toctree.rst>
+   Browser Plugins <Projects/browser-plugins_toctree.rst>
+   Control Center <Projects/control-center_toctree.rst>
    Packer Vagrant Boxes <Projects/packer_toctree.rst>
    Vagrant Plugin <Projects/vagrant_toctree.rst>
    Ansible Module <Projects/ansible_toctree.rst>
