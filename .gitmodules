@@ -11,19 +11,19 @@
 	path = Projects/agent
 	url = https://github.com/subutai-io/agent.wiki.git
 [submodule "Projects/tray.wiki"]
-	path = Projects/tray
+	path = Projects/control-center
 	url = https://github.com/subutai-io/tray.wiki.git
 [submodule "Projects/p2p.wiki"]
 	path = Projects/p2p
 	url = https://github.com/subutai-io/p2p.wiki.git
 [submodule "Projects/browsers.wiki"]
-	path = Projects/browsers
+	path = Projects/browser-plugins
 	url = https://github.com/subutai-io/browsers.wiki.git
 [submodule "Projects/base.wiki"]
-	path = Projects/base
+	path = Projects/peer-os
 	url = https://github.com/subutai-io/base.wiki.git
 [submodule "Projects/gorjun.wiki"]
-	path = Projects/gorjun
+	path = Projects/cdn
 	url = https://github.com/subutai-io/gorjun.wiki.git
 [submodule "Projects/plugins.wiki"]
 	path = Projects/plugins
@@ -32,7 +32,7 @@
 	path = Projects/ansible
 	url = https://github.com/subutai-io/ansible.wiki.git
 [submodule "Projects/hub"]
-	path = Projects/hub
+	path = Projects/bazaar
 	url = https://github.com/subutai-io/hub
 [submodule "Projects/subutron"]
 	path = Projects/subutron
