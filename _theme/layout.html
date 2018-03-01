@@ -1,0 +1,492 @@
+{#
+    basicstrap/layout.html
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Master layout template for Sphinx themes. on Twitter Bootstrap
+
+    :copyright: Copyright 2012 by tell-k.
+    :license: MIT Licence, see LICENSE for details.
+#}
+{%- block doctype -%}
+<!DOCTYPE html>
+{%- endblock %}
+{%- set reldelim1 = reldelim1 is not defined and ' &raquo;' or reldelim1 %}
+{%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
+{%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and
+(sidebars != []) %}
+{%- set url_root = pathto('', 1) %}
+{# XXX necessary? #}
+{%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+{%- if not embedded and docstitle %}
+{%- set titlesuffix = " &mdash; "|safe + docstitle|e %}
+{%- else %}
+{%- set titlesuffix = "" %}
+{%- endif %}
+
+{%- if theme_bootstrap_version == "3" %}
+  {%- set bs_span_prefix = "col-md-" %}
+  {%- set class_device_xs= "xs" %}
+  {%- set class_device_sm= "sm" %}
+  {%- set class_device_md= "md" %}
+  {%- set class_row = "row" %}
+{%- else %}
+  {%- set bs_span_prefix = "span" %}
+  {%- set class_device_xs= "phone" %}
+  {%- set class_device_sm= "tablet" %}
+  {%- set class_device_md= "desktop" %}
+  {%- if (not theme_row_fixed|tobool) %}
+    {%- set class_row = "row-fluid" %}
+  {%- else %}
+    {%- set class_row = "row" %}
+  {%- endif %}
+{%- endif %}
+
+{%- macro relbar() %}
+<div id="navbar-related" class=" related navbar {% if (theme_relbar_inverse|tobool) %}navbar-inverse{% else %}navbar-default{% endif %}" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav {% if theme_noresponsiverelbar|tobool %}text-center{% endif %}">
+        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></li>
+    </ul>
+<ul class="nav navbar-nav {% if not theme_noresponsiverelbar|tobool %}pull-right hidden-{{ class_device_xs }} hidden-{{ class_device_sm }}{% else %}text-center{% endif %}">
+      {% if not (theme_nosidebar|tobool) %}
+        {%- for rellink in rellinks|reverse %}
+        <li><a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}" {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a></li>
+        {%- endfor %}
+        {%- block rootrellink %}
+        {%- endblock %}
+        {%- for parent in parents %}
+        <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a></li>
+        {%- endfor %}
+        <li><a href="#">top</a></li>
+        {%- block relbaritems %} {% endblock %}
+      {% else %}
+        {%- if prev %}
+        <li><a href="{{ prev.link|e }}"><i class="icon icon-double-angle-left"></i>&nbsp;{{ prev.title }}</a></li>
+        {%- endif %}
+        <li><a class="uplink" href="{{ pathto(master_doc) }}">{{ _('Contents') }}</a></li>
+        {%- if next %}
+        <li><a href="{{ next.link|e }}">{{ next.title }}&nbsp;<i class="icon icon-double-angle-right"></i></a></li>
+        {%- endif %}
+        <li><a href="#">top</a></li>
+      {%- endif %}
+    </ul>
+  </div>
+</div>
+{%- endmacro %}
+
+{%- macro sidebar() %}
+{%- if render_sidebar %}
+<div class="{{ bs_span_prefix }}{{ theme_sidebar_span }} hidden-{{ class_device_xs }}" id="sidebar-wrapper">
+  <div class="sidebar hidden-{{ class_device_xs }}" role="navigation" aria-label="main navigation">
+    
+
+    {%- if sidebars != None %}
+    {#- new style sidebar: explicitly include/exclude templates #}
+    {%- for sidebartemplate in sidebars %}
+    {%- include sidebartemplate %}
+    {%- endfor %}
+    {%- else %}
+    {#- old style sidebars: using blocks -- should be deprecated #}
+    {%- block sidebartoc %}
+    {%- include "localtoc.html" %}
+    {%- endblock %}
+    {%- block sidebarrel %}
+    {%- include "relations.html" %}
+    {%- endblock %}
+    {%- block sidebarsourcelink %}
+    {%- include "sourcelink.html" %}
+    {%- endblock %}
+    {%- if customsidebar %}
+    {%- include customsidebar %}
+    {%- endif %}
+    {%- block sidebarsearch %}
+    {%- include "searchbox.html" %}
+    {%- endblock %}
+    {%- endif %}
+  </div>
+</div>
+{%- endif %}
+{%- endmacro %}
+
+{% set script_files = script_files + ['_static/js/bootstrap' + theme_bootstrap_version + '.min.js'] %}
+{%- macro script() %}
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '{{ url_root }}',
+            VERSION:     '{{ release|e }}',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
+            HAS_SOURCE:  {{ has_source|lower }}
+  };
+</script>
+{%- for scriptfile in script_files %}
+    {%- if scriptfile == '_static/jquery.js' %}
+    <script type="text/javascript" src="{{ pathto('_static/js/jquery.min.js', 1) }}"></script>
+    {%- else %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endif %}
+{%- endfor %}
+<script type="text/javascript" src="{{ pathto('_static/js/jquery.cookie.min.js', 1) }}"></script>
+<script type="text/javascript" src="{{ pathto('_static/js/basicstrap.js', 1) }}"></script>
+<script type="text/javascript">
+</script>
+{%- endmacro %}
+
+{%- macro css() %}
+{%- if (theme_googlewebfont|tobool) %}
+<link rel="stylesheet" href="{{ pathto(theme_googlewebfont_url, 1) }}" media="screen and (min-width:481px)" type="text/css" />
+{%- endif %}
+
+<link rel="stylesheet" href="{{ pathto('_static/css/basicstrap-base.css', 1) }}" type="text/css" />
+
+{%- if (theme_inner_theme|tobool) %}
+<link rel="stylesheet" id="current-theme" href="{{ pathto('_static/css/bootstrap' + theme_bootstrap_version + '/' + theme_inner_theme_name + '.css', 1) }}" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" href="{{ pathto('_static/css/adjust_theme/' + theme_inner_theme_name + '.css', 1) }}" type="text/css" />
+{%- else %}
+<link rel="stylesheet" id="current-theme" href="{{ pathto('_static/css/bootstrap' + theme_bootstrap_version + '/bootstrap.min.css', 1) }}" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+{%- endif %}
+
+
+
+
+{% if (theme_nav_fixed_top|tobool) %}
+<style type="text/css">
+  body {
+    {%- if theme_bootstrap_version == "3" %}
+    padding-top: 60px;
+    padding-bottom: 40px;
+    {%- else %}
+    padding-top: 60px;
+    padding-bottom: 40px;
+    {%- endif %}
+  }
+</style>
+{% endif %}
+<link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+<link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+{%- for cssfile in css_files %}
+<link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+{%- endfor %}
+{%- if (not theme_noresponsive|tobool) and theme_bootstrap_version == "2" %}
+<link rel="stylesheet" href="{{ pathto('_static/css/bootstrap2/bootstrap-responsive.min.css', 1) }}" type="text/css" />
+{%- endif %}
+
+{%- if theme_noresponsive|tobool and theme_bootstrap_version == "3" %}
+<link rel="stylesheet" href="{{ pathto('_static/css/bootstrap3/bootstrap-non-responsive.css', 1) }}" type="text/css" />
+{%- endif %}
+
+{%- endmacro %}
+
+<html lang="{{ theme_lang }}">
+  <head>
+    <meta charset="{{ encoding }}" />
+    {{ metatags }}
+    {%- block htmltitle %}
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    {%- endblock %}
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Subutai helps connect individuals from all over the globe so they may share resources to create secure cloud environments across their peers. Just as a cloud can float down onto land and is thus called fog, IoT devices attach when available and needed to your cloud as it floats around with you.">
+    <meta name="author" content="Optdyn Corporation">
+    <meta name="keywords" content="Optdyn, Corporation, Subutai, Cloud, Computing, Blockchain, Router, Bazaar, IoT">
+
+    <!--Custom CSS from J&J-->
+    <link rel="stylesheet" href="{{ pathto('_static/customcss/styles.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/customcss/bootstrap.min.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/customcss/bootstrap-social.css', 1) }}" type="text/css" />
+    
+    <link rel="stylesheet" href="{{ pathto('_static/fontawesome/fontawesome-all.css', 1) }}" type="text/css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="{{ pathto('../_static/customcss/styles.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('../_static/customcss/bootstrap.min.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('../_static/customcss/bootstrap-social.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('../_static/fontawesome/fontawesome-all.css', 1) }}" type="text/css" />
+
+    {{ css() }}
+    {%- if not embedded %}
+    {{ script() }}
+    {%- if use_opensearch %}
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}"
+    href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+    {%- endif %}
+    
+    <link rel="icon" type="image/png"  href="{{ pathto('_static/' + favicon, 1) }}"/>
+    
+    {%- endif %}
+    {%- block linktags %}
+    {%- if hasdoc('about') %}
+    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
+    {%- endif %}
+    {%- if hasdoc('genindex') %}
+    <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}" />
+    {%- endif %}
+    {%- if hasdoc('search') %}
+    <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
+    {%- endif %}
+    {%- if hasdoc('copyright') %}
+    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
+    {%- endif %}
+    <link rel="top" title="{{ docstitle|e }}" href="{{ pathto('index') }}" />
+    {%- if parents %}
+    <link rel="up" title="{{ parents[-1].title|striptags|e }}" href="{{ parents[-1].link|e }}" />
+    {%- endif %}
+    {%- if next %}
+    <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
+    {%- endif %}
+    {%- if prev %}
+    <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
+    {%- endif %}
+    {%- endblock %}
+    {%- block extrahead %} {% endblock %}
+  </head>
+  <body role="document" style="font-family: 'Maven Pro' sans-serif;">
+
+
+    <nav class="{{class_row}} navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img alt="logo" src="{{pathto('_static/logo.png',1)}}" width="160"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #000;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="internal-pages/p2p-cloud-platform.html" ><h4 style="font-size: 14px; color: #fff; font-weight: 700;">P2P Cloud Platform</h4></a></li>
+          <li><a href="internal-pages/goodwill.html"><h4 style="font-size: 14px; color: #fff; font-weight: 700;">GoodWill</h4></a></li>
+          
+          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Ideation<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="internal-pages/p2p-cloud.html"><h4 style="font-size: 14px; font-weight: 700;">P2P Cloud</h4></a></li>
+                  <li><a href="internal-pages/manifesto.html"><h4 style="font-size: 14px; font-weight: 700;">Manifesto</h4></a></li>
+                  <li><a href="https://subutai.blog/"><h4 style="font-size: 14px; font-weight: 700;">Blog</h4></a></li>
+                  <li><a href="internal-pages/tribute.html"><h4 style="font-size: 14px; font-weight: 700;">Tribute</h4></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA"><h4 style="font-size: 14px; font-weight: 700;">Presentation</h4></a></li>
+                  <li><a href="https://docs.subutai.io/glossary.html" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Glossary</h4></a></li>
+                </ul>
+              </li>
+
+          <li><a href="https://docs.subutai.io/attic/Peer/getting-started.html" target="_blank"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Getting Started</h4></a></li>
+          
+          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Resources<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://github.com/subutai-io" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">GitHub</h4></a></li>
+                  <li><a href="internal-pages/faq.html"><h4 style="font-size: 14px; font-weight: 700;">FAQ</h4></a></li>
+                  <li><a href="https://github.com/subutai-blueprints" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Blueprints</h4></a></li>
+                  <li><a href="https://subutai.io/how-can-i-help.html"><h4 style="font-size: 14px; font-weight: 700;">Get Involved</h4></a></li>
+                  <li><a href="https://subutai.blog/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Use Cases</h4></a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-size: 14px;color: #fff; font-weight: 700;">Community<span class="caret"></span></h4></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://subutai.io/how-can-i-help.html"><h4 style="font-size: 14px; font-weight: 700;">Get Involved</h4></a></li>
+                  <li><a href="https://slack.subut.ai/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Slack</h4></a></li>
+                  <li><a href="https://telegram.org/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Telegram</h4></a></li>
+                  <li><a href="https://twitter.com/SubutaiCloud" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Twitter</h4></a></li>
+                  <li><a href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Reddit</h4></a></li>
+                  <li><a href="https://www.facebook.com/subutaicloud" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Facebook</h4></a></li>
+                  <li><a href="https://www.linkedin.com/company/subutai-social-cloud/" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Linkedin</h4></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA" target="_blank"><h4 style="font-size: 14px; font-weight: 700;">Youtube</h4></a></li>
+                </ul>
+              </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <br/>
+
+    <!-- container -->
+    <div class="{% if (not theme_content_fixed|tobool) %}container-fluid{% else %}container{% endif %}">
+      
+      <!-- row -->
+      <div class="{{ class_row }}">
+        {%- block content %}
+
+        {%- block sidebar1 %}
+        {% if (not theme_rightsidebar|tobool) %} {{ sidebar() }} {% endif %}
+        {% endblock %}
+
+        <div class="{% if (not theme_nosidebar|tobool) %}{{ bs_span_prefix }}{{ 12 - theme_sidebar_span|int }}{% else %}{{ bs_span_prefix }}12{% endif %}" id="content-wrapper">
+          <div class="document" role="main">
+            {%- block document %}
+            <div class="documentwrapper">
+              {%- if render_sidebar %}
+              <div class="bodywrapper">
+                {%- endif %}
+                <div class="body">
+                  {% block body %} {% endblock %}
+                </div>
+                {%- if render_sidebar %}
+              </div>
+              {%- endif %}
+            </div>
+            {%- endblock %}
+          </div>
+        </div>
+
+        {%- block sidebar2 %}
+        {% if (theme_rightsidebar|tobool) %} {{ sidebar() }} {% endif %}
+        {% endblock %}
+
+        {%- endblock %}{# /content block #}
+      </div><!-- /row -->
+      <br/>
+
+    <!-- Section 4 - Community -->
+  <section>
+    <div class="{{class_row}} cont-part5">
+      <div class="container">
+        <div class="text-center">
+          <h1>Community</h1>
+          <h3 style="color: #fff;">We’d love to hear from you!</h3>
+        </div><br><br>
+        <div class="icons-cont-part5">
+          <div class="text-center">
+            <a class="btn btn-block btn-social btn-twitter" href="https://twitter.com/SubutaiCloud" target="_blank" style="margin-top: 5px;">
+                <span class="fab fa-twitter"></span>Twitter
+             </a>
+             <a class="btn btn-block btn-social btn-facebook" href="https://www.facebook.com/subutaicloud" target="_blank">
+                <span class="fab fa-facebook"></span>Facebook
+             </a>
+             <a class="btn btn-block btn-social btn-reddit" href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing" target="_blank">
+                <span class="fab fa-reddit"></span>Reddit
+             </a>
+             <a class="btn btn-block btn-social btn-linkedin" href="https://www.linkedin.com/company/subutai-social-cloud" target="_blank">
+                <span class="fab fa-linkedin"></span>LinkedIn
+             </a>
+             <a class="btn btn-block btn-social btn-slack" href="//slack.subut.ai" target="_blank" style="background-color: #fff; color: #000;">
+                <span class="fab fa-slack"></span>Slack
+             </a>
+             <a class="btn btn-block btn-social btn-telegram" href="//slack.subut.ai" target="_blank" style="background-color: #2fade7; color: #fff;">
+                <span class="fab fa-telegram"></span>Telegram
+             </a>
+          </div>
+        </div><br/>
+
+        <div class="mailchimp">
+        <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+          
+          <style type="text/css">
+            #mc_embed_signup{
+              background: #04192b;
+               clear:left;
+               font:15px 'Maven Pro', sans-serif;;
+               color: #fff;
+             }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          
+          <div id="mc_embed_signup">
+            <form action="https://optdyn.us17.list-manage.com/subscribe/post?u=35361aa6e4a7374ec14c974bc&amp;id=a9787e94b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="row">
+                <div class="col-lg-6">
+                    <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                      <br/>
+                      <input style="background-color: #fff;border-color: #078dd0; color: #333;" type="email" placeholder="YOUR EMAIL" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_35361aa6e4a7374ec14c974bc_a9787e94b0" tabindex="-1" value=""></div>
+                    <div class="clear"><input style="background-color: #000;margin-top: 4%; height: 43px;" type="submit" value="SIGN UP FOR UPDATES" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->    
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 - Tribute -->
+  <section>
+    <div class="{{class_row}} cont-part6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <h3>Tribute: <a href="internal-pages/tribute.html">Standing on the Shoulders of Giants ></a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- row -->
+      <div class="{{ class_row }} cont-footer">
+        <footer>
+          <div class="cont-footer">
+            <div class="container" style="padding-top: 20px;">
+              <div class="row" style="">
+                <div class="col-lg-4">
+                  <div class="text-center">
+                    <img src="{{pathto('_static/optdyn.png',1)}}" class="img" alt="Optdyn" width="150">
+                  </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <p>Copyright &copy; <span id="currentYear"></span> OptDyn. All rights reserved.</p>
+                    <p><a href="#">Privacy |</a> <a href="#">Terms of Use |</a> <a href="#"> Cookies</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="icons-cont-footer">
+                    <div class="text-center">
+                      <a href="https://twitter.com/SubutaiCloud" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                      <a href="https://www.facebook.com/subutaicloud" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                      <a href="https://www.reddit.com/r/LXD/comments/5wwhs2/subutai_social_peertopeer_social_cloud_computing" target="_blank"><i class="fab fa-reddit-square"></i></a>
+                      <a href="https://www.linkedin.com/company/subutai-social-cloud" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div><!-- /row -->
+
+      
+
+    </div>
+    <!-- /container -->
+
+    {%- if theme_theme_preview|tobool %}
+    {%- include "_theme_preview.html" %}
+    {%- endif %}
+    <script type="text/javascript">
+        var currentYear = (new Date()).getFullYear();
+        document.getElementById("currentYear").innerHTML = currentYear;
+    </script>
+  </body>
+</html>

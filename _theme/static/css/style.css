@@ -1,0 +1,406 @@
+/*CSS global*/
+body, html{
+	width: 100%;
+	height: 100%;
+}
+
+section .cont-part5 .mailchimp{
+	margin-left: 35%;
+}
+
+
+header{
+	overflow: hidden; 
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+p{
+	font-size: 16px;
+}
+
+a{
+	color: #078DD0;
+}
+
+/* CSS Navbar */
+.navbar-inverse{
+	background-color: #000;
+	border-color: #000;
+}
+
+/* CSS HEADER*/
+.jumbotron {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image:  url("../_static/img/bg.jpg");]
+	position: fixed; 
+	width: 100%;
+	height: 100%;
+}
+
+.cont-header{
+	padding-top: 10%;
+	padding-bottom: 10%;
+
+}
+
+.jumbotron .cont-header img{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	max-width: 350px;
+}
+
+.jumboutron .cont-header h1{
+	color: #fff;
+	font-weight: 700;
+}
+
+.jumboutron .cont-header h2,h3{
+	color: #fff;
+}
+
+
+/*CSS Section 1 - Cont 2  - Carousel*/
+section .carousel-inner{
+	overflow: hidden; 
+    position: relative; 
+}
+
+section .carousel-indicators li {
+    background-color: #078DD0;
+    background-color: #078DD0;
+    border: 1px solid #078DD0;
+}
+
+section .carousel-inner h1{
+	font-weight: 700;
+	color: #04192b;
+}
+
+section .carousel-inner .img-responsive{
+	height: auto;
+	width: 100%;
+}
+
+/*CSS Section 2 - GoodWill*/
+section .cont-part3{
+	background-color: #fff;
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+
+section .cont-part3 h2{
+	color: #fff;
+	font-weight: 700;
+}
+
+
+section .cont-part3 img{
+	max-width: 300px;
+}
+
+section .cont-text-part3{
+	margin-top: 60px;
+}
+
+section .cont-text-part3 p{
+	color: #04192b;
+	text-align: justify;
+	font-size: 18px;
+}
+
+section .cont-text-part3 h1{
+	color: #04192b;
+	font-weight: 700;
+	text-align: center;
+}
+
+section .cont-text-part3 h3{
+	color: #04192b;
+	text-align: center;
+}
+
+section .cont-part3 .button-learn-more-cont-part3 a{
+	width: 200px;
+	background-color: #04192b;
+	border-color: #04192b
+}
+
+/*CSS Section 3 */
+section .cont-part4{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+section .cont-part4 .panel-primary {
+    border-color: #078DD0;
+}
+
+section .cont-part4 .panel-body{
+	padding-left: 15px;
+	background-color: #078DD0;
+	border-color: #078DD0;
+	height: auto;
+}
+
+section .cont-part4 .panel-body h2{
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+}
+
+section .cont-part4 .panel-body h4{
+	color: #fff;
+	text-align: center;
+	padding-bottom: 10px;
+	font-weight: 700;
+}
+
+section .cont-part4 .panel-body ul li{
+	color: #fff;
+	text-align: left;
+	font-size: 16px;
+	padding-bottom: 20px;
+
+}
+
+section .cont-part4 .panel-body a{
+	color: #fff;
+	font-weight: 0;
+}
+
+
+section .cont-part4 .getting-started .panel-body {
+	padding-top: 30px;
+	height: 355px;
+}
+
+section .cont-part4 .getting-started .panel-body  ul li{
+	text-align: left;
+	padding-bottom: 20px;
+}
+
+/*CSS Section 4 - Community*/
+section .cont-part5{
+	background-color: #04192b;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+section .cont-part5 h1{
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+}
+
+section .cont-part5 .icons-cont-part5 a{
+	width: 150px;
+}
+
+section .cont-part5 .icons-cont-part5 .btn-block {
+    display: inline-block;
+    width: 130px;
+    margin-left: 10px;
+}
+
+/*CSS Section 5 - Tribute*/
+section .cont-part6{
+	background-color: #078DD0;
+	padding-top: 2%;
+	padding-bottom: 3%;
+}
+
+section .cont-part6 h3{
+	color: #fff;
+}
+
+section .cont-part6 a{
+	color: #fff;
+	font-family: 'Maven Pro';
+}
+
+/*CSS Footer*/
+footer{
+	background-color: #000;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+footer .cont-footer img{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 10px;
+} 
+
+footer .cont-footer p{
+	padding-left: 15px;
+	color: #e9e9e9;
+	text-align: center;
+}
+
+footer .cont-footer p a{
+	color: #e9e9e9;
+	text-align: center;
+}
+
+
+footer .cont-footer .icons-cont-footer i{
+	font-size: 30px;
+	padding-left: 20px;
+	color: #fff;
+	padding-top: 5px;	
+}
+
+@media (max-width: 768px) { 
+	/*Navbar*/
+	.navbar-header{
+		padding-bottom: 10px;
+	}
+
+	.navbar-inverse .navbar-toggle{
+		margin-top: 15px;
+	}
+
+	/*Header*/
+	.jumbotron {
+		width: 100%;
+		max-height: 100%;
+	}
+
+	.cont-header{
+		padding-top: 10%;
+		padding-bottom: 10%;
+
+	}
+
+	.jumbotron .cont-header img{
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		max-width: 250px;
+	}
+
+	/*GoodWill*/
+	section .cont-part3{
+		padding-top: 0%;
+		padding-bottom: 10%;
+	}
+
+	section .cont-text-part3 p{
+		color: #04192b;
+		text-align: center;
+	}
+
+	section .cont-part3 .button-learn-more-cont-part3 a{
+		margin-top: 30px;
+	}
+
+	/*Getting Started*/
+	section .cont-part4{
+		padding-top: 15%;
+	}
+
+
+	section .cont-part4 .panel-body ul li{
+		color: #fff;
+		text-align: left;
+		padding-top: 5px;
+		font-size: 14px;
+	}
+
+	/*Community*/
+	section .cont-part5{
+		padding-bottom: 15%;
+		text-align: center;
+	}
+
+	section .cont-part5 h1{
+		padding-bottom: 10px;
+	}
+
+	section .cont-part5 .icons-cont-part5 i{
+		font-size: 40px;	 
+		padding-top: 5%;
+		text-align: center;
+	}
+
+	/*Tribute*/
+	section .cont-part6{
+		background-color: #078DD0;
+		padding-top: 4%;
+		padding-bottom: 10%;
+	}
+
+	section .cont-part6 h3{
+		color: #fff;
+		font-size: 20px;
+	}	
+
+	/*Footer*/
+	footer{
+		background-color: #000;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	footer .cont-footer img{
+		padding-bottom: 15px;
+	} 
+
+	footer .cont-footer p{
+		margin-top: 20px;
+		padding-left: 15px;
+		color: #e9e9e9;
+		text-align: center;
+		font-size: 13px;
+	}
+
+	footer .cont-footer p a{
+		color: #e9e9e9;
+		text-align: center;
+		font-size: 13px;
+	}
+
+
+	footer .cont-footer .icons-cont-footer i{
+		font-size: 30px;
+		padding-left: 20px;
+		color: #fff;
+		padding-top: 5px;	
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1200px){
+	section .cont-text-part3 p{
+		color: #04192b;
+		text-align: center;
+	}
+
+	section .cont-part3 .button-learn-more-cont-part3 a{
+		margin-top: 30px;
+	}
+}
+
+@media (max-height: 880px) and (max-width: 580px){
+	section .carousel-inner .img-responsive{
+		height: auto;
+		width: 100%;
+	}
+	header {
+		height: 500px;
+		width: 100%;
+	}
+}
