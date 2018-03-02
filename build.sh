@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # ARG $1: a word or a string of whitespace separated words
 # OUTPUT: Converts any string of words to captitalize first letter of each word
 function fn_camel() {
@@ -100,3 +99,9 @@ cat ./index_body >> ./index.rst
 make clean
 make html
 
+cd /readthedocs/_build/html
+for html in `find . -type f -regex '.*\.html'`; do
+  cat "$html" | sed -e 's@<img @<img class="img-responsive" @' > "$html.tmp";
+  cp -f "$html.tmp" "$html"
+  rm "$html.tmp" 
+done
