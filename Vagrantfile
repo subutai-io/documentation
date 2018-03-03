@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
       }, inline: <<-SHELL
 
     # Tuck these away into the environment so they're available to synchronize
-    echo "GDRIVE_RTD_ROOT=$GDRIVE_RTD_ROOT" >> /etc/environment
+    echo "GDRIVE_RTD_ROOT='$GDRIVE_RTD_ROOT'" >> /etc/environment
 
     if [ -n "$ACNG_HOST" -a -n "$ACNG_PORT" ]; then
       ACNG_URL="http://$ACNG_HOST:$ACNG_PORT"
