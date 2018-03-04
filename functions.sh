@@ -94,4 +94,52 @@ function gdocs_clean() {
   find . -type f -regex '.*\.docx$' | xargs rm
 }
 
+function dl_file() {
+  local id="$1"
+
+  gdrive 'export' --force --mime 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' $id
+}
+
+function dl_dir() {
+  local parent_id="$1"
+  local query="'""$parent_id""' in parents"
+  local name=''
+  local id=''
+  local typ=''
+  
+
+  # i.e. gdrive list -m 100 -q "'1GcnXGM23mCaPHBkI7l9O1gn_AEquxgyq' in parents"
+  while read line; do
+    OIFS=$IFS
+    IFS=' '
+    read id name typ date1 date2 <<< "$line"
+    IFS=$OIFS
+
+    pushd .
+    echo "[DEBUG] PWD = $PWD, id = $id, name = $name, typ = $typ"
+
+    if [ "$typ" != "dir" ]; then
+      dl_file "$id"
+      echo "[DEBUG] Finished downloading file $name"
+    else
+      if [ ! -d "$name" ]; then
+        mkdir -p "$name"
+      fi
+
+      echo "[DEBUG] Entering directory $name"
+      cd $name
+      dl_dir "$id" "$name"
+      echo "[DEBUG] Done processing directory $name"
+    fi
+    popd
+
+  done < <(gdrive list --no-header -m 1000 -q "$query")
+
+}
+
+function query() {
+  local parent="$1"
+  echo "trashed = false and 'me' in readers and '"$parent"' in parents"
+}
+
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. /readthedocs/functions.sh
+
 PARENT=''
 QUERY="trashed = false and name = 'readthedocs'"
 
@@ -34,72 +36,7 @@ else
   fi
 fi
 
-function dl_file() {
-  local id="$1"
-
-  gdrive 'export' --force --mime 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' $id
-}
-
-function dl_dir() {
-  local parent_id="$1"
-  local query="'""$parent_id""' in parents"
-  local name=''
-  local id=''
-  local typ=''
-  
-
-  # i.e. gdrive list -m 100 -q "'1GcnXGM23mCaPHBkI7l9O1gn_AEquxgyq' in parents"
-  while read line; do
-    OIFS=$IFS
-    IFS=' '
-    read id name typ date1 date2 <<< "$line"
-    IFS=$OIFS
-
-    pushd .
-    echo "[DEBUG] PWD = $PWD, id = $id, name = $name, typ = $typ"
-
-    if [ "$typ" != "dir" ]; then
-      dl_file "$id"
-      echo "[DEBUG] Finished downloading file $name"
-    else
-      if [ ! -d "$name" ]; then
-        mkdir -p "$name"
-      fi
-
-      echo "[DEBUG] Entering directory $name"
-      cd $name
-      dl_dir "$id" "$name"
-      echo "[DEBUG] Done processing directory $name"
-    fi
-    popd
-
-  done < <(gdrive list --no-header -m 1000 -q "$query")
-
-}
-
-function query() {
-  local parent="$1"
-  echo "trashed = false and 'me' in readers and '"$parent"' in parents"
-}
-
 cd /readthedocs
 QUERY="$(query $GDRIVE_RTD_ROOT)"
 
 dl_dir "$GDRIVE_RTD_ROOT"
-
-# while read line; do
-#  OIFS=$IFS
-#  IFS=' '
-#  read id name typ date1 date2 <<< "$line"
-#  IFS=$OIFS
-#
-#  if [ "$typ" == "dir" ]; then
-#    echo "recursively downloading directory $id"
-#    echo "gdrive download --no-progress --recursive --force --path /readthedocs $id"
-#    gdrive download --no-progress --recursive --force --path /readthedocs $id
-#  else
-#    gdrive 'export' --force --mime 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' $id
-#  fi
-#done < <(gdrive list --no-header -m 1000 -q "$QUERY")
-#
-

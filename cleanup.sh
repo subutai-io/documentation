@@ -4,19 +4,20 @@
 
 rm -f index.rst
 
+# does not work in the submodules need to do this again
+# inside each submodule below to get the proper results
 for docfile in `find . -type f -regex '.*\.\(rst\|md\)$'`; do
   git_clean "$docfile"
 done
 
 # if user asks delete all gdocs files: don't want to download all the time
 if [ "$1" == "gdocs" ]; then
-  echo 'Deleting all gdocs (docx files), you will need to download again.'
-  find . -type f -regex '.*\.docx$' | xargs rm
+  gdocs_clean
 fi
 
 for md in `find . -type f -regex '.*\.md'`; do
   if [ -n "$(tail -n 5 $md | grep ORIGIN | grep gdocs)" ]; then
-    echo "Removing generated Markdown file $md"
+    debug "Removing generated Markdown file $md"
     rm "$md"
   fi
 done
@@ -32,7 +33,9 @@ for proj_dir in `find /readthedocs/Projects -type d`; do
   proj_name="$(basename $proj_dir)"
   echo [DEBUG] proj_name = $proj_name
   cd $proj_dir
-  git checkout .
+  for docfile in `find . -type f -regex '.*\.\(rst\|md\)$'`; do
+    git_clean "$docfile"
+  done
   cd ..
 done
 cd /readthedocs
