@@ -1,11 +1,13 @@
 #!/bin/bash
 
-. /readthedocs/functions.sh
+cd /readthedocs
+. ./functions.sh
 
 if [ "$1" == "nodownload" ]; then
   info "Skipping Google Drive downloads: nodownload argument provided."
+  ./cleanup.sh
 else
-  cd /readthedocs
+  ./cleanup.sh gdocs
   ./download.sh
 fi 
 
@@ -45,8 +47,8 @@ for gdocfile in `find . -maxdepth 1 -type f -regex '.*\.docx'`; do
   echo "[DEBUG] title = $title"
 
   fn_header "$title" > $rstfile
-#  w2m "$gdocfile" > "$mdfile"
-  pandoc --from docx --to rst $mdfile -o $rstfile.tmp
+  # w2m "$gdocfile" > "$mdfile"
+  pandoc --from docx --to rst "$gdocfile" -o "$rstfile.tmp"
   cat $rstfile.tmp >> $rstfile
   rm $rstfile.tmp
   sorted_files+=("$rstfile")
