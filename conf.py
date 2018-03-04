@@ -133,7 +133,6 @@ html_theme_path = ["."]
 # documentation.
 #
 html_theme_options = {
-    "collapse_navigation" : True
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
