@@ -6,7 +6,7 @@ rm -f index.rst
 
 # does not work in the submodules need to do this again
 # inside each submodule below to get the proper results
-for docfile in `find . -type f -regex '.*\.\(rst\|md\)$'`; do
+find . -type f -regex '.*\.\(rst\|md\)$' | while read -r docfile; do 
   git_clean "$docfile"
 done
 

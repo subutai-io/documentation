@@ -2,7 +2,6 @@
 # Functions used by scripts
 #
 
-
 if [ -z "$loglevel" ]; then
   loglevel=4
 fi
@@ -78,14 +77,24 @@ function fn_header() {
 # SIDE-EFFECTS: removes untracked files, reverts modified files 
 # .gitignore settings will impact results
 function git_clean() {
-  if [ -n "$(git status -s $1 | grep '^??')" ]; then
-    debug "Deleting untracked (generated) file: $1"
-    rm "$1"
-  elif [ -n "$(git status -s $1 | grep ' M')" ]; then
-    debug "Reverting modified tracked file = $1"
-    git checkout "$1"
+  local in_file="$1"
+
+  if [ ! -f "$in_file" ]; then
+    err "File '$in_file' does not exist!"
+    return
+  fi
+  
+  local untracked=$(git status -s "$in_file" | grep '^??')
+  local modified=$(git status -s "$in_file" | grep ' M')
+
+  if [ -n "$untracked" ]; then
+    debug "Deleting untracked (generated) file: $in_file"
+    rm -f "$in_file"
+  elif [ -n "$modified" ]; then
+    debug "Reverting modified tracked file = $in_file"
+    git checkout "$in_file"
   else
-    debug "Skipping git tracked file: $1"
+    debug "Skipping git tracked file: $in_file"
   fi
 }
 
