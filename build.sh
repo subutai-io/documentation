@@ -2,8 +2,12 @@
 
 . /readthedocs/functions.sh
 
-cd /readthedocs
-./download.sh
+if [ "$1" == "nodownload" ]; then
+  info "Skipping Google Drive downloads: nodownload argument provided."
+else
+  cd /readthedocs
+  ./download.sh
+fi 
 
 cd /readthedocs/Products
 ./build.sh
@@ -40,7 +44,7 @@ for gdocfile in `find . -maxdepth 1 -type f -regex '.*\.docx'`; do
   title="$(fn_title $rstfile)"
   echo "[DEBUG] title = $title"
 
-#  fn_header "$title" > $rstfile
+  fn_header "$title" > $rstfile
 #  w2m "$gdocfile" > "$mdfile"
   pandoc --from docx --to rst $mdfile -o $rstfile.tmp
   cat $rstfile.tmp >> $rstfile
