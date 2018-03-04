@@ -1,34 +1,6 @@
 #!/bin/bash
 
-# ARG $1: a word or a string of whitespace separated words
-# OUTPUT: Converts any string of words to captitalize first letter of each word
-function fn_camel() {
-  echo "$1" | awk '{for(i=1;i<=NF;i++)sub(/./,toupper(substr($i,1,1)),$i)}1'
-}
-
-# ARG $1: takes a file with or without a path and generates a title
-# OUTPUT: the title with camel hump notation
-function fn_title() {
-  local file=$(basename "$1")
-  local no_ext_no_prefix=$(echo "$file" | sed -e 's/\.[^.]*$//' -e 's/^[0-9]*_//')
-  local w_spaces=$(echo "$no_ext_no_prefix" | sed 's/-\|_/ /g')
-  local camel=$(fn_camel "$w_spaces")
-  echo "$camel"
-}
-
-# ARG $1: the title to generate the h1 header for
-# OUTPUT: the two lined md/rst compat h1 header for the title:
-#
-# 'Test Header for Title'
-# '====================='
-#
-function fn_header() {
-  local title="$1"
-  local num="$(echo ${#title})"
-  v=$(printf "%-${num}s" "=")
-  echo "$title"
-  echo "${v// /=}"
-}
+. /readthedocs/functions.sh
 
 cd /readthedocs
 ./download.sh
@@ -68,9 +40,9 @@ for gdocfile in `find . -maxdepth 1 -type f -regex '.*\.docx'`; do
   title="$(fn_title $rstfile)"
   echo "[DEBUG] title = $title"
 
-  fn_header "$title" > $rstfile
-  w2m "$gdocfile" > "$mdfile"
-  pandoc --from markdown --to rst $mdfile -o $rstfile.tmp
+#  fn_header "$title" > $rstfile
+#  w2m "$gdocfile" > "$mdfile"
+  pandoc --from docx --to rst $mdfile -o $rstfile.tmp
   cat $rstfile.tmp >> $rstfile
   rm $rstfile.tmp
   sorted_files+=("$rstfile")
