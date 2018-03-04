@@ -37,8 +37,8 @@
 [submodule "Projects/subutron"]
 	path = Projects/subutron
 	url = https://github.com/subutai-io/subutron.git
-[submodule "Projects/playbook"]
-	path = Projects/playbook
+[submodule "Projects/playbooks"]
+	path = Projects/playbooks
 	url = https://github.com/subutai-io/playbooks.wiki.git
 [submodule "Projects/readthedocs"]
 	path = Projects/readthedocs
