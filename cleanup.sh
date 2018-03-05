@@ -3,6 +3,7 @@
 . /readthedocs/functions.sh
 
 rm -f index.rst
+find . -type d -name media | xargs rm -rf
 
 # does not work in the submodules need to do this again
 # inside each submodule below to get the proper results
