@@ -50,10 +50,11 @@ for gdocfile in `find $PRODUCT_DIR -type f -regex '.*\.docx'`; do
   echo "[DEBUG] title = $title"
 
   fn_header "$title" > $rstfile
-  w2m "$gdocfile" > "$mdfile"
-  pandoc --from markdown --to rst $mdfile -o $rstfile.tmp
-  cat $rstfile.tmp >> $rstfile
-  rm $rstfile.tmp
+  # w2m "$gdocfile" > "$mdfile"
+  pandoc --from docx --to markdown "$gdocfile" -o "$mdfile"
+  pandoc --from markdown --to rst "$mdfile" -o "$rstfile.tmp"
+  cat "$rstfile.tmp" >> "$rstfile"
+  rm "$rstfile.tmp"
   sorted_files+=("$rstfile")
 done
 
