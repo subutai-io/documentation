@@ -6,6 +6,14 @@ if [ -z "$loglevel" ]; then
   loglevel=4
 fi
 
+function pushd() {
+    command pushd "$@" > /dev/null
+}
+
+function popd() {
+    command popd "$@" > /dev/null
+}
+
 function upper () {
   echo "$1" | tr '[:lower:]' '[:upper:]'
 }
@@ -111,7 +119,7 @@ function dl_file() {
 
 function dl_dir() {
   local parent_id="$1"
-  local query="'""$parent_id""' in parents"
+  local query="trashed = false and '""$parent_id""' in parents"
   local name=''
   local id=''
   local typ=''
@@ -180,7 +188,7 @@ function convert_docx_pandoc_md_pandoc_rst() {
   fn_header "$title" > $rstfile
   debug "Parent of $gdocfile is $parent_dir"
   
-  pushd .
+  pushd . 
   cd $parent_dir
   pandoc -s --from docx --to markdown --extract-media="." "$gdocfile" -o "$mdfile"
   popd
