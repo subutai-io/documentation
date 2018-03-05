@@ -42,19 +42,7 @@ echo "Processing entries first in $PRODUCT_DIR:"
 
 declare -a sorted_files
 for gdocfile in `find $PRODUCT_DIR -type f -regex '.*\.docx'`; do
-  gdocbase="$(basename $gdocfile)"
-  rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
-  mdfile="$(echo $gdocfile | sed -e 's/\.docx$/\.md/')"
-  rstbase="$(basename $rstfile)"
-  title="$(fn_title $rstfile)"
-  echo "[DEBUG] title = $title"
-
-  fn_header "$title" > $rstfile
-  # w2m "$gdocfile" > "$mdfile"
-  pandoc --from docx --to markdown "$gdocfile" -o "$mdfile"
-  pandoc --from markdown --to rst "$mdfile" -o "$rstfile.tmp"
-  cat "$rstfile.tmp" >> "$rstfile"
-  rm "$rstfile.tmp"
+  rstfile="$($products_cfunc $gdocfile)"
   sorted_files+=("$rstfile")
 done
 

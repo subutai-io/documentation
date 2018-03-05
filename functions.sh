@@ -172,12 +172,19 @@ function convert_md_pandoc_rst() {
 # Best results: headings and links all render perfectly (About Page)
 function convert_docx_pandoc_md_pandoc_rst() {
   local gdocfile="$1"
+  local parent_dir="$(dirname "$1")"
   local mdfile="$(echo $gdocfile | sed -e 's/\.docx$/\.md/')"
   local rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
   local title="$(fn_title $rstfile)"
   
   fn_header "$title" > $rstfile
-  pandoc --from docx --to markdown "$gdocfile" -o "$mdfile"
+  debug "Parent of $gdocfile is $parent_dir"
+  
+  pushd .
+  cd $parent_dir
+  pandoc -s --from docx --to markdown --extract-media="." "$gdocfile" -o "$mdfile"
+  popd
+
   pandoc --from markdown --to rst "$mdfile" -o "$rstfile.tmp"
   cat "$rstfile.tmp" >> "$rstfile"
   rm "$rstfile.tmp"
