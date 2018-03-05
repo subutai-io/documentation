@@ -151,4 +151,67 @@ function query() {
   echo "trashed = false and 'me' in readers and '"$parent"' in parents"
 }
 
+resource_cfunc="convert_w2m_pandoc"
+products_cfunc="convert_docx_pandoc_md_pandoc_rst"
+projects_cfunc="convert_md_pandoc_rst"
+toplevel_cfunc="convert_docx_pandoc_md_pandoc_rst"
+
+function convert_md_pandoc_rst() {
+  local mdfile="$1"
+  local rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
+  local title="$(fn_title $rstfile)"
+  
+  fn_header "$title" > $rstfile
+  pandoc --from markdown --to rst "$mdfile" -o "$rstfile.tmp"
+  cat "$rstfile.tmp" >> "$rstfile"
+  rm "$rstfile.tmp"
+  echo "$rstfile"
+}
+
+# 100 Warnings
+# Best results: headings and links all render perfectly (About Page)
+function convert_docx_pandoc_md_pandoc_rst() {
+  local gdocfile="$1"
+  local mdfile="$(echo $gdocfile | sed -e 's/\.docx$/\.md/')"
+  local rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
+  local title="$(fn_title $rstfile)"
+  
+  fn_header "$title" > $rstfile
+  pandoc --from docx --to markdown "$gdocfile" -o "$mdfile"
+  pandoc --from markdown --to rst "$mdfile" -o "$rstfile.tmp"
+  cat "$rstfile.tmp" >> "$rstfile"
+  rm "$rstfile.tmp"
+  echo "$rstfile"
+}
+
+# 111 Warnings
+# Headings function correctly (About Page)
+function convert_docx_pandoc_rst() {
+  local gdocfile="$1"
+  local rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
+  local title="$(fn_title $rstfile)"
+  
+  fn_header "$title" > $rstfile
+  pandoc --from docx --to rst "$gdocfile" -o "$rstfile.tmp"
+  cat "$rstfile.tmp" >> "$rstfile"
+  rm "$rstfile.tmp"
+  echo "$rstfile"
+}
+
+
+# 99 Warnings
+# Some headings not showing up properly (About Page) 
+function convert_docx_w2m_md_pandoc_rst() {
+  local gdocfile="$1"
+  local mdfile="$(echo $gdocfile | sed -e 's/\.docx$/\.md/')"
+  local rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
+  local title="$(fn_title $rstfile)"
+  
+  fn_header "$title" > "$rstfile"
+  w2m "$gdocfile" > "$mdfile"
+  pandoc --from markdown --to rst "$mdfile" -o "$rstfile.tmp"
+  cat "$rstfile.tmp" >> "$rstfile"
+  rm "$rstfile.tmp"
+  echo "$rstfile"
+}
 

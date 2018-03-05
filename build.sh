@@ -3,6 +3,7 @@
 cd /readthedocs
 . ./functions.sh
 
+git pull
 git submodule foreach git pull origin master
 
 if [ "$1" == "nodownload" ]; then
@@ -14,17 +15,28 @@ else
 fi 
 
 cd /readthedocs/Products
-./build.sh
+./toctree.sh PeerOS
+./toctree.sh Router
+./toctree.sh Bazaar
 
 cd /readthedocs/Projects
-./build.sh
+for proj_dir in `find /readthedocs/Projects -type d`; do
+  if [ "$proj_dir" == "/readthedocs/Projects" ]; then
+    continue;
+  fi
 
-cd /readthedocs
+  proj_name="$(basename $proj_dir)"
+  echo "project dir  = $proj_dir"
+  echo "project name = $proj_name"
+
+  ./toctree.sh $proj_name
+done
 
 #
 # Build the main index.rst file
 #
 
+cd /readthedocs
 cat > ./index.rst <<-EOF
 Subutai Documentation
 =====================
@@ -41,19 +53,7 @@ EOF
 
 declare -a sorted_files
 for gdocfile in `find . -maxdepth 1 -type f -regex '.*\.docx'`; do
-  gdocbase="$(basename $gdocfile)"
-  rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
-  mdfile="$(echo $gdocfile | sed -e 's/\.docx$/\.md/')"
-  rstbase="$(basename $rstfile)"
-  title="$(fn_title $rstfile)"
-  echo "[DEBUG] title = $title"
-
-  fn_header "$title" > $rstfile
-  w2m "$gdocfile" > "$mdfile"
-  pandoc --from markdown --to rst "$mdfile" -o "$rstfile.tmp"
-  # pandoc --from docx --to rst "$gdocfile" -o "$rstfile.tmp"
-  cat $rstfile.tmp >> $rstfile
-  rm $rstfile.tmp
+  rstfile="$($toplevel_cfunc $gdocfile)"
   sorted_files+=("$rstfile")
 done
 
