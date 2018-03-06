@@ -46,3 +46,6 @@
 [submodule "Projects/router"]
 	path = Projects/router
 	url = https://github.com/subutai-io/blockchain-router.wiki.git
+[submodule "Projects/bazaar"]
+	path = Projects/bazaar
+	url = https://github.com/subutai-io/bazaar.wiki.git
