@@ -1,9 +1,6 @@
 #!/bin/bash
 
-urlencode () {
-  echo "$@" | sed 's/ /%20/g;s/!/%21/g;s/"/%22/g;s/#/%23/g;s/\$/%24/g;s/\&/%26/g
-;s/'\''/%27/g;s/(/%28/g;s/)/%29/g;s/:/%3A/g;s/\?/%3F/g'
-}
+. /readthedocs/functions.sh
 
 PROJECTS=/readthedocs/Projects
 PROJECT_NAME="$1"
