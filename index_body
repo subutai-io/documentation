@@ -52,3 +52,13 @@
    The Subutron <Projects/subutron_toctree.rst> 
    Test Playbooks <Projects/playbooks_toctree.rst>
 
+.. _6:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Popular Blueprints
+
+   Blockchain-in-a-Box <Blueprints/blockchain-in-a-box>
+   Wordpress <Blueprints/wordpress>
+   MatterMost <Blueprints/mattermost>
+
