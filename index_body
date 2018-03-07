@@ -48,7 +48,6 @@
    Vagrant Plugin <Projects/vagrant_toctree.rst>
    Ansible Module <Projects/ansible_toctree.rst>
    Read The Docs <Projects/readthedocs_toctree.rst>
-   Read The Docs <Projects/hackathon_toctree.rst>
    The Subutron <Projects/subutron_toctree.rst> 
    Test Playbooks <Projects/playbooks_toctree.rst>
 
@@ -58,6 +57,7 @@
    :maxdepth: 2
    :caption: Popular Blueprints
 
+   Hackathon <Projects/hackathon_toctree.rst>
    Blockchain-in-a-Box <Blueprints/blockchain-in-a-box>
    Wordpress <Blueprints/wordpress>
    MatterMost <Blueprints/mattermost>
