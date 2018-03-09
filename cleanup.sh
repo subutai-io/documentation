@@ -32,11 +32,27 @@ for proj_dir in `find /readthedocs/Projects -type d`; do
   fi
 
   proj_name="$(basename $proj_dir)"
-  echo [DEBUG] proj_name = $proj_name
+  debug proj_name = $proj_name
   cd $proj_dir
   for docfile in `find . -type f -regex '.*\.\(rst\|md\)$'`; do
     git_clean "$docfile"
   done
   cd ..
 done
+
+cd Blueprints
+for bp_dir in `find /readthedocs/Blueprints -type d`; do
+  if [ "$bp_dir" == "/readthedocs/Blueprints" ]; then
+    continue;
+  fi
+
+  bp_name="$(basename $bp_dir)"
+  debug bp_name = $bp_name
+  cd $bp_dir
+  for docfile in `find . -type f -regex '.*\.\(rst\|md\)$'`; do
+    git_clean "$docfile"
+  done
+  cd ..
+done
+
 cd /readthedocs
