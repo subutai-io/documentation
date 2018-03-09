@@ -40,12 +40,15 @@
 [submodule "Projects/readthedocs"]
 	path = Projects/readthedocs
 	url = https://github.com/subutai-io/readthedocs.wiki.git
-[submodule "Projects/hackathon"]
-	path = Projects/hackathon
-	url = https://github.com/subutai-blueprints/hackathon.wiki.git
 [submodule "Projects/router"]
 	path = Projects/router
 	url = https://github.com/subutai-io/blockchain-router.wiki.git
 [submodule "Projects/bazaar"]
 	path = Projects/bazaar
 	url = https://github.com/subutai-io/bazaar.wiki.git
+[submodule "Blueprints/blockchain-in-a-box"]
+	path = Blueprints/blockchain-in-a-box
+	url = https://github.com/subutai-blueprints/blockchain-in-a-box.wiki.git
+[submodule "Blueprints/hackathon"]
+	path = Blueprints/hackathon
+	url = https://github.com/subutai-blueprints/hackathon.wiki.git
