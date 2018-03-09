@@ -26,10 +26,23 @@ for proj_dir in `find /readthedocs/Projects -type d`; do
   fi
 
   proj_name="$(basename $proj_dir)"
-  echo "project dir  = $proj_dir"
-  echo "project name = $proj_name"
+  debug "project dir  = $proj_dir"
+  debug "project name = $proj_name"
 
   ./toctree.sh $proj_name
+done
+
+cd /readthedocs/Blueprints
+for bp_dir in `find /readthedocs/Blueprints -type d`; do
+  if [ "$bp_dir" == "/readthedocs/Blueprints" ]; then
+    continue;
+  fi
+
+  bp_name="$(basename $bp_dir)"
+  debug "blueprint dir  = $bp_dir"
+  debug "blueprint name = $bp_name"
+
+  ./toctree.sh $bp_name
 done
 
 #
