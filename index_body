@@ -58,7 +58,8 @@
    :caption: Popular Blueprints
 
    Hackathon <Blueprints/hackathon_toctree.rst>
-   Blockchain-in-a-Box <Blueprints/blockchain-in-a-box>
-   Wordpress <Blueprints/wordpress>
-   MatterMost <Blueprints/mattermost>
+   Blockchain-in-a-Box <Blueprints/blockchain-in-a-box_toctree.rst>
+   Wordpress <Blueprints/wordpress_toctree.rst>
+   Wordpress Standalone <Blueprints/wordpress-standalone_toctree.rst>
+   MatterMost <Blueprints/mattermost_toctree.rst>
 
