@@ -57,7 +57,7 @@
    :maxdepth: 2
    :caption: Popular Blueprints
 
-   Hackathon <Projects/hackathon_toctree.rst>
+   Hackathon <Blueprints/hackathon_toctree.rst>
    Blockchain-in-a-Box <Blueprints/blockchain-in-a-box>
    Wordpress <Blueprints/wordpress>
    MatterMost <Blueprints/mattermost>
