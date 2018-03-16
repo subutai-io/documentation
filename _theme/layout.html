@@ -178,7 +178,7 @@
 
 {%- endmacro %}
 
-<html lang="{{ theme_lang }}">
+<html prefix="og: http://ogp.me/ns#" lang="{{ theme_lang }}">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76144216-1"></script>
@@ -204,6 +204,11 @@
     <meta name="description" content="Subutai helps connect individuals from all over the globe so they may share resources to create secure cloud environments across their peers. Just as a cloud can float down onto land and is thus called fog, IoT devices attach when available and needed to your cloud as it floats around with you.">
     <meta name="author" content="Optdyn Corporation">
     <meta name="keywords" content="Optdyn, Corporation, Subutai, Cloud, Computing, Blockchain, Router, Bazaar, IoT">
+    <meta property="og:url" content="https://subutai.io" />
+    <meta property="og:image" content="https://subutai.io/img/bg.jpg"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="800"/> 
+    <meta property="og:image:height" content="600"/>
 
     <!--Custom CSS from J&J-->
     <link rel="stylesheet" href="{{ pathto('_static/customcss/styles.css', 1) }}" type="text/css" />
@@ -230,7 +235,8 @@
     href="{{ pathto('_static/opensearch.xml', 1) }}"/>
     {%- endif %}
     
-    <link rel="icon" type="image/png"  href="{{ pathto('_static/' + favicon, 1) }}"/>
+        <!-- Favicon link-->
+    <link rel="shortcut icon" href="https://subutai.io/img/favicon.png" />
     
     {%- endif %}
     {%- block linktags %}
