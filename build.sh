@@ -8,7 +8,7 @@ if [ "$1" == "nodownload" ]; then
   ./cleanup.sh
 else
   git pull
-  git submodule foreach git pull origin master
+  git submodule foreach 'git checkout .; git pull origin master'
 
   ./cleanup.sh gdocs
   ./download.sh
@@ -95,7 +95,7 @@ make html
 
 cd /readthedocs/_build/html
 for html in `find . -type f -regex '.*\.html'`; do
-  cat "$html" | sed -e 's@<img @<img class="img-responsive" @' > "$html.tmp";
+  cat "$html" | sed -e 's@<img @<img class="img-responsive" @' -e 's/---/--/' > "$html.tmp";
   cp -f "$html.tmp" "$html"
   rm "$html.tmp" 
 done
