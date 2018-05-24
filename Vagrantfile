@@ -16,6 +16,8 @@ Vagrant.configure("2") do |config|
       "GDRIVE_RTD_ROOT" => ENV['GDRIVE_RTD_ROOT']
       }, inline: <<-SHELL
 
+    export DEBIAN_FRONTEND=noninteractive
+
     # Tuck these away into the environment so they're available to synchronize
     echo "GDRIVE_RTD_ROOT='$GDRIVE_RTD_ROOT'" >> /etc/environment
 
@@ -62,7 +64,7 @@ Vagrant.configure("2") do |config|
     else
       apt-get -y update
       apt-get install -y git python python-pip python-dev build-essential
-      pip install --upgrade pip
+      pip install --upgrade pip==9.0.3
       pip install --upgrade virtualenv
       pip install sphinx sphinx-autobuild recommonmark
       pip install sphinx_rtd_theme
@@ -91,8 +93,9 @@ Vagrant.configure("2") do |config|
 
     # Before exiting in privileged mode setup iptables and routing
     # sphinx-autobuild does not listen on all interface just localhost
-    sysctl -w net.ipv4.conf.enp0s8.route_localnet=1
-    iptables -t nat -I PREROUTING -p tcp -d 172.16.0.0/16 --dport 8000 -j DNAT --to-destination 127.0.0.1:8000
+
+    # sysctl -w net.ipv4.conf.enp0s8.route_localnet=1
+    # iptables -t nat -I PREROUTING -p tcp -d 172.16.0.0/16 --dport 8000 -j DNAT --to-destination 127.0.0.1:8000
   SHELL
   
   if ENV['GDRIVE_TOKEN_FILE'].nil? && ARGV[1] == 'up'
