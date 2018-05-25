@@ -3,8 +3,13 @@ docs_port = 8000
 
 Vagrant.configure("2") do |config|
   config.vm.box = "subutai/stretch"
-  config.vm.synced_folder ".", "/readthedocs", disabled: false
   config.vm.network "forwarded_port", guest: 8000, host: 8000, auto_correct: true
+
+  config.vm.synced_folder ".", "/readthedocs", disabled: false
+
+  config.vm.provider :kvm do |_, override|
+    config.vm.synced_folder ".", "/readthedocs", disabled: false, nfs: true
+  end  
 
   config.vm.provision 'shell',
     env: {
@@ -75,7 +80,7 @@ Vagrant.configure("2") do |config|
       echo "GDrive already installed ..."
     else
       # Get the google drive client
-      wget 'https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download' -O /usr/local/bin/gdrive >/dev/null 2>&1
+      wget 'https://cdn.subutai.io:8338/kurjun/rest/raw/download?id=6915b900-149d-4ad2-8440-f75b2272f1c5&token=e584e0f25663e755aac4994ba5d4e759c9380bea8b237947a6861f291e9e50cb' -O /usr/local/bin/gdrive >/dev/null 2>&1
       chmod +x /usr/local/bin/gdrive
       touch /root/gdrive_installed
     fi
