@@ -3,16 +3,11 @@
 cd /readthedocs
 . ./functions.sh
 
-if [ "$1" == "nodownload" ]; then
-  info "Skipping Google Drive downloads: nodownload argument provided."
-  ./cleanup.sh
-else
-  git pull
-  git submodule foreach 'git checkout .; git pull origin master'
+git pull
+git submodule foreach 'git checkout .; git pull origin master'
 
-  ./cleanup.sh gdocs
-  ./download.sh
-fi 
+./cleanup.sh
+./download.sh
 
 cd /readthedocs/Products
 ./toctree.sh PeerOS

@@ -2,29 +2,18 @@
 
 . /readthedocs/functions.sh
 
+# top level index.rst is generated
 rm -f index.rst
-find . -type d -name media | xargs rm -rf
 
-# does not work in the submodules need to do this again
-# inside each submodule below to get the proper results
-find . -type f -regex '.*\.\(rst\|md\)$' | while read -r docfile; do 
+# git restore or remove each rst file in the top level
+find . -type f -regex '.*\.\(rst\)$' | while read -r docfile; do 
   git_clean "$docfile"
 done
 
-# if user asks delete all gdocs files: don't want to download all the time
-if [ "$1" == "gdocs" ]; then
-  gdocs_clean
-fi
-
-for md in `find . -type f -regex '.*\.md'`; do
-  if [ -n "$(tail -n 5 $md | grep ORIGIN | grep gdocs)" ]; then
-    debug "Removing generated Markdown file $md"
-    rm "$md"
-  fi
-done
-
+# checkout everything that might have been modified
 git checkout /readthedocs/Products
 
+# descend into Projects directories and clean up
 cd Projects
 for proj_dir in `find /readthedocs/Projects -type d`; do
   if [ "$proj_dir" == "/readthedocs/Projects" ]; then
@@ -34,12 +23,13 @@ for proj_dir in `find /readthedocs/Projects -type d`; do
   proj_name="$(basename $proj_dir)"
   debug proj_name = $proj_name
   cd $proj_dir
-  for docfile in `find . -type f -regex '.*\.\(rst\|md\)$'`; do
+  for docfile in `find . -type f -regex '.*\.\(rst\)$'`; do
     git_clean "$docfile"
   done
   cd ..
 done
 
+# descend into Blueprints directories and clean up
 cd Blueprints
 for bp_dir in `find /readthedocs/Blueprints -type d`; do
   if [ "$bp_dir" == "/readthedocs/Blueprints" ]; then
@@ -49,7 +39,7 @@ for bp_dir in `find /readthedocs/Blueprints -type d`; do
   bp_name="$(basename $bp_dir)"
   debug bp_name = $bp_name
   cd $bp_dir
-  for docfile in `find . -type f -regex '.*\.\(rst\|md\)$'`; do
+  for docfile in `find . -type f -regex '.*\.\(rst\)$'`; do
     git_clean "$docfile"
   done
   cd ..
