@@ -22,7 +22,7 @@
         "ansible-playbook": "site.yml",
         "extra-vars": [
             {
-                "key": "rtd_user",
+                "key": "rtdUser",
                 "value": "${rtdUser}"
             }
         ],
@@ -33,7 +33,7 @@
                     "${hostName}"
                 ]
             }
-        ]
+        ] 
     },
     "user-variables": {
         "environmentName": {
@@ -48,7 +48,7 @@
             "default": "rtd",
             "validation": "[a-zA-Z0-9]+"
         },
-        "primeUser": {
+        "rtdUser": {
             "description": "Enter the readthedocs user (leave empty for default)",
             "type": "string",
             "default": "readthedocs", 

@@ -33,7 +33,8 @@ Vagrant.configure("2") do |config|
       echo "Python and Sphinx already installed ..."
     else
       apt-get -y update
-      apt-get install -y git python python-pip python-dev build-essential
+      apt-get install -y git python python-pip  
+      # python-dev build-essential
       pip install --upgrade pip==9.0.3
       pip install --upgrade virtualenv
       pip install sphinx sphinx-autobuild recommonmark
