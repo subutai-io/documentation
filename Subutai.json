@@ -1,0 +1,64 @@
+{
+    "name": "${environmentName}",
+    "description": "Subutai Readthedocs",
+    "version": "0.0.1",
+    "author": "https://github.com/akarasulu",
+    "ssh-key": "readthedocs", 
+    "containers": [
+        {
+            "hostname": "${hostName}",
+            "template": "debian-stretch",
+            "peer-criteria": "peers",
+            "size": "${containerSize}"
+        }
+    ],
+    "peer-criteria": [
+        {
+            "name": "peers"
+        }
+    ],
+    "ansible-configuration": {
+        "source-url": "https://github.com/akarasulu/subutai-readthedocs/archive/master.zip",
+        "ansible-playbook": "site.yml",
+        "extra-vars": [
+            {
+                "key": "rtd_user",
+                "value": "${rtdUser}"
+            }
+        ],
+        "groups": [
+            {
+                "name": "rtd",
+                "hostnames": [
+                    "${hostName}"
+                ]
+            }
+        ]
+    },
+    "user-variables": {
+        "environmentName": {
+            "description": "Enter the environment name",
+            "type": "string",
+            "default": "subutai-readthedocs",
+            "validation": "[a-zA-Z0-9\-]+"
+        },
+        "hostName": {
+            "description": "Enter the hostname",
+            "type": "string",
+            "default": "rtd",
+            "validation": "[a-zA-Z0-9]+"
+        },
+        "primeUser": {
+            "description": "Enter the readthedocs user (leave empty for default)",
+            "type": "string",
+            "default": "readthedocs", 
+            "validation": "[a-zA-Z0-9]*"
+        }, 
+        "containerSize": {
+            "description": "Container Size",
+            "type": "enum",
+            "default": "SMALL",
+            "validation": "SMALL,MEDIUM,LARGE"
+        }
+    }
+}
