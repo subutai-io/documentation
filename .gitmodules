@@ -4,9 +4,6 @@
 [submodule "Projects/vagrant.wiki"]
 	path = Projects/vagrant
 	url = https://github.com/subutai-io/vagrant.wiki.git
-[submodule "Projects/snap.wiki"]
-	path = Projects/snap
-	url = https://github.com/subutai-io/snap.wiki.git
 [submodule "Projects/agent.wiki"]
 	path = Projects/agent
 	url = https://github.com/subutai-io/agent.wiki.git
