@@ -49,12 +49,12 @@
 [submodule "Blueprints/hackathon"]
 	path = Blueprints/hackathon
 	url = https://github.com/subutai-blueprints/hackathon.wiki.git
-[submodule "Blueprints/Blueprints/mattermost"]
+[submodule "Blueprints/mattermost"]
 	path = Blueprints/mattermost
 	url = https://github.com/subutai-blueprints/mattermost.wiki.git
-[submodule "Blueprints/Blueprints/wordpress"]
+[submodule "Blueprints/wordpress"]
 	path = Blueprints/wordpress
 	url = https://github.com/subutai-blueprints/wordpress.wiki.git
-[submodule "Blueprints/Blueprints/wordpress-standalone"]
+[submodule "Blueprints/wordpress-standalone"]
 	path = Blueprints/wordpress-standalone
 	url = https://github.com/subutai-blueprints/wordpress-standalone.wiki.git
