@@ -13,19 +13,17 @@ How to install AppScale to your environment?
     > will be used to install specific parts required for AppScale’s
     > correct working) :
 
-![](./media/image2.png){width="2.5104166666666665in" height="2.34375in"}
+![](./media/image2.png)
 
 2\. When the Environment is installed, on the left of its name a special
 mark “A” is shown:
 
-![](./media/image6.png){width="6.057292213473316in"
-height="0.5208333333333334in"}
+![](./media/image6.png)
 
 3\. You need to click on AppScale “tool” on the left side of the
 website’s page:
 
-![](./media/image5.png){width="1.3984656605424322in"
-height="3.682292213473316in"}
+![](./media/image5.png)
 
 4\. On the AppScale page you need to click the “Install Cluster” button.
 Then you should select:
@@ -53,8 +51,7 @@ using like login).
 On the final step you need to input and confirm new password. After push
 “Save” button.
 
-![](./media/image8.png){width="5.208333333333333in"
-height="5.979166666666667in"}
+![](./media/image8.png)
 
 5\. You need to wait some time to finish the installation. When it is
 finished, cluster status will show up as “INSTALLED”. After that you can

@@ -13,7 +13,7 @@ Peers. The following information about Peers is available:
 2.  Price of using the Peer (per hour, in GoodWill).
 
 3.  Information about CPU: quantity and type of cores, frequency of the
-    > processor, manufacturer of processor.
+    processor, manufacturer of processor.
 
 4.  Information about RAM (random access memory) in GB (Gigabyte)
 
@@ -50,20 +50,16 @@ On the individual Peer page you can see a lot of useful information:
     > only for its owner).
 
 6.  You can see this Peer in the War room, by clicking this button:
-    > ![](./media/image6.png){width="0.5208333333333334in"
-    > height="0.4531255468066492in"}
+    > ![](./media/image6.png)
 
 7.  To open Subutai console you can use this button:
-    > ![](./media/image9.png){width="0.4479166666666667in"
-    > height="0.375in"}
+    > ![](./media/image9.png)
 
 8.  On the top right corner you can add or remove to/from your favorite
     > list of peers:
 
-![](./media/image3.png){width="2.1718755468066493in"
-height="0.6770833333333334in"}
-![](./media/image11.png){width="2.1145833333333335in"
-height="0.6145833333333334in"}
+![](./media/image3.png)
+![](./media/image11.png)
 
 On this page there is also information about the Resource Host (server
 that provides premise for container):
@@ -78,26 +74,25 @@ that provides premise for container):
 
 -   P2P version
 
-![](./media/image10.png){width="6.010416666666667in" height="2.5in"}
+![](./media/image10.png)
 
-2\. Uptime in %. This is total % of time this Peer is online.
+2. Uptime in %. This is total % of time this Peer is online.
 
-3\. CPU. Information about Peer’s processor characteristics:
+3. CPU. Information about Peer’s processor characteristics:
 Manufacturer, core frequency, amount of cores.
 
-4\. RAM. (Random Access Memory) shows the Peers’ total memory in GB.
+4. RAM. (Random Access Memory) shows the Peers’ total memory in GB.
 
-5\. HDD (Hard disk drive) shows Peer’s total Hard Disk space available in
+5. HDD (Hard disk drive) shows Peer’s total Hard Disk space available in
 GB.
 
-6\. Price. Usage of Peers can be paid. This field shows the price for per
+6. Price. Usage of Peers can be paid. This field shows the price for per
 hour of using the Peer. Price depends on the size of containers.
 
-7\. If you have your own Peer, you can set up its prices by clicking
+7. If you have your own Peer, you can set up its prices by clicking
 “Action” button:
 
-![](./media/image12.png){width="3.3645833333333335in"
-height="6.072916666666667in"}
+![](./media/image12.png)
 
 Also clicking the “Action” button you will be able to see metrics of
 your peer. These are statistic that can be shown by chosen parameters
