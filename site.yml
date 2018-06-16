@@ -41,6 +41,6 @@
         - sphinx_rtd_theme
     
     - name: Add RTD User
-      user: rtd
+      user: "{{ rtdUser }}"
       comment: "Subutai RTD User"
       shell: /bin/bash
