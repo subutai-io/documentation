@@ -41,8 +41,8 @@ fi
 echo "Processing entries first in $PRODUCT_DIR:"
 
 declare -a sorted_files
-for gdocfile in `find $PRODUCT_DIR -type f -regex '.*\.docx'`; do
-  rstfile="$($products_cfunc $gdocfile)"
+for mdfile in `find $PRODUCT_DIR -type f -regex '.*\.md'`; do
+  rstfile="$(convert_md $mdfile)"
   sorted_files+=("$rstfile")
 done
 
