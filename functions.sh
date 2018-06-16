@@ -113,7 +113,7 @@ function git_clean() {
 
 function convert_md() {
   local mdfile="$1"
-  local rstfile="$(echo $gdocfile | sed -e 's/\.docx$/\.rst/')"
+  local rstfile="$(echo $mdfile | sed -e 's/\.md$/\.rst/')"
   local title="$(fn_title $rstfile)"
   
   fn_header "$title" > $rstfile
