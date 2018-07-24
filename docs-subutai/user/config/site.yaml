@@ -1,0 +1,10 @@
+title: 'Learn2 with Git Sync'
+default_lang: en
+author:
+  name: 'John Appleseed'
+  email: john@email.com
+taxonomies: [category,tag,author]
+metadata:
+  description: 'Learn2 with Git Sync'
+summary:
+  size: 300
