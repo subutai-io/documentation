@@ -11,4 +11,4 @@ Migrating Subutai documentation website to a new one based on [Grav CMS](https:/
 
 'mkdir cache assets logs images user/data'
 
-You're done!
+You're done! This website uses the [Learn2 Skeleton](https://github.com/hibbitts-design/grav-skeleton-learn2-with-git-sync/) and already has relevant plugins installed by default.
