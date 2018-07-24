@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/admin/languages/en.yaml',
-    'modified' => 1521196402,
+    'modified' => 1532459352,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
@@ -398,6 +398,10 @@ return [
             'DISPLAY_ERRORS_HELP' => 'Display full backtrace-style error page',
             'LOG_ERRORS' => 'Log errors',
             'LOG_ERRORS_HELP' => 'Log errors to /logs folder',
+            'LOG_HANDLER' => 'Log handler',
+            'LOG_HANDLER_HELP' => 'Where to output the logs',
+            'SYSLOG_FACILITY' => 'Syslog facility',
+            'SYSLOG_FACILITY_HELP' => 'Syslog facility for output',
             'DEBUGGER' => 'Debugger',
             'DEBUGGER_HELP' => 'Enable Grav debugger and following settings',
             'DEBUG_TWIG' => 'Debug Twig',
@@ -447,6 +451,7 @@ return [
             'PAGE_FILE' => 'Page Template',
             'PAGE_FILE_HELP' => 'Page template file name, and by default the display template for this page',
             'NO_USER_ACCOUNTS' => 'No user accounts found, please create one first...',
+            'NO_USER_EXISTS' => 'No local user exists for this account, cannot save...',
             'REDIRECT_TRAILING_SLASH' => 'Redirect trailing slash',
             'REDIRECT_TRAILING_SLASH_HELP' => 'Perform a 301 redirect rather than transparently handling trailing slash URIs.',
             'DEFAULT_DATE_FORMAT' => 'Page date format',
@@ -551,7 +556,6 @@ return [
             'FRONTMATTER_IGNORE_FIELDS' => 'Ignore frontmatter fields',
             'FRONTMATTER_IGNORE_FIELDS_HELP' => 'Certain frontmatter fields may contain Twig but should not be processed, such as \'forms\'',
             'PACKAGE_X_INSTALLED_SUCCESSFULLY' => 'Package %s installed successfully',
-            'NEEDS_GRAV_1_1' => '<i class="fa fa-exclamation-triangle"></i> <strong>You are running Grav v%s</strong>. You must update to the latest <strong>Grav v1.1.x</strong> release in order to ensure compatibility. This may require switching to <strong>Testing GPM releases</strong> in the System configuration.',
             'ORDERING_DISABLED_BECAUSE_PARENT_SETTING_ORDER' => 'Parent setting order, ordering disabled',
             'ORDERING_DISABLED_BECAUSE_PAGE_NOT_VISIBLE' => 'Page is not visible, ordering disabled',
             'ORDERING_DISABLED_BECAUSE_TOO_MANY_SIBLINGS' => 'Ordering via the admin is unsupported because there are more than 200 siblings',
@@ -576,6 +580,7 @@ return [
             'PREVIEW' => 'Preview',
             'FULLSCREEN' => 'Fullscreen',
             'MODULAR' => 'Modular',
+            'MODULAR_SETUP' => 'Modular Setup',
             'NON_ROUTABLE' => 'Non-Routable',
             'NON_MODULAR' => 'Non-Modular',
             'NON_VISIBLE' => 'Non-Visible',
@@ -716,7 +721,10 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
             'ROUTE_DEFAULT' => 'Default Route',
             'ROUTE_CANONICAL' => 'Canonical Route',
             'ROUTE_ALIASES' => 'Route Aliases',
-            'OPEN_NEW_TAB' => 'Open in new tab'
+            'OPEN_NEW_TAB' => 'Open in new tab',
+            'PAGEMEDIA_RESIZER' => '> The following settings apply to images uploaded through the page media. Resize Width / Height will automatically resize down and proportionally an image if exceeds the limits set in the inputs. Resolution min and max values define the size ranges for uploaded images. Set the fields to 0 to prevent any manipulation.',
+            'SESSION_INITIALIZE' => 'Initialize Session',
+            'SESSION_INITIALIZE_HELP' => 'Makes Grav to start a session. This feature is needed to make any user interaction to work, such as login, forms etc. Admin plugin isn\'t affected by this setting.'
         ]
     ]
 ];

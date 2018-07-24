@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/admin/blueprints.yaml',
-    'modified' => 1521196402,
+    'modified' => 1532459352,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.7.1',
+        'version' => '1.8.6',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [
@@ -21,19 +21,19 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.4.0'
+                'version' => '>=1.4.5'
             ],
             1 => [
                 'name' => 'form',
-                'version' => '>=2.11.0'
+                'version' => '>=2.14.0'
             ],
             2 => [
                 'name' => 'login',
-                'version' => '>=2.5.0'
+                'version' => '>=2.7.0'
             ],
             3 => [
                 'name' => 'email',
-                'version' => '~2.0'
+                'version' => '>=2.7.0'
             ]
         ],
         'form' => [
@@ -166,6 +166,17 @@ return [
                     ],
                     'help' => 'Auto will use blueprint if available, if none found, it will use "Expert" mode.'
                 ],
+                'frontend_preview_target' => [
+                    'type' => 'select',
+                    'label' => 'Preview pages target',
+                    'size' => 'medium',
+                    'default' => 'inline',
+                    'options' => [
+                        'inline' => 'Inline in Admin',
+                        '_blank' => 'New tab',
+                        '_self' => 'Current tab'
+                    ]
+                ],
                 'pages.show_parents' => [
                     'type' => 'select',
                     'size' => 'medium',
@@ -278,6 +289,94 @@ return [
                     'type' => 'array',
                     'label' => 'Hide modular page types in Admin',
                     'value_only' => true
+                ],
+                'MediaResize' => [
+                    'type' => 'section',
+                    'title' => 'Page Media Image Resizer',
+                    'underline' => true
+                ],
+                'MediaResizeNote' => [
+                    'type' => 'spacer',
+                    'text' => 'PLUGIN_ADMIN.PAGEMEDIA_RESIZER',
+                    'markdown' => true
+                ],
+                'pagemedia.resize_width' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resize Width',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'Resize wide images down to the set value'
+                ],
+                'pagemedia.resize_height' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resize Height',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'Resize tall images down to the set value'
+                ],
+                'pagemedia.res_min_width' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resolution Min Width',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'The minimum width allowed for an image to be added'
+                ],
+                'pagemedia.res_min_height' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resolution Min Height',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'The minimum height allowed for an image to be added'
+                ],
+                'pagemedia.res_max_width' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resolution Max Width',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'The maximum width allowed for an image to be added'
+                ],
+                'pagemedia.res_max_height' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resolution Max Height',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'The maximum height allowed for an image to be added'
+                ],
+                'pagemedia.resize_quality' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => '0...1',
+                    'label' => 'Resize Quality',
+                    'default' => 0.80000000000000004,
+                    'validate' => [
+                        'type' => 'number',
+                        'step' => 0.01
+                    ],
+                    'help' => 'The quality to use when resizing an image. Between 0 and 1 value.'
                 ],
                 'Dashboard' => [
                     'type' => 'section',

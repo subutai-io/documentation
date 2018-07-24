@@ -21,7 +21,7 @@ use Grav\Plugin\Email\Utils as EmailUtils;
 use Grav\Plugin\Login\Events\UserLoginEvent;
 use Grav\Plugin\Login\RememberMe\RememberMe;
 use Grav\Plugin\Login\RememberMe\TokenStorage;
-use RocketTheme\Toolbox\Session\Message;
+use Grav\Plugin\Login\TwoFactorAuth\TwoFactorAuth;
 
 /**
  * Class Login
@@ -47,8 +47,14 @@ class Login
     /** @var RememberMe */
     protected $rememberMe;
 
+    /** @var TwoFactorAuth */
+    protected $twoFa;
+
     /** @var RateLimiter[] */
     protected $rateLimiters = [];
+
+    /** @var array  */
+    protected $provider_login_templates = [];
 
     /**
      * Login constructor.
@@ -67,10 +73,10 @@ class Login
     /**
      * Login user.
      *
-     * @param array $credentials
-     * @param array $options
-     * @param array $extra          Example: ['authorize' => 'site.login', 'user' => null], undefined variables gets set.
-     * @return User
+     * @param array $credentials    Login credentials, eg: ['username' => '', 'password' => '']
+     * @param array $options        Login options, eg: ['remember_me' => true]
+     * @param array $extra          Example: ['authorize' => 'site.login', 'user' => null], undefined variables get set.
+     * @return User|UserLoginEvent  Returns event if $extra['return_event'] is true.
      */
     public function login(array $credentials, array $options = [], array $extra = [])
     {
@@ -105,7 +111,7 @@ class Login
             // Make sure that event didn't mess up with the user authorization.
             $user = $event->getUser();
             $user->authenticated = true;
-            $user->authorized = $event->isDelayed();
+            $user->authorized = !$event->isDelayed();
 
         } else {
             // Allow plugins to log errors or do other tasks on failure.
@@ -121,24 +127,29 @@ class Login
         $user = $event->getUser();
         $user->def('language', 'en');
 
-        return $user;
+        return !empty($event['return_event']) ? $event : $user;
     }
 
     /**
      * Logout user.
      *
-     * @param array $options
-     * @param User $user
-     * @return User
+     * @param array                 $options
+     * @param array|User            $extra      Array of: ['user' => $user, ...] or User object (deprecated).
+     * @return User|UserLoginEvent  Returns event if $extra['return_event'] is true.
      */
-    public function logout(array $options = [], User $user = null)
+    public function logout(array $options = [], $extra = [])
     {
         $grav = Grav::instance();
 
+        if ($extra instanceof User) {
+            $extra = ['user' => $extra];
+        } elseif (isset($extra['user'])) {
+            $extra['user'] = $grav['user'];
+        }
+
         $eventOptions = [
-            'user' => $user ?: $grav['user'],
             'options' => $options
-        ];
+        ] + $extra;
 
         $event = new UserLoginEvent($eventOptions);
 
@@ -147,8 +158,9 @@ class Login
 
         $user = $event->getUser();
         $user->authenticated = false;
+        $user->authorized = false;
 
-        return $user;
+        return !empty($event['return_event']) ? $event : $user;
     }
 
     /**
@@ -161,17 +173,33 @@ class Login
      */
     public function authenticate($credentials, $options = ['remember_me' => true])
     {
-        $user = $this->login($credentials, $options);
+        $event = $this->login($credentials, $options, ['return_event' => true]);
+        $user = $event['user'];
 
-        if ($user->authenticated) {
-            $this->grav['messages']->add($this->language->translate('PLUGIN_LOGIN.LOGIN_SUCCESSFUL',
-                [$user->language]), 'info');
+        $redirect = $event->getRedirect();
+        $message = $event->getMessage();
+        $messageType = $event->getMessageType();
 
-            $redirect_route = $this->uri->route();
-            $this->grav->redirect($redirect_route);
+        if ($user->authenticated && $user->authorized) {
+            if (!$message) {
+                $message = 'PLUGIN_LOGIN.LOGIN_SUCCESSFUL';
+                $messageType = 'info';
+            }
+
+            if (!$redirect) {
+                $redirect = $this->uri->route();
+            }
         }
 
-        return $user->authenticated;
+        if ($message) {
+            $this->grav['messages']->add($this->language->translate($message, [$user->language]), $messageType);
+        }
+
+        if ($redirect) {
+            $this->grav->redirect($redirect, $event->getRedirectCode());
+        }
+
+        return $user->authenticated && $user->authorized;
     }
 
     /**
@@ -183,19 +211,25 @@ class Login
      */
     public function register($data)
     {
-        //Add new user ACL settings
-        $groups = $this->config->get('plugins.login.user_registration.groups', []);
+        if (!isset($data['groups'])) {
+            //Add new user ACL settings
+            $groups = (array) $this->config->get('plugins.login.user_registration.groups', []);
 
-        if (count($groups) > 0) {
-            $data['groups'] = $groups;
+            if (count($groups) > 0) {
+                $data['groups'] = $groups;
+            }
         }
 
-        $access = $this->config->get('plugins.login.user_registration.access.site', []);
-        if (count($access) > 0) {
-            $data['access']['site'] = $access;
+        if (!isset($data['access'])) {
+            $access = (array) $this->config->get('plugins.login.user_registration.access.site', []);
+
+            if (count($access) > 0) {
+                $data['access']['site'] = $access;
+            }
         }
 
-        $username = $data['username'];
+        $username = $this->validateField('username', $data['username']);
+
         $file = CompiledYamlFile::instance($this->grav['locator']->findResource('account://' . $username . YAML_EXT,
             true, true));
 
@@ -205,6 +239,79 @@ class Login
         $user->save();
 
         return $user;
+    }
+
+    /**
+     * @param string $type
+     * @param mixed  $value
+     * @param string $extra
+     *
+     * @return string
+     */
+    public function validateField($type, $value, $extra = '')
+    {
+        switch ($type) {
+            case 'user':
+            case 'username':
+                /** @var Config $config */
+                $config = Grav::instance()['config'];
+                $username_regex = '/' . $config->get('system.username_regex') . '/';
+
+                if (!is_string($value) || !preg_match($username_regex, $value)) {
+                    throw new \RuntimeException('Username should be between 3 and 16 characters, including lowercase letters, numbers, underscores, and hyphens. Uppercase letters, spaces, and special characters are not allowed');
+                }
+
+                break;
+
+            case 'password1':
+                /** @var Config $config */
+                $config = Grav::instance()['config'];
+                $pwd_regex = '/' . $config->get('system.pwd_regex') . '/';
+
+                if (!is_string($value) || !preg_match($pwd_regex, $value)) {
+                    throw new \RuntimeException('Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters');
+                }
+
+                break;
+
+            case 'password2':
+                if (!is_string($value) || strcmp($value, $extra)) {
+                    throw new \RuntimeException('Passwords did not match.');
+                }
+
+                break;
+
+            case 'email':
+                if (!is_string($value) || !filter_var($value, FILTER_VALIDATE_EMAIL)) {
+                    throw new \RuntimeException('Not a valid email address');
+                }
+
+                break;
+
+            case 'permissions':
+                if (!is_string($value) || !in_array($value, ['a', 's', 'b'])) {
+                    throw new \RuntimeException('Permissions ' . $value . ' are invalid.');
+                }
+
+                break;
+
+            case 'fullname':
+                if (!is_string($value) || trim($value) === '') {
+                    throw new \RuntimeException('Fullname cannot be empty');
+                }
+
+                break;
+
+            case 'state':
+                if ($value !== 'enabled' && $value !== 'disabled') {
+                    throw new \RuntimeException('State is not valid');
+                }
+
+                break;
+
+        }
+
+        return $value;
     }
 
     /**
@@ -368,6 +475,26 @@ class Login
     }
 
     /**
+     * Gets and sets the TwoFactorAuth object
+     *
+     * @param TwoFactorAuth $var
+     * @return TwoFactorAuth
+     * @throws \RobThree\Auth\TwoFactorAuthException
+     */
+    public function twoFactorAuth($var = null)
+    {
+        if ($var !== null) {
+            $this->twoFa = $var;
+        }
+
+        if (!$this->twoFa) {
+            $this->twoFa = new TwoFactorAuth;
+        }
+
+        return $this->twoFa;
+    }
+
+    /**
      * @param string $context
      * @param int $maxCount
      * @param int $interval
@@ -420,6 +547,10 @@ class Login
             return true;
         }
 
+        if (!$user->authorized) {
+            return false;
+        }
+
         // Continue to the page if user is authorized to access the page.
         foreach ($rules as $rule => $value) {
             if (is_array($value)) {
@@ -446,17 +577,17 @@ class Login
      * @param int    $count
      * @param int    $interval
      * @return bool
-     * @deprecated 3.0 Use $grav['login']->getRateLimiter($context) instead. See Grav\Plugin\Login\RateLimiter class.
+     * @deprecated 2.5.0 Use $grav['login']->getRateLimiter($context) instead. See Grav\Plugin\Login\RateLimiter class.
      */
     public function isUserRateLimited(User $user, $field, $count, $interval)
     {
         if ($count > 0) {
             if (!isset($user->{$field})) {
-                $user->{$field} = array();
+                $user->{$field} = [];
             }
-            //remove older than 1 hour attempts
-            $actual_resets = array();
-            foreach ($user->{$field} as $reset) {
+            //remove older than $interval x minute attempts
+            $actual_resets = [];
+            foreach ((array)$user->{$field} as $reset) {
                 if ($reset > (time() - $interval * 60)) {
                     $actual_resets[] = $reset;
                 }
@@ -477,7 +608,7 @@ class Login
      *
      * @param User   $user
      * @param string $field
-     * @deprecated 3.0 Use $grav['login']->getRateLimiter($context) instead. See Grav\Plugin\Login\RateLimiter class.
+     * @deprecated 2.5.0 Use $grav['login']->getRateLimiter($context) instead. See Grav\Plugin\Login\RateLimiter class.
      */
     public function resetRateLimit(User $user, $field)
     {
@@ -488,12 +619,24 @@ class Login
      * Get Current logged in user
      *
      * @return User
-     * @deprecated 3.0 Use $grav['user'] instead.
+     * @deprecated 2.5.0 Use $grav['user'] instead.
      */
     public function getUser()
     {
         /** @var User $user */
         return $this->grav['user'];
+    }
+
+    public function addProviderLoginTemplate($template)
+    {
+        $this->provider_login_templates[] = $template;
+    }
+
+    public function getProviderLoginTemplates()
+    {
+        $templates =  $this->provider_login_templates;
+
+        return $templates;
     }
 
 }

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/form/languages.yaml',
-    'modified' => 1521196406,
+    'modified' => 1532459343,
     'data' => [
         'en' => [
             'PLUGIN_FORM' => [
@@ -26,6 +26,7 @@ return [
                 'RECAPTCHA_SECRET_KEY_HELP' => 'For more info visit https://developers.google.com/recaptcha',
                 'GENERAL' => 'General',
                 'USE_BUILT_IN_CSS' => 'Use built-in CSS',
+                'USE_INLINE_CSS' => 'Use inline CSS',
                 'FILEUPLOAD_PREVENT_SELF' => 'Cannot use "%s" outside of pages.',
                 'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'Unable to upload file %s: %s',
                 'FILEUPLOAD_UNABLE_TO_MOVE' => 'Unable to move file %s to "%s"',
@@ -71,7 +72,10 @@ return [
                 'DESTINATION_HELP' => 'Das Ziel, wohin die Dateien hochgeladen werden sollen.',
                 'ACCEPT' => 'Erlaube MIME-Typen',
                 'ACCEPT_HELP' => 'Eine Liste von MIME-Typen, die hochgeladen werden dürfen.',
-                'ERROR_VALIDATING_CAPTCHA' => 'Die Überprüfung des Captcha ist fehlgeschlagen.'
+                'ERROR_VALIDATING_CAPTCHA' => 'Die Überprüfung des Captcha ist fehlgeschlagen.',
+                'DATA_SUMMARY' => 'Hier die Zusammenfassung von dem, was Sie geschrieben haben:',
+                'YES' => 'Ja',
+                'NO' => 'Nein'
             ]
         ],
         'es' => [
@@ -79,6 +83,7 @@ return [
                 'NOT_VALIDATED' => 'Falló la validación del formulario. Uno o más campos obligatorios no fueron cubiertos.',
                 'NONCE_NOT_VALIDATED' => 'Oops, hay un problema, por favor revise la información e intente enviar el formulario otra vez.',
                 'FILES' => 'Subida de Ficheros',
+                'FORM_ALREADY_SUBMITTED' => 'Este formulario ya ha sido enviado',
                 'ALLOW_MULTIPLE' => 'Permitir más de un fichero',
                 'ALLOW_MULTIPLE_HELP' => 'Permitir seleccionar más de un fichero para subir.',
                 'DESTINATION' => 'Destino',
@@ -86,11 +91,48 @@ return [
                 'ACCEPT' => 'MIME Types permitidos',
                 'ACCEPT_HELP' => 'Una lista de  MIME Types que se permiten subir.',
                 'ERROR_VALIDATING_CAPTCHA' => 'Error al comprobar el Captcha',
+                'DATA_SUMMARY' => 'Este es el resumen de lo que nos has escrito:',
+                'NO_FORM_DATA' => 'No hay datos disponibles del formulario',
                 'RECAPTCHA' => 'ReCaptcha',
                 'RECAPTCHA_SITE_KEY' => 'Site key',
                 'RECAPTCHA_SITE_KEY_HELP' => 'Para más información visita https://developers.google.com/recaptcha',
                 'RECAPTCHA_SECRET_KEY' => 'Secret key',
-                'RECAPTCHA_SECRET_KEY_HELP' => 'Para más información visita https://developers.google.com/recaptcha'
+                'RECAPTCHA_SECRET_KEY_HELP' => 'Para más información visita https://developers.google.com/recaptcha',
+                'GENERAL' => 'General',
+                'USE_BUILT_IN_CSS' => 'Utilizar CSS incorporado',
+                'USE_INLINE_CSS' => 'Utilizar CSS en línea',
+                'FILEUPLOAD_PREVENT_SELF' => 'No se puede utilizar "%s" fuera de las páginas',
+                'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'No se puede subir el fichero %s: %s',
+                'FILEUPLOAD_UNABLE_TO_MOVE' => 'No se puede mover el fichero %s to "%s"',
+                'DROPZONE_CANCEL_UPLOAD' => 'Cancelar subida',
+                'DROPZONE_CANCEL_UPLOAD_CONFIRMATION' => '¿Estas seguro que quieres cancelar esta subida?',
+                'DROPZONE_DEFAULT_MESSAGE' => 'Arrastra tus ficheros aquí o <strong>haz click en esta área</strong>',
+                'DROPZONE_FALLBACK_MESSAGE' => 'Tu navegador no soporta el arrastrar y soltar ficheros de subida.',
+                'DROPZONE_FALLBACK_TEXT' => 'Por favor utiliza el formulario alternativo que esta debajo, para subir ficheros como antiguamente.',
+                'DROPZONE_FILE_TOO_BIG' => 'Fichero demasiado grande ({{filesize}}MiB). Máximo tamaño: {{maxFilesize}}MiB.',
+                'DROPZONE_INVALID_FILE_TYPE' => 'No puedes subir ficheros de este tipo.',
+                'DROPZONE_MAX_FILES_EXCEEDED' => 'No puedes subir mas ficheros.',
+                'DROPZONE_REMOVE_FILE' => 'Borrar fichero',
+                'DROPZONE_REMOVE_FILE_CONFIRMATION' => '¿Estas seguro de que quieres borrar este fichero?',
+                'DROPZONE_RESPONSE_ERROR' => 'El servidor respondió con el código de estado {{statusCode}}.',
+                'YES' => 'Si',
+                'NO' => 'No',
+                'REFRESH_PREVENTION' => 'Prevenir refresco',
+                'REFRESH_PREVENTION_HELP' => 'Utiliza el ID único del formulario para garantizar que el este no se vuelve a procesar cuando se refresca el navegador',
+                'LIMIT' => 'Límite',
+                'LIMIT_HELP' => 'Máximo número de ficheros permitidos por campo (múltiples requeridos)',
+                'FILESIZE' => 'Tamaño máximo de fichero',
+                'FILESIZE_HELP' => 'Tamaño máximo de fichero permitido (en MB), 0 = Utiliza el de por defecto del sistema',
+                'AVOID_OVERWRITING' => 'Evitar sobreescribir',
+                'AVOID_OVERWRITING_HELP' => 'Evita que los ficheros con el mismo nombre sean sobreescritos. Se agregará el prefijo de fecha',
+                'RANDOM_NAME' => 'Nombre aleatorio',
+                'RANDOM_NAME_HELP' => 'Genera una cadela aleatoria de 15 caracteres como nombre de fichero a subir',
+                'CLIENT_SIDE_VALIDATION' => 'Validación del lado del cliente',
+                'CLIENT_SIDE_VALIDATION_HELP' => 'Por defecto los formularios usarán validación HTML5 del lado del cliente como primera línea de defensa',
+                'INLINE_ERRORS' => 'Errores en línea',
+                'INLINE_ERRORS_HELP' => 'Útil con \'validación del lado del cliente\' desactivado, muestra errores en el formulario contextual en línea',
+                'RESOLUTION_MIN' => '{{attr}} fué menor que el mínimo {{min}}px <br />',
+                'RESOLUTION_MAX' => '{{attr}} fué mayor que el máximo {{max}}px <br />'
             ]
         ],
         'fr' => [

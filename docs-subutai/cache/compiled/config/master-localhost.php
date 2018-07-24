@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1532457993,
-    'checksum' => 'a4de1b20832eba9c8e3d980cd65519de',
+    'timestamp' => 1532459373,
+    'checksum' => 'ceae68987c49ff70dbd07a6b572683c0',
     'files' => [
         'user/config' => [
             'media' => [
@@ -24,6 +24,10 @@ return [
             'plugins/feed' => [
                 'file' => 'user/config/plugins/feed.yaml',
                 'modified' => 1521196362
+            ],
+            'plugins/git-sync' => [
+                'file' => 'user/config/plugins/git-sync.yaml',
+                'modified' => 1532459373
             ],
             'plugins/highlight' => [
                 'file' => 'user/config/plugins/highlight.yaml',
@@ -61,25 +65,25 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ]
         ],
         'user/plugins' => [
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1521196408
+                'modified' => 1532459357
             ],
             'plugins/highlight' => [
                 'file' => 'user/plugins/highlight/highlight.yaml',
@@ -95,7 +99,7 @@ return [
             ],
             'plugins/external_links' => [
                 'file' => 'user/plugins/external_links/external_links.yaml',
-                'modified' => 1521196416
+                'modified' => 1532459346
             ],
             'plugins/git-sync' => [
                 'file' => 'user/plugins/git-sync/git-sync.yaml',
@@ -103,7 +107,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1521196406
+                'modified' => 1532459343
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
@@ -115,7 +119,7 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ]
         ]
     ],
@@ -127,6 +131,7 @@ return [
                 'route' => NULL,
                 'redirect_to_login' => true,
                 'redirect_after_login' => NULL,
+                'redirect_after_logout' => '/',
                 'route_activate' => '/activate_user',
                 'route_forgot' => '/forgot_password',
                 'route_reset' => '/reset_password',
@@ -247,12 +252,13 @@ return [
                 'mode' => 'active'
             ],
             'git-sync' => [
-                'enabled' => true,
+                'enabled' => false,
                 'text_var' => 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)'
             ],
             'form' => [
                 'enabled' => true,
                 'built_in_css' => true,
+                'inline_css' => true,
                 'refresh_prevention' => false,
                 'client_side_validation' => true,
                 'inline_errors' => false,
@@ -327,6 +333,7 @@ return [
                     'delete_page' => true
                 ],
                 'edit_mode' => 'normal',
+                'frontend_preview_target' => 'inline',
                 'show_github_msg' => true,
                 'pages_list_display_field' => 'title',
                 'google_fonts' => true,

@@ -13,7 +13,9 @@
 
         {% block instructions %}{% endblock %}
 
-        {% set redirect = redirect ?: uri.route(false) %}
+        {% block integration %}{% endblock %}
+
+        {% set redirect = redirect ?: uri.path %}
 
         <form method="post" action="{{ base_url_relative }}">
             <div class="padding">
@@ -22,6 +24,12 @@
                 {{ nonce_field('admin-form', 'admin-nonce')|raw }}
             </div>
         </form>
+
+        <script>
+            $(document).ready( function() {
+                $('#messages').delay(5000).animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+            });
+        </script>
     </section>
 </body>
 {% endblock %}

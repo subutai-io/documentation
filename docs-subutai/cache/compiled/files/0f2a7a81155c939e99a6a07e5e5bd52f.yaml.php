@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://admin/admin.yaml',
-    'modified' => 1521196402,
+    'modified' => 1532459352,
     'data' => [
         'enabled' => true,
         'route' => '/admin',
@@ -37,6 +37,7 @@ return [
             'delete_page' => true
         ],
         'edit_mode' => 'normal',
+        'frontend_preview_target' => 'inline',
         'show_github_msg' => true,
         'pages_list_display_field' => 'title',
         'google_fonts' => false,

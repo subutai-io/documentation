@@ -1,3 +1,62 @@
+# v2.7.3
+## 06/20/2018
+
+1. [](#bugfix)
+    * Fixed regression with `redirect_after_login` setting [#164](https://github.com/getgrav/grav-plugin-login/issues/164)
+
+# v2.7.2
+## 06/11/2018
+
+1. [](#new)
+    * Norwegian translation added [#163](https://github.com/getgrav/grav-plugin-login/issues/163)
+1. [](#bugfix)
+    * Fixed issue with `redirect_after_login` being ignored [#164](https://github.com/getgrav/grav-plugin-login/issues/164)
+    * CLI commands `change-user-state` and `change-password` were ignoring desired username [#161](https://github.com/getgrav/grav-plugin-login/issues/161)
+
+# v2.7.1
+## 06/03/2018
+
+1. [](#bugfix)
+    * Removed extra unnecessary username check [#159](https://github.com/getgrav/grav-plugin-login/issues/159)
+    * CLI command `add-user` ignores desired username [#157](https://github.com/getgrav/grav-plugin-login/issues/157)
+
+# v2.7.0
+## 05/11/2018
+
+1. [](#new)
+    * Moved support for 2FA authentication into Login plugin (only supported in Admin currently)
+    * Updated plugin dependencies (Grav >= 1.4.5, Form >=2.13.4, Email >=2.7.0)
+1. [](#improved)
+    * Added cleaner way for 3rd party providers to add twig templates to login form
+    * Use `Login` class validation methods in CLI
+    * Added logging of login exceptions
+    * Show denied message only when authenticated but not authorized
+1. [](#bugfix)
+    * Don't allow Profile saving if a Grav user account doesn't exist (OAuth/LDAP users for example)
+    * Don't allow PW reset if no current password exists (OAuth/LDAP users for example) 
+
+# v2.6.3
+## 04/12/2018
+
+1. [](#bugfix)
+    * Fixed issue with saving profile and stating email has already exists
+
+# v2.6.2
+## 04/12/2018
+
+1. [](#new)
+    * Added custom logout redirect configuration option
+    * Added support for `Login::login()` and `Login::logout()` to return `UserLoginEvent` instance instead of `User`
+    * Added support for custom login messages and redirects set in `UserLoginEvent`
+1. [](#bugfix)
+    * Fixed typo in activation email body [#151](https://github.com/getgrav/grav-plugin-login/issues/151) 
+    
+# v2.6.1
+## 03/19/2018
+
+1. [](#improved)
+    * Fixed undefined index if login form didn't contain username/password
+
 # v2.6.0
 ## 02/22/2018
 

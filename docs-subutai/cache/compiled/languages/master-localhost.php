@@ -1,131 +1,131 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1532457994,
-    'checksum' => '6f5b13bc3514babf3a0a9099e0182060',
+    'timestamp' => 1532459357,
+    'checksum' => 'd99bcf53b55971762d46c6e5833b339f',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1520791984
+                'modified' => 1532459185
             ]
         ],
         'user/plugins' => [
             'plugins/external_links' => [
                 'file' => 'user/plugins/external_links/languages.yaml',
-                'modified' => 1521196416
+                'modified' => 1532459346
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1521196406
+                'modified' => 1532459343
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
@@ -135,189 +135,197 @@ return [
         'user/plugins/login/languages' => [
             'de' => [
                 'file' => 'user/plugins/login/languages/de.yaml',
-                'modified' => 1521196408
+                'modified' => 1532459357
             ],
             'en' => [
                 'file' => 'user/plugins/login/languages/en.yaml',
-                'modified' => 1521196408
+                'modified' => 1532459357
+            ],
+            'es' => [
+                'file' => 'user/plugins/login/languages/es.yaml',
+                'modified' => 1532459357
             ],
             'fr' => [
                 'file' => 'user/plugins/login/languages/fr.yaml',
-                'modified' => 1521196408
+                'modified' => 1532459357
             ],
             'hr' => [
                 'file' => 'user/plugins/login/languages/hr.yaml',
-                'modified' => 1521196408
+                'modified' => 1532459357
             ],
             'hu' => [
                 'file' => 'user/plugins/login/languages/hu.yaml',
-                'modified' => 1521196408
+                'modified' => 1532459357
+            ],
+            'no' => [
+                'file' => 'user/plugins/login/languages/no.yaml',
+                'modified' => 1532459357
             ],
             'ro' => [
                 'file' => 'user/plugins/login/languages/ro.yaml',
-                'modified' => 1521196408
+                'modified' => 1532459357
             ],
             'ru' => [
                 'file' => 'user/plugins/login/languages/ru.yaml',
-                'modified' => 1521196408
+                'modified' => 1532459357
             ]
         ],
         'user/plugins/admin/languages' => [
             'ar' => [
                 'file' => 'user/plugins/admin/languages/ar.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'bg' => [
                 'file' => 'user/plugins/admin/languages/bg.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'br' => [
                 'file' => 'user/plugins/admin/languages/br.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'ca' => [
                 'file' => 'user/plugins/admin/languages/ca.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'cs' => [
                 'file' => 'user/plugins/admin/languages/cs.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'cy' => [
                 'file' => 'user/plugins/admin/languages/cy.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'da' => [
                 'file' => 'user/plugins/admin/languages/da.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'de' => [
                 'file' => 'user/plugins/admin/languages/de.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'el' => [
                 'file' => 'user/plugins/admin/languages/el.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'en' => [
                 'file' => 'user/plugins/admin/languages/en.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'es' => [
                 'file' => 'user/plugins/admin/languages/es.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'et' => [
                 'file' => 'user/plugins/admin/languages/et.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'eu' => [
                 'file' => 'user/plugins/admin/languages/eu.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'fa' => [
                 'file' => 'user/plugins/admin/languages/fa.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'fi' => [
                 'file' => 'user/plugins/admin/languages/fi.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'fr' => [
                 'file' => 'user/plugins/admin/languages/fr.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'he' => [
                 'file' => 'user/plugins/admin/languages/he.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'hr' => [
                 'file' => 'user/plugins/admin/languages/hr.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'hu' => [
                 'file' => 'user/plugins/admin/languages/hu.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'id' => [
                 'file' => 'user/plugins/admin/languages/id.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'it' => [
                 'file' => 'user/plugins/admin/languages/it.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'ja' => [
                 'file' => 'user/plugins/admin/languages/ja.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'ko' => [
                 'file' => 'user/plugins/admin/languages/ko.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'lt' => [
                 'file' => 'user/plugins/admin/languages/lt.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'nl' => [
                 'file' => 'user/plugins/admin/languages/nl.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'no' => [
                 'file' => 'user/plugins/admin/languages/no.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'pl' => [
                 'file' => 'user/plugins/admin/languages/pl.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'pt' => [
                 'file' => 'user/plugins/admin/languages/pt.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'ro' => [
                 'file' => 'user/plugins/admin/languages/ro.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'ru' => [
                 'file' => 'user/plugins/admin/languages/ru.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'sk' => [
                 'file' => 'user/plugins/admin/languages/sk.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'sl' => [
                 'file' => 'user/plugins/admin/languages/sl.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'sv' => [
                 'file' => 'user/plugins/admin/languages/sv.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'th' => [
                 'file' => 'user/plugins/admin/languages/th.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'tlh' => [
                 'file' => 'user/plugins/admin/languages/tlh.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'tr' => [
                 'file' => 'user/plugins/admin/languages/tr.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'uk' => [
                 'file' => 'user/plugins/admin/languages/uk.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'vi' => [
                 'file' => 'user/plugins/admin/languages/vi.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ],
             'zh' => [
                 'file' => 'user/plugins/admin/languages/zh.yaml',
-                'modified' => 1521196402
+                'modified' => 1532459352
             ]
         ]
     ],
@@ -4514,7 +4522,10 @@ Sti: `%2$s`
                 'DESTINATION_HELP' => 'Das Ziel, wohin die Dateien hochgeladen werden sollen.',
                 'ACCEPT' => 'Erlaube MIME-Typen',
                 'ACCEPT_HELP' => 'Eine Liste von MIME-Typen, die hochgeladen werden dürfen.',
-                'ERROR_VALIDATING_CAPTCHA' => 'Die Überprüfung des Captcha ist fehlgeschlagen.'
+                'ERROR_VALIDATING_CAPTCHA' => 'Die Überprüfung des Captcha ist fehlgeschlagen.',
+                'DATA_SUMMARY' => 'Hier die Zusammenfassung von dem, was Sie geschrieben haben:',
+                'YES' => 'Ja',
+                'NO' => 'Nein'
             ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'E-Mail ist nicht konfiguriert',
@@ -5731,6 +5742,10 @@ Pfad: `%2$s`
                 'DISPLAY_ERRORS_HELP' => 'Display full backtrace-style error page',
                 'LOG_ERRORS' => 'Log errors',
                 'LOG_ERRORS_HELP' => 'Log errors to /logs folder',
+                'LOG_HANDLER' => 'Log handler',
+                'LOG_HANDLER_HELP' => 'Where to output the logs',
+                'SYSLOG_FACILITY' => 'Syslog facility',
+                'SYSLOG_FACILITY_HELP' => 'Syslog facility for output',
                 'DEBUGGER' => 'Debugger',
                 'DEBUGGER_HELP' => 'Enable Grav debugger and following settings',
                 'DEBUG_TWIG' => 'Debug Twig',
@@ -5780,6 +5795,7 @@ Pfad: `%2$s`
                 'PAGE_FILE' => 'Page Template',
                 'PAGE_FILE_HELP' => 'Page template file name, and by default the display template for this page',
                 'NO_USER_ACCOUNTS' => 'No user accounts found, please create one first...',
+                'NO_USER_EXISTS' => 'No local user exists for this account, cannot save...',
                 'REDIRECT_TRAILING_SLASH' => 'Redirect trailing slash',
                 'REDIRECT_TRAILING_SLASH_HELP' => 'Perform a 301 redirect rather than transparently handling trailing slash URIs.',
                 'DEFAULT_DATE_FORMAT' => 'Page date format',
@@ -5884,7 +5900,6 @@ Pfad: `%2$s`
                 'FRONTMATTER_IGNORE_FIELDS' => 'Ignore frontmatter fields',
                 'FRONTMATTER_IGNORE_FIELDS_HELP' => 'Certain frontmatter fields may contain Twig but should not be processed, such as \'forms\'',
                 'PACKAGE_X_INSTALLED_SUCCESSFULLY' => 'Package %s installed successfully',
-                'NEEDS_GRAV_1_1' => '<i class="fa fa-exclamation-triangle"></i> <strong>You are running Grav v%s</strong>. You must update to the latest <strong>Grav v1.1.x</strong> release in order to ensure compatibility. This may require switching to <strong>Testing GPM releases</strong> in the System configuration.',
                 'ORDERING_DISABLED_BECAUSE_PARENT_SETTING_ORDER' => 'Parent setting order, ordering disabled',
                 'ORDERING_DISABLED_BECAUSE_PAGE_NOT_VISIBLE' => 'Page is not visible, ordering disabled',
                 'ORDERING_DISABLED_BECAUSE_TOO_MANY_SIBLINGS' => 'Ordering via the admin is unsupported because there are more than 200 siblings',
@@ -5909,6 +5924,7 @@ Pfad: `%2$s`
                 'PREVIEW' => 'Preview',
                 'FULLSCREEN' => 'Fullscreen',
                 'MODULAR' => 'Modular',
+                'MODULAR_SETUP' => 'Modular Setup',
                 'NON_ROUTABLE' => 'Non-Routable',
                 'NON_MODULAR' => 'Non-Modular',
                 'NON_VISIBLE' => 'Non-Visible',
@@ -6049,7 +6065,10 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'ROUTE_DEFAULT' => 'Default Route',
                 'ROUTE_CANONICAL' => 'Canonical Route',
                 'ROUTE_ALIASES' => 'Route Aliases',
-                'OPEN_NEW_TAB' => 'Open in new tab'
+                'OPEN_NEW_TAB' => 'Open in new tab',
+                'PAGEMEDIA_RESIZER' => '> The following settings apply to images uploaded through the page media. Resize Width / Height will automatically resize down and proportionally an image if exceeds the limits set in the inputs. Resolution min and max values define the size ranges for uploaded images. Set the fields to 0 to prevent any manipulation.',
+                'SESSION_INITIALIZE' => 'Initialize Session',
+                'SESSION_INITIALIZE_HELP' => 'Makes Grav to start a session. This feature is needed to make any user interaction to work, such as login, forms etc. Admin plugin isn\'t affected by this setting.'
             ],
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Username',
@@ -6071,6 +6090,7 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instructions to reset your password have been sent via email',
                 'FORGOT_FAILED_TO_EMAIL' => 'Failed to email instructions, please try again later',
                 'FORGOT_CANNOT_RESET_EMAIL_NO_EMAIL' => 'Cannot reset password for %s, no email address is set',
+                'FORGOT_CANNOT_RESET_EMAIL_NO_PASSWORD' => 'Cannot reset password for %s, this email is associated with a remote account',
                 'FORGOT_USERNAME_DOES_NOT_EXIST' => 'User with username <b>%s</b> does not exist',
                 'FORGOT_EMAIL_NOT_CONFIGURED' => 'Cannot reset password. This site is not configured to send emails',
                 'FORGOT_EMAIL_SUBJECT' => '%s Password Reset Request',
@@ -6093,7 +6113,7 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'USER_NEEDS_EMAIL_FIELD' => 'The user needs an email field',
                 'EMAIL_SENDING_FAILURE' => 'An error occurred while sending the email',
                 'ACTIVATION_EMAIL_SUBJECT' => 'Activate your account on %s',
-                'ACTIVATION_EMAIL_BODY' => '<h1>%Account Activation</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>, but you cannot login until it is activated.</p><p><br/><a href="%2$s" class="btn-primary">Activate Your Account Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
+                'ACTIVATION_EMAIL_BODY' => '<h1>Account Activation</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>, but you cannot login until it is activated.</p><p><br/><a href="%2$s" class="btn-primary">Activate Your Account Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
                 'ACTIVATION_NOTICE_MSG' => 'Hi %s, your account is created, please check your email to fully activate it',
                 'WELCOME_EMAIL_SUBJECT' => 'Welcome to %s',
                 'WELCOME_EMAIL_BODY' => '<h1>Account Created</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>.</p><p><br/><a href="%2$s" class="btn-primary">Login Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
@@ -6127,6 +6147,8 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'REGISTRATION_FIELD_KEY' => 'Field name',
                 'REDIRECT_AFTER_LOGIN' => 'Redirect after login',
                 'REDIRECT_AFTER_LOGIN_HELP' => 'Custom route to redirect after login',
+                'REDIRECT_AFTER_LOGOUT' => 'Redirect after logout',
+                'REDIRECT_AFTER_LOGOUT_HELP' => 'Custom route to redirect after logout',
                 'REDIRECT_AFTER_REGISTRATION' => 'Redirect after registration',
                 'REDIRECT_AFTER_REGISTRATION_HELP' => 'Custom route to redirect after the registration',
                 'OPTIONS' => 'Options',
@@ -6165,7 +6187,19 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'LOGGED_OUT' => 'You have been successfully logged out...',
                 'PAGE_RESTRICTED' => 'Access is restricted, please login...',
                 'DYNAMIC_VISIBILITY' => 'Dynamic Page Visibility',
-                'DYNAMIC_VISIBILITY_HELP' => 'Allows dynamic processing of page visibility base on access rules if login.visibility_requires_access is set to true on a page'
+                'DYNAMIC_VISIBILITY_HELP' => 'Allows dynamic processing of page visibility base on access rules if login.visibility_requires_access is set to true on a page',
+                'USER_IS_REMOTE_ONLY' => 'This user authenticated with a remote service, so profile cannot be saved',
+                '2FA_TITLE' => '2-Factor Authentication',
+                '2FA_INSTRUCTIONS' => '##### 2-Factor Authentication
+You have **2FA** enabled on this account. Please use your **2FA** app to enter the current **6-digit code** to complete the login process.',
+                '2FA_REGEN_HINT' => 'Regenerating the secret will require you to update your authenticator app',
+                '2FA_FAILED' => 'Invalid 2-Factor Authentication code, please try again...',
+                '2FA_ENABLED' => '2FA Enabled',
+                '2FA_CODE_INPUT' => '000000',
+                '2FA_SECRET' => '2FA Secret',
+                '2FA_SECRET_HELP' => 'Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it\'s a good idea to backup the secret in a safe location, in case you need to reinstall your app. Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information ',
+                '2FA_REGENERATE' => 'Regenerate',
+                'BTN_CANCEL' => 'Cancel'
             ],
             'PLUGINS' => [
                 'EXTERNAL_LINKS' => [
@@ -6230,6 +6264,7 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'RECAPTCHA_SECRET_KEY_HELP' => 'For more info visit https://developers.google.com/recaptcha',
                 'GENERAL' => 'General',
                 'USE_BUILT_IN_CSS' => 'Use built-in CSS',
+                'USE_INLINE_CSS' => 'Use inline CSS',
                 'FILEUPLOAD_PREVENT_SELF' => 'Cannot use "%s" outside of pages.',
                 'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'Unable to upload file %s: %s',
                 'FILEUPLOAD_UNABLE_TO_MOVE' => 'Unable to move file %s to "%s"',
@@ -7113,10 +7148,127 @@ Tienes **2FA** habilitado en esta cuenta. Por favor usa tu aplicación **2FA** p
                 '2FA_SECRET_HELP' => 'Escanea este código QR en tu [Aplicación de Autenticador](https://learn.getgrav.org/admin-panel/2fa#apps). También es una buena idea hacer un respaldo del secreto en una ubicación segura, para el caso que necesites reinstalar tu aplicación. Revisa la [Documentación de Grav](https://learn.getgrav.org/admin-panel/2fa) para mas información ',
                 '2FA_REGENERATE' => 'Regenerar'
             ],
+            'PLUGIN_LOGIN' => [
+                'USERNAME' => 'Nombre de usuario',
+                'EMAIL' => 'Email',
+                'USERNAME_EMAIL' => 'Nombre de usuario/Email',
+                'PASSWORD' => 'Contraseña',
+                'ACCESS_DENIED' => 'Acceso denegado...',
+                'LOGIN_FAILED' => 'El acceso ha fallado...',
+                'LOGIN_SUCCESSFUL' => 'Ha accedido correctamente.',
+                'BTN_LOGIN' => 'Acceder',
+                'BTN_LOGOUT' => 'Salir',
+                'BTN_FORGOT' => 'Olvidado',
+                'BTN_REGISTER' => 'Registro',
+                'BTN_RESET' => 'Restaurar contraseña',
+                'BTN_SEND_INSTRUCTIONS' => 'Enviar instrucciones para restauración',
+                'RESET_LINK_EXPIRED' => 'El enlace para la restauración ha caducado, inténtelo de nuevo.',
+                'RESET_PASSWORD_RESET' => 'La contraseña ha sido restaurada',
+                'RESET_INVALID_LINK' => 'Ha utilizado un enlace de restauración inválido, inténtelo de nuevo.',
+                'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instructions to reset your password have been sent via email',
+                'FORGOT_FAILED_TO_EMAIL' => 'No se ha podido enviar el email con instrucciones, inténtelo de nuevo.',
+                'FORGOT_CANNOT_RESET_EMAIL_NO_EMAIL' => 'No se puede restaurar la contraseña para %s, no hay dirección de email.',
+                'FORGOT_USERNAME_DOES_NOT_EXIST' => 'No existe ningún usuario con el nombre <b>%s</b>.',
+                'FORGOT_EMAIL_NOT_CONFIGURED' => 'No se puede restaurar la contraseña. Este sitio no está configurado para enviar emails.',
+                'FORGOT_EMAIL_SUBJECT' => '%s solicitud de restauración de contraseña',
+                'FORGOT_EMAIL_BODY' => '<h1>Restauración de contraseña</h1><p>Estimado/a %1$s,</p><p>Se ha realizado una petición de restauración de contraseña en <b>%4$s</b>.</p><p><br /><a href="%2$s" class="btn-primary">Pulse aquí para restaurar su contraseña</a><br /><br /></p><p>Como alternativa puede copiar la siguiente URL en la barra de direcciones de su navegador:</p> <p class="word-break"><a href="%2$s">%2$s</a></p> <p><br />Saludos cordiales,<br /><br />%3$s</p>',
+                'SESSION' => '&ldquo;Recuérdame&rdquo;-Sesión',
+                'REMEMBER_ME' => 'Recuérdame',
+                'REMEMBER_ME_HELP' => 'Fija una cookie persistente en su navegador para permitir autenticación persistente entre sesiones.',
+                'REMEMBER_ME_STOLEN_COOKIE' => 'Alguien ha usado su información de acceso para acceder a este sitio. Se han cerrado todas las sesiones. Vuelva a acceder con sus credenciales y compruebe sus datos.',
+                'BUILTIN_CSS' => 'Usar CSS incorporado',
+                'BUILTIN_CSS_HELP' => 'Incluir CSS proporcionado por el plugin de administración',
+                'ROUTE' => 'Ruta de acceso',
+                'ROUTE_HELP' => 'Ruta de acceso personalizada que proporciona su tema',
+                'ROUTE_REGISTER' => 'Ruta de registro',
+                'ROUTE_REGISTER_HELP' => 'Ruta a la página de registro. Ajuste esto si desea utilizar la página de registro incorporada. Déjelo vacío so tiene su propio formulario de registro.',
+                'USERNAME_NOT_VALID' => 'El nombre de usuario deberá contener entre 3 y 16 caracteresEl nombre de usuario deberá contener entre 3 y 16 caracteres y puede incluir minúsculas, números, guiones bajos y normales. No se permiten letras mayúsculas, espacios ni caracteres especiales.',
+                'USERNAME_NOT_AVAILABLE' => 'El nombre de usuario %s ya existe, elija otro.',
+                'EMAIL_NOT_AVAILABLE' => 'El email %s ya existe, elija otro.',
+                'PASSWORD_NOT_VALID' => 'La contraseña debe contener por lo menois un número y una letra mayúscula y minúscula, y debe ser de al menos 8 caracteres.',
+                'PASSWORDS_DO_NOT_MATCH' => 'Las contraseñas no coinciden. Compruebe que ha introducido la misma contrasenna dos veces.',
+                'USER_NEEDS_EMAIL_FIELD' => 'El usuario necesita un campo de email.',
+                'EMAIL_SENDING_FAILURE' => 'Ha ocurrido un error al enviar el email.',
+                'ACTIVATION_EMAIL_SUBJECT' => 'Active su cuenta en %s',
+                'ACTIVATION_EMAIL_BODY' => '<h1>%Activación de cuenta</h1><p>Hola %1$s, </p><p>Su cuenta en <b>%3$s</b> ha sido creada con éxito, pero no podrá acceder hasta que se active..</p><p><br/><a href="%2$s" class="btn-primary">Active su cuenta ahora</a><br/><br/></p><p>Como alternativa puede copiar la siguiente URL en la barra de direcciones de su navegador:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Saludos cordiales,<br/><br/>%4$s</p>',
+                'ACTIVATION_NOTICE_MSG' => 'Hola %s, su cuenta ha sido creada, compruebe su correo electrónico para acivarla completamente.',
+                'WELCOME_EMAIL_SUBJECT' => 'Bienvenido/a a %s',
+                'WELCOME_EMAIL_BODY' => '<h1>Cuenta creada</h1><p>Hola %1$s, </p><p>Su cuenta en <b>%3$s</b> ha sido creada con éxito.</p><p><br/><a href="%2$s" class="btn-primary">Acceda ahora</a><br/><br/></p><p>Como alternativa puede copiar la siguiente URL en la barra de direcciones de su navegador:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Saludos cordiales,<br/><br/>%4$s</p>',
+                'WELCOME_NOTICE_MSG' => 'Hola %s, su cuenta ha sido creada con éxito.',
+                'NOTIFICATION_EMAIL_SUBJECT' => 'Usuario nuevo en %s',
+                'NOTIFICATION_EMAIL_BODY' => '<h1>Usuario nuevo</h1><p>Hola, se ha registrado un usuario nuevo en %1$s.</p><p><ul><li>Nombre de usuario: <b>%2$s</b></li><li>Email: <b>%3$s</b></ul><p><p><br/><a href="%4$s" class="btn-primary">Visite %1$s</a><br/><br/></p>',
+                'EMAIL_FOOTER' => 'GetGrav.org',
+                'ACTIVATION_LINK_EXPIRED' => 'Enlace de activación caducado',
+                'USER_ACTIVATED_SUCCESSFULLY' => 'Usiario activado con éxito',
+                'INVALID_REQUEST' => 'Solicitud inválida',
+                'USER_REGISTRATION' => 'Registro de usuarios',
+                'USER_REGISTRATION_ENABLED_HELP' => 'Activar el registro de usuarios',
+                'VALIDATE_PASSWORD1_AND_PASSWORD2' => 'Validar contraseñas',
+                'VALIDATE_PASSWORD1_AND_PASSWORD2_HELP' => 'Validar y comparar dos campos diferentes para las contraseñas, llamados `password1` y `password2`. Active esto si tiene dos cambpos de contraseña en el formulario de registro.',
+                'SET_USER_DISABLED' => 'Crear usuario inactivo',
+                'SET_USER_DISABLED_HELP' => 'Utilizado en combinación con `Enviar email de activación`. Añade el usuario a Grav, pero lo marca inactivo.',
+                'LOGIN_AFTER_REGISTRATION' => 'Acceder con el usuario después del registro.',
+                'LOGIN_AFTER_REGISTRATION_HELP' => 'Hacer que el usuario acceda inmediatamente después del registro. Si se requiere activación mediante email, al usuario se le permitirá entrada justo después de activar la cuenta.',
+                'SEND_ACTIVATION_EMAIL' => 'Enviar email de activación',
+                'SEND_ACTIVATION_EMAIL_HELP' => 'Envía un email al usuario para activar su cuenta. Active la opción `Crear usuario inactivo` si usa esta característica de modo que el usuario se creará en modo inactivo y se enviará un email para activar la cuenta.',
+                'SEND_NOTIFICATION_EMAIL' => 'Enviar email de notificación',
+                'SEND_NOTIFICATION_EMAIL_HELP' => 'Notifica al administrador del sitio de que se ha registrado un usuario nuevo. El email se enviará a la dirección del campo `Para` en la configuración del Plugin Email.',
+                'SEND_WELCOME_EMAIL' => 'Enviar email de bienvenida',
+                'SEND_WELCOME_EMAIL_HELP' => 'Envía un email al usuario recién creado',
+                'DEFAULT_VALUES' => 'Valores predeterminados',
+                'DEFAULT_VALUES_HELP' => 'Lista de nombres de campo y sus valores asociados que se añadirán al perfil de usuario (archivo yaml) de forma predeterminada, sin ser configurables por el usuario. Separe los valores con coma, sin espacios entre los valores.',
+                'ADDITIONAL_PARAM_KEY' => 'Parámetro',
+                'ADDITIONAL_PARAM_VALUE' => 'Valor',
+                'REGISTRATION_FIELDS' => 'Campos de registro',
+                'REGISTRATION_FIELDS_HELP' => 'Añada los campos que se incluirán en el archivo Yaml del usuario. Los campos que no se muestren aquí no estarán presentes en el formulario de registro.',
+                'REGISTRATION_FIELD_KEY' => 'Nombre del campo',
+                'REDIRECT_AFTER_LOGIN' => 'Redireccionar después del acceso',
+                'REDIRECT_AFTER_LOGIN_HELP' => 'Ruta personalizada para redireccionar al acceder',
+                'REDIRECT_AFTER_REGISTRATION' => 'Redireccionar después del registro',
+                'REDIRECT_AFTER_REGISTRATION_HELP' => 'Ruta personalizada para redireccionar después del registro',
+                'OPTIONS' => 'Opciones',
+                'EMAIL_VALIDATION_MESSAGE' => 'Debe ser un email válido',
+                'PASSWORD_VALIDATION_MESSAGE' => 'La contraseña debe contener al menos un número, una mayúscula y una minúscula, y debe ser de al menos 8 caracteres.',
+                'TIMEOUT_HELP' => 'Fija el tiempo de caducidad de la sesión en segundos cuando `Recuérdame` está activado y marcadopor el usuario. El mínimo es 604800, que es una semana.',
+                'GROUPS_HELP' => 'Lista de grupos del que formará parte el usuario reci´n registrado.',
+                'SITE_ACCESS_HELP' => 'Lista de niveles de acceso al sitio que tendrá el usuario nuevo. Por ejemplo: `login` -> `true` ',
+                'WELCOME' => 'Bienvenido/a',
+                'REDIRECT_AFTER_ACTIVATION' => 'Redireccionar después de activación de usuario',
+                'REDIRECT_AFTER_ACTIVATION_HELP' => 'Se usará si el usuario debe activar la cuenta vía email. Una vez activado, se mostrará esta ruta',
+                'REGISTRATION_DISABLED' => 'Registro desactivado',
+                'USE_PARENT_ACL_LABEL' => 'Usar reglas de acceso del padre',
+                'USE_PARENT_ACL_HELP' => 'Comprobar reglas de acceso superiores si no hay reglas de acceso definidas.',
+                'PROTECT_PROTECTED_PAGE_MEDIA_LABEL' => 'Proteger medios de una página protegida por acceso',
+                'PROTECT_PROTECTED_PAGE_MEDIA_HELP' => 'Si está activo, los medios (imágenes, etc.) de una página protegido por acceso también estarán protegidos y solo serán visibles para usuarios que hayan accedido (login)',
+                'SECURITY_TAB' => 'Seguridad',
+                'MAX_RESETS_COUNT' => 'Cantidad máxima de restauraciones de contraseña',
+                'MAX_RESETS_COUNT_HELP' => 'Protección de avalancha de restauración de contraseña (0 - ilimitado)',
+                'MAX_RESETS_INTERVAL' => 'Intervalo máximo de restauración de contraseña',
+                'MAX_RESETS_INTERVAL_HELP' => 'El intervalo máximo de tiempo para el valor máximo de restauración',
+                'FORGOT_CANNOT_RESET_IT_IS_BLOCKED' => 'No se puede restaurar la contraseña de %s, la funcionalidad de restauración ha sido bloqueada temporalmente. Inténtelo de nuevo más tarde (máximo %s minutos)',
+                'MAX_LOGINS_COUNT' => 'Número máximo de accesos',
+                'MAX_LOGINS_COUNT_HELP' => 'Protección de avalancha (0 - ilimitado)',
+                'MAX_LOGINS_INTERVAL' => 'Intervalo máximo de acceso',
+                'MAX_LOGINS_INTERVAL_HELP' => 'El intervalo de tiempo para el número máximo de accesos',
+                'TOO_MANY_LOGIN_ATTEMPTS' => 'Ha habido demasiados intentos fallidos de acceso en el tiempo permitido (%s minutos)',
+                'SECONDS' => 'segundos',
+                'RESETS' => 'reinicios',
+                'ATTEMPTS' => 'intentos',
+                'ROUTES' => 'Rutas',
+                'ROUTE_FORGOT' => 'Ruta de contraseña olvidada',
+                'ROUTE_RESET' => 'Ruta de restauración de contraseña',
+                'ROUTE_PROFILE' => 'Ruta del perfil de usuario',
+                'ROUTE_ACTIVATE' => 'Ruta de activación de usuario',
+                'LOGGED_OUT' => 'Su sesión ha finalizado correctamente...',
+                'PAGE_RESTRICTED' => 'Acceso restringido, acceda con sus credenciales...',
+                'DYNAMIC_VISIBILITY' => 'Visibilidad de páginas dinámicas',
+                'DYNAMIC_VISIBILITY_HELP' => 'Permite el procesamiento de la visibilidad de páginas basada en reglas de acceso si login.visibility_requires_access es true en un página'
+            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Falló la validación del formulario. Uno o más campos obligatorios no fueron cubiertos.',
                 'NONCE_NOT_VALIDATED' => 'Oops, hay un problema, por favor revise la información e intente enviar el formulario otra vez.',
                 'FILES' => 'Subida de Ficheros',
+                'FORM_ALREADY_SUBMITTED' => 'Este formulario ya ha sido enviado',
                 'ALLOW_MULTIPLE' => 'Permitir más de un fichero',
                 'ALLOW_MULTIPLE_HELP' => 'Permitir seleccionar más de un fichero para subir.',
                 'DESTINATION' => 'Destino',
@@ -7124,11 +7276,48 @@ Tienes **2FA** habilitado en esta cuenta. Por favor usa tu aplicación **2FA** p
                 'ACCEPT' => 'MIME Types permitidos',
                 'ACCEPT_HELP' => 'Una lista de  MIME Types que se permiten subir.',
                 'ERROR_VALIDATING_CAPTCHA' => 'Error al comprobar el Captcha',
+                'DATA_SUMMARY' => 'Este es el resumen de lo que nos has escrito:',
+                'NO_FORM_DATA' => 'No hay datos disponibles del formulario',
                 'RECAPTCHA' => 'ReCaptcha',
                 'RECAPTCHA_SITE_KEY' => 'Site key',
                 'RECAPTCHA_SITE_KEY_HELP' => 'Para más información visita https://developers.google.com/recaptcha',
                 'RECAPTCHA_SECRET_KEY' => 'Secret key',
-                'RECAPTCHA_SECRET_KEY_HELP' => 'Para más información visita https://developers.google.com/recaptcha'
+                'RECAPTCHA_SECRET_KEY_HELP' => 'Para más información visita https://developers.google.com/recaptcha',
+                'GENERAL' => 'General',
+                'USE_BUILT_IN_CSS' => 'Utilizar CSS incorporado',
+                'USE_INLINE_CSS' => 'Utilizar CSS en línea',
+                'FILEUPLOAD_PREVENT_SELF' => 'No se puede utilizar "%s" fuera de las páginas',
+                'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'No se puede subir el fichero %s: %s',
+                'FILEUPLOAD_UNABLE_TO_MOVE' => 'No se puede mover el fichero %s to "%s"',
+                'DROPZONE_CANCEL_UPLOAD' => 'Cancelar subida',
+                'DROPZONE_CANCEL_UPLOAD_CONFIRMATION' => '¿Estas seguro que quieres cancelar esta subida?',
+                'DROPZONE_DEFAULT_MESSAGE' => 'Arrastra tus ficheros aquí o <strong>haz click en esta área</strong>',
+                'DROPZONE_FALLBACK_MESSAGE' => 'Tu navegador no soporta el arrastrar y soltar ficheros de subida.',
+                'DROPZONE_FALLBACK_TEXT' => 'Por favor utiliza el formulario alternativo que esta debajo, para subir ficheros como antiguamente.',
+                'DROPZONE_FILE_TOO_BIG' => 'Fichero demasiado grande ({{filesize}}MiB). Máximo tamaño: {{maxFilesize}}MiB.',
+                'DROPZONE_INVALID_FILE_TYPE' => 'No puedes subir ficheros de este tipo.',
+                'DROPZONE_MAX_FILES_EXCEEDED' => 'No puedes subir mas ficheros.',
+                'DROPZONE_REMOVE_FILE' => 'Borrar fichero',
+                'DROPZONE_REMOVE_FILE_CONFIRMATION' => '¿Estas seguro de que quieres borrar este fichero?',
+                'DROPZONE_RESPONSE_ERROR' => 'El servidor respondió con el código de estado {{statusCode}}.',
+                'YES' => 'Si',
+                'NO' => 'No',
+                'REFRESH_PREVENTION' => 'Prevenir refresco',
+                'REFRESH_PREVENTION_HELP' => 'Utiliza el ID único del formulario para garantizar que el este no se vuelve a procesar cuando se refresca el navegador',
+                'LIMIT' => 'Límite',
+                'LIMIT_HELP' => 'Máximo número de ficheros permitidos por campo (múltiples requeridos)',
+                'FILESIZE' => 'Tamaño máximo de fichero',
+                'FILESIZE_HELP' => 'Tamaño máximo de fichero permitido (en MB), 0 = Utiliza el de por defecto del sistema',
+                'AVOID_OVERWRITING' => 'Evitar sobreescribir',
+                'AVOID_OVERWRITING_HELP' => 'Evita que los ficheros con el mismo nombre sean sobreescritos. Se agregará el prefijo de fecha',
+                'RANDOM_NAME' => 'Nombre aleatorio',
+                'RANDOM_NAME_HELP' => 'Genera una cadela aleatoria de 15 caracteres como nombre de fichero a subir',
+                'CLIENT_SIDE_VALIDATION' => 'Validación del lado del cliente',
+                'CLIENT_SIDE_VALIDATION_HELP' => 'Por defecto los formularios usarán validación HTML5 del lado del cliente como primera línea de defensa',
+                'INLINE_ERRORS' => 'Errores en línea',
+                'INLINE_ERRORS_HELP' => 'Útil con \'validación del lado del cliente\' desactivado, muestra errores en el formulario contextual en línea',
+                'RESOLUTION_MIN' => '{{attr}} fué menor que el mínimo {{min}}px <br />',
+                'RESOLUTION_MAX' => '{{attr}} fué mayor que el máximo {{max}}px <br />'
             ],
             'PLUGIN_EMAIL' => [
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Por favor configura una dirección de \'remitente\' en la configuración del Plugin de Email o en el formulario',
@@ -11467,11 +11656,12 @@ Beállítottad a **Kétlépcsős Hitelesítést** ehhez a fiókhoz. Kérlek hasz
                 'ACCESS_DENIED' => 'Hozzáférés megtagadva...',
                 'LOGIN_FAILED' => 'Sikertelen belépés...',
                 'LOGIN_SUCCESSFUL' => 'Sikeresen beléptél.',
+                'LOGGED_OUT' => 'Sikeresen kiléptél.',
                 'BTN_LOGIN' => 'Belépés',
                 'BTN_LOGOUT' => 'Kilépés',
                 'BTN_FORGOT' => 'Elfelejtettem',
                 'BTN_REGISTER' => 'Regisztráció',
-                'REMEMBER_ME' => 'Jegyezz Meg',
+                'REMEMBER_ME' => 'Jegyezz meg',
                 'REMEMBER_ME_HELP' => 'Elhelyezünk egy hosszú lejáratú sütit a böngésződben, hogy belépve maradhass két munkamenet között.',
                 'REMEMBER_ME_STOLEN_COOKIE' => 'Valaki a belépési adataid felhasználásával látogatta meg ezt az oldalt! Minden munkamenetet kiléptettünk. Kérlek, jelentkezz be ismét és ellenőrizd az adataidat.',
                 'BUILTIN_CSS' => 'Beépített CSS használata',
@@ -15566,6 +15756,69 @@ Du har **2FA** aktivert på denne kontoen. Bruk din **2FA** app for å angi gjel
                 '2FA_SECRET' => '2FA hemmelig nøkkel',
                 '2FA_SECRET_HELP' => 'Skanne QR koden inn i [Autentiseringsappen] (https://learn.getgrav.org/admin-panel/2fa#apps). Det er også lurt å sikkerhetskopiere den hemmelige nøkkelen på et trygt sted i tilfelle du må re-installere appen.  Sjekk [Gravs dokumentasjon] (https://learn.getgrav.org/admin-panel/2fa) for mer info ',
                 '2FA_REGENERATE' => 'Opprett ny'
+            ],
+            'PLUGIN_LOGIN' => [
+                'USERNAME' => 'Brukernavn',
+                'EMAIL' => 'E-post',
+                'USERNAME_EMAIL' => 'Brukernavn/E-post',
+                'PASSWORD' => 'Passord',
+                'ACCESS_DENIED' => 'Adgang forbudt...',
+                'LOGIN_FAILED' => 'Innlogging feilet...',
+                'LOGIN_SUCCESSFUL' => 'Du har logget inn.',
+                'BTN_LOGIN' => 'Logg inn',
+                'BTN_LOGOUT' => 'Logg ut',
+                'BTN_FORGOT' => 'Glemt passord',
+                'BTN_REGISTER' => 'Registrer',
+                'BTN_RESET' => 'Tilbakestill Passord',
+                'BTN_SEND_INSTRUCTIONS' => 'Send instruksjoner for tilbakestilling',
+                'RESET_LINK_EXPIRED' => 'Tilbakestillingslenke har utløpt, vennligst prøv igjen',
+                'RESET_PASSWORD_RESET' => 'Passord har blitt nullstilt',
+                'RESET_INVALID_LINK' => 'Ugyldig ilbakestillingslenke, vennligst prøv igjen',
+                'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instruksjoner for å tilbakestille passordet ditt er sendt via e-post',
+                'FORGOT_FAILED_TO_EMAIL' => 'Kunne ikke sende instruksjoner, prøv igjen senere',
+                'FORGOT_CANNOT_RESET_EMAIL_NO_EMAIL' => 'Kan ikke tilbakestille passord for %s, ingen e-postadresse er angitt',
+                'FORGOT_USERNAME_DOES_NOT_EXIST' => 'Bruker med brukernavn <b>%s</ b> eksisterer ikke',
+                'FORGOT_EMAIL_NOT_CONFIGURED' => 'Kan ikke tilbakestille passord. Dette nettstedet er ikke konfigurert til å sende e-post',
+                'FORGOT_EMAIL_SUBJECT' => 'Forespørsel om tilbakestilling av passord for %s',
+                'FORGOT_EMAIL_BODY' => '<h1>Tilbekestilling av passord</h1><p>%1$s,</p><p>En forespørsel om tilbakestilling av passord ble gjort på <b>%4$s</b>.</p><p><br /><a href="%2$s" class="btn-primary">Klikk her for å tilbakestille passordet ditt</a><br /><br /></p><p>Du kan også kopiere følgende nettadresse til nettleserens adressefelt:</p> <p class="word-break"><a href="%2$s">%2$s</a></p> <p><br />Vennlig hilsen,<br /><br />%3$s</p>',
+                'SESSION' => '&ldquo;Husk meg&rdquo;-Sesjon',
+                'REMEMBER_ME' => 'Husk meg',
+                'REMEMBER_ME_HELP' => 'Setter en informasjonskapsel i nettleseren din for å tillate persistent innlogging.',
+                'REMEMBER_ME_STOLEN_COOKIE' => 'Din innloggingsinformasjon har blitt benyttet et annet sted. Alle sesjoner har blitt logget ut. Vennligst logg inn med brukernavn og passord, og sjekk din brukerinformasjon.',
+                'BUILTIN_CSS' => 'Bruk innebygget stil',
+                'BUILTIN_CSS_HELP' => 'Bruk stil fra admin-plugin',
+                'ROUTE' => 'Adresse til innlogging',
+                'ROUTE_HELP' => 'Adresse til innlogging',
+                'USERNAME_NOT_VALID' => 'Brukernavn skal være fra 3 til 16 tegn, og kan bestå av små bokstaver, tall, understrek, and bindestrek. Store bokstaver, mellomrom og spesialtegn er ikke tillatt',
+                'USERNAME_NOT_AVAILABLE' => 'Brukernavnet %s er allerede i bruk, vennligst velg et annet brukernavn',
+                'EMAIL_NOT_AVAILABLE' => 'E-postadressen %s er i bruk, vennligst velg en annen e-postadresse',
+                'PASSWORD_NOT_VALID' => 'Passord må inneholde minst ett tall, en listen og en stor bokstav, og må være minst 8 tegn',
+                'PASSWORDS_DO_NOT_MATCH' => 'Passwordene er ikke like. Sjekk at du skrev inn samme passord to ganger',
+                'USER_NEEDS_EMAIL_FIELD' => 'Brukeren trenger felt for e-post',
+                'WELCOME_EMAIL_SUBJECT' => 'Velkommen til %s',
+                'ADDITIONAL_PARAM_VALUE' => 'Verdi',
+                'REGISTRATION_FIELD_KEY' => 'Feltnavn',
+                'REDIRECT_AFTER_LOGIN' => 'Gå til side etter innlogging',
+                'REDIRECT_AFTER_LOGIN_HELP' => 'Gå til side etter innlogging',
+                'OPTIONS' => 'Valg',
+                'EMAIL_VALIDATION_MESSAGE' => 'Må være en gyldig e-postadresse',
+                'PASSWORD_VALIDATION_MESSAGE' => 'Passordet må bestå av minst ett tall, både store og små bokstaver, og minst 8 tegn',
+                'WELCOME' => 'Velkommen',
+                'SECURITY_TAB' => 'Sikkerhet',
+                'MAX_RESETS_COUNT' => 'Maksimum antall tilbakestilling av passord',
+                'MAX_RESETS_INTERVAL' => 'Minimum tid mellom tilbakestilling av passord',
+                'MAX_RESETS_INTERVAL_HELP' => 'Minimum tid mellom hvert forsøk på tilbakestilling av passord',
+                'MAX_LOGINS_COUNT' => 'Maksimum antall innlogginger',
+                'MAX_LOGINS_INTERVAL' => 'Maksimum innloggingsinterval',
+                'MAX_LOGINS_INTERVAL_HELP' => 'Tidsintervall for telling av innlogginsforsøk',
+                'TOO_MANY_LOGIN_ATTEMPTS' => 'For mange innloggingsforsøk i løpet av %s minutter',
+                'SECONDS' => 'sekunder',
+                'RESETS' => 'nullstillinger',
+                'ATTEMPTS' => 'forsøk',
+                'ROUTE_FORGOT' => 'Adresse for &rdquo;Glemt passord&rdquo;',
+                'ROUTE_RESET' => 'Adresse for tilbakestilling av passord',
+                'ROUTE_PROFILE' => 'Adresse til brukerprofil',
+                'PAGE_RESTRICTED' => 'Begrenset tilgang, vennligst logg inn...'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 Tittel: %1$s
@@ -22741,7 +22994,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '6f5b13bc3514babf3a0a9099e0182060',
-        'timestamp' => 1532457994
+        'checksum' => 'd99bcf53b55971762d46c6e5833b339f',
+        'timestamp' => 1532459357
     ]
 ];

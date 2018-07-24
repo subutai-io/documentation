@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/admin/languages/cs.yaml',
-    'modified' => 1521196402,
+    'modified' => 1532459352,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Jedná se o beta verzi! V ostrém provozu používejte pouze na vlastní nebezpečí...',

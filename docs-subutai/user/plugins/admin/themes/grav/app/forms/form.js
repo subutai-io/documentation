@@ -35,8 +35,8 @@ export default class Form {
 
         if (saveTask.length) {
             $(global).on('keydown', function(event) {
-                var key = String.fromCharCode(event.which).toLowerCase();
-                if (((event.ctrlKey && !event.altKey) || event.metaKey) && key === 's') {
+                const key = String.fromCharCode(event.which).toLowerCase();
+                if (!event.shiftKey && ((event.ctrlKey && !event.altKey) || event.metaKey) && key === 's') {
                     event.preventDefault();
                     saveTask.click();
                 }

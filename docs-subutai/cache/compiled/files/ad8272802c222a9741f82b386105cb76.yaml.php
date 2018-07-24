@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/external_links/blueprints.yaml',
-    'modified' => 1521196414,
+    'modified' => 1532459346,
     'data' => [
         'name' => 'External Links',
-        'version' => '1.6.0',
+        'version' => '1.6.1',
         'description' => 'This plugin adds small icons to external and mailto links, informing users the link will take them to a new site or open their email client.',
         'icon' => 'external-link',
         'author' => [

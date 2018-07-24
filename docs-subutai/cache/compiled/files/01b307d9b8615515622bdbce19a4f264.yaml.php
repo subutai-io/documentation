@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/login/languages/en.yaml',
-    'modified' => 1521196408,
+    'modified' => 1532459357,
     'data' => [
         'PLUGIN_LOGIN' => [
             'USERNAME' => 'Username',
@@ -24,6 +24,7 @@ return [
             'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instructions to reset your password have been sent via email',
             'FORGOT_FAILED_TO_EMAIL' => 'Failed to email instructions, please try again later',
             'FORGOT_CANNOT_RESET_EMAIL_NO_EMAIL' => 'Cannot reset password for %s, no email address is set',
+            'FORGOT_CANNOT_RESET_EMAIL_NO_PASSWORD' => 'Cannot reset password for %s, this email is associated with a remote account',
             'FORGOT_USERNAME_DOES_NOT_EXIST' => 'User with username <b>%s</b> does not exist',
             'FORGOT_EMAIL_NOT_CONFIGURED' => 'Cannot reset password. This site is not configured to send emails',
             'FORGOT_EMAIL_SUBJECT' => '%s Password Reset Request',
@@ -46,7 +47,7 @@ return [
             'USER_NEEDS_EMAIL_FIELD' => 'The user needs an email field',
             'EMAIL_SENDING_FAILURE' => 'An error occurred while sending the email',
             'ACTIVATION_EMAIL_SUBJECT' => 'Activate your account on %s',
-            'ACTIVATION_EMAIL_BODY' => '<h1>%Account Activation</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>, but you cannot login until it is activated.</p><p><br/><a href="%2$s" class="btn-primary">Activate Your Account Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
+            'ACTIVATION_EMAIL_BODY' => '<h1>Account Activation</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>, but you cannot login until it is activated.</p><p><br/><a href="%2$s" class="btn-primary">Activate Your Account Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
             'ACTIVATION_NOTICE_MSG' => 'Hi %s, your account is created, please check your email to fully activate it',
             'WELCOME_EMAIL_SUBJECT' => 'Welcome to %s',
             'WELCOME_EMAIL_BODY' => '<h1>Account Created</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>.</p><p><br/><a href="%2$s" class="btn-primary">Login Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
@@ -80,6 +81,8 @@ return [
             'REGISTRATION_FIELD_KEY' => 'Field name',
             'REDIRECT_AFTER_LOGIN' => 'Redirect after login',
             'REDIRECT_AFTER_LOGIN_HELP' => 'Custom route to redirect after login',
+            'REDIRECT_AFTER_LOGOUT' => 'Redirect after logout',
+            'REDIRECT_AFTER_LOGOUT_HELP' => 'Custom route to redirect after logout',
             'REDIRECT_AFTER_REGISTRATION' => 'Redirect after registration',
             'REDIRECT_AFTER_REGISTRATION_HELP' => 'Custom route to redirect after the registration',
             'OPTIONS' => 'Options',
@@ -118,7 +121,19 @@ return [
             'LOGGED_OUT' => 'You have been successfully logged out...',
             'PAGE_RESTRICTED' => 'Access is restricted, please login...',
             'DYNAMIC_VISIBILITY' => 'Dynamic Page Visibility',
-            'DYNAMIC_VISIBILITY_HELP' => 'Allows dynamic processing of page visibility base on access rules if login.visibility_requires_access is set to true on a page'
+            'DYNAMIC_VISIBILITY_HELP' => 'Allows dynamic processing of page visibility base on access rules if login.visibility_requires_access is set to true on a page',
+            'USER_IS_REMOTE_ONLY' => 'This user authenticated with a remote service, so profile cannot be saved',
+            '2FA_TITLE' => '2-Factor Authentication',
+            '2FA_INSTRUCTIONS' => '##### 2-Factor Authentication
+You have **2FA** enabled on this account. Please use your **2FA** app to enter the current **6-digit code** to complete the login process.',
+            '2FA_REGEN_HINT' => 'Regenerating the secret will require you to update your authenticator app',
+            '2FA_FAILED' => 'Invalid 2-Factor Authentication code, please try again...',
+            '2FA_ENABLED' => '2FA Enabled',
+            '2FA_CODE_INPUT' => '000000',
+            '2FA_SECRET' => '2FA Secret',
+            '2FA_SECRET_HELP' => 'Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it\'s a good idea to backup the secret in a safe location, in case you need to reinstall your app. Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information ',
+            '2FA_REGENERATE' => 'Regenerate',
+            'BTN_CANCEL' => 'Cancel'
         ]
     ]
 ];

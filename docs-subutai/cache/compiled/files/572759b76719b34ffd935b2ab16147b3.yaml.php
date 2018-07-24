@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/system/config/site.yaml',
-    'modified' => 1520791984,
+    'modified' => 1532459185,
     'data' => [
         'title' => 'Grav',
         'default_lang' => 'en',
         'author' => [
             'name' => 'John Appleseed',
-            'email' => 'john@email.com'
+            'email' => 'john@example.com'
         ],
         'taxonomies' => [
             0 => 'category',

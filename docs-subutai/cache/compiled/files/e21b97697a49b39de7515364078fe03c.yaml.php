@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/form/blueprints.yaml',
-    'modified' => 1521196406,
+    'modified' => 1532459343,
     'data' => [
         'name' => 'Form',
-        'version' => '2.13.0',
+        'version' => '2.15.1',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [
@@ -20,7 +20,7 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.3.9'
+                'version' => '>=1.4.5'
             ]
         ],
         'form' => [
@@ -46,6 +46,19 @@ return [
                         'built_in_css' => [
                             'type' => 'toggle',
                             'label' => 'PLUGIN_FORM.USE_BUILT_IN_CSS',
+                            'highlight' => 1,
+                            'default' => 1,
+                            'options' => [
+                                1 => 'Enabled',
+                                0 => 'Disabled'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'inline_css' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_FORM.USE_INLINE_CSS',
                             'highlight' => 1,
                             'default' => 1,
                             'options' => [

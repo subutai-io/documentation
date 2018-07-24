@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/system/config/media.yaml',
-    'modified' => 1520791984,
+    'modified' => 1532459185,
     'data' => [
         'types' => [
             'defaults' => [

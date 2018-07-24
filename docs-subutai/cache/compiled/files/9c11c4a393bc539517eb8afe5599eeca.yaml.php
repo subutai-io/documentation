@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/external_links/external_links.yaml',
-    'modified' => 1521196416,
+    'modified' => 1532459346,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

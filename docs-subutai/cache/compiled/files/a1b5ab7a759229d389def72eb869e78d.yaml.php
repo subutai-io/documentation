@@ -2,10 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/form/form.yaml',
-    'modified' => 1521196406,
+    'modified' => 1532459343,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,
+        'inline_css' => true,
         'refresh_prevention' => false,
         'client_side_validation' => true,
         'inline_errors' => false,

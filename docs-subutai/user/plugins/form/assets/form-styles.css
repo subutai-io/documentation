@@ -10,19 +10,20 @@
     color: #b52b27;
 }
 
+.form-honeybear {
+    visibility: hidden;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
 .form-errors p {
     margin: 0;
 }
 
-.form-input-file.dropzone {
-    position: relative;
-    min-height: 70px;
-    border-radius: 3px;
-    margin-bottom: .85rem;
-    border: 2px dashed #ccc;
-    color: #aaa;
-    padding: 0.5rem;
-}
+
 
 .form-input-file input {
     display: none;
@@ -36,6 +37,16 @@
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
+}
+
+.form-input-file.dropzone {
+    position: relative;
+    min-height: 70px;
+    border-radius: 3px;
+    margin-bottom: .85rem;
+    border: 2px dashed #ccc;
+    color: #aaa;
+    padding: 0.5rem;
 }
 
 .form-input-file.dropzone .dz-preview {
@@ -86,8 +97,7 @@
     height: 100px;
 }
 
-.signature-pad--body
-canvas {
+.signature-pad--body canvas {
     position: absolute;
     left: 0;
     top: 0;

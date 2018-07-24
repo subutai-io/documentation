@@ -1,3 +1,73 @@
+# v2.15.1
+## 06/20/2018
+
+1. [](#improved)
+    * Including EXIF JS library in the modules dependencies to fix orientation when uploading images 
+1. [](#bugfix)
+   * Fix HTML data template for checkboxes fields where 'use' property is "keys" [#258](https://github.com/getgrav/grav-plugin-form/pull/258)
+
+# v2.15.0
+## 05/31/2018
+
+1. [](#new)
+    * Added support for `Uri::post()`
+    * Added support for `autocapitalize`, `inputmode`, and `spellcheck` options in field definitions
+
+# v2.14.1
+## 05/15/2018
+
+1. [](#bugfix)
+    * Fixed regression with select field, causing issues with filepicker field [grav-plugin-admin#1441](https://github.com/getgrav/grav-plugin-admin/issues/1441)
+    
+# v2.14.0
+## 05/11/2018
+
+1. [](#new)
+    * Make `pagemedia` field available outside of pages context
+    * Added option on fields to disable displaying of label (`display_label: false`)
+    * Moved Dropzone HTML into an overridable Twig template
+    * Added support for image upload delete in Dropzone `file` field
+1. [](#improved)
+    * Added support for `optgroup` within select field
+    * Save forms only once (stops extra work being done)
+    * Allow file field to pass dropzone options
+    * Added datasets support to fields
+    * Added `field.classes` support to display field
+1. [](#bugfix)
+    * Removed overridden class in `password` field
+    * Worked around forms being lost if form cache expired before page cache, see [#240](https://github.com/getgrav/grav-plugin-form/pull/240)
+    * Fixed default form in dynamically created page if header uses `forms` instead of old `form` field
+    * Escape placeholder text in default field
+
+# v2.13.3
+## 04/13/2018
+
+1. [](#new)
+    * Added support to save form data in raw format (yaml or json)
+    * Added new `timestamp` action to add a timestamp field
+
+# v2.13.2
+## 04/12/2018
+
+1. [](#new)
+    * Added event `onFormPrepareValidation` to allow some pre-processing before form validation
+    * Added new `postfix` and `dateraw` options to "Save" action
+1. [](#improved)
+    * Added support for `nest_id` boolean flag to `fieldset` field to nest sub-fields with name of fieldset  
+    * Added classes attribute to `spacer` field 
+1. [](#bugfix)
+    * Fixed `Form::setFields()` causing validation to fail on added and removed fields
+    
+# v2.13.1
+## 03/21/2018
+
+1. [](#improved)
+    * CAPTCHA fallback to `cURL` if `Fopen` is not allowed [#224](https://github.com/getgrav/grav-plugin-form/pull/244)
+    * Use `visibility:hidden` rather than `display:none` for honeypot field [#235](https://github.com/getgrav/grav-plugin-form/pull/235)
+    * Added support for markdown in checkbox field [#233](https://github.com/getgrav/grav-plugin-form/pull/233)
+    * Added option to control `inline_css: true|false` for fields such as honeypot
+    * Added class and CSS for honeypot field    
+
 # v2.13.0
 ## 03/09/2018
 
