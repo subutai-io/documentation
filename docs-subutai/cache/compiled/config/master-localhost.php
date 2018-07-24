@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1532459373,
-    'checksum' => 'ceae68987c49ff70dbd07a6b572683c0',
+    'timestamp' => 1532460368,
+    'checksum' => 'e3c65d5821d1d7f01c2e2f5c7f84a046',
     'files' => [
         'user/config' => [
             'media' => [
@@ -35,7 +35,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/config/plugins/simplesearch.yaml',
-                'modified' => 1521196362
+                'modified' => 1532460322
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -51,7 +51,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1521196426
+                'modified' => 1532460338
             ],
             'themes/learn2-git-sync' => [
                 'file' => 'user/config/themes/learn2-git-sync.yaml',
@@ -381,10 +381,7 @@ return [
                 'enabled' => true,
                 'built_in_css' => false,
                 'route' => '/search',
-                'template' => 'simplesearch_results',
-                'filters' => [
-                    'category' => 'docs'
-                ]
+                'template' => 'simplesearch_results'
             ]
         ],
         'media' => [
