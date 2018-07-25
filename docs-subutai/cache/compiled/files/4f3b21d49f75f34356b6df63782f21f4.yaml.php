@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/highlight/blueprints.yaml',
-    'modified' => 1521196422,
+    'modified' => 1532554914,
     'data' => [
         'name' => 'Highlight',
         'version' => '1.4.0',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/admin/themes/grav/templates/forms/fields/iconpicker/icons.yaml',
-    'modified' => 1532459352,
+    'modified' => 1532554913,
     'data' => [
         'icons' => [
             0 => [

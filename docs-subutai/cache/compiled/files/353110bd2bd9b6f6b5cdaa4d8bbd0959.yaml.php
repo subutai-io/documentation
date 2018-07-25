@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/git-sync/blueprints.yaml',
-    'modified' => 1521196420,
+    'modified' => 1532554913,
     'data' => [
         'name' => 'Git Sync',
         'version' => '1.0.4',

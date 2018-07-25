@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/system/languages/nb.yaml',
-    'modified' => 1532459185,
+    'modified' => 1532554913,
     'data' => [
         'MONTHS_OF_THE_YEAR' => [
             0 => 'januar',

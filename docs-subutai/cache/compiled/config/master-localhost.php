@@ -1,125 +1,125 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1532460748,
-    'checksum' => 'bd3874a392c34de0ee2e72991388347c',
+    'timestamp' => 1532555107,
+    'checksum' => 'ba2a54b9ea849d7e7e3d60ae1e0feb10',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'plugins/admin' => [
                 'file' => 'user/config/plugins/admin.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'plugins/anchors' => [
                 'file' => 'user/config/plugins/anchors.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'plugins/external_links' => [
                 'file' => 'user/config/plugins/external_links.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'plugins/feed' => [
                 'file' => 'user/config/plugins/feed.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'plugins/git-sync' => [
                 'file' => 'user/config/plugins/git-sync.yaml',
-                'modified' => 1532459373
+                'modified' => 1532554913
             ],
             'plugins/highlight' => [
                 'file' => 'user/config/plugins/highlight.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/config/plugins/simplesearch.yaml',
-                'modified' => 1532460322
+                'modified' => 1532554913
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1521196362
+                'modified' => 1532555107
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1532460748
+                'modified' => 1532554913
             ],
             'themes/learn2-git-sync' => [
                 'file' => 'user/config/themes/learn2-git-sync.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ],
             'themes/mytheme' => [
                 'file' => 'user/config/themes/mytheme.yaml',
-                'modified' => 1521196362
+                'modified' => 1532554913
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1532459185
+                'modified' => 1532554912
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1532459185
+                'modified' => 1532554912
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1532459185
+                'modified' => 1532554912
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1532459185
+                'modified' => 1532554912
             ]
         ],
         'user/plugins' => [
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1532459357
+                'modified' => 1532554914
             ],
             'plugins/highlight' => [
                 'file' => 'user/plugins/highlight/highlight.yaml',
-                'modified' => 1521196422
+                'modified' => 1532554914
             ],
             'plugins/youtube' => [
                 'file' => 'user/plugins/youtube/youtube.yaml',
-                'modified' => 1521196424
+                'modified' => 1532554914
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
-                'modified' => 1521196418
+                'modified' => 1532554913
             ],
             'plugins/external_links' => [
                 'file' => 'user/plugins/external_links/external_links.yaml',
-                'modified' => 1532459346
+                'modified' => 1532554913
             ],
             'plugins/git-sync' => [
                 'file' => 'user/plugins/git-sync/git-sync.yaml',
-                'modified' => 1521196420
+                'modified' => 1532554913
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1532459343
+                'modified' => 1532554913
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1521196410
+                'modified' => 1532554913
             ],
             'plugins/customadmin' => [
                 'file' => 'user/plugins/customadmin/customadmin.yaml',
-                'modified' => 1521196428
+                'modified' => 1532554913
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1532459352
+                'modified' => 1532554913
             ]
         ]
     ],
@@ -651,10 +651,10 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Learn2 with Git Sync',
+            'title' => 'Subutai Documentation v7',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'John Appleseed',
+                'name' => 'Subutai',
                 'email' => 'john@email.com'
             ],
             'taxonomies' => [

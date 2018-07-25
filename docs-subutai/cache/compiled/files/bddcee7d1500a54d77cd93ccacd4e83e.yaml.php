@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/system/blueprints/config/system.yaml',
-    'modified' => 1532459185,
+    'modified' => 1532554912,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [

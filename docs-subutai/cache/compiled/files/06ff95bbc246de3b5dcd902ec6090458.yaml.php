@@ -2,22 +2,18 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/config/system.yaml',
-    'modified' => 1532460608,
+    'modified' => 1532554913,
     'data' => [
         'absolute_urls' => false,
-        'timezone' => '',
-        'default_locale' => NULL,
         'param_sep' => ':',
         'wrapped_site' => false,
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
-        'custom_base_url' => '',
+        'force_lowercase_urls' => true,
         'username_regex' => '^[a-z0-9_-]{3,16}$',
         'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
+        'intl_enabled' => true,
         'languages' => [
-            'supported' => [
-                
-            ],
             'include_default_lang' => true,
             'translations' => true,
             'translations_fallback' => true,
@@ -26,7 +22,7 @@ return [
             'override_locale' => false
         ],
         'home' => [
-            'alias' => '/basics',
+            'alias' => '/welcome',
             'hide_in_urls' => false
         ],
         'pages' => [
@@ -39,7 +35,6 @@ return [
                 'count' => 20
             ],
             'dateformat' => [
-                'default' => NULL,
                 'short' => 'jS M Y',
                 'long' => 'F jS \\a\\t g:ia'
             ],
@@ -73,9 +68,7 @@ return [
                 5 => 'rss',
                 6 => 'atom'
             ],
-            'append_url_extension' => '',
             'expires' => 604800,
-            'cache_control' => NULL,
             'last_modified' => false,
             'etag' => false,
             'vary_accept_encoding' => false,
@@ -111,10 +104,7 @@ return [
             'cli_compatibility' => false,
             'lifetime' => 604800,
             'gzip' => false,
-            'allow_webserver_gzip' => false,
-            'redis' => [
-                'socket' => false
-            ]
+            'allow_webserver_gzip' => false
         ],
         'twig' => [
             'cache' => true,
@@ -142,7 +132,7 @@ return [
             ]
         ],
         'errors' => [
-            'display' => '0',
+            'display' => 0,
             'log' => true
         ],
         'debugger' => [
@@ -161,27 +151,20 @@ return [
         ],
         'media' => [
             'enable_media_timestamp' => false,
-            'unsupported_inline_types' => [
-                
-            ],
-            'allowed_fallback_types' => [
-                
-            ],
             'auto_metadata_exif' => false,
-            'upload_limit' => 33554432
+            'upload_limit' => 2097152
         ],
         'session' => [
             'enabled' => true,
+            'initialize' => true,
             'timeout' => 1800,
             'name' => 'grav-site',
             'secure' => false,
             'httponly' => true,
-            'split' => true,
-            'path' => NULL
+            'split' => true
         ],
         'gpm' => [
             'releases' => 'stable',
-            'proxy_url' => NULL,
             'method' => 'auto',
             'verify_peer' => true,
             'official_gpm_only' => true

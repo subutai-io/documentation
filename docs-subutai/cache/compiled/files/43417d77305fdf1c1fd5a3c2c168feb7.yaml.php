@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/themes/learn2-git-sync/languages.yaml',
-    'modified' => 1521196426,
+    'modified' => 1532554914,
     'data' => [
         'en' => [
             'THEME_LEARN2_GIT_EDIT_THIS_PAGE' => 'Edit this Page',

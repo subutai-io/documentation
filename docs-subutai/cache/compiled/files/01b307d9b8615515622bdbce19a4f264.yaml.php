@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/login/languages/en.yaml',
-    'modified' => 1532459357,
+    'modified' => 1532554914,
     'data' => [
         'PLUGIN_LOGIN' => [
             'USERNAME' => 'Username',

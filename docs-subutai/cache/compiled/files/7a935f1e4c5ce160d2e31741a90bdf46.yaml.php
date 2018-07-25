@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/felipe/public_html/readthedocs/docs-subutai/user/plugins/admin/languages/ko.yaml',
-    'modified' => 1532459352,
+    'modified' => 1532554913,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => '이것은 베타입니다! 개인적으로 사용할시 위험할수있습니다...',
