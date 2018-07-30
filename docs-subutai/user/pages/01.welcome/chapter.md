@@ -1,5 +1,6 @@
 ---
 title: Welcome
+media_order: SubutaiHeroImageV7.jpg
 taxonomy:
     category:
         - docs
@@ -7,6 +8,8 @@ child_type: docs
 ---
 
 ## Welcome to the Horde
+
+![](SubutaiHeroImageV7.jpg)
 
 This is the Subutai Platform’s user documentation. Here you will find updated information on how to install, run and make the best possible use of our products:
 
