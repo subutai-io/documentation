@@ -56,15 +56,15 @@ outside of the community to the centralized cloud taxing the bandwidth
 of the backbone connection to the Internet, driving up their
 communication costs and increasing the latency of their Internet
 responses. Despite the “world-wide” aspects of the “World-Wide-Web”, a
-lot of the data and communications are done very locally.\
-\
+lot of the data and communications are done very locally.
+
 Subutai can give local people control of their cloud usage, allowing
 them to cache data locally in community clouds and execute applications
 on the edge, with Subutai’s intelligent management services making
 automatic decisions on where to execute programs and store data,
 decreasing the amount of systems administration overhead and making
-management easier.\
-\
+management easier.
+
 Subutai’s blueprints allow for local applications or application suites
 to be developed, suitable for the local community. Other types of
 high-bandwidth, low-latency applications would also work better in
@@ -135,8 +135,8 @@ integrated. In the fledgling days of the Internet it was “Internet
 Service Providers” (ISPs) who provided the services (email, data
 storage, web hosting) over the communications links of the local
 carriers. The Internet was built to be resilient to outages by various
-local problems such as floods, hurricanes, civil strife, etc.\
-\
+local problems such as floods, hurricanes, civil strife, etc.
+
 Big cloud companies changed that. While a lot of facilities may still be
 provided by the local carriers, more and more services are offered by
 mostly centralized services, and while the big cloud companies are
@@ -144,11 +144,9 @@ careful to have redundancy that helps to isolate from natural disasters,
 the fact that they are owned by a large company means that they have
 some major issues:
 
--   The customer can not be sure of where their data is kept or their
-    > programs are run
+-   The customer can not be sure of where their data is kept or their programs are run
 
--   The customer can not easily integrate services between major
-    > companies
+-   The customer can not easily integrate services between major companies
 
 -   The customer often suffers from “lock in”
 
@@ -194,8 +192,8 @@ electricity to off-peak. Electric companies not only want to help their
 customers save electricity, but they want to carefully monitor power
 usage to determine other ways of helping save electricity during peak
 hours. Many electric companies are doing a lot of research in reducing
-power consumption.\
-\
+power consumption.
+
 IoT enters into this, but power companies fear IoT due to the
 possibility of viruses and Denial of Service (DoS) attacks getting into
 the power grid through the “things”, and having massive amounts of
