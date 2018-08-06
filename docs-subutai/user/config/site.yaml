@@ -2,13 +2,15 @@ title: 'Subutai Documentation v7'
 default_lang: en
 author:
   name: Subutai
-  email: john@email.com
+  email: subutai-social@optimal-dynamics.com
 taxonomies:
   - category
   - tag
   - author
 metadata:
-  description: 'Learn2 with Git Sync'
+  description: 'Learn about Subutai™, the world’s first intelligent Peer-to-Peer Cloud computing platform that brings Open Source P2P Cloud computing, Internet of Things (IoT), and cryptocurrency mining to everyone. Technical site for products that include: Subutai™ PeerOS software and Bazaar global marketplace (v7.0); Subutai™ Blockchain Router (hardware; v2.0); KHAN™ Ethereum blockchain reserve currency token (coming soon), Blueprints (such as Blockchain-in-a-Box) and more.'
+  keywords: 'Optdyn, KHAN, Corporation, Subutai, Cloud, Computing, Blockchain, Router, Bazaar, IoT'
+  author: 'Optdyn Corporation'
 summary:
   enabled: true
   format: short

@@ -3,17 +3,17 @@ title: 'E2E Plugin'
 visible: true
 ---
 
-E2E Plugin¶
-
 Subutai uses PGP key pairs to identify all entities including users like cloud owners and Peer administrators. The default administrator account on the new Peer needs to be associated with the global identity of the peer owner to share or rent resources to others.
-Manually managing PGP keys¶
+
+#### Manually managing PGP keys
 
 Users who know how to manage their own keys can use their preferred tools to do so. Various platform specific PGP tools like GPG on Linux can be used on a command line interface or user GUI to create and use PGP keys. That can be a major hassle, especially for those that are not PGP savvy. Worse yet, it can actually be detrimental for those who don’t understand PKI or how to secure their keys. Even PGP pros will be annoyed when having to deal manually with frequent challenge and response authorization operations.
 
 This is why we created browser plugins. Additionally we’re working on FIDO (World’s Largest Ecosystem for Standards-Based, interoperable authentication) and hardware key fob integration to always improve security. The Subutai E2E browser plugins have these benefits while still leaving the manual approach open.
 
 As mentioned, the Subutai E2E Browser Plugin / Extension should be installed in the browser with either an existing key or a newly generated PGP key before logging into the management console. The plugin will generate a new key pair for you if you don’t already have one. You can easily import and export keys into the plugin.
-Getting started¶
+
+### Getting started
 
 Before you start using our E2E plugin, please NOTE that for now, we support Chrome, Safari and Edge browsers. To install plugin on Chrome, please go to *this link*.
 
