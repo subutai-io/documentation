@@ -8,7 +8,7 @@ The Subutai platform is composed of four products. You can find documentation ab
 
 * [PeerOS](peeros)
 * [Bazaar](bazaar)
-* [Blockchain Router](router)
-* [KHAN](khan)
+* Blockchain Router (documentation upcoming)
+* KHAN (documentation upcoming)
 
-See also documentation for Subutai Platform's [companion software](companion-software).
+See also documentation for the Subutai Platform's [companion software](companion-software).
