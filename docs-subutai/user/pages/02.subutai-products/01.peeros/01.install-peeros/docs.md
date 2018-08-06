@@ -101,7 +101,7 @@ The last killall command is just a precaution, don't worry if it says, “no suc
 
 >>> Note: If NetworkManager is not configured properly, after restart, you may need to add your nameserver into the /etc/resolv.conf file it generates. It’s best to add this to the NetworkManager connection configuration if you don’t want the resolv.conf file to be overwritten.
 
-#### 2. Install Subutai¶
+#### 2. Install Subutai
 
 Add contrib and non-free to your main repository. For example:
 

@@ -3,21 +3,18 @@ title: Environments
 visible: true
 ---
 
-Environments¶
+An Environment is a logically grouped set of containers distributed across one or multiple peers that share the same network (they belong to the same p2p swarm - see more on p2p). An environment can host a number of applications.
 
-An Environment is a logically grouped set of containers distributed across one or multiple peers that share the same network (they belong to the same p2p swarm - see more on *p2p*). An environment can host a number of applications.
-
-Templates¶
+### Templates
 
 Environments are based on templates - basic software packages that provide a set of functionalities and can be extended to whatever you may need. For instance, there are templates that allow you to deploy a Debian server image to a Subutai Environment. You can use the templates already available in the PeerOS and Bazaar, or you an even create your own:
 
-Check how to create Templates (from the *command-line interface* or the *Subutai Console*).
+Check how to create Templates (from the command-line interface or the Subutai Console).
 
 
+## How To Create And Use Environments
 
-How To Create And Use Environments¶
-
-First thing you need to install an Environment is to sign up on the *Subutai Bazaar*. Any Environment needs at least one Peer on which to run. You can lease or rent other people’s Peers, or you can add include your own Peers on Subutai Bazaar. Once you have a Peer to set up your Environment, please make sure you have the Control Center on your desktop and the E2E plugin for your browser with a properly configured PGP key. Once you have all of this - account on Bazaar, peer, control center, e2e plugin + pgp key setup and configured, you can start with environment creation.
+First thing you need to install an Environment is to sign up on the Subutai Bazaar. Any Environment needs at least one Peer on which to run. You can lease or rent other people’s Peers, or you can add include your own Peers on Subutai Bazaar. Once you have a Peer to set up your Environment, please make sure you have the Control Center on your desktop and the E2E plugin for your browser with a properly configured PGP key. Once you have all of this - account on Bazaar, peer, control center, e2e plugin + pgp key setup and configured, you can start with environment creation.
 
 Go to Subutai Bazaar and in the up left corner, click the “Environment” button, then click “create environment”:
 
@@ -51,4 +48,4 @@ So when all is up and running, you can SSH into your container via Control Cente
 
 Once your SSH button is active (white and clickable), you can click it and then a terminal will be opened and you will have access to your container!
 
-All plain and simple! Feel free to leave your questions or comments in our *slack community*.
+All plain and simple! Feel free to leave your questions or comments in our slack community.
