@@ -19,7 +19,7 @@ class UniformResourceLocator implements ResourceLocatorInterface
     public $base;
 
     /**
-     * @var array
+     * @var array[]
      */
     protected $schemes = [];
 
@@ -102,11 +102,11 @@ class UniformResourceLocator implements ResourceLocatorInterface
         foreach((array) $paths as $path) {
             if (is_array($path)) {
                 // Support stream lookup in ['theme', 'path/to'] format.
-                if (count($path) != 2 || !is_string($path[0]) || !is_string($path[1])) {
+                if (count($path) !== 2 || !is_string($path[0]) || !is_string($path[1])) {
                     throw new \BadMethodCallException('Invalid stream path given.');
                 }
                 $list[] = $path;
-            } elseif (strstr($path, '://')) {
+            } elseif (false !== strpos($path, '://')) {
                 // Support stream lookup in 'theme://path/to' format.
                 $stream = explode('://', $path, 2);
                 $stream[1] = trim($stream[1], '/');
@@ -231,9 +231,9 @@ class UniformResourceLocator implements ResourceLocatorInterface
         if (!is_string($uri)) {
             if ($throwException) {
                 throw new \BadMethodCallException('Invalid parameter $uri.');
-            } else {
-                return false;
             }
+
+            return false;
         }
 
         $uri = preg_replace('|\\\|u', '/', $uri);
@@ -252,9 +252,9 @@ class UniformResourceLocator implements ResourceLocatorInterface
                     if ($part === null || $part === '' || (!$list && strpos($part, ':'))) {
                         if ($throwException) {
                             throw new \BadMethodCallException('Invalid parameter $uri.');
-                        } else {
-                            return false;
                         }
+
+                        return false;
                     }
                 } elseif (($i && $part === '') || $part === '.') {
                     continue;
@@ -321,12 +321,13 @@ class UniformResourceLocator implements ResourceLocatorInterface
     {
         $uris = array_unique($uris);
 
-        $list = [];
+        $lists = [[]];
         foreach ($uris as $uri) {
-            $list = array_merge($list, $this->findResources($uri, $absolute, $all));
+            $lists[] = $this->findResources($uri, $absolute, $all);
         }
 
-        return $list;
+        // TODO: In PHP 5.6+ use array_merge(...$list);
+        return call_user_func_array('array_merge', $lists);
     }
 
     /**
@@ -345,17 +346,47 @@ class UniformResourceLocator implements ResourceLocatorInterface
             $iterator = new \RecursiveIteratorIterator($this->getRecursiveIterator($uri), \RecursiveIteratorIterator::SELF_FIRST);
 
             /** @var UniformResourceIterator $uri */
-            foreach ($iterator as $uri) {
-                $key = $uri->getUrl() . '@010';
-                $this->cache[$key] = $uri->getPathname();
+            foreach ($iterator as $item) {
+                $key = $item->getUrl() . '@010';
+                $this->cache[$key] = $item->getPathname();
             }
         }
 
         return $this;
     }
 
+    /**
+     * Reset locator cache.
+     *
+     * @param string $uri
+     * @return $this
+     */
+    public function clearCache($uri = null)
+    {
+        if ($uri) {
+            $this->clearCached($uri, true, true, true);
+            $this->clearCached($uri, true, true, false);
+            $this->clearCached($uri, true, false, true);
+            $this->clearCached($uri, true, false, false);
+            $this->clearCached($uri, false, true, true);
+            $this->clearCached($uri, false, true, false);
+            $this->clearCached($uri, false, false, true);
+            $this->clearCached($uri, false, false, false);
+        } else {
+            $this->cache = [];
+        }
 
+        return $this;
+    }
 
+    /**
+     * @param string $uri
+     * @param bool $array
+     * @param bool $absolute
+     * @param bool $all
+     * @return array|string|bool
+     * @throws \BadMethodCallException
+     */
     protected function findCached($uri, $array, $absolute, $all)
     {
         // Local caching: make sure that the function gets only called at once for each file.
@@ -377,6 +408,14 @@ class UniformResourceLocator implements ResourceLocatorInterface
         }
 
         return $this->cache[$key];
+    }
+
+    protected function clearCached($uri, $array, $absolute, $all)
+    {
+        // Local caching: make sure that the function gets only called at once for each file.
+        $key = $uri .'@'. (int) $array . (int) $absolute . (int) $all;
+
+        unset($this->cache[$key]);
     }
 
     /**

@@ -23,6 +23,7 @@ return array(
     'RocketTheme\\Toolbox\\File\\' => array($vendorDir . '/rockettheme/toolbox/File/src'),
     'RocketTheme\\Toolbox\\Event\\' => array($vendorDir . '/rockettheme/toolbox/Event/src'),
     'RocketTheme\\Toolbox\\DI\\' => array($vendorDir . '/rockettheme/toolbox/DI/src'),
+    'RocketTheme\\Toolbox\\Compat\\' => array($vendorDir . '/rockettheme/toolbox/Compat/src'),
     'RocketTheme\\Toolbox\\Blueprints\\' => array($vendorDir . '/rockettheme/toolbox/Blueprints/src'),
     'RocketTheme\\Toolbox\\ArrayTraits\\' => array($vendorDir . '/rockettheme/toolbox/ArrayTraits/src'),
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),

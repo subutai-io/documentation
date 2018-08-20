@@ -136,11 +136,11 @@ class Question
      */
     public function setAutocompleterValues($values)
     {
-        if (is_array($values)) {
+        if (\is_array($values)) {
             $values = $this->isAssoc($values) ? array_merge(array_keys($values), array_values($values)) : array_values($values);
         }
 
-        if (null !== $values && !is_array($values) && !$values instanceof \Traversable) {
+        if (null !== $values && !\is_array($values) && !$values instanceof \Traversable) {
             throw new InvalidArgumentException('Autocompleter values can be either an array, `null` or a `Traversable` object.');
         }
 
@@ -160,7 +160,7 @@ class Question
      *
      * @return $this
      */
-    public function setValidator($validator)
+    public function setValidator(callable $validator = null)
     {
         $this->validator = $validator;
 
@@ -220,7 +220,7 @@ class Question
      *
      * @return $this
      */
-    public function setNormalizer($normalizer)
+    public function setNormalizer(callable $normalizer)
     {
         $this->normalizer = $normalizer;
 
@@ -241,6 +241,6 @@ class Question
 
     protected function isAssoc($array)
     {
-        return (bool) count(array_filter(array_keys($array), 'is_string'));
+        return (bool) \count(array_filter(array_keys($array), 'is_string'));
     }
 }
