@@ -1,6 +1,9 @@
 ---
 title: 'Subutai Use Cases'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 ### Use Case: Be Your Own Micro Cloud Provider

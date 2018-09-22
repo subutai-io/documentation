@@ -1,6 +1,9 @@
 ---
 title: 'Products page (user menu)'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 On this section you can add your own products like templates, applications, operating systems, plugins etc.

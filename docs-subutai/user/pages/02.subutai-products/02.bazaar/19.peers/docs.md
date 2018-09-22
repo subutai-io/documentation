@@ -1,6 +1,9 @@
 ---
 title: Peers
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 A Peer is a single Subutai node with management services (a management host container), and at least one local Resource Host (1 - N RHs) that contribute resources to be shared.

@@ -1,6 +1,9 @@
 ---
 title: 'Getting Started'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 ## Get Started with Subutai

@@ -1,6 +1,9 @@
 ---
 title: 'Update Subutai Components'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 In order to prevent damages to your system and the whole Subutai ecosystem, please keep your software always up to date. The following instructions will help you update all components of Subutai Platform.

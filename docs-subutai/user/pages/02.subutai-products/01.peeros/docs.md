@@ -1,6 +1,9 @@
 ---
 title: PeerOS
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 Subutai’s *PeerOs* is a multi-platform open source software bundle that enables users to share, barter or sell computing resources on the Subutai Platform. It is the building block of Subutai’s P2P cloud services. The software is free and open source. Anyone can install and run the Subutai PeerOS. Its source code is [available on GitHub](https://github.com/subutai-io/peer-os/).

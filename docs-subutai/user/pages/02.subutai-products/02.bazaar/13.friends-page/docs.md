@@ -1,6 +1,9 @@
 ---
 title: 'Friends page'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 Friends page allows you to befriend users of Subutai Bazaar. There you can see 3 menus:

@@ -1,6 +1,9 @@
 ---
 title: 'Balance, Notifications and Chat'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 **Balance** - here users can check information about their current amount of GoodWill (Subutai Bazaar’s internal currency).

@@ -1,6 +1,9 @@
 ---
 title: Products
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 Our website has a special section named “Products”. Here you can choose a lot of different products (plugins, blueprints), which can be installed on any users’ Environments to run a variety of web and cloud applications.

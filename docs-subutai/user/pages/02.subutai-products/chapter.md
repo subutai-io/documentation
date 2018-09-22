@@ -1,5 +1,8 @@
 ---
 title: 'Subutai Products'
+taxonomy:
+    category:
+        - docs
 ---
 
 ### Subutai Products

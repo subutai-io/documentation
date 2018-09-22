@@ -1,6 +1,9 @@
 ---
 title: AppScale
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 *AppScale* is a special platform that can automatically deploy Google App Engine applications on private or public cloud systems. It can be deployed on local clusters as well. The main idea of AppScale is to be a helpful platform for developers that can run applications on any kind of cloud systems.

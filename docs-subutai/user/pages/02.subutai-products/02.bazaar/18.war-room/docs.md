@@ -1,6 +1,9 @@
 ---
 title: 'War Room'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 The Globe represents Peers as they are distributed in the whole world. On the left side there are 3 switches:

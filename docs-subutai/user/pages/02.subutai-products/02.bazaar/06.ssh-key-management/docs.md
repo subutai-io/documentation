@@ -1,6 +1,9 @@
 ---
 title: 'SSH key management'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 Here the user can easily manage their SSH keys - add, view, delete and edit keys. SSH keys are very important to access environments and containers on Subutai.

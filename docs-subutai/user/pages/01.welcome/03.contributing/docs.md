@@ -1,6 +1,9 @@
 ---
 title: Contributing
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 There are many ways to contribute to Subutai Cloud, many ways to join the Horde ([1](#horde))!

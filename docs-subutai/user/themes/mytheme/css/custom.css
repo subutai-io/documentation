@@ -18,3 +18,55 @@ Put your custom CSS in this file.
     display:none;
 }
 */
+
+/* title */
+@font-face {
+    font-family: MavenPro;
+    src: url(../fonts/MavenPro-Regular.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: MavenPro;
+}
+
+/* sidebar */
+/* header */
+#header {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#logo {
+    margin: 20px 0;
+    width: 60%;
+}
+/* logo */
+.logoTxt {
+    width: 100%;
+}
+/* main title home */
+#chapter h1 {
+    font-size: 3.25rem;
+    /* letter-spacing: -3px; */
+}
+#chapter ul li {
+    line-height: 1.5;
+    margin: 40px 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+#chapter ul li img {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+ul li {
+    margin: 20px 0;   
+}

@@ -1,6 +1,9 @@
 ---
 title: 'Account Settings'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 When the user clicks their name in the right top corner of the Subutai Bazaar, a pop up menu shows up. In this menu there is a Gear-like button. After clicking this button, the user can see their account settings:

@@ -1,6 +1,9 @@
 ---
 title: Console
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 Subutai Console allows you to manage your own distributed, containerized data clouds. The management modules are installed during the Peer creation. Once you are finished with the Peer installation, you get your Console credentials: peer IP, login and password. In order to access the Console, type the Peer’s IP address and port in your browser’s address bar, then fill login and password fields with the ones shown you at the final step of Peer installation. Then the system will ask you to change your password from default (secret) and confirm it. After this, you can use the Subutai Console to administer your Peer: create Environments and containers, install plugins to manage different sorts of applications, and register your Peer on Subutai Bazaar to share, sell or buy computational resources.

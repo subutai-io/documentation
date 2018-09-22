@@ -1,6 +1,9 @@
 ---
 title: Environments
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 An Environment is a logically grouped set of containers distributed across one or multiple peers that share the same network (they belong to the same p2p swarm - see more on p2p). An environment can host a number of applications.

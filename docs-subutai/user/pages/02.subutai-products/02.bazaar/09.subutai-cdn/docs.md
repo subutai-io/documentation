@@ -1,6 +1,9 @@
 ---
 title: 'Subutai CDN'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 Subutai CDN is a server where you can store your templates and also use other templates to create own environment and host sites or other sorts of applications.

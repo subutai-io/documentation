@@ -1,6 +1,9 @@
 ---
 title: 'About Subutai'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 The Subutai open source project and its community formed in 2013 to build a peer-to-peer (P2P) cloud and fog computing([1](#fog)) platform called Subutai. The software was first released in April of 2014 under the Apache Software License 2.0.

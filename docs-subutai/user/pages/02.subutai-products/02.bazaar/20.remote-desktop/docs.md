@@ -1,6 +1,9 @@
 ---
 title: 'Remote Desktop'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 This installation guide includes general information about Subutai Remote Desktop and installation scenarios.

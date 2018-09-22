@@ -1,6 +1,9 @@
 ---
 title: Glossary
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 **Bazaar** - Subutai’s online marketplace to buy/sell/exchange/barter devices, cloud applications, and idle computer resources.

@@ -1,6 +1,9 @@
 ---
 title: 'Subutai Bazaar'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 [Subutai Bazaar](https://bazaar.subutai.io) is the P2P cloud market and social environment for the Subutai Platform. These documentation pages have instructions on what it can do and how. Through the Bazaar users can sell, barter, share or hire computational resources and server applications from other users.

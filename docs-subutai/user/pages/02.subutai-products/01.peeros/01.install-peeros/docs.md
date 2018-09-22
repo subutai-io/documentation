@@ -1,6 +1,9 @@
 ---
 title: 'Install PeerOS'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 This guide describes the recommended way of installing Subutai PeerOS in a fresh Debian system. It is meant for users interested in the full install for admins. Alternatively, if you prefer the Quick install, where you can run the PeerOS virtualized alongside your preferred operating system, refer to the guide on [Vagrant version](../run-peeros-vagrant).

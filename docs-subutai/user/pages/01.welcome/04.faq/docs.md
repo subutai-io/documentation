@@ -1,6 +1,9 @@
 ---
 title: FAQ
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 ## General questions

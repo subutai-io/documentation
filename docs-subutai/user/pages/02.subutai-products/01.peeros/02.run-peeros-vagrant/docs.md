@@ -1,6 +1,9 @@
 ---
 title: 'Run PeerOS with Vagrant'
 visible: true
+taxonomy:
+    category:
+        - docs
 ---
 
 The easiest and quickest way to get a Subutai Peer running on any platform is to use Vagrant with VirtualBox.
