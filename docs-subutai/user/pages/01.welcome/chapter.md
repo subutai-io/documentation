@@ -11,7 +11,7 @@ child_type: docs
 
 <!-- ![](SubutaiHeroImageV7.jpg) -->
 
-This is the Subutai Platform’s user documentation. Here you will find updated information on how to install, run and make the best possible use of our products:
+## This is the Subutai Platform’s user documentation. Here you will find updated information on how to install, run and make the best possible use of our products:
 
 * ![](logo-peer-os-web-noshadow.jpg) Subutai™ PeerOS — Open Source, container-based P2P Cloud and IoT software and firmware.
 * ![](logo-bazaar-noshadow.jpg) Subutai™ Bazaar — a marketplace to buy/sell/exchange/barter devices, cloud applications, and idle computer resources.
