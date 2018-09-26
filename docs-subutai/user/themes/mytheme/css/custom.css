@@ -19,6 +19,10 @@ Put your custom CSS in this file.
 }
 */
 
+body {
+    letter-spacing: normal;
+}
+
 /* title */
 @font-face {
     font-family: MavenPro;
@@ -27,6 +31,7 @@ Put your custom CSS in this file.
 
 h1, h2, h3, h4, h5, h6 {
     font-family: MavenPro;
+    letter-spacing: -1px;
 }
 a {
     color: #078DD0;
@@ -122,11 +127,23 @@ a:active, a:hover, #body-inner a:hover {
 .chapter2 ul li a {
     /* font-weight: bold; */
     font-size: 1.25rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+}
+.topics li ul li {
+    margin: 10px 0;
+    font-size: 1rem;
 }
 .chapter2 ul li ul li ul li a {
     font-size: 1rem;
     font-weight: normal;
+}
+.topics li:nth-child(2) ul li {
+    font-size: 1.25rem;
+}
+/* .topics li ul li ul li { */
+#sidebar li ul li ul li {
+    margin: 10px 0;
+    font-size: 1rem;
 }
 ul li, ol li {
     margin: 20px 0;   
@@ -150,4 +167,15 @@ ul li, ol li {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+}
+
+/* copy to clipboard icon */
+.copy-to-clipboard {
+    background-image: url(/documentation/docs-subutai/user/themes/mytheme/images/clippy.svg);
+}
+pre .copy-to-clipboard {
+    opacity: .4;
+}
+pre .copy-to-clipboard:hover {
+    opacity: 1;
 }
