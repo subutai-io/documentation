@@ -69,14 +69,6 @@ a:active, a:hover, #body-inner a:hover {
 #sidebar ul.topics>li>a {
     font-size: 1.4rem;
 }
-/* .chapter2 #sidebar .topics .dd-item ul .dd-item   */
-/* .chapter2 #sidebar .topics .dd-item {
-    font-size: 1rem;
-    font-weight: normal;
-} */
-/* .topics>.dd-item {
-    font-size: 1rem;
-} */
 
 /* logo*/
 .logoTxt {
@@ -109,12 +101,6 @@ a:active, a:hover, #body-inner a:hover {
     display: inline-block;
     margin: 0 20px 0 0;
 }
-/* .chapter2 ul li {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-} */
 .chapter2 ul li a:first-child {
     text-align: center;
     width: 30%;
@@ -129,9 +115,7 @@ a:active, a:hover, #body-inner a:hover {
     margin: 0;
 }
 .chapter2 ul li a {
-    /* font-weight: bold; */
     font-size: 1.25rem;
-    /* margin-top: 20px; */
 }
 .topics li ul li {
     margin: 10px 0;
@@ -143,6 +127,16 @@ a:active, a:hover, #body-inner a:hover {
 }
 .topics li:nth-child(2) ul li {
     font-size: 1.25rem;
+}
+/* chapter prod */
+.chapterProd #body-inner p:first-child {
+    margin-top: 0;
+}
+.chapterProd #body img {
+    margin-top: 0;
+    width: 80px;
+    height: auto;
+    display: block;
 }
 /* .topics li ul li ul li { */
 #sidebar li ul li ul li {

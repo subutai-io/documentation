@@ -3,10 +3,8 @@
     {# <h1><img src="{{ page.url }}/{{ page.title-icon }}" alt="Subutai PeerOS">{{ page.title }}</h1> #}
     <div>
         {# <img src="{{ page.find('/images').media[page.header.title-icon] }}" alt="test"> #}
-        <img src="{{ page.media.image }}" alt="product name">
+        {# <img src="{{ page.media.image }}" alt="product name"> #}
         <h1>{{ page.title }}</h1>
     </div>
-    <p>
-    	{{ page.content }}
-    </p>
+    {{ page.content }}
 </div>
