@@ -45,8 +45,11 @@
     <nav id="sidebar">
         <div id="header-wrapper">
             <div id="header">
-                <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}"><img class="logoTxt" src="/user/themes/mytheme/images/logo-subutai-txt.png"></a>
+                {# <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}"><img class="logoTxt" src="/user/themes/mytheme/images/logo-subutai-txt.png"></a> #}
+                <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}"><img class="logoTxt" src="{{ base_url }}/user/themes/mytheme/images/logo-subutai-txt.png"></a>
                 {% include 'partials/search.html.twig' %}
+                {# {% include 'partials/tntsearch.html.twig' with { in_page: true }%} #}
+                <a class="advancedSearch" href="{{ base_url }}/search/">Advanced Search</a>
             </div>
         </div>
         {% include 'partials/sidebar.html.twig' %}
@@ -60,7 +63,7 @@
         <div class="padding highlightable">
             <a href="#" id="sidebar-toggle" data-sidebar-toggle><i class="fa fa-2x fa-bars"></i></a>
 
-            {% block topbar %}{% if  github_link_position == 'top' or config.plugins.breadcrumbs.enabled %}
+            {# {% block topbar %}{% if  github_link_position == 'top' or config.plugins.breadcrumbs.enabled %}
             <div id="top-bar">
                 {% if  github_link_position == 'top' %}
                 <div id="top-github-link">
@@ -72,7 +75,7 @@
                 {% include 'partials/breadcrumbs.html.twig' %}
                 {% endif %}
             </div>
-            {% endif %}{% endblock %}
+            {% endif %}{% endblock %} #}
 
             {% block content %}{% endblock %}
 

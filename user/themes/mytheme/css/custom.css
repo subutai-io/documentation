@@ -62,6 +62,14 @@ a:active, a:hover, #body-inner a:hover {
     width: 50%;
 }
 /********** SIDEBAR **********/
+/* search */
+#sidebar .advancedSearch {
+    color: #FFF;
+    margin-top: 10px;
+}
+#sidebar .advancedSearch:hover {
+    font-weight: 700;
+}
 /* menu */
 .dd-item {
     font-family: MavenPro;
