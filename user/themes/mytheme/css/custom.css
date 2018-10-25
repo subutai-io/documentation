@@ -63,6 +63,26 @@ a:active, a:hover, #body-inner a:hover {
 }
 /********** SIDEBAR **********/
 /* search */
+.tntsearch-form {
+    margin-top: 60px;
+}
+.homeLink {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+.homeLink a {
+    color: #555;
+}
+.homeLink i {
+    font-size: 2rem;
+}
+.homeLink i:last-child {
+    font-size: .9rem;
+}
+.homeLink a:hover, .homeLink a:hover {
+    color: #078DD0;
+}
 #sidebar .advancedSearch {
     color: #FFF;
     margin-top: 10px;
@@ -82,10 +102,27 @@ a:active, a:hover, #body-inner a:hover {
 .logoTxt {
     width: 100%;
 }
+/* page title */
+h1, #chapter h1, #chapter2 h1 {
+    margin-bottom: 10px;
+    border-bottom: none !important;
+}
+.titleDivider {
+    border-bottom: 4px solid #F0F2F4;
+    width: 40%;
+    margin: 0 auto;
+}
+#body h1 + hr {
+    margin-top: 0;
+}
 /* chapters pages */
 /* main title home */
 #chapter h1, .chapter2 h1 {
     font-size: 3.25rem;
+}
+h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #F0F2F4;
 }
 #chapter h2, .chapter2 h2 {
     text-align: center;

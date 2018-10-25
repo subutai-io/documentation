@@ -4,6 +4,12 @@
     {{ page.content }}
 
     {% include 'partials/tntsearch.html.twig' with { in_page: true }%}
+    <div class="homeLink">
+        <a href="{{ base_url }}">
+            <i class="fas fa-home"></i><br>
+            <i>back to home</i>
+        </a>
+    </div>
 {% endblock %}
 
 {% block navigation %}{% endblock %}
