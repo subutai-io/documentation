@@ -1,0 +1,58 @@
+/* OPTDYN WEBSITE - CUSTOM STYLES
+   GRAV VERSION 1.4.7 (SATBLE AT JULY-21-2018) */
+
+
+/* .captcha-wrap {
+    max-width: 240px;
+}
+.g-recaptcha {
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+} */
+
+.hideMobile {
+    display: none;
+}
+.hideSmart {
+    display: none;
+}
+
+/* LOGO */
+.logo .navbar-brand img {
+    width: 160px;
+}
+/* MENU */
+#header a {
+    color: #FFF;
+    font-size: .9rem;
+}
+#header a:active {
+    color: #22B5FF;
+}
+.dropmenu ul li a:hover,
+.dropmenu ul li a:focus,
+.dropmenu ul li a.active {
+    color: #04346E;
+}
+
+@media (min-width: 480px) {
+    .hideMobile {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .hideSmart {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {        
+    #header a:hover {
+        color: #22B5FF;
+    }
+}
+
+@media (min-width: 1200px) {
+   
+}

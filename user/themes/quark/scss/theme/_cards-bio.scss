@@ -1,0 +1,170 @@
+
+.leaders-wrap {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    // -webkit-justify-content: space-between;
+    // justify-content: space-between;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    .leaderCard {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        // margin-bottom: 60px;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        font-size: .75rem;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .cardContent-wrap {
+            font-family: 'myriad-pro';
+            padding: 20px;
+            -moz-box-sizing: border-box;
+            background: #FFF;
+            // border-radius: 25px;
+            -webkit-box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+            box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+        
+            .cardImg-wrap {
+                width: 100%;
+                // width: 160px;
+                // float: left;
+                // margin: 0 20px 0 0;
+
+                img {
+                    width: 100%;
+                    // border-radius: 25px;
+                    -webkit-box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+                    box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+                }
+            }
+
+            h4 {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
+            b {
+                font-family: MavenPro;
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-top: 0;
+                font-size: .7rem;
+                color: #078DD0;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+            // p {
+            //     float: right;
+            // }
+        }
+    }
+}
+.anchorLink-subtitle {
+    position: absolute;
+    left: 0;
+    top: -35px
+}
+.leaderCard {
+    .anchorLink {
+        position: absolute;
+        left: 0;
+        top: -60px
+    }
+}
+
+@media (min-width: 480px) {
+    .leaders-wrap {
+        -webkit-justify-content: center;
+        justify-content: center;
+    
+        .leaderCard {
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .leaders-wrap {
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+
+        .leaderCard:nth-child(1),
+        .leaderCard:nth-child(3),
+        .leaderCard:nth-child(5),
+        .leaderCard:nth-child(7),
+        .leaderCard:nth-child(9),
+        .leaderCard:nth-child(11) {
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        .leaderCard:nth-child(2),
+        .leaderCard:nth-child(4),
+        .leaderCard:nth-child(6),
+        .leaderCard:nth-child(8),
+        .leaderCard:nth-child(10) {
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+
+        .leaderCard {
+            width: 50%;
+            margin-top: 40px;
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+            // margin-bottom: 60px;
+            .cardContent-wrap {
+                .cardImg-wrap {
+                    width: 160px;
+                    float: left;
+                    margin: 0 20px 0 0;
+                }
+                h4 {
+                    // width: calc(100% - 180px);
+                    text-align: left;
+                    margin-top: 0;
+                    font-size: 1rem;
+                }
+                b {
+                    text-align: left;
+                //     width: calc(100% - 180px);
+                //     margin-top: 0;
+                //     float: right;
+                //     font-size: .7rem;
+                //     color: #078DD0;
+                //     line-height: 1.5;
+                //     margin-bottom: 20px;
+                }
+            }
+        }    
+    }
+	
+}
+
+@media (min-width: 992px) {
+    .leaders-wrap {
+        width: 856px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .leaders-wrap {
+        width: 1000px;
+    }
+}

@@ -1,0 +1,126 @@
+
+// shadow on video
+.videoContainer {
+    max-width: 854px;
+    margin: 0 auto;
+}
+.grav-youtube {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.23);
+
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+// ABOUT
+.leaders-container {
+    max-width: 854px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    // -webkit-justify-content: center;
+    // justify-content: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
+    .leaders-wrap {
+        box-sizing: border-box;
+        // padding: 20px;
+        // margin: 0 16px 40px 16px;
+        margin: 0 0 40px 0;
+        width: 100%;
+
+        .leaderItem {
+
+            .leaderImg {
+                line-height: 0;
+                // border-radius: 5px;
+
+                img {
+                    // -webkit-box-shadow: -1px 0 2px 0 rgba(0,0,0,0.05), 1px 0 2px 0 rgba(0,0,0,0.1), 0 1px 1px 0 rgba(0,0,0,0.2);
+                    // box-shadow: -1px 0 2px 0 rgba(0,0,0,0.05), 1px 0 2px 0 rgba(0,0,0,0.1), 0 1px 1px 0 rgba(0,0,0,0.2);
+                    // border-radius: 25px;
+                    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+                }
+            }
+            .leaderInfo {
+                width: 100%;
+                text-align: center;
+                h4 {
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    font-size: 1rem;
+                }
+                span {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}
+.leaders-wrap:active .leaderItem .leaderImg img {
+    // -webkit-box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.23);
+    // box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.23);
+    // -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.22);
+    // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 5px 9px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 5px 9px rgba(0, 0, 0, 0.22);
+}
+.leaders-wrap:active .leaderItem .leaderInfo h4 {
+    color: #078DD0;
+    text-decoration: none;
+}
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 768px) {
+	.leaders-container {
+        
+        .leaders-wrap {
+            width: 23%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .leaders-wrap:hover .leaderItem .leaderInfo h4 {
+        color: #078DD0;
+        text-decoration: none;
+    }
+    .leaders-wrap:hover .leaderItem .leaderImg img {
+        // -webkit-box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.23);
+        // box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.23);
+        // -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.22);
+        // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.22);
+        -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 5px 9px rgba(0, 0, 0, 0.22);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 5px 9px rgba(0, 0, 0, 0.22);
+    }
+}
+
+@media (min-width: 1200px) {
+    .videoContainer {
+        max-width: 1000px;
+    }
+    .grav-youtube {
+        margin-bottom: 30px;
+    }
+    .leaders-container {
+        max-width: 1000px;
+    }
+}

@@ -1,0 +1,17 @@
+enabled: true
+from: info@optdyn.com
+from_name: 'fernando ted'
+to: info@optdyn.com
+mailer:
+  engine: smtp
+  smtp:
+    server: smtp.gmail.io
+    port: 465
+    encryption: ssl
+    user: b0aba0d2a82ded
+    password: 7a500a20ee9717
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: false
+body: test

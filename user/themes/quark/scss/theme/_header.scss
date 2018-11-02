@@ -1,0 +1,103 @@
+#header {
+	width: 100%;
+	height: $header-height-large;
+	-webkit-box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
+	box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
+	// border-bottom: 1px solid rgba($gray-color, 0.2);
+	@extend .default-animation;
+
+	font-size: 0.7rem;
+	font-weight: 700;
+
+	// background: $light-color;
+	color: $dark-color;
+	background: linear-gradient(#045E92, #088DD0);
+	border-bottom: none;
+	a {
+		color: $dark-color;
+	}
+
+	.logo svg path {
+		fill: $header-color-dark;
+	}
+
+  .header-dark &:not(.scrolled) {
+    background: $header-color-dark;
+    color: $light-color;
+    a {
+      color: rgba($light-color, 0.7) !important;
+    }
+    a.active {
+      color: $light-color !important;
+    }
+    .dropmenu ul ul a {
+        color: $dark-color !important;
+    }
+    .logo svg path {
+      fill: $light-color;
+    }
+  }
+
+  .header-dark.header-transparent &:not(.scrolled) {
+    background: rgba(#000, 0.05);
+  }
+
+  .header-transparent &:not(.scrolled) {
+    background: rgba(#fff, 0.05);
+    //border-bottom: 0 !important;
+  }
+
+  .navbar-section {
+    // height: $header-height-large;
+    @extend .default-animation;
+  }
+
+  .logo svg {
+    width: 150px;
+    display: inherit;
+
+    @extend .default-animation;
+  }
+
+  // Fixed Header solution
+  .header-fixed & {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+// Animate Fixed Header
+body.header-fixed.header-animated {
+  #header.scrolled {
+    height: $header-height-small;
+
+    .navbar-section {
+      height: $header-height-small;
+    }
+    .dropmenu.animated ul li:hover > ul {padding-top: 4px;}
+    // .logo svg {
+    //   width: 100px;
+    // }
+    .logo img {
+      width: 120px;
+    }
+
+    ~ .mobile-menu .button_container {
+      top: 0.5rem;
+    }
+  }
+}
+
+.login-status-wrapper {
+  white-space: nowrap;
+
+  .icon {
+    font-size: 120%;
+  }
+}

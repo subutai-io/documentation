@@ -1,0 +1,14 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="headline">
+        <h1 class="titlePage">Contact OptDyn</h1>
+    </div>
+    {% include "forms/form.html.twig" %}
+    <!-- Begin MailChimp Signup Form -->
+    {% include "partials/sign-up-newsletter.html.twig" %}
+    <!--End mc_embed_signup-->
+    {# {% include "partials/socials.html.twig" %} #}
+    {{ page.content }}
+
+{% endblock %}

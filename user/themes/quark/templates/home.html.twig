@@ -1,0 +1,47 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {{ page.content }}
+
+    <div id="home">
+
+        {% include 'partials/product-list.html.twig' %}
+
+        <div class="twitter-container">
+            <div class="headline">
+                <div class="small-container">
+                    <h2 class="twitterTitle titleSection">OptDyn on Twitter</h2>
+                </div>
+            </div>
+
+            <div class="tweet-wrap">
+                <a class="twitter-timeline" href="https://twitter.com/optdyn?ref_src=twsrc%5Etfw" data-tweet-limit="1" data-chrome="noheader nofooter" data-width="660px" data-show-replies="false">Tweets by optdyn</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            {# {% include 'latest-tweets/templates/partials/latest-tweets.html.twig' %} #}
+
+            {# {% include 'partials/latest-tweets.html.twig' %} #}
+            
+            {# <a class="twitter-timeline" href="https://twitter.com/optdyn" data-tweet-limit="1" data-width="550" ></a>
+        <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+             #}
+
+            {# <div class="tweet-wrap">
+                <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Reuters: &quot;U.S. government seeks Facebook help to wiretap Messenger...&quot; Forcing companies to break encryption for a criminal probe is permitted under legislation such as the CLOUD Act. Learn how you can keep your private data safe. <a href="https://t.co/UV8PcR0y8X">https://t.co/UV8PcR0y8X</a> <a href="https://twitter.com/hashtag/surveillance?src=hash&amp;ref_src=twsrc%5Etfw">#surveillance</a> <a href="https://twitter.com/hashtag/cloud?src=hash&amp;ref_src=twsrc%5Etfw">#cloud</a></p>&mdash; OptDyn, Inc. (@optdyn) <a href="https://twitter.com/optdyn/status/1031148889217400832?ref_src=twsrc%5Etfw">August 19, 2018</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div> #}
+        </div>
+
+        <!-- Begin MailChimp Signup Form -->
+        {% include 'partials/sign-up-newsletter.html.twig' %}
+        {# {% include 'partials/sign-up-newsletter.html.twig' %} #}
+    </div>
+
+    <script>
+
+      $('body').click(function () {
+          $('.timeline-Tweet-text').css('font-size', '10px');
+      });
+  </script>
+    
+{% endblock %}
+

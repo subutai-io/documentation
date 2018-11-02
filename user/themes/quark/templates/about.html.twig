@@ -1,0 +1,168 @@
+{% extends 'partials/base.html.twig' %}
+{% set collection = page.collection() %}
+
+{% block content %}
+    {{ page.content }}
+    <!-- LEADERSHIP -->
+    <div class="headline titleSection-marginTop">
+        <div class="colLeft">
+            <h2 class="titleSection">Leadership Team</h2>
+        </div>
+        <div class="colRight">
+            <a href="about/leadership#leaders">See the full Leadership Team<i class="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <!-- Alex -->
+    <div class="leaders-container grid-xl">
+        <a href="about/leadership/#alex" class="leaders-wrap">
+            <div class="leaderItem">
+                <div class="leaderImg">
+                    <img src="user/themes/quark/images/alex.jpg" alt="Alex Karasulu">
+                </div>
+                <div class="leaderInfo">
+                    <h4>Alex Karasulu</h4>
+                    <span>Founder / Co-CEO</span>
+                </div>
+            </div>
+        </a>
+        <!-- maddog -->
+        <a href="about/leadership/#maddog" class="leaders-wrap">
+            <div class="leaderItem">
+                <div class="leaderImg">
+                    <img src="user/themes/quark/images/Jon-Hall.jpg" alt="Jon maddog Hall">
+                </div>
+                <div class="leaderInfo">
+                    <h4>Jon "maddog" Hall</h4>
+                    <span>Co-Chief Executive Officer</span>
+                </div>
+            </div>
+        </a>
+        <!-- Sally -->
+        <a href="about/leadership/#sally" class="leaders-wrap">
+            <div class="leaderItem">
+                <div class="leaderImg">
+                    <img src="user/themes/quark/images/sally-01.jpg" alt="">
+                </div>
+                <div class="leaderInfo">
+                    <h4>Sally Khudairi</h4>
+                    <span>Chief Marketing Officer</span>
+                </div>
+            </div>
+        </a>
+        <!-- Nursel -->
+        <a href="about/leadership/#nursel" class="leaders-wrap">
+            <div class="leaderItem">
+                <div class="leaderImg">
+                    <img src="user/themes/quark/images/NurselKarasulu.jpg" alt="">
+                </div>
+                <div class="leaderInfo">
+                    <h4>Nursel Karasulu</h4>
+                    <span>Chief Financial Officer</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    {# ADVISORY BOARD #}
+    <div class="headline">
+        <div class="colLeft">
+            <h2 class="titleSection">Advisory Board</h2>
+        </div>
+        <div class="colRight">
+            <a href="about/leadership#advisors">See the full Advisory Board<i class="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="leaders-container grid-xl">
+        <!-- Simon -->
+        <a href="about/leadership/#simon" class="leaders-wrap">
+            <div class="leaderItem">
+                <div class="leaderImg">
+                    <img src="user/themes/quark/images/Simon-Cocking.jpg" alt="">
+                </div>
+                <div class="leaderInfo">
+                    <h4>Simon Cocking</h4>
+                    <span>Blockchain / Cryptocurrency Market</span>
+                </div>
+            </div>
+        </a>
+        <!-- Jeff -->
+        <a href="about/leadership/#jeff" class="leaders-wrap">
+            <div class="leaderItem">
+                <div class="leaderImg">
+                    <img src="user/themes/quark/images/JeffCarr.jpg" alt="Jeff Carr">
+                </div>
+                <div class="leaderInfo">
+                    <h4>Jeff Carr</h4>
+                    <span>Cloud Computing</span>
+                </div>
+            </div>
+        </a>
+        <!-- Rusling -->
+        <a href="about/leadership/#rusling" class="leaders-wrap">
+            <div class="leaderItem">
+                <div class="leaderImg">
+                    <img src="user/themes/quark/images/David_Rusling_Hi_Res.jpg" alt="David Rusling">
+                </div>
+                <div class="leaderInfo">
+                    <h4>David Rusling</h4>
+                    <span>IoT</span>
+                </div>
+            </div>
+        </a>
+        <!-- Ben -->
+        <a href="about/leadership/#ben" class="leaders-wrap">
+            <div class="leaderItem">
+                <div class="leaderImg">
+                    <img src="user/themes/quark/images/ben-photo-06.jpg" alt="Benedict O’Mahoney">
+                </div>
+                <div class="leaderInfo">
+                    <h4>Benedict O’Mahoney</h4>
+                    <span>Blockchain Law</span>
+                </div>
+            </div>
+        </a>
+    </div> <!-- leaders-container -->
+
+    <!-- PRESS -->
+    <div class="headline">
+        <div class="colLeft">
+            <h2 class="titleSection">OptDyn Press</h2>
+        </div>
+    </div>
+
+    {% for post in page.find('/about/press').children.order('date', 'desc').slice(0, 1) %}
+    {# <div id="item" class="lastPost-container"> #}
+    <div id="item" class="post-container">
+        <div class="bricklayer">
+            <div class="card">
+                <a class="postItemLink" href="{{ post.url }}">
+                    <div class="card-header">
+                        <div class="card-subtitle text-gray">
+                            <span class="blog-date">
+                                <time class="dt-published" datetime="{{ post.date|date("c") }}">
+                                    <i class="fa fa-calendar"></i> {{ post.date|date(system.post.dateformat.short) }}
+                                </time>
+                            </span>
+                        </div>
+                        <div class="card-title">
+                            {# <h5 class="p-name mt-1"><a href="{{ post.url }}" class="u-url">{{ post.title }}</a></h5> #}
+                            <h5 class="postItemTitle">{{ post.title }}</h5>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        {% if post.summary != post.content %}
+                        {{ post.summary }}
+                        {% else %}
+                        {{ post.content }}
+                        {% endif %}
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="headline">
+        <a class="seeAll-link" href="about/press">See all Press Releases</a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+email: webmaster@optdyn.com
+fullname: Website
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$KL569l4qaafVUuDba7/jyOKHVvopNAPbG9HJ7hr240Q3FOmCgwb8C

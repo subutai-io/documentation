@@ -1,0 +1,166 @@
+{% set body_classes = body_class(['header-fixed', 'header-animated', 'header-dark', 'header-transparent', 'sticky-footer']) %}
+{% set grid_size = theme_var('grid-size') %}
+{% set compress = theme_var('production_mode') ? '.min.css' : '.css' %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    {# <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title> #}
+    <title>OptDyn</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/svx6tbo.css">
+
+    <meta property="og:title" content="OptDyn" />
+    <meta property="og:url" content="https://optdyn.com" />
+    <meta property="og:description" content="OptDyn is the company behind Subutai™, the intelligent blockchain-driven platform that brings Open Source Peer-to-Peer (P2P) Cloud computing, Internet of Things (IoT), and cryptocurrency mining to everyone. Unlike many companies whose promises lack a working product backing their claims, Subutai is proven, mature (v7.0), solves real-world problems, and is ready to use today. OptDyn is based in the United States with distributed teams in Europe, Asia, and South America." />
+    <meta property="og:image" content="https://optdyn.com/img/optdynmeta.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="300" />
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://optdyn.com">
+    <meta property="twitter:title" content="OptDyn">
+    <meta property="twitter:image" content="https://optdyn.com/img/optdynmeta.jpg">
+    <meta property="twitter:description" content="OptDyn is the company behind Subutai™, the intelligent blockchain-driven platform that brings Open Source Peer-to-Peer (P2P) Cloud computing, Internet of Things (IoT), and cryptocurrency mining to everyone. Unlike many companies whose promises lack a working product backing their claims, Subutai is proven, mature (v7.0), solves real-world problems, and is ready to use today. OptDyn is based in the United States with distributed teams in Europe, Asia, and South America." />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url('theme://images/apple-touch-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url('theme://images/apple-touch-icon-60x60.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url('theme://images/apple-touch-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('theme://images/apple-touch-icon-76x76.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url('theme://images/apple-touch-icon-114x114.png') }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url('theme://images/apple-touch-icon-120x120.png') }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url('theme://images/apple-touch-icon-144x144.png') }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url('theme://images/apple-touch-icon-152x152.png') }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('theme://images/apple-touch-icon-180x180.png') }}" />
+
+    <meta name="apple-mobile-web-app-title" content="OptDyn" />
+    <meta name="application-name" content="OptDyn" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
+        {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
+        {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
+        {% do assets.addCss('theme://css-compiled/theme'~compress) %}
+        {% do assets.addCss('theme://css/custom.css') %}
+        {% do assets.addCss('theme://css/line-awesome.min.css') %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 101) %}
+        {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
+        {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head %}
+</head>
+<body id="top" class="{% block body_classes %}{{ body_classes }}{% endblock %}">
+    <div id="page-wrapper">
+    {% block header %}
+        <section id="header" class="section">
+            <section class="container {{ grid_size }}">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="{{ home_url }}" class="navbar-brand mr-10"><img src="{{ url('user/themes/quark/images/optdyn.png') }}"></a>
+                    </section>
+                    <section class="navbar-section">
+
+                        <nav class="dropmenu animated">
+                            {% block header_navigation %}
+                        {% include 'partials/navigation.html.twig' %}
+                            {% endblock %}
+                        </nav>
+
+                        {% if config.plugins.login.enabled and grav.user.username %}
+                            <span class="login-status-wrapper"><i class="fa fa-user"></i> {% include 'partials/login-status.html.twig' %}</span>
+                        {% endif %}
+
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block hero %}{% endblock %}
+
+        <section id="start">
+        {% block body %}
+            <section id="body-wrapper" class="section">
+                <section class="container {{ grid_size }}">
+                    {% block messages %}
+                        {% include 'partials/messages.html.twig' ignore missing %}
+                    {% endblock %}
+                    {% block content %}{% endblock %}
+                </section>
+            </section>
+        {% endblock %}
+        </section>
+
+    </div>
+
+{% block footer %}
+    <footer id="footer">
+        <div class="footer-wrap container {{ grid_size }}">
+            <div class="footerBlock-menu">
+                <ul class="footerMenu">
+                    <li class="footerMenu-item"><a href="/privacy">Privacy</a><span class="vertDivider">&verbar;</span></li>
+                    <li class="footerMenu-item"><a href="/privacy#terms">Terms of Use</a><span class="vertDivider">&verbar;</span></li>
+                    <li class="footerMenu-item"><a href="/privacy#cookies">Cookies</a></li>
+                </ul>
+                <small>Copyright © 2013-2018 OptDyn Inc. <br class="showMobile">All rights reserved</small>
+            </div>
+            <div class="footerBlock-logo">
+                <div class="footerLogo-wrap">
+                    <img class="logo" src="{{ url('user/themes/quark/images/optdyn.png') }}" alt="OptDyn">
+                </div>
+            </div>
+            <div class="footerBlock-social">
+                <div class="social-wrap">
+                    <a href="https://www.facebook.com/optdyn/" class="socialLink" target="_blank"><i class="fa fa-facebook socialIcon"></i></a>
+                    <a href="https://twitter.com/optdyn" class="socialLink" target="_blank"><i class="fa fa-twitter socialIcon"></i></a>
+                    <a href="https://www.youtube.com/channel/UCISHGzbHjYWYFfu7krnYLkA" class="socialLink" target"_blank"><i class="fa fa-youtube socialIcon"></i></a>
+                    <a href="https://www.linkedin.com/company/optdyn/" class="socialLink" target="_blank"><i class="fa fa-linkedin socialIcon"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+
+    
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            {# <div class="mobile-logo">
+                {% include('@images/grav-logo.svg') %}
+            </div> #}
+            <nav class="overlay-menu">
+                {% include 'partials/navigation.html.twig' with {tree: true} %}
+            </nav>
+        </div>
+    </div>
+
+{% block bottom %}
+    {{ assets.js('bottom') }}
+{% endblock %}
+
+</body>

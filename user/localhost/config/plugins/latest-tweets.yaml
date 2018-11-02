@@ -1,0 +1,12 @@
+enabled: true
+twitter_id: optdyn
+tweets_to_display: 1
+ignore_replies: '1'
+include_rts: '0'
+consumerkey: veY62B1ZWCq8hq4KGZkIureNp
+consumersecret: bBAl5koaTexK897PZdT3uR84ut7k8zvR3ZnwAsw83D1QYjF5Rq
+accesstoken: 715639899324608517-8cqBUaQDwryObS5R5sf3GESyvnPcOe3
+accesstokensecret: kraRRF6xzi23e9tttyNsplXdKVKUjqsksU5w9tbMCyVhY
+built_in_css: '1'
+fontawesome: '1'
+read_more: 'Read More...'

@@ -1,0 +1,17 @@
+title: Grav
+default_lang: en
+author:
+  name: OptDyn
+  email: info@optdyn.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'OptDyn is the company behind Subutai™, the intelligent blockchain-driven platform that brings Open Source Peer-to-Peer (P2P) Cloud computing, Internet of Things (IoT), and cryptocurrency mining to everyone. Unlike many companies whose promises lack a working product backing their claims, Subutai is proven, mature (v7.0), solves real-world problems, and is ready to use today. OptDyn is based in the United States with distributed teams in Europe, Asia, and South America.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
