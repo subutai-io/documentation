@@ -1,5 +1,0 @@
----
-visible: false
----
-
-#Advanced Search
