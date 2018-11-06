@@ -1,0 +1,227 @@
+/*
+===============================================================================================================================
+Put your custom CSS in this file.
+===============================================================================================================================
+*/
+
+/* CSS to hide sidebar numbering (uncomment to enable) */
+/*
+#sidebar ul.topics > li > a b
+{
+    visibility: hidden;
+}
+*/
+
+/* CSS to hide clipboard icon (uncomment to enable) */
+/*
+.copy-to-clipboard {
+    display:none;
+}
+*/
+
+body {
+    letter-spacing: normal;
+}
+/* text font size */
+body p {
+    font-size: 1.2rem;
+}
+
+/* title */
+@font-face {
+    font-family: MavenPro;
+    src: url(../fonts/MavenPro-Regular.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: MavenPro;
+    letter-spacing: -1px;
+}
+a {
+    color: #078DD0;
+}
+a:active, a:hover, #body-inner a:hover {
+    color: #04346E;
+    text-decoration: none;
+}
+
+/* sidebar */
+/* header */
+#header {
+    width: 100%;
+    background: #078DD0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#logo {
+    margin: 20px 0;
+    width: 50%;
+}
+/********** SIDEBAR **********/
+/* search */
+.tntsearch-form {
+    margin-top: 60px;
+}
+.homeLink {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+.homeLink a {
+    color: #555;
+}
+.homeLink i {
+    font-size: 2rem;
+}
+.homeLink i:last-child {
+    font-size: .9rem;
+}
+.homeLink a:hover, .homeLink a:hover {
+    color: #078DD0;
+}
+#sidebar .advancedSearch {
+    color: #FFF;
+    margin-top: 10px;
+}
+#sidebar .advancedSearch:hover {
+    font-weight: 700;
+}
+/* menu */
+.dd-item {
+    font-family: MavenPro;
+}
+#sidebar ul.topics>li>a {
+    font-size: 1.4rem;
+}
+
+/* logo*/
+.logoTxt {
+    width: 100%;
+}
+/* page title */
+h1, #chapter h1, #chapter2 h1 {
+    margin-bottom: 10px;
+    border-bottom: none !important;
+}
+.titleDivider {
+    border-bottom: 4px solid #F0F2F4;
+    width: 40%;
+    margin: 0 auto;
+}
+#body h1 + hr {
+    margin-top: 0;
+}
+/* chapters pages */
+/* main title home */
+#chapter h1, .chapter2 h1 {
+    font-size: 3.25rem;
+}
+h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #F0F2F4;
+}
+#chapter h2, .chapter2 h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: unset;
+}
+#chapter p, .chapter2 p {
+    text-align: left;
+}
+#chapter ul li {
+    line-height: 1.5;
+    margin: 40px 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+#chapter ul li img {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+.chapter2 ul li a:first-child {
+    text-align: center;
+    width: 30%;
+}
+.chapter2 .topics li a:first-child {
+    text-align: left;
+    width: unset;
+}
+.chapter2 #chapter ul li a img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.chapter2 ul li a {
+    font-size: 1.25rem;
+}
+.topics li ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.chapter2 ul li ul li ul li a {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.topics li:nth-child(2) ul li {
+    font-size: 1.25rem;
+}
+/* chapter prod */
+.chapterProd #body-inner p:first-child {
+    margin-top: 0;
+}
+.chapterProd #body img {
+    margin-top: 0;
+    width: 80px;
+    height: auto;
+    display: block;
+}
+/* .topics li ul li ul li { */
+#sidebar li ul li ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+ul li, ol li {
+    margin: 20px 0;   
+}
+.chapter2 #body-inner ul {
+    padding-left: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.chapter2 #body-inner ul li {
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center; 
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#body-inner h1 img {
+    width: 60px;
+}
+
+/* copy to clipboard icon */
+.copy-to-clipboard {
+    background-image: url(/documentation/docs-subutai/user/themes/mytheme/images/clippy.svg);
+}
+pre .copy-to-clipboard {
+    opacity: .4;
+}
+pre .copy-to-clipboard:hover {
+    opacity: 1;
+}
