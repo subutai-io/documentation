@@ -1,0 +1,27 @@
+---
+title: 'Quick PeerOS Install'
+visible: true
+taxonomy:
+    category:
+        - docs
+---
+
+## Quick PeerOS Install
+The following quick install methods use Vagrant with VirtualBox or other supported hypervisors: 
+  
+* [Basic setup using Vagrant with VirtualBox](https://github.com/MarilizaC/doc_v2/wiki/Basic-setup-using-Vagrant-with-VirtualBox)
+* [Basic setup using Vagrant with other supported hypervisors](https://github.com/MarilizaC/doc_v2/wiki/Basic-setup-using-Vagrant-with-other-supported-hypervisors)
+
+Choose the hypervisor of your choice or based on your system requirements. Be sure that your system can accommodate the default settings assigned to a peer, including the following:
+
+* RAM size: 4098 MB
+* Disk storage size: 50 GB
+* CPU quantity: 2 (cores)
+
+To troubleshoot installation errors, see [Common errors encountered when using Vagrant plugins](https://github.com/MarilizaC/doc_v2/wiki/Maintain-your-Vagrant-plugins#-common-errors-encountered-when-using-vagrant-plugins).
+
+For those who prefer a user interface, a similar setup can be completed through the Subutai Control Center desktop application. With the Control Center, you can create and manage peers, as well as other components, like environments and containers. For more information, see [Using the Control Center]().
+
+After creating a peer, you can modify the peer settings manually or by using one of the Subutai software components. To know how, see [Using the Management Console]() or [Using the Control Center](). For maintenance of your Vagrant plugins, refer to [Maintain your Vagrant plugins](https://github.com/MarilizaC/doc_v2/wiki/Maintain-your-Vagrant-plugins).
+
+

@@ -1,0 +1,147 @@
+---
+title: 'Advanced PeerOS Install'
+visible: true
+taxonomy:
+    category:
+        - docs
+---
+
+
+## Advanced PeerOS Install
+
+Users can manually install PeerOS through the Advanced Install option, which allows flexibility in that you can specify the configurations to be included in the setup. This guide describes the recommended way of installing Subutai PeerOS on a fresh Debian system. Alternatively, the [Quick Install](../peeros-quick-install) option is also available, which uses the default setup and settings. 
+
+Subutai, which is based on Debian, has its own Debian repository. Setting up the Debian system involves the following procedures:
+1. Installing Subutai to convert the host into a Subutai Resource Host (RH)
+2. Importing a special container named “management”, which automatically installs the Subutai Management Console in the RH, to convert it into a Subutai Peer
+
+#### Before you start
+
+*Don’t forget to set aside extra disk, partition, or volume.*
+
+* **Extra disk, partition, or volume** - Whether you plan to install Subutai in a virtual machine or a fresh server, it is mandatory to have a separate disk, partition, or logical volume. It will serve as storage for your resource host. Refer to the hardware requirements and the rest of this section before initiating your installation.
+* **Using your email or social networking accounts** - Your email or social network account details are used only for verification and for setting up your unique username identifier. You may receive occasional product and community updates, but rest assured that your details will neither be used to send spam mails nor to solicit network contacts. Such practices are totally against our policies.
+   
+#### Hardware requirements
+Unlimited hardware configuration options are possible. However, when setting up a peer with a single resource host, we recommend running it on a virtual machine with the following minimum requirements:
+
+* 2 or more CPU cores
+* 4 GB of RAM (8 GB or more is best)
+* 2 disks or partitions - one for the operating system (more than 10 GB), and one for container storage (more than 100 GB)
+* 1 network adapter - preferably 1 Gbit (bridged)
+
+When running Subutai on a virtual machine, take note of the following guidelines with regard to hardware:
+* Peers can run on Hyper-V, GCE, AWS, KVM, VirtualBox, VMware, and Parallels. Make sure that these virtual hardware resources are available to the guest operating system.
+* A virtual machine is not necessary, but will prove a convenient approach. Peers can be installed on an existing physical host with full security and isolation without a VM. In this case, similar hardware requirements apply to the existing physical host.
+
+#### Operating system requirements
+Review these general caveats and requirements for the operating system on which you want to install Subutai:
+* Using a freshly installed and stable version of Debian operating system is preferable.
+* Update all system components to the latest available version including system libraries and the kernel.
+* Avoid installing additional components on the system.
+* Avoid desktop distributions due to NetworkManager’s dnsmasq running on port 53.    
+  If not possible, *be sure to disable dnsmasq on desktop editions*. Refer to the instructions below, [Using a desktop operating system](#Using-desktop-operating-system).
+* Ensure that the system has network connectivity (via a bridge if virtual), either with a static IP or one provided by DHCP.
+* Before installing Subutai, verify that the required network ports listed below are not used:
+  * udp/53 - DNS service port
+  * udp/67 - DHCP service port
+  * tcp/80 - Web service port
+  * tcp/443 - Secure web service port
+  * udp/1900 - Service discovery service port
+  * udp/6881 - P2P service port
+  * tcp/8086 - Metrics service port
+  * tcp/8443 - Subutai Management Console web service port
+  * tcp/8444 - Subutai Management LAN communication service port    
+  
+  To verify, run `sudo lsof -i :53`, for example.
+* After your installation, set the file descriptor limit by adding it to the `/etc/profile` file:   
+  `echo “ulimit -n 65535”`
+* Make sure to restart your computer after you have completed the installation and set up procedures.
+
+#### <a name="Using-desktop-operating-system"></a> Using a desktop operating system
+Using a guest virtual machine allows for maximum flexibility to install a stock unmodified guest VM operating system, and reduces complications. Debian is our recommended operating system.
+
+Virtual or not, desktop editions should be avoided. Besides unnecessarily wasting resources for the windowing system, they use NetworkManager that installs dnsmasq on port 53. If you do need to use a desktop operating system, here are the procedures to ensure that dnsmasq is disabled: 
+
+1. Check if port 53 is already bound:      
+   `~$ sudo lsof -i :53`   
+  
+   Any output from `lsof` means that port 53 is being used.
+
+2. After verifying that port 53 is already bound, you must stop dnsmasq permanently. Doing so is safe and won’t affect the general use of your system. Run the following command:    
+   `~$ sudo systemctl disable systemd-resolved.service`    
+   `~$ sudo service systemd-resolved stop`
+
+3. Edit `/etc/NetworkManager/NetworkManager.conf` and then change the DNS property in the `[main]` section so that it is set to `default: dns=default`.
+  
+   Here's how the file may look after you have added or modified the DNS property:   
+    ```
+    [main]   
+    plugins=ifupdown, keyfile   
+    dns=default   
+    [ifupdown]   
+    managed=false
+    ```   
+4. Remove `resolv.conf` and then restart NetworkManager:       
+   `~$ sudo rm /etc/resolv.conf`   
+   `~$ sudo service network-manager restart`   
+   `~$ sudo killall dnsmasq`
+
+   The last `killall` command is just a precaution, don't worry if it says, “no such process”. Another `lsof` for port 53 
+   should not produce any output now, which means you’re ready to start the installation.
+
+   :heavy_check_mark: If NetworkManager is not configured properly, after restart, you may need to add your nameserver into the `/etc/resolv.conf` file it generates. It’s best to add this to the NetworkManager connection configuration if you don’t want the `resolv.conf` file to be overwritten. 
+
+### Install Subutai PeerOS
+:heavy_exclamation_mark: All files must be run as root or sudo user.
+
+1. Add `contrib` and `non-free` to your main repository. For example, `sed -i ‘s/main/main contrib non-free/g’ /etc/apt/sources.list`
+
+   Optionally, you can use packages from Debian backports:    
+   Add `deb http://deb.debian.org/debian stretch-backports main contrib` to `/etc/apt/sources.list`.
+2. Run: `apt update`
+3. Install `zfsutils`:
+   `apt install spl-dkms && apt install zfsutils-linux`
+
+   If you are installing packages from Debian backports, run these instead:    
+   `apt install -t stretch-backports dkms spl-dkms`   
+   `apt install -t stretch-backports zfs-dkms`
+4. Run: `/sbin/modprobe zfs`
+5. Create your storage partition using `ZFS`:       
+   `zpool create -f subutai /<path to your device>` (for example, `/dev/xvdb`).
+6. Create your mountpoint:   
+   `zfs create -o mountpoint="/var/lib/lxc" subutai/fs`
+7. Install `lxc`: `apt install lxc`
+8. Add the Subutai repository to `apt`:   
+   `echo "deb http://deb.subutai.io/subutai prod main" > /etc/apt/sources.list.d/subutai.list`
+9. Make sure `dirmngr` is installed:   
+   `apt-get install dirmngr`
+10. Add security keys:   
+   `apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C6B2AC7FBEB649F1`
+11. Update `apt` and install Subutai:    
+   `apt update && apt install subutai`
+
+#### Troubleshooting installation errors  
+To recover from an error during installation, you can manually run:   
+`dpkg --configure spl-dkms`   
+`dpkg --configure zfs-dkms`
+
+### Import the Management Container
+1. Now that you have successfully installed PeerOS and have an active resource host, you can import the Management software and its Console to convert this host into a Subutai peer:
+
+   `# subutai import management`
+
+2. Restart services to make sure all goes smoothly:
+
+   `# systemctl stop nginx && systemctl disable nginx && apt-get update && apt-get upgrade && systemctl restart subutai-nginx && systemctl status subutai-nginx`
+
+#### Troubleshooting a CDN unreachable error   
+When installing directly on a desktop edition, the NetworkManager configuration may not configure the `/etc/resolv.conf`  file properly to resolve CDN addresses causing and displaying - “CDN unreachable errors” - with the `import` command. If this happens, you must configure NetworkManager to use the right nameserver. For more information, refer to the note on step 4 of [Using a desktop operating system](#Using-desktop-operating-system). 
+
+#### Congratulations! You have a peer!
+At the end of the output stream, you should see the Management Console’s URL, as shown in the screenshot below (within the red box).    
+(insert screenshot here)
+
+Using this URL, you can access the Management Console and manage the peer. On the output stream, the default admin password, "secret", is also provided. On your first login, you can assign your own admin password. 
+
+:heavy_check_mark: Before you log into the Management Console, set up PGP keys manually or you can use the [E2E Plugin](). 
