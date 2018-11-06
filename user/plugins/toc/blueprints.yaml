@@ -1,0 +1,211 @@
+name: "Toc"
+version: "1.4.1"
+description: "This plugin automagically generates a (minified) Table of Contents based on special markers in the document and adds it into the resulting HTML document."
+icon: "language"
+author:
+  name: "Sommerregen"
+  email: "sommerregen@benjamin-regler.de"
+homepage: "https://github.com/sommerregen/grav-plugin-toc"
+keywords: ["toc", "filter", "formatter", "plugin"]
+docs: "https://github.com/sommerregen/grav-plugin-toc/blob/master/README.md"
+bugs: "https://github.com/sommerregen/grav-plugin-toc/issues"
+license: "MIT/GPL"
+
+form:
+  validation: strict
+
+  fields:
+    global:
+      type: section
+      title: PLUGINS.TOC.GLOBAL_CONFIG
+      underline: 1
+
+      fields:
+        enabled:
+          type: toggle
+          label: PLUGINS.TOC.PLUGIN_STATUS
+          highlight: 1
+          default: 0
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+          validate:
+            type: bool
+
+        active:
+          type: toggle
+          label: PLUGINS.TOC.PLUGIN_ACTIVE
+          help: PLUGINS.TOC.PLUGIN_ACTIVE_HELP
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.YES
+            0: PLUGIN_ADMIN.NO
+          validate:
+            type: bool
+
+        built_in_css:
+          type: toggle
+          label: PLUGINS.TOC.BUILTIN_CSS
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.YES
+            0: PLUGIN_ADMIN.NO
+          validate:
+            type: bool
+
+    specific:
+      type: section
+      title: PLUGINS.TOC.SPECIFIC_CONFIG
+      underline: 1
+
+      fields:
+        title:
+          type: toggle
+          label: PLUGINS.TOC.TITLE
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.YES
+            0: PLUGIN_ADMIN.NO
+          validate:
+            type: bool
+
+        anchorlink:
+          type: toggle
+          label: PLUGINS.TOC.ANCHORLINK
+          help: PLUGINS.TOC.ANCHORLINK_HELP
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.YES
+            0: PLUGIN_ADMIN.NO
+          validate:
+            type: bool
+
+        permalink:
+          type: toggle
+          label: PLUGINS.TOC.PERMALINK
+          help: PLUGINS.TOC.PERMALINK_HELP
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.YES
+            0: PLUGIN_ADMIN.NO
+          validate:
+            type: bool
+
+        placement:
+          type: select
+          size: small
+          label: PLUGINS.TOC.PLACEMENT
+          default: left
+          options:
+            left: PLUGINS.TOC.PLACEMENT_LEFT
+            right: PLUGINS.TOC.PLACEMENT_RIGHT
+
+        visible:
+          type: select
+          size: large
+          label: PLUGINS.TOC.VISIBLILITY
+          default: hover
+          options:
+            hover: PLUGINS.TOC.VISIBLILITY_HOVER
+            always: PLUGINS.TOC.VISIBLILITY_ALWAYS
+
+        class:
+          type: selectize
+          size: large
+          label: PLUGINS.TOC.CLASS
+          help: PLUGINS.TOC.CLASS_HELP
+          validate:
+            type: commalist
+
+        icon:
+          type: text
+          size: x-small
+          label: PLUGINS.TOC.ICON
+          help: PLUGINS.TOC.ICON_HELP
+          placeholder: "#"
+          default: "#"
+          validate:
+            type: string
+
+        baselevel:
+          type: text
+          size: x-small
+          label: PLUGINS.TOC.BASELEVEL
+          default: 1
+          validate:
+            type: int
+            min: 1
+            max: 6
+
+        headinglevel:
+          type: text
+          size: x-small
+          label: PLUGINS.TOC.HEADINGLEVEL
+          default: 6
+          validate:
+            type: int
+            min: 1
+            max: 6
+
+        slug:
+          type: section
+          title: PLUGINS.TOC.SLUG.SECTION
+
+          fields:
+            slug.truncate:
+              type: toggle
+              label: PLUGINS.TOC.SLUG.TRUNCATE
+              highlight: 1
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
+
+            slug.granularity:
+              type: select
+              size: small
+              label: PLUGINS.TOC.SLUG.GRANULARITY.LABEL
+              default: words
+              options:
+                words: PLUGINS.TOC.SLUG.GRANULARITY.WORDS
+                characters: PLUGINS.TOC.SLUG.GRANULARITY.CHARACTERS
+              validate:
+                type: string
+
+            slug.length:
+              type: text
+              size: x-small
+              label: PLUGINS.TOC.SLUG.LENGTH
+              default: 32
+              placeholder: 32
+              validate:
+                type: int
+                min: 1
+                max: 255
+
+            slug.break:
+              type: text
+              size: x-small
+              label: PLUGINS.TOC.SLUG.BREAK
+              help: PLUGINS.TOC.SLUG.BREAK_HELP
+              default: "-"
+              placeholder: "-"
+              validate:
+                type: string
+
+            slug.pad:
+              type: text
+              size: x-small
+              label: PLUGINS.TOC.SLUG.PAD
+              help: PLUGINS.TOC.SLUG.PAD_HELP
+              default: "-..."
+              placeholder: "-..."
+              validate:
+                type: string
