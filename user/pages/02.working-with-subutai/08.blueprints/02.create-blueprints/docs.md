@@ -54,14 +54,6 @@ instructions to optimally allocate or purchase resources based on
 several factors called environment governance rules involving criteria
 such as:
 
-.. raw:: html
-
-   <p>
-
-.. raw:: html
-
-   </p>
-
 -  Resource Costs
 -  Performance Criteria
 -  Application Load Distribution
@@ -100,7 +92,6 @@ All blueprints **MUST** have a specification file named
 "**Subutai.json**" in the root of the git repository. This file
 specifies various parameters that govern how the blueprint is used by
 the Subutai P2P Platform. The JSON file is pretty simple, take a look
-...
 
 ### A Simple Blueprint
 
@@ -111,10 +102,6 @@ with a single container. The blueprint can be used to create a new
 environment, or add the application (not much of one with its container)
 to an existing environment:
 
-**NOTE** I will probable change this example to something more
-interesting and a bit more useful, maybe into a Wordpress application.
-
-.. code:: json
 
     {
       "name": "My-Website",
@@ -238,14 +225,6 @@ environmental recommendations for the application's infrastructure stack
 to operate properly. The container infrastructure is then installed on
 the peers selected by blueprint users.
 
-.. raw:: html
-
-   <p>
-
-.. raw:: html
-
-   </p>
-
 ### Let's Test It
 
 
@@ -305,8 +284,6 @@ settings to be reused the next time the blueprint is used.
 
 Here's what the blueprint above looks like after parameterizing some
 fields in JSON entities:
-
-.. code:: json
 
     {
       "name": "${environmentName}",
@@ -407,8 +384,6 @@ domains by pulling them in from the Bazaar user's profile. Bazaar users
 can create subdomains under the base ``envs.subutai.cloud`` using the
 Bazaar.
 
-[TODO screenshot showing domains area]
-
     Right now custom user domains are not supported but on our short
     list. Later on with some breathing room, we will support using your
     own custom domains as well as registering new domains with the
@@ -426,14 +401,6 @@ prompting for the following variables:
    Blueprint Wizard
 
 ### Uploading Custom Templates
-
-.. raw:: html
-
-   <p>
-
-.. raw:: html
-
-   </p>
 
 You'll notice we used an existing container template in the blueprint
 examples so far. Although discouraged, for blueprints, custom templates
@@ -495,8 +462,6 @@ or more playbooks, shell scripts etc, you can do virtually anything you
 want to configure and build up the application. Here's how we can modify
 our blueprint and have it use a playbook inside the repository, which of
 course is all version controlled:
-
-.. code:: json
 
     {
       "name": "${environmentName}",
@@ -630,3 +595,17 @@ python-interpreter to use for a group like so:
 You can use this same ``python-interpreter`` attribute to point to
 different container specific python interpreters. This enables BP
 authors to use any version of Ansible on the Subutai Platform.
+
+### Branding Features
+
+Blueprints have branding attributes that allow authors, projects, and
+companies to help promote their brand. Brand information can be put into
+the following top level JSON Object attributes in the Subutai.json file:
+
++-------------+-------------+----------------------------------------------------+
+| Attribute   | Data Type   | Purpose                                            |
++=============+=============+====================================================+
+| author      | string      | the name, email, or GitHub account of the author   |
++-------------+-------------+----------------------------------------------------+
+| version     | string      | the version of the blueprint                       |
++-------------+-------------+----------------------------------------------------+
