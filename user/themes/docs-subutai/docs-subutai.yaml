@@ -14,6 +14,6 @@ streams:
      type: ReadOnlyStream
      prefixes:
        '':
-       - user/themes/mytheme
+       - user/themes/docs-subutai
        - user/themes/learn2-git-sync
        - user/themes/learn2

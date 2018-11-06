@@ -18,7 +18,7 @@ home:
   alias: /welcome
   hide_in_urls: false
 pages:
-  theme: mytheme
+  theme: docs-subutai
   order:
     by: default
     dir: asc
