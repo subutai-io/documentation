@@ -22,31 +22,30 @@ Interface.
 ###Bazaar Interface
 
 - [Top menu](top-menu)
-  - Balance
-  - Notifications
-  - Chat
-  - User profile
+  - [Balance](top-menu#balance)
+  - [Notifications](top-menu#notifications)
+  - [Chat](top-menu#chat)
+  - [User profile](top-menu#user-profile)
 - [User menu](user-menu)
-  - Settings
-  - Billing
-  - My peers
-  - Domains
-  - Products
-  - SSH key management
-  - My Blueprints
-  - Application settings
-  - CDN
-  - Organizations
-  - Friends
-  - Invitations & Coupons
-  - Cloud accounts
-- [Bazaar tools](tools)
-  - Environments
-  - War Room
-  - Peers
-  - Products
-  - Map of Peers
-  - Organisations
-  - Users
-
+  - [Settings](user-menu#settings)
+  - [Billing](user-menu#billing)
+  - [My peers](user-menu#my-peers)
+  - [Domains](user-menu#domains)
+  - [Products](user-menu#products)
+  - [SSH key management](user-menu#ssh-key-management)
+  - [My Blueprints](user-menu#my-blueprints)
+  - [Application settings](user-menu#application-settings)
+  - [CDN](user-menu#cdn)
+  - [Organizations](user-menu#organizations)
+  - [Friends](user-menu#friends)
+  - [Invitations & Coupons](user-menu#invitations-coupons)
+  - [Cloud accounts](user-menu#cloud-accounts)
+- [Bazaar tools](bazaar-tools)
+  - [Environments](bazaar-tools/environments)
+  - [War Room](bazaar-tools/war-room)
+  - [Peers](bazaar-tools/peers)
+  - [Products](bazaar-tools/products)
+  - [Map of Peers](bazaar-tools/map-of-peers)
+  - [Organizations](bazaar-tools/organizations)
+  - [Users](bazaar-tools/users)
 
