@@ -15,7 +15,7 @@ languages:
   http_accept_language: false
   override_locale: false
 home:
-  alias: /welcome
+  alias: /introduction
   hide_in_urls: false
 pages:
   theme: docs-subutai
