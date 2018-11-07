@@ -1,5 +1,6 @@
 ---
-title: 'Quick PeerOS Install'
+title: 'Maintain your Vagrant plugins'
+Menu: Maintain Vagrant Plugins
 visible: true
 taxonomy:
     category:

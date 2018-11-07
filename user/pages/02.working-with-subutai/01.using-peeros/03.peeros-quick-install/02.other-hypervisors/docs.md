@@ -1,5 +1,5 @@
 ---
-title: 'Quick PeerOS Install'
+title: 'Other Hypervisors'
 visible: true
 taxonomy:
     category:
