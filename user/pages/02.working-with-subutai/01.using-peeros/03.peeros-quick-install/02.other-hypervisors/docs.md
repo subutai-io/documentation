@@ -23,10 +23,10 @@ At Subutai, we have built Vagrant boxes, available on Vagrant Cloud, for the fol
 |------------------|---------------|----------------|--------------------|
 |VirtualBox (5.2.0 or higher)|✅|✅|✅|
 |Libvirt|✅| | |
-|Hyper-V (8.1 or higher)|||✅|
-|VMware Workstation (regular and Pro)|✅||✅|
-|VMware Fusion (regular and Pro)||✅||
-|Parallels Desktop (10 or higher; only Pro and Business editions)||✅||
+|Hyper-V (8.1 or higher)| | |✅|
+|VMware Workstation (regular and Pro)|✅| |✅|
+|VMware Fusion (regular and Pro)| |✅| |
+|Parallels Desktop (10 or higher; only Pro and Business editions)| |✅| |
 
 Here are the boxes to choose from, two versions for each supported Vagrant provider. The boxes use a different Linux OS flavor for the guest virtual machine OS.
 
