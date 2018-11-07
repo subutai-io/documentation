@@ -49,3 +49,7 @@ Your quick guide to setting up the Subutai products and components.
 **[Working with Subutai](../working-with-subutai#working-with-subutai)**
 
 Learn about the products and how to use their features.
+
+### Subutai 101
+
+[plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)

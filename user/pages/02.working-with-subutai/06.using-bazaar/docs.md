@@ -19,6 +19,12 @@ more complex applications such as Cassandra, Apache, Wordpress, Jetty or
 even a full-fledged GNU-Linux Operating System with a Graphic User
 Interface.
 
+###Sign up
+
+Sign up to the Bazaar by accessing the [register page](https://bazaar.subutai.io/register). You can either inform your e-mail and click "Sign up", or choose one of the options of external authentication (Facebook, Google or GitHub).
+
+[plugin:youtube](https://www.youtube.com/watch?v=70BsnBbT-YQ)
+
 ###Bazaar Interface
 
 - [Top menu](top-menu)
@@ -48,4 +54,3 @@ Interface.
   - [Map of Peers](bazaar-tools/map-of-peers)
   - [Organizations](bazaar-tools/organizations)
   - [Users](bazaar-tools/users)
-

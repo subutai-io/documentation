@@ -8,16 +8,13 @@ taxonomy:
 ---
 
 
-
 ### Use Case: Be Your Own Micro Cloud Provider
 
 By using P2P technologies to combine resources on computers, Subutai already provides an infrastructure as a service cloud environment. Subutai users can create cloud environments effectively appearing as virtual data centers. The more computing resources you throw into your peer[s] and the number of peers supporting your environment, the bigger the virtual data center. Scaling a peer with more resources and scaling the number of peers themselves give Subutai its elastic cloud capabilities. Higher level infrastructure services are built on this such as an S3 compatible clone. Subutai aims to model and implement as many Amazon compatible services as possible.
 
-AppScale has been integrated with Subutai to provide a Google App Engine (GAE)-compatible PaaS layer. Applications written and deployed to GAE can also be run on Subutai with the AppScale plugin. That means you can write PHP, Python, Java, and Go based GAE applications to run on Subutai while distributing the application on peers across the Internet
-
 ### Use Case: Virtual Office
 
-We're very excited about building applications that can run across P2P cloud infrastructures for distributed startup teams and SME's with multiple branch offices. Not only do you tie people and SOHO offices together, but you enable them with common back-office and productivity applications they need. Native built-in social cloud services and the AppScale based PaaS layer can be utilized to quickly build your ultimate application on Subutai.
+We're very excited about building applications that can run across P2P cloud infrastructures for distributed startup teams and SME's with multiple branch offices. Not only do you tie people and SOHO offices together, but you enable them with common back-office and productivity applications they need. Native built-in social cloud services can be utilized to quickly build your ultimate application on Subutai.
 
 ### Use Case: Virtual Electronics and IoT Laboratory
 
@@ -65,6 +62,7 @@ Finally, the Subutai Blockchain Router is an Open Hardware broadband router, RAI
 
 Almost everyone loves green energy. Unfortunately from time to time the energy demand goes above the energy supply of hydro electric plants, solar farms, and other low-polluting sources. Hot summers, with lots of air conditioning, cooling demands for food, and more and more demands on electricity have forced electric companies to direct their customers to using more efficient electric products and during off-peak hours.
 Many people are using home and business automation to reduced their consumption of electricity by reducing lighting to “need to have” (turning lights on and off automatically), and scheduling heavy use of electricity to off-peak. Electric companies not only want to help their customers save electricity, but they want to carefully monitor power usage to determine other ways of helping save electricity during peak hours. Many electric companies are doing a lot of research in reducing power consumption.
+
 IoT enters into this, but power companies fear IoT due to the possibility of viruses and Denial of Service (DoS) attacks getting into the power grid through the “things”, and having massive amounts of “things” affect other parts of the grid. Customers fear the use of IoT controlling their homes.
 
 The Subutai™ Blockchain Router uses sophisticated technology for examining every data packet that passes through the system, either from the outside grid and telecommunication lines to the “things” inside the home or business, or from the “things” going back to the outside, for viruses and other malware. The Blockchain Router also constantly examines the operating system for anomalies in operation to determine if the operating system itself has become infected. A Dynamic Information Flow Tracking (DIFT) coprocessor in the router’s FPGA is being designed to inspect router instructions in realtime to trap malicious code. Therefore power companies have a much better assurance of using data from homes and businesses when using the Subutai Blockchain Router.

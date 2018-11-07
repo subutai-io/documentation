@@ -6,12 +6,11 @@ taxonomy:
         - docs
 ---
 
-[TOC]
-
+Learn more about the tools in Subutai Bazaar:
 
 - [Environments](environments)
 - [War Room](war-room)
-- [Peers])(peers)
+- [Peers](peers)
 - [Products](products)
 - [Map of Peers](map-of-peers)
 - [Organizations](organizations)
