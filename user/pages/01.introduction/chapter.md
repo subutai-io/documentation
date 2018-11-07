@@ -20,7 +20,7 @@ Here you can find the instructions and guidelines on installing, running, and ma
 |![PeerOS](icon_peerOS.png)|![Bazaar](icon_bazaar.png)|![Blockchain Router](icon_brouter.png)|
 |Open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software|Global marketplace to buy/sell/exchange/barter computing resources and applications online|Broadband cloud router and </br> open hardware IoT gateway </br> that serves as a plug-and-play cryptocurrency wallet and mining device|
 
-### Companion Software
+### Software Components
 
  Aside from the products, Subutai has companion software that enable easy integration, management, and access to the platform’s rich features.
 
