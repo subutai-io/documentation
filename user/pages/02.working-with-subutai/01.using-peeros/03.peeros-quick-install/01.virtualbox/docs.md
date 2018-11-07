@@ -13,7 +13,7 @@ The easiest and quickest way to get a Subutai Peer running on any platform is to
 
 Download the latest [Vagrant 2.0.1](https://www.vagrantup.com/downloads.html) and [VirtualBox 5.1.0](https://www.virtualbox.org/wiki/Downloads) or higher from their respective websites.    
 
-!!! Don't use package managers to install these software: package manager versions are usually out of date. 
+!!!! Don't use package managers to install these software: package manager versions are usually out of date. 
 
 ***
 
