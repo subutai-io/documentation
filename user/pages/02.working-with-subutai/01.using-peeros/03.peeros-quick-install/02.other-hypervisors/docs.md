@@ -39,7 +39,7 @@ In case you encounter an error during installation, see [Common errors encounter
 
 <p> Between Libvirt's QEMU and KVM hypervisors with remote management capabilities, the Vagrant Subutai plugin currently supports only the local KVM hypervisor.  
 
-:heavy_check_mark: Vagrant modifications can be made to create remote KVM-based virtual machines, but that is beyond the scope of this guide.
+!!! Vagrant modifications can be made to create remote KVM-based virtual machines, but that is beyond the scope of this guide.
 
 To install and use the provider (on Linux variants only):
 1. Install the KVM hypervisor on your local machine.
@@ -118,7 +118,8 @@ Vagrant comes ready with a built-in provider for Hyper-V and VirtualBox, so you 
      `vagrant init subutai/stretch`    
      `vagrant up --provider hyperv`   
    
-     :heavy_check_mark: After running vagrant up, when asked to choose a switch, select the option for vagrant-subutai.
+!!!! After running vagrant up, when asked to choose a switch, select the option for vagrant-subutai.
+
    * Vagrant VirtualBox provider   
      `vagrant plugin install vagrant-vbguest`   
      `vagrant init subutai/stretch`   
