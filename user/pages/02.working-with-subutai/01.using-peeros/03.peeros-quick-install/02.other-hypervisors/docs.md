@@ -22,7 +22,7 @@ At Subutai, we have built Vagrant boxes, available on Vagrant Cloud, for the fol
 |Supported OS|Linux|Mac|Windows|
 |------------------|---------------|----------------|--------------------|
 |VirtualBox (5.2.0 or higher)|✅|✅|✅|
-|Libvirt|✅|||
+|Libvirt|✅| | |
 |Hyper-V (8.1 or higher)|||✅|
 |VMware Workstation (regular and Pro)|✅||✅|
 |VMware Fusion (regular and Pro)||✅||
