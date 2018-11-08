@@ -14,22 +14,22 @@ Learn about the Subutai products and how to use their features.
 
 [TOC]
 
-### 1. <a name="getting-started"></a>Getting Started with Subutai
+#### 1. <a name="getting-started"></a>Getting Started with Subutai
 
 There are different ways to get started using Subutai, whether you want to set up peers and rent your compute resources or you want to look for available resources to rent.
 
-#### Create a Bazaar account
+##### Create a Bazaar account
 
 Users who want to rent compute resources or those who are new to the Subutai platform could start with the basic [Bazaar](https://bazaar.subutai.io) account. In Bazaar, check out the available peers and apps, like Blueprints or plugins that you can use. Create environments where you can set up and access those apps. [Learn how create your account](using-bazaar#Sign-up).
 
-#### Create and run peers
+##### Create and run peers
 
 Peer owners or administrators can get started through these methods:
 
 - Do a quick install of PeerOS, using Vagrant with VirtualBox or other hypervisors, and then get a peer running in no time. Your journey begins [here](using-peeros).
 - Those who need a user interface can create peers using the Control Center desktop application. You need a Bazaar account, which is used to log in to the Control Center. Get more information and instructions [here](using-bazaar#Sign-up).
 
-#### Use a Subutai Blueprint
+##### Use a Subutai Blueprint
 
 Use enhanced templates that we call “Blueprints” to create cloud environments and install applications at the same time. Using blueprints is a quick way of deploying applications within a cloud environment, on a peer that you own or rent from another user. Check our growing collection of Blueprints: file hosting (Nextcloud); CMS (WordPress, Grav); smart contract development (Blockchain in a Box); gaming (Minecraft Server), and lots more. [Install a blueprint](blueprints/using-blueprints).
 

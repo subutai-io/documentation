@@ -1,5 +1,5 @@
 ---
-title: 'War Rooom'
+title: 'War Room'
 visible: true
 taxonomy:
     category:

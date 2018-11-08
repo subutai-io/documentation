@@ -1,12 +1,12 @@
 ---
-title: 'About the Subutai Open Source Project'
-menu: Open Source Project
+title: 'Use Cases'
 visible: true
 taxonomy:
     category:
         - docs
 ---
 
+[TOC]
 
 ### Use Case: Be Your Own Micro Cloud Provider
 
