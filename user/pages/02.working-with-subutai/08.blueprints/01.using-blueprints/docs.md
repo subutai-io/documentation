@@ -22,9 +22,9 @@ application:
 
     **NOTE:** If you want to install into an existing environment you
     **MUST** use the third option by navigating to an existing
-    environment and adding the application. See `Environment:
+    environment and adding the application. See [Environment:
     Applications
-    Tab <https://github.com/subutai-blueprints/hackathon/wiki/Using-Subutai-Blueprints#environment-applications-tab>`__.
+    Tab](https://github.com/subutai-blueprints/hackathon/wiki/Using-Subutai-Blueprints#environment-applications-tab).
 
 The different ways to install applications using blueprints are
 explained in detail within the following sections.
