@@ -1,12 +1,11 @@
 ---
-title: 'Management Console'
+title: 'Using the Management Console'
+Menu: Management Console
 visible: true
 taxonomy:
     category:
         - docs
 ---
-
-# Using the Management Console
 
 Find out how to use the features of the Management Console, from monitoring to maintenance of peers, environments, and containers. 
 
@@ -46,7 +45,7 @@ On the address bar of a browser, enter the Console’s IP address and port numbe
 
 From the Tools menu, go to Peers. On the Peers page, select the peer that you want to access to open its details page. On this page, click the Open Subutai Console icon to log in to the Console.
 
- !! If you want to access a shared peer, click My Peers and then go to the Shared peers tab.
+!!! If you want to access a shared peer, click My Peers and then go to the Shared peers tab.
 
 * **From Control Center**    
 From the menu, go to Peers and then select the peer that you want to access. On the Peer page, click **Open Console** to access the Login page.
@@ -85,7 +84,7 @@ Beside the Bazaar logo, you can see the current status of a registered peer: Onl
 * **Notifications and logs**    
   The Notification bell with a number indicates the presence of notifications or logs. These notify you of available updates, task status, and change in Console settings or components.
   
-!! If you want to view log details, go to System > Updates.
+!!! If you want to view log details, go to System > Updates.
 
  Click the bell to display the list of notifications.
 
