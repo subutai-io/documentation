@@ -5,7 +5,7 @@ taxonomy:
         - docs
 child_type: docs
 toc:
-	headinglevel: 3
+	headinglevel: 4
 ---
 
 # Working with Subutai
@@ -14,7 +14,7 @@ Learn about the Subutai products and how to use their features.
 
 [TOC]
 
-#### 1. <a name="getting-started"></a>Getting Started with Subutai
+#### <a name="getting-started"></a>Getting Started with Subutai
 
 There are different ways to get started using Subutai, whether you want to set up peers and rent your compute resources or you want to look for available resources to rent.
 
@@ -33,21 +33,21 @@ Peer owners or administrators can get started through these methods:
 
 Use enhanced templates that we call “Blueprints” to create cloud environments and install applications at the same time. Using blueprints is a quick way of deploying applications within a cloud environment, on a peer that you own or rent from another user. Check our growing collection of Blueprints: file hosting (Nextcloud); CMS (WordPress, Grav); smart contract development (Blockchain in a Box); gaming (Minecraft Server), and lots more. [Install a blueprint](blueprints/using-blueprints).
 
-### 2. Install the software components
+#### Install the software components
 
 Peer owners, managers, and administrators can start using the software components built to easily access and manage peers, environments, and containers.
 
-#### Using the E2E Plugin
+##### Using the E2E Plugin
 
 This browser plugin facilitates working with peers by managing PGP-based authentication and encryption. Tasks requiring authentication need PGP keys that can be generated and managed by the E2E plugin.
 
-#### Using the Control Center
+##### Using the Control Center
 This convenient desktop application is designed for working with Subutai Bazaar and PeerOS. Users can create and manage peers, environments, and containers using the features of the Control Center.
 
-#### Using the Management Console
+##### Using the Management Console
 This online application exposes PeerOS functionality to enable creation and management of peers, environments, and containers. It is automatically installed and set up during peer creation.  
 
-### 3. Using PeerOS
+#### Using PeerOS
 
 - [Subutai PeerOS: An Overview](using-peeros#overview)    
 - [Get to Know the PeerOS Components](using-peeros/peeros-components)    
@@ -55,6 +55,6 @@ This online application exposes PeerOS functionality to enable creation and mana
 - [Advanced PeerOS Install](using-peeros/peeros-advanced-install)
 - [Manage Peers](using-peeros/manage-peers)
 
-### 4. Using Bazaar
+#### Using Bazaar
 
 - [Using the Subutai Bazaar](using-bazaar)
