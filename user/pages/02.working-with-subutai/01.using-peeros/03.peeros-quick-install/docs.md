@@ -20,8 +20,8 @@ Choose the hypervisor of your choice or based on your system requirements. Be su
 
 To troubleshoot installation errors, see [Common errors encountered when using Vagrant plugins](maintain-vagrant-plugins).
 
-For those who prefer a user interface, a similar setup can be completed through the Subutai Control Center desktop application. With the Control Center, you can create and manage peers, as well as other components, like environments and containers. For more information, see [Using the Control Center]().
+For those who prefer a user interface, a similar setup can be completed through the Subutai Control Center desktop application. With the Control Center, you can create and manage peers, as well as other components, like environments and containers. For more information, see [Using the Control Center](../../../software-components/control-center).
 
-After creating a peer, you can modify the peer settings manually or by using one of the Subutai software components. To know how, see [Using the Management Console]() or [Using the Control Center](). For maintenance of your Vagrant plugins, refer to [Maintain your Vagrant plugins](maintain-vagrant-plugins).
+After creating a peer, you can modify the peer settings manually or by using one of the Subutai software components. To know how, see [Using the Management Console]() or [Using the Control Center](../../../software-components/control-center). For maintenance of your Vagrant plugins, refer to [Maintain your Vagrant plugins](maintain-vagrant-plugins).
 
 
