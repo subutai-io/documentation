@@ -32,7 +32,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 `vagrant plugin update vagrant-subutai `
 
 #### <a name="Common-errors-Vagrant-plugins"></a> Common errors encountered when using Vagrant plugins   
-:triangular_flag_on_post: **Error:** No usable default provider could be found for your system
+- **Error:** No usable default provider could be found for your system
 
     No usable default provider could be found for your system.
     
@@ -43,7 +43,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: Setting up Vagrant with a provider that is not supported.    
 * Action: Use any of the supported Vagrant providers and their versions from the table here.
 
-:triangular_flag_on_post: **Error:** There are errors in the configuration of this machine
+- **Error:** There are errors in the configuration of this machine
 
     Bringing machine 'default' up with 'vmware_desktop' provider...
     There are errors in the configuration of this machine. Please fix the following 
@@ -56,7 +56,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Action: To update the Vagrant Subutai plugin, run: 
 `vagrant plugin update vagrant-subutai`
 
-:triangular_flag_on_post: **Error:** VT-x is disabled in the BIOS for all CPU modes 
+- **Error:** VT-x is disabled in the BIOS for all CPU modes 
 
     The system cannot find the path specified.
     There was an error while executing `VBoxManage`, a CLI used by Vagrant
@@ -72,7 +72,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: Trying to create a peer while VT-x is not enabled on the machine.
 * Action: Reboot your machine to launch BIOS, where you can enable VT-x.
 
-:triangular_flag_on_post: **Error:** VT-x is being used by another hypervisor
+- **Error:** VT-x is being used by another hypervisor
 
     ==> default: Booting VM...
     There was an error while executing 'VBoxManage', a CLI used by Vagrant
@@ -89,7 +89,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: Setting up a machine with the VirtualBox provider while another hypervisor is already running on the same machine.    
 * Action: Turn off the other hypervisor first, before bringing up VirtualBox.
 
-:triangular_flag_on_post: **Error:** Cannot allocate memory
+- **Error:** Cannot allocate memory
 
     Call to virDomainCreateWithFlags failed: internal error: process exited
     while connecting to monitor: 2018-05-26T05:21:29.9574D3Zqemu-system-x86_64:
@@ -98,7 +98,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: Installing Vagrant provider on a machine that does not have enough available RAM.     
 * Action: Verify that your system has the minimum required RAM size for guests. You may check the requirements at <requirements link>
 
-:triangular_flag_on_post: **Error:** Failed to build gem native extension
+- **Error:** Failed to build gem native extension
 
     Bundler, the underlying system Vagrant uses to install plugins, reported
     an error. The error is shown below...
@@ -114,7 +114,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: Using Libvirt without the necessary dependencies.   
 * Action: Before installing, be sure that you have all the build dependencies for the Vagrant Libvirt provider. Review the dependencies required for your Linux distribution [here](https://github.com/vagrant-libvirt/vagrant-libvirt#installation).
 
-:triangular_flag_on_post: **Error:** Could not find a registered machine
+- **Error:** Could not find a registered machine
 
     There was an error while executing 'VBoxManage', a CLI used by Vagrant
     for controlling VirtualBox. The command and stderr is shown below.
@@ -128,14 +128,14 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: The version of the hypervisor is not or no longer supported.
 * Action: Refer the table [here](https://github.com/MarilizaC/doc_v2/wiki/Basic-setup-using-Vagrant-with-other-supported-hypervisors#supported-providers) for the current supported versions of Vagrant providers. 
 
-:triangular_flag_on_post: **Error:** Peer finished to up with the following errors...
+- **Error:** Peer finished to up with the following errors...
 
     ... This is an internal error and should be reported as a bug to support@hashicorp.com.
 
 * Issue: Cannot bring up peer through VMware due to reported VMware issues.
 * Action: Refer to the known VMware issues and possible workarounds [here](https://www.vagrantup.com/docs/vmware/known-issues.html).
 
-:triangular_flag_on_post: **Error:** The Hyper-V cmdlets for PowerShell are not available 
+- **Error:** The Hyper-V cmdlets for PowerShell are not available 
 
     Bringing machine 'default' up with 'fyperv' provider...
     ==> default: Verifying Hyper-V is enabled...
@@ -146,7 +146,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: Using the Hyper-V provider while Hyper-V is not enabled on the system.    
 * Action: Be sure to enable Hyper-V on Windows before using the provider. You may refer to the instructions [here](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/).
 
-:triangular_flag_on_post: **Error:** An action ‘read_state’ was attempted on the machine… but another process is already executing an action on the machine
+- **Error:** An action ‘read_state’ was attempted on the machine… but another process is already executing an action on the machine
 
     C:\Users\User\Peer\Peer2>vagrant ssh
     An action ‘read_state’ was attempted on the machine 'default', but
