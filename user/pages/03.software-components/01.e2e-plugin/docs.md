@@ -1,5 +1,5 @@
 ---
-title: 'Using the Management Console'
+title: 'E2E Plugin'
 visible: true
 taxonomy:
     category:
