@@ -6,8 +6,6 @@ taxonomy:
         - docs
 ---
 
-# Writing Subutai Blueprints
-
 Several application installation mechanisms exist for Subutai including
 Blueprints. Blueprints install, update, and keep applications operating
 optimally in P2P Environments.
@@ -146,13 +144,13 @@ environment to be created, and a ``description`` of the new environment.
 Incidentally, these fields are ignored when adding the application to an
 existing environment.
 
-The ``version`` and ``author`` attributes are pretty self explanatory.
+The __version__ and __author__ attributes are pretty self explanatory.
 
 ### SSH Access Control
 
 
 In the [Subutai Bazaar](https://bazaar.subutai.io), users can
-associate public SSH keys with their accounts. The ``ssh-key``
+associate public SSH keys with their accounts. The __ssh-key__
 attributes value is a reference to a user profile SSH key to use. This
 way, blueprints can reference a key, and the platform substitutes the
 user's profile key for it and injects it into the authorized_keys file
@@ -160,35 +158,29 @@ of all the containers in the blueprint.
 
 ### Containers
 
-
 Things start to get interesting in the ``containers`` array of JSON
 objects. These are references to container templates to use to build
 container hosts within the P2P environment. The attributes are listed
 with a brief description in the table below:
 
-+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Attribute           | Value Type   | Description                                                                                                                                                 |
-+=====================+==============+=============================================================================================================================================================+
-| ``hostname``        | String       | the name of the container host in the environment                                                                                                           |
-+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``template``        | String       | the template to use from the template repository                                                                                                            |
-+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``peer-criteria``   | String       | reference to the peer selection criteria section                                                                                                            |
-+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``size``            | Enum         | `the container size: TINY, MEDIUM, SMALL, LARGE, HUGE <https://github.com/subutai-blueprints/hackathon/wiki/What-is-%22GoodWill%22%3F#container-sizes>`__   |
-+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+| Attribute           | Value Type   | Description|
+|---------------------|--------------|------------------------------------------------------------------------------------------|
+| ``hostname``        | String       | the name of the container host in the environment|
+| ``template``        | String       | the template to use from the template repository|
+| ``peer-criteria``   | String       | reference to the peer selection criteria section|
+| ``size``            | Enum         | the container size: TINY, MEDIUM, SMALL, LARGE, HUGE|
 
 ### External Ports
 
 
-The ``port-mapping`` attribute is a an array of port and DNS name
+The **port-mapping** attribute is a an array of port and DNS name
 mapping settings. Here we're mapping service ports to be exposed by the
 container: both HTTP and SSH are exposed to the outside world.
 
-    **NOTE**: all Subutai Containers templates are required to have at
-    least SSH installed and available even if not exposed outside of a
-    `Subutai
-    Environment <https://github.com/subutai-blueprints/hackathon/wiki/What-is-a-Subutai-Environment%3F>`__.
+!!! **NOTE**: all Subutai Containers templates are required to have at
+least SSH installed and available even if not exposed outside of a
+[Subutai Environment](../../glossary#environment).
 
 ### Peer Criteria
 
@@ -201,24 +193,15 @@ criteria is used to offer the users of the blueprint an initial list of
 peers to select from which satisfy the blueprint author's suggested
 environmental conditions:
 
-+-------------+----------+-----------------------------------------------------+
-| Attribute   | Value    | Description                                         |
-|             | Type     |                                                     |
-+=============+==========+=====================================================+
+
+| Attribute   | Value Type| Description|
+|-------------|----------|------------------------------------------------|
 | name        | String   | the name of the peer-criteria to reference it       |
-+-------------+----------+-----------------------------------------------------+
 | max-price   | Integer  | the maximum price to pay for a container in         |
 |             |          | "GoodWill" per hour                                 |
-+-------------+----------+-----------------------------------------------------+
-| avg-cpu-loa | Integer  | the maximum cpu load on the peer as a percentage    |
-| d           |          |                                                     |
-+-------------+----------+-----------------------------------------------------+
-| min-free-ra | Integer  | the minimum RAM (in MB) that **MUST** be available  |
-| m           |          | on the peer                                         |
-+-------------+----------+-----------------------------------------------------+
-| min-free-di | Integer  | the minimum free disk (in GB) that **MUST** be      |
-| sk-space    |          | available on the peer                               |
-+-------------+----------+-----------------------------------------------------+
+| avg-cpu-load | Integer  | the maximum cpu load on the peer as a percentage    |
+| min-free-ram | Integer  | the minimum RAM (in MB) that **MUST** be available per hour  |
+| min-free-disk-space | Integer  | the minimum free disk (in GB) that **MUST** be available on the peer|
 
 Using these and other parameters blueprint authors specify some basic
 environmental recommendations for the application's infrastructure stack
@@ -227,11 +210,9 @@ the peers selected by blueprint users.
 
 ### Let's Test It
 
-
-Go ahead and fork this blueprint from
-`example-website <https://github.com/subutai-blueprints/example-website>`__.
-Then log into your account on the `Subutai
-Bazaar <https://bazaar.subutai.io>`__. We can launch the blueprint by
+Go ahead and fork this blueprint from [example-website](https://github.com/subutai-blueprints/example-website).
+Then log into your account on the [Subutai
+Bazaar](https://bazaar.subutai.io). We can launch the blueprint by
 adding the GitHub Repository you just forked to your account.
 
 To add the repository, right click on your account with mini avatar in
@@ -239,31 +220,19 @@ the upper right hand corner. You'll see a popup menu drop down to manage
 various settings. You'll see a '*GitHub Projects*' menu item as seen on
 the image to the right. Select it to goto the GitHub area where you can
 authorize your GitHub account. In the upper left hand corner you'll see
-the following '*Authorize*' button.
-
-.. figure:: images/github_authorize.png
-   :alt: GitHub Authorize
-
-   GitHub Authorize
+the '*Authorize*' button.
 
 Press it to authorize you GitHub account. You should then see all with a
-Subutai.json file at the root will be loaded. Here's what my account
-looks like after loading the repository:
-
-.. figure:: images/github_loaded.png
-   :alt: GitHub Authorize
-
-   GitHub Authorize
+Subutai.json file at the root will be loaded. 
 
 From here, an environment can be built with the blueprint or used to
-install it into an existing environment with the '*Build*' button. The
-blueprint can be displayed using the '*View*' button. If changes are
+install it into an existing environment with the **Build** button. The
+blueprint can be displayed using the **View** button. If changes are
 made to the git repository the blueprint can be reloaded. When building
 a reload is automatically performed to make sure the freshest blueprint
 in the repository branch is used.
 
 ### Using Variables
-
 
 This is a boring and static blueprint without much flexibility. It is
 not very feasible is it?
@@ -354,51 +323,33 @@ variable names in between ``${}``, i.e. ``${webContainerSize}``, to
 substitute values provided by users of the blueprint at installation
 time. Variable definitions have the following attributes:
 
-+-------------+------------+----------------------------------------------------+
+
 | Attribute   | Value Type | Description                                        |
-+=============+============+====================================================+
 | description | String     | a description to show the user at install time     |
-+-------------+------------+----------------------------------------------------+
-| type        | Enum       | ``enum``, ``int``, ``double``, ``domain``          |
-|             |            | ``string``                                         |
-+-------------+------------+----------------------------------------------------+
+|-------------|------------|----------------------------------------------------|
+| type        | Enum       | ``enum``, ``int``, ``double``, ``domain`` ``string``         |
 | default     | String     | the default value                                  |
-+-------------+------------+----------------------------------------------------+
 | validation  | String     | regex for strings, comma separated enum list,      |
 |             |            | numeric ranges for int and double                  |
-+-------------+------------+----------------------------------------------------+
 
 The fields are self explanatory perhaps with the exception of the
-``validation`` attribute. This field allows the blueprint installation
+**validation** attribute. This field allows the blueprint installation
 wizard to validate values provided by users. For strings Java Regular
 Expressions validators are used to make sure strings conform to the
 patter. Enums just use a comma separated list of values, and users are
 offered these values in a drop down combobox so validation is not
 necessary since these are the only options presented.
 
-    **AVAILABLE IN THE NEXT RELEASE** For numbers (int and double types)
-    a numeric range expression will be used for validation checks.
-
-The ``domain`` variable type is very special. It will only accept
+The **domain** variable type is very special. It will only accept
 domains by pulling them in from the Bazaar user's profile. Bazaar users
-can create subdomains under the base ``envs.subutai.cloud`` using the
+can create subdomains under the base **subut.ai** using the
 Bazaar.
-
-    Right now custom user domains are not supported but on our short
-    list. Later on with some breathing room, we will support using your
-    own custom domains as well as registering new domains with the
-    Bazaar.
 
 You can change the original blueprint and press reload in the GitHub
 Projects view to see your changes. You used the GitHub Projects view
 above when you authorized your GitHub account. Try building the
 blueprint to see what happens now. You should see the blueprint wizard
-prompting for the following variables:
-
-.. figure:: images/github_loaded.png
-   :alt: Blueprint Wizard
-
-   Blueprint Wizard
+prompting for variables.
 
 ### Uploading Custom Templates
 
@@ -417,23 +368,15 @@ privacy level of the template. There are two ways in which you can do
 this: through the UI console of a peer, or on the command line inside
 the peer. These external guides document the steps needed:
 
--  `Create Templates from
-   CLI <https://github.com/subutai-io/base/wiki/Create-Templates-from-CLI>`__
--  `Create Templates from
-   Console <https://github.com/subutai-io/base/wiki/Create-Templates-from-Console>`__
+- [Create Templates from CLI](https://github.com/subutai-io/base/wiki/Create-Templates-from-CLI)
+- [Create Templates from Console](https://github.com/subutai-io/base/wiki/Create-Templates-from-Console)
 
-Below is the Bazaar's CDN interface where you can also upload your
+There is also the Bazaar's CDN interface where you can also upload your
 templates and manage them. Notice there are there areas one of which is
 the APT repository interface. You can upload software packages there to
 make them automatically available through ``apt-get``.
 
-.. figure:: images/hub_kurjun.png
-   :alt: Bazaar's CDN Interface
-
-   Bazaar's CDN Interface
-
 ### Using Devops Tools
-
 
 *We don't advise using custom templates when using blueprints.* We
 touched upon this briefly above. This is a bad pattern. It restricts
@@ -449,11 +392,6 @@ steps and other configuration changes involved with the installation on
 these containers? The answer is to use more sophisticated devops tools
 designed specifically for this purpose. Blueprints use Ansible playbooks
 to enable full application provisioning.
-
-    **COMING IN FUTURE RELEASES:** Presently only Ansible is supported,
-    however we plan to provide additional provisioners in the future:
-    namely all provisioners supported by Vagrant will be supported by
-    Subutai Blueprints.
 
 With Ansible and it's playbooks you can automatically provision and
 re-provision applications to achieve the Nirvana of continuous
@@ -602,10 +540,7 @@ Blueprints have branding attributes that allow authors, projects, and
 companies to help promote their brand. Brand information can be put into
 the following top level JSON Object attributes in the Subutai.json file:
 
-+-------------+-------------+----------------------------------------------------+
 | Attribute   | Data Type   | Purpose                                            |
-+=============+=============+====================================================+
+|-------------|-------------|----------------------------------------------------|
 | author      | string      | the name, email, or GitHub account of the author   |
-+-------------+-------------+----------------------------------------------------+
 | version     | string      | the version of the blueprint                       |
-+-------------+-------------+----------------------------------------------------+
