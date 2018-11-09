@@ -21,7 +21,7 @@ Find out the various ways of getting involved with the project:
 
 ### <a name="contribute"></a> Contribute to the Subutai Cloud
 
-__There are many ways to contribute to the Subutai crowd cloud or, <br> shall we say, many ways to join the horde!__
+**There are many ways to contribute to the Subutai crowd cloud or, <br> shall we say, _many ways to join the horde!_**
 
 **Start using Subutai.** Use Subutai to start renting or sharing your computing resources. With PeerOS, you can create peers and fire them up using Subutai Vagrant boxes. Once up and running, register them with Bazaar where other users and renters can select them according to their requirements.   
 
@@ -29,7 +29,7 @@ For renters or users, you can increase your computing power, choose from the ava
 
 **Give feedback.** We welcome your feedback! Tell us how we can improve the user experience for everyone. Your helpful feedback, suggestions, and comments are extremely valuable to us.  
 
-![](subutai_globe.png?classes=float-left) Plus, we want to light up that globe at [Subutai Bazaar](https://bazaar.subutai.io/login). With peers all around the world, the power of the P2P cloud community increases. </p> 
+![](subutai_globe.png?classes=float-left) Plus, we want to light up that globe at [Subutai Bazaar](https://bazaar.subutai.io). With peers all around the world, the power of the P2P cloud community increases. </p> 
 
 Connect with us on [Subutai Slack](https://slack.subutai.io) to contribute or discuss your ideas.
 

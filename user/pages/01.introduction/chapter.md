@@ -15,7 +15,7 @@ Here you can find the instructions and guidelines on installing, running, and ma
 
 ### Subutai Components
 
-|**PeerOS**|**Bazaar**|**Blockchain Router**|
+|**[PeerOS](../working-with-subutai/using-peeros)**|**[Bazaar](../working-with-subutai)**|**Blockchain Router**|
 |----------------|----------------|-------------------------------|
 |![PeerOS](icon_peerOS.png)|![Bazaar](icon_bazaar.png)|![Blockchain Router](icon_brouter.png)|
 |Open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software|Global marketplace to buy/sell/exchange/barter computing resources and applications online|Broadband cloud router and </br> open hardware IoT gateway </br> that serves as a plug-and-play cryptocurrency wallet and mining device|
@@ -24,10 +24,10 @@ Here you can find the instructions and guidelines on installing, running, and ma
 
  Aside from the products, Subutai has companion software that enable easy integration, management, and access to the platform’s rich features.
 
-|**E2E Plugin**|**Management Console**|
+|**[E2E Plugin](../software-components/e2e-plugin)**|**[Management Console](../software-components/management-console)**|
 |--------------|----------------------|
 |Facilitates working with peers by handling PGP key generation, including PGP-based encryption and authentication.|The online application for peer administration and creation of private cloud environments, with easy integration with Bazaar to make peers available to other users. [Learn more](../software-components/using-management-console).|
-|**P2P Daemon**||**Control Center**|
+|**[P2P Daemon](../software-components/p2p-daemon)**||**[Control Center](../software-components/control-center)**|
 |Program that runs in the background to handle intra-environment connectivity and communication between containers, primarily enabling peers to join the swarm.|Convenient desktop application for setting up peers, components, and environments, with seamless Bazaar and P2P Daemon integration.|
 
 ### Learn more about Subutai
@@ -42,6 +42,10 @@ Here you can find the instructions and guidelines on installing, running, and ma
 - [FAQs](../faqs)
 - [Get Support](../get-support)
 
+**[Use Cases](use-cases)**
+
+Real world examples of what you can do with Subutai.
+
 **[Getting Started with Subutai](../working-with-subutai#getting-started-with-subutai)**
 
 Your quick guide to setting up the Subutai products and components.
@@ -53,3 +57,5 @@ Learn about the products and how to use their features.
 ### Subutai 101
 
 [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)
+
+See more of our [video tutorials](../video-tutorials)
