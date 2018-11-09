@@ -133,7 +133,7 @@ Blueprint does **NOT** need to be published at the Subutai Bazaar.
 
 ### Environment: Applications Tab
 
-You can launch both publish bazaar blueprints and private GitHub
+You can launch both public bazaar blueprints and private GitHub
 blueprints through an environment's **Applications** tab. There's a
 button there, **Add Applications** which opens a dialog that offers
 users two categories of application blueprints to select from: published
