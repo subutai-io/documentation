@@ -27,6 +27,8 @@ Sign up to the Bazaar by accessing the [register page](https://bazaar.subutai.io
 
 ###Bazaar Interface
 
+![Bazaar Interface](bazaar-interface-areas.png)
+
 - [Top menu](top-menu)
   - [Balance](top-menu#balance)
   - [Notifications](top-menu#notifications)
