@@ -6,13 +6,15 @@ taxonomy:
         - docs
 ---
 
+[TOC]
+
 Several application installation mechanisms exist for Subutai including
 Blueprints. Blueprints install, update, and keep applications operating
 optimally in P2P Environments.
 
 Blueprints encapsulate users from the details of application
 installation and maintenance. Instead of wasting time and energy on
-figuring out how to install and maintain applications users focus on
+figuring out how to install and maintain applications, users are able to focus on
 using them instead. Blueprint creators and maintainers engrain their
 knowledge of installing and maintaining applications into their
 blueprints.
@@ -20,16 +22,6 @@ blueprints.
 For the benefit of blueprint authors and maintainers, Subutai provides
 workflows and tooling integrations to enable blueprint development using
 devops best practices and git for blueprint version control.
-
-### Applications for Everyone
-
-One click cloud application installation is critical. People from all
-walks of life should be able to launch an application in their own p2p
-cloud instantly. It should be as easy as installing an iPhone
-application from the Apple App Store. Bridging this gap between
-non-technical users and open source products is crucial for the success
-of open source in the cloud era. Subutai Blueprints make cloud
-applications easy to install and use for mass consumption.
 
 ### Application Provisioning
 
@@ -64,17 +56,17 @@ subsequently to upgrade it, or to adjust resources and runtime
 parameters to changing conditions. The triggers to provision the
 application may be manual or automatic. Provisioning should be viewed as
 a perpetual process rather than a one time event. This is the only way
-to adapt to changing conditions to maintain a the "**desired state**".
+to adapt to changing conditions to maintain a desired state.
 Automatic perpetual provisioning is enabled when an environment is
-flagged to use dynamic matching. The screenshot show’s the governance
-rules used to manage dynamic environment and application provisioning on
+flagged to use _dynamic matching_. Governance
+rules are used to manage dynamic environment and application provisioning on
 the [Subutai Bazaar](https://bazaar.subutai.io).
 
 These rules are used to match peers dynamically to the needs of the
 environment owner and to respond to changes over time. Some of these
 same parameters are also available to Blueprint authors. Blueprints use
 them to produce an initial set of peers an environment owner can choose
-from when creating a new environment using a blueprint. Later on the
+from when creating a new environment using a blueprint. Later on, the
 environment owner can use similar settings to enable dynamic peer
 matching for their environments.
 
@@ -82,14 +74,13 @@ matching for their environments.
 
 Blueprints were designed to be version controlled from the start since
 they essentially represent [Infrastructure as
-Code](http://searchitoperations.techtarget.com/definition/Infrastructure-as-Code-IAC)
-So technically, a blueprint can have anything in it that you can put
+Code](http://searchitoperations.techtarget.com/definition/Infrastructure-as-Code-IAC). So technically, a blueprint can contain anything you can put
 into a git repository.
 
 All blueprints **MUST** have a specification file named
 "**Subutai.json**" in the root of the git repository. This file
 specifies various parameters that govern how the blueprint is used by
-the Subutai P2P Platform. The JSON file is pretty simple, take a look
+the Subutai P2P Platform. The JSON file is pretty simple, as we will see below.
 
 ### A Simple Blueprint
 
@@ -131,7 +122,6 @@ to an existing environment:
       "peer-criteria": [ 
         {
           "name": "HTTP-GROUP",
-          "max-price": "5",
           "avg-cpu-load": "50",
           "min-free-ram": "128",
           "min-free-disk-space": "10"
@@ -144,14 +134,13 @@ environment to be created, and a ``description`` of the new environment.
 Incidentally, these fields are ignored when adding the application to an
 existing environment.
 
-The __version__ and __author__ attributes are pretty self explanatory.
+The __version__ and __author__ attributes are pretty self-explanatory.
 
 ### SSH Access Control
 
-
-In the [Subutai Bazaar](https://bazaar.subutai.io), users can
-associate public SSH keys with their accounts. The __ssh-key__
-attributes value is a reference to a user profile SSH key to use. This
+In the Subutai Bazaar, users can
+associate [public SSH keys](../../using-bazaar/user-menu#ssh-key-management) with their accounts. The __ssh-key__
+blueprint attribute is a reference to a user profile SSH key to use. This
 way, blueprints can reference a key, and the platform substitutes the
 user's profile key for it and injects it into the authorized_keys file
 of all the containers in the blueprint.
@@ -173,9 +162,8 @@ with a brief description in the table below:
 
 ### External Ports
 
-
-The **port-mapping** attribute is a an array of port and DNS name
-mapping settings. Here we're mapping service ports to be exposed by the
+The **port-mapping** attribute is a an array of port and [DNS name
+mapping](../../using-bazaar/user-menu#domains) settings. Here we're mapping service ports to be exposed by the
 container: both HTTP and SSH are exposed to the outside world.
 
 !!! **NOTE**: all Subutai Containers templates are required to have at
@@ -183,7 +171,6 @@ least SSH installed and available even if not exposed outside of a
 [Subutai Environment](../../glossary#environment).
 
 ### Peer Criteria
-
 
 Everything pretty much makes sense except perhaps this peer-criteria
 reference. It is a pointer into the next JSON object array of peer
@@ -193,14 +180,12 @@ criteria is used to offer the users of the blueprint an initial list of
 peers to select from which satisfy the blueprint author's suggested
 environmental conditions:
 
-
 | Attribute   | Value Type| Description|
 |-------------|----------|------------------------------------------------|
 | name        | String   | the name of the peer-criteria to reference it       |
-| max-price   | Integer  | the maximum price to pay for a container in         |
-|             |          | "GoodWill" per hour                                 |
+| max-price   | Integer  | the maximum price to pay for a container in "GoodWill" per hour|
 | avg-cpu-load | Integer  | the maximum cpu load on the peer as a percentage    |
-| min-free-ram | Integer  | the minimum RAM (in MB) that **MUST** be available per hour  |
+| min-free-ram | Integer  | the minimum RAM (in MB) that **MUST** be available per hour|
 | min-free-disk-space | Integer  | the minimum free disk (in GB) that **MUST** be available on the peer|
 
 Using these and other parameters blueprint authors specify some basic
@@ -212,13 +197,13 @@ the peers selected by blueprint users.
 
 Go ahead and fork this blueprint from [example-website](https://github.com/subutai-blueprints/example-website).
 Then log into your account on the [Subutai
-Bazaar](https://bazaar.subutai.io). We can launch the blueprint by
+Bazaar](https://bazaar.subutai.io). You can launch the blueprint by
 adding the GitHub Repository you just forked to your account.
 
-To add the repository, right click on your account with mini avatar in
+To add the repository, right click on your user profile in
 the upper right hand corner. You'll see a popup menu drop down to manage
-various settings. You'll see a '*GitHub Projects*' menu item as seen on
-the image to the right. Select it to goto the GitHub area where you can
+various settings. You'll see a '*My Blueprints*' menu item as seen on
+the image to the right. Select it to go to the [GitHub](../../using-bazaar/user-menu#my-blueprints) area where you can
 authorize your GitHub account. In the upper left hand corner you'll see
 the '*Authorize*' button.
 
@@ -234,8 +219,8 @@ in the repository branch is used.
 
 ### Using Variables
 
-This is a boring and static blueprint without much flexibility. It is
-not very feasible is it?
+So far we have a boring and static blueprint without much flexibility. It is
+not very usable is it?
 
 -  What if you want users to pick their own domains?
 -  What about setting the environment name?
@@ -327,10 +312,9 @@ time. Variable definitions have the following attributes:
 | Attribute   | Value Type | Description                                        |
 | description | String     | a description to show the user at install time     |
 |-------------|------------|----------------------------------------------------|
-| type        | Enum       | ``enum``, ``int``, ``double``, ``domain`` ``string``         |
+| type        | Enum       | ``enum``, ``int``, ``double``, ``domain`` ``string``|
 | default     | String     | the default value                                  |
-| validation  | String     | regex for strings, comma separated enum list,      |
-|             |            | numeric ranges for int and double                  |
+| validation  | String     | regex for strings, comma separated enum list, numeric ranges for int and double|
 
 The fields are self explanatory perhaps with the exception of the
 **validation** attribute. This field allows the blueprint installation
@@ -342,8 +326,8 @@ necessary since these are the only options presented.
 
 The **domain** variable type is very special. It will only accept
 domains by pulling them in from the Bazaar user's profile. Bazaar users
-can create subdomains under the base **subut.ai** using the
-Bazaar.
+can add their own domains or use Subutai subdomains offered for free using the
+Bazaar. Learn more about domains [here](../../using-bazaar/user-menu#domains).
 
 You can change the original blueprint and press reload in the GitHub
 Projects view to see your changes. You used the GitHub Projects view
@@ -393,7 +377,7 @@ these containers? The answer is to use more sophisticated devops tools
 designed specifically for this purpose. Blueprints use Ansible playbooks
 to enable full application provisioning.
 
-With Ansible and it's playbooks you can automatically provision and
+With Ansible and its playbooks you can automatically provision and
 re-provision applications to achieve the Nirvana of continuous
 provisioning to always maintain an application's desired state. With one
 or more playbooks, shell scripts etc, you can do virtually anything you

@@ -6,6 +6,8 @@ taxonomy:
         - docs
 ---
 
+[TOC]
+
 ### Using Subutai Blueprints
 
 
