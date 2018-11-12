@@ -6,7 +6,7 @@ taxonomy:
 child_type: docs
 ---
 
-# Glossary
+[TOC]
 
 ####Bazaar
 

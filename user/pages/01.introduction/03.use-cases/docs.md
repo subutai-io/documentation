@@ -6,9 +6,9 @@ taxonomy:
         - docs
 ---
 
-[TOC]
-
 ### Use Case: Be Your Own Micro Cloud Provider
+
+[TOC]
 
 By using P2P technologies to combine resources on computers, Subutai already provides an infrastructure as a service cloud environment. Subutai users can create cloud environments effectively appearing as virtual data centers. The more computing resources you throw into your peer[s] and the number of peers supporting your environment, the bigger the virtual data center. Scaling a peer with more resources and scaling the number of peers themselves give Subutai its elastic cloud capabilities. Higher level infrastructure services are built on this such as an S3 compatible clone. Subutai aims to model and implement as many Amazon compatible services as possible.
 

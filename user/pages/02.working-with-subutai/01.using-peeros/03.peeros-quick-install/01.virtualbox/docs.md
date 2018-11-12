@@ -13,7 +13,7 @@ The easiest and quickest way to get a Subutai Peer running on any platform is to
 
 Download the latest [Vagrant 2.0.1](https://www.vagrantup.com/downloads.html) and [VirtualBox 5.1.0](https://www.virtualbox.org/wiki/Downloads) or higher from their respective websites.    
 
-!!!! Don't use package managers to install these software: package manager versions are usually out of date. 
+!!!!! Don't use package managers to install these software: package manager versions are usually out of date. 
 
 ***
 
@@ -36,7 +36,7 @@ During processing, if asked for the bridge interface you want to use, the first 
 
 In case you encounter an error during installation, see [Common errors encountered when using Vagrant plugins](../maintain-vagrant-plugins#common-errors).
 
-!!! Congratulations! You have a peer!
+!!!! Congratulations! You have a peer!
 
 At the end of processing, you should see the following message indicating that the peer has been successfully created:
 

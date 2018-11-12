@@ -58,4 +58,4 @@ Learn about the products and how to use their features.
 
 [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)
 
-See more of our [video tutorials](../video-tutorials)
+See more of our [video resources](../videos)
