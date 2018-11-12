@@ -1,6 +1,6 @@
 ---
 title: 'Using the Management Console'
-Menu: Management Console
+menu: Management Console
 visible: true
 taxonomy:
     category:
