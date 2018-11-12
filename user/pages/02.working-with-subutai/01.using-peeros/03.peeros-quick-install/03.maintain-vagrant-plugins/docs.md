@@ -33,7 +33,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 
 #### <a name="Common-errors-Vagrant-plugins"></a> Common errors encountered when using Vagrant plugins   
 
-!!!! - **Error:** No usable default provider could be found for your system
+!!! - **Error:** No usable default provider could be found for your system
 
     No usable default provider could be found for your system.
     
