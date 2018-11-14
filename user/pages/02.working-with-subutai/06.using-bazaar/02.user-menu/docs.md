@@ -40,7 +40,7 @@ This page shows the Peers you use. You can view your own Peers; Peers that you h
 Here you can map domain names to your environments and containers. To add domains to your list, click "Add new". There will be two options for you to choose:
 
 - **Bazaar sub-domain** allows you to create free subdomains of `.envs.subut.ai`. Type your desired subdomain, click the green button to check whether it is available and click save.
-- **User managed domain** will let you use domain names or subdomains you already own. Please note you need to have access to a registrar where your domain was created in order to configure it. First, type your domain name or subdomain. You will see that the example below will be changed to reflect the CNAME record you will need to add to your registrar's DNS settings.
+- **User managed domain** lets you use domain names or subdomains you already own. Please note you need to have access to a registrar where your domain was created in order to configure it. First, type your domain name or subdomain. You will see that the example below will be changed to reflect the CNAME record you will need to add to your registrar's DNS settings.
 
 Either way, from now on when you run a [Blueprint](../blueprints) or access an [Environment's](../bazaar-tools/environments) `Container Port Mapping` tab, this subdomain will be available to use.
 
@@ -86,8 +86,8 @@ If you want to add a user as your friend, go to the user’s page, pick the user
 
 ### Invitations & Coupons
 
-1. Invitations. It is possible to invite new users by email to join the Bazaar. Once you send an invitation by email, the user will receive a link and be directed to the Bazaar’s registration page. Note that this link expires in one hour. Once the user is registered, both of you receive an reward in GoodWill.
-1. Coupons. We often partner up with different organizations to offer particular coupon codes. You can use the code as an User Profile Coupon. This will bring you a reward in GoodWill as well.
+- Invitations. It is possible to invite new users by email to join the Bazaar. Once you send an invitation by email, the user will receive a link and be directed to the Bazaar’s registration page. Note that this link expires in one hour. Once the user is registered, both of you receive an reward in GoodWill.
+- Coupons. We often partner up with different organizations to offer particular coupon codes. You can use the code as an User Profile Coupon. This will bring you a reward in GoodWill as well.
 
 ### Cloud accounts
 
