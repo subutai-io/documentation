@@ -8,83 +8,87 @@ taxonomy:
 
 [TOC]
 
+The User menu is located in the right sidebar of [Subutai Bazaar](https://bazaar.subutai.io). To activate it, click your name on the [Top menu](../top-menu). Please refer below to the functionalities the User menu ofers.
+
 
 ### Settings
 
-When the user clicks on their name in the Top Menu, a pop-up menu shows up. In this menu in the right top corner there is a button that looks like a gear.
+User settings will allow you to see and sometimes edit the following personal information:
 
-After clicking this button, the user can see their account settings:
-
-- User name
-- E-mail, used while signing up.
-- Country of location.
-- User guides (hints). Here the user can switch off or switch on the menu hints. Disable if they annoy you.
+- Name
+- Username
+- The Email address you used for sign-up
+- Your avatar
+- Your country
+- User guides (hints). Switch off or switch on the menu hints.
 - Reset user guides. Here you you can reset all completed user guides (if you do that,you will see all user guides again).
-- Change password. You need to know your old password to create a new one.
-- PGP fingerprint (Pretty Good Privacy) is a special sort of encryption. PGP increases the security of communications between the user’s machine and servers. You can change it if you need at any time. PGP key is generated automatically. To start using it, please install the Subutai [E2E extension](../../software-components).
+- Change password. You will need your old password to create a new one.
+- PGP fingerprint (Pretty Good Privacy) is a special sort of encryption. PGP increases the security of communications between the user’s machine and servers. You can change it if you need at any time. The PGP key can be generated automatically by the Subutai [E2E extension](../../software-components), if you have it installed in your browser.
 - You can also delete your account, if you don’t need it anymore. Be careful: this operation is permanent.
 
 
 ### Billing
 
-The Billing page displays your payments, transactions and rewards. You may check your transaction history using the calendar. Pressing “View” button will show you detailed informations about each operation.
+The Billing page displays your Journal of Transactions, Environment payment reports and Rewards. You may check your transaction history using the calendar. The “View” button will show you detailed information about each operation.
 
 ### My peers
 
-This page shows the Peers you use. You can view your own Peers, Peers that you have added to your Favorites list, shared Peers, cloud Peers that you own, operation history of your Peers and Peers’ logs.
+This page shows the Peers you use. You can view your own Peers; Peers that you have added to your Favorites list; Shared Peers; Cloud Peers that you own; operation history of your Peers and Peers’ logs.
 
 ### Domains
 
-You can point domain names to your environments and containers. For now the only available option are subdomains of ‘envs.subut.ai’, but in the future that will be expanded. You may add your own subdomain by clicking “Add new” and checking the availability of your desired subdomain. After the environment is created, you need to set up a container port mapping. See more detailed information on “How to create and use environment” page.
+Here you can map domain names to your environments and containers. To add domains to your list, click "Add new". There will be two options for you to choose:
+
+- **Bazaar sub-domain** allows you to create free subdomains of `.envs.subut.ai`. Type your desired subdomain, click the green button to check whether it is available and click save.
+- **User managed domain** will let you use domain names or subdomains you already own. Please note you need to have access to a registrar where your domain was created in order to configure it. First, type your domain name or subdomain. You will see that the example below will be changed to reflect the CNAME record you will need to add to your registrar's DNS settings.
+
+Either way, from now on when you run a [Blueprint](../blueprints) or access an [Environment's](../bazaar-tools/environments) `Container Port Mapping` tab, this subdomain will be available to use.
 
 ### Products
 
-On this section you can add your own products like templates, applications, operating systems, plugins etc.
-
-To start uploading your product, click on “Add product”. In the popup menu you need to input: name of your product, category, type of product, dependencies (some products can depend on other products), price and version, description. Here you can also upload images of your product’s logo.
-
+This page lists your accepted Blueprints. You can edit their name, category, version, price (in GoodWill), description and logo.
 
 ### SSH key management
 
-Here the user can easily manage their SSH keys - add, view, delete and edit keys. SSH keys are very important to access environments and containers on Subutai.
+Here you can easily manage your SSH keys - add, view, delete and edit keys. SSH keys are very important to gain terminal access to Environments and Containers on Subutai.
 
-To add an existing key, press click the green Add button and copy/paste the key you have in the pop-up field. Then press add and your key will be successfully added to the Bazaar!
+To add your key, click the green Add button and paste your key in the appropriate field. Click add and your key will be successfully added to the Bazaar!
 
 ### My Blueprints
 
-This section allows you to add your GitHub projects to the Subutai Bazaar Apps section. You can for instance create your own Blueprint in GitHub, then authorize it on the Subutai Bazaar and upload it. After that, you will be able to build Environments based on your Blueprint. You can also publish your blueprint in the Apps section to make it available to other users.
+This section allows you to add your GitHub projects to the Subutai Bazaar Apps section. You can for instance create your own Blueprint in GitHub, then authorize it on the Subutai Bazaar and upload it. After that, you will be able to build Environments based on your Blueprint. You can also publish your blueprint to make it available to other Bazaar users.
 
 ### Application settings
 
-You can add user variables for your Blueprint in this menu. For instance, you can add your Environment’s name and then, when someone builds an Environment with the Blueprint, this variable will be automatically added. This option is useful, because you don’t need to specify all the variables before creating and environment (e.g. pre-configure its name).
+Here you can add the default variables to use in Blueprints. For instance, you can add your Environment’s name and then, when you build an Environment with the Blueprint, this variable will be automatically added. This option is useful for repetitive builds, as you can specify beforehand all the variables before creating new environments.
 
 ### CDN
 
-Subutai CDN is a server where you can store your templates and also use other templates to create own environment and host sites or other sorts of applications.
+Subutai CDN is a server where you can store your templates and also use find other users' templates to create your own Environments.
 
-You can download or upload templates there. Please note that you need to have the E2E plugin and PGP key installed and setup to use the Subutai CDN.
+You can upload and download your Subutai Templates (as tar.gz files), or any other RAW file. There is also a tab called "REST Token Management" to generate Bazaar tokens via REST.
 
-Press the authorize button and wait until your key is added. NOTE: the CDN token expires within one hour. After that, you will need to perform an authorization again.
+Please note that you need to have the E2E plugin and PGP key installed and configured in order to use the Subutai CDN. Press the authorize button and wait until your key is added. NOTE: the CDN token expires within one hour. After that, you will need to perform an authorization again.
 
 ### Organizations
 
-You can create your own organization, invite its members, and share resources with them. Here you also can synchronize your organization with a GitHub repository, create cloud Peers and contribute your organization’s resources.
+You can create your own organization and invite its members. Then you can add GitHub repositories, create cloud Peers and contribute resources that will be made available to its members.
 
 ### Friends
 
-Friends page allows you to befriend users of Subutai Bazaar. There you can see 3 menus:
+Friends page allows you to befriend users of Subutai Bazaar. There are 3 tabs:
 
-- My Friends
-- Friend Requests
-- My friend Requests
+- My Friends - your list of approved friends.
+- Friend Requests - other users who are asking to become your friends.
+- My friend Requests - the users you have asked to add to your list of friends.
 
 If you want to add a user as your friend, go to the user’s page, pick the user you want and click “add friend” on the left side menu.
 
 ### Invitations & Coupons
 
-1. Invitations. It is possible to invite new users by email to join the Bazaar. Once you send an invitation by email, the user will receive a link and be directed to the Bazaar’s registration page. Note that this link expires within 1 hour. When the user is registered, both of you receive an award in GoodWill.
-1. Coupons. We often partner up with different organizations to offer particular coupon codes. You can take the code, go to User Profile > Coupon and enter the coupon code in this field. For this we will award you some GoodWill.
+1. Invitations. It is possible to invite new users by email to join the Bazaar. Once you send an invitation by email, the user will receive a link and be directed to the Bazaar’s registration page. Note that this link expires in one hour. Once the user is registered, both of you receive an reward in GoodWill.
+1. Coupons. We often partner up with different organizations to offer particular coupon codes. You can use the code as an User Profile Coupon. This will bring you a reward in GoodWill as well.
 
 ### Cloud accounts
 
-You can add your accounts from service providers in cloud accounts section. You need to perform the following steps: specify which cloud provider you use, provide your account key and secret key (no one will have access to your secret key that will be used in Subutai Bazaar).
+You can add your accounts from third-party service providers in the cloud accounts section. To do that, choose which cloud provider you use, provide your account key and secret key (rest assured that your key is stored safely and can not be seen by anyone).
