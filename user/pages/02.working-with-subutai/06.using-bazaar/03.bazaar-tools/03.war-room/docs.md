@@ -5,6 +5,9 @@ taxonomy:
     category:
         - docs
 ---
+
+![War Room](war-room.png)
+
 The Globe represents Peers as they are distributed in the whole world. On the left side there are 3 switches:
 
 - Users - here you can turn off or turn on the visibility of user > density by country. ountries with a lot of Peers are shown in > pink, the ones with some Peers are light blue. If there are no > Peers, the country is shown in dark.

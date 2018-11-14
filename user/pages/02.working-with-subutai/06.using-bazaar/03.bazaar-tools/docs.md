@@ -6,7 +6,7 @@ taxonomy:
         - docs
 ---
 
-Learn more about the tools in Subutai Bazaar:
+Learn more about the tools in [Subutai Bazaar](https://bazaar.subutai.io). You can find them in the left sidebar.
 
 - [Environments](environments)
 - [War Room](war-room)
