@@ -6,21 +6,23 @@ taxonomy:
         - docs
 ---
 
+![Top Menu](top-menu.png)
+
 [TOC]
 
 
 ### Balance
 
-Here users can check information about their current amount of GoodWills (Subutai Bazaar’s *internal currency*).
+Here you can check information about your current [GoodWill](../../../glossary#goodwill) balance.
 
 ### Notifications
 
-Here users can see all the recent system notifications. You can clear them.
+Bazaar notifies you whenever there are changes in your Peers or Environments; new shared resources or any other information relevant to you.
 
 ### Chat
 
-By clicking on the “Chat” button, a special window shows up with a list of all Subutai Bazaar users, both offline and online. You can choose a user and write them a private message. Here also you can create conversation rooms and add to other users to them, to start a group dialogue. On this window you can search by username. On the bottom of the window, you can turn off or turn on sound notifications.
+By clicking on the “Chat” button, you can see a list of Subutai Bazaar users, both offline and online. You can choose a user and send them a private message. You can also create conversation rooms for groups and add other users to them. You can search by username. When the chat is active, you can turn off or turn on sound notifications.
 
 ### User profile
 
-Click your user name to show the [user menu](../user-menu), then click your avatar to see your user profile.
+Click your username to show the [user menu](../user-menu), then click your avatar to see your public user profile.
