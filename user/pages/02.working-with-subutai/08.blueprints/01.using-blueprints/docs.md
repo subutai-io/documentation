@@ -14,8 +14,8 @@ taxonomy:
 There are three ways in which you can trigger the installation of an
 application blueprint in [Subutai Bazaar](https://bazaar.subutai.io):
 
-1. From the **Products** page
-2. From the **GitHub Projects** associated with your profile
+1. From the **[Products](../../using-bazaar/bazaar-tools/products)** page
+2. From the **Blueprints** associated with [your profile](../../using-bazaar/user-menu#my-products)
 3. From an environment's **Applications** tab: the **Add Application**
    button
 
