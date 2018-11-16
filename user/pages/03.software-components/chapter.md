@@ -28,3 +28,8 @@ The following components are designed primarily for peer owners, administrators,
 
 #### Control Center
 
+- [Control Center: An Overview](control-center)
+- [Download, install and access](download-install)
+- [Get to Know](get-to-know)
+- [Configure Control Center Settings](configure-settings)
+- [Create a Peer](create-peer)

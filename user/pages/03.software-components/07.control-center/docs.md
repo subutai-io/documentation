@@ -34,3 +34,4 @@ This section provides information about the Control Center and how to use its fe
 Start by downloading the Control Center and learning about its features and user interface.
 
 |[Download & Access the Control Center](download-install)|[Get to Know the Control Center](get-to-know)|[Install the Software Components](install-components)|
+|----|----|----|
