@@ -30,7 +30,7 @@ To create a custom template, you need to choose a parent template from the list 
 
 7. In the dialog, you can enter the name of your template and version. Click the "Create" button. The operation will take some time.
 
-8. Close the dialog upon template creation, and go to the **Environment -> Environments** section. You may have to refresh the page to see your template in the templates list on the right side bar under category "Own".
+8. Close the dialog upon template creation, and go to the **Environment -> Environments** section. You may have to refresh the page to see your template in the templates list. Your templates will show "Own" on a tooltip.
 
 ### Create Templates from CLI
 

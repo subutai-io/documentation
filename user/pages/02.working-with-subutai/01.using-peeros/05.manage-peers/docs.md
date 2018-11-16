@@ -31,7 +31,7 @@ Compared with the Subutai Console, the Control Center application provides you w
 #### <a name="Register-peers-with-Bazaar"></a> Register peers with Bazaar
 Peer registration can be done with the REST API request:
 
-`POST /rest/v1/hub/register`
+`POST /rest/v1/bazaar/register`
 
 The table below lists the required parameters to complete your registration. To learn more about this REST API, see [Register Peer with Bazaar]().
 
