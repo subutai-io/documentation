@@ -165,7 +165,7 @@ Restart services to make sure all goes smoothly:
 
 When installing directly on a desktop edition, the NetworkManager configuration may not configure the /etc/resolv.conf file properly to resolve CDN addresses causing and displaying - “CDN unreachable errors” - with the import command. If this happens, you must configure NetworkManager to use the right nameserver. For more information, refer to the note on step 1.d.
 
-!!! Congratulations! You have a peer!
+!!!! Congratulations! You have a peer!
 
 Command will return the Subutai Console’s access URL, as shown in the screenshot below (within the red box).
 
