@@ -1,15 +1,69 @@
 ---
-title: 'About this Subutai Documentation'
+title: 'About this Documentation'
 visible: true
-menu: About this Subutai Documentation
+menu: About this Documentation
 taxonomy:
     category:
         - docs
 ---
 
-## About the Subutai Documentation
+## About this Subutai Documentation
 
 Here you can find the instructions and guidelines on installing, running, and making the best possible use of the Subutai products and components.
+
+Here you can find the instructions and guidelines on installing, running, and making the best possible use of the Subutai products and components.
+
+- **[Getting Started with Subutai](https://github.com/MarilizaC/doc_v2/wiki/Working-with-Subutai#getting-started-with-subutai)**  
+  Your quick guide to setting up the Subutai products and components.
+
+- **[Working with Subutai](https://github.com/MarilizaC/doc_v2/wiki/Working-with-Subutai#working-with-subutai)**  
+  Learn about the products and how to use their features.
+  
+  <table> 
+  <tr align="center" valign="top">
+    <td><a href="https://github.com/MarilizaC/doc_v2/wiki/Using-PeerOS"><b>Using PeerOS</b></a> 
+     <p><br><img src="https://github.com/MarilizaC/doc-files/blob/master/icon_peerOS.png"></img> </p>
+     Find out more about PeerOS, the open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software
+    </td>
+    <td><b>Using Bazaar</b>
+     <p><br><img src="https://github.com/MarilizaC/doc-files/blob/master/icon_bazaar.png"></img></p> 
+     Learn about the features of Bazaar, the global marketplace to buy/sell/exchange/barter computing resources and applications online
+    </td>
+    <td><b>Using the Blockchain Router</b>
+     <p><br><img src="https://github.com/MarilizaC/doc-files/blob/master/icon_brouter.png"></img></p> 
+     Get to know the Blockchain Router, the broadband cloud router and </br> open hardware IoT gateway </br> that serves as a plug-and-play cryptocurrency wallet and mining device
+    </td> 
+    <td><b>Using Blueprints</b>
+     <p><br><img src="">insert BP logo here</img></p> 
+     Learn to use Subutai Blueprints, the enhanced templates that enable quick deployment of applications within cloud environments.
+    </td>   
+  </tr>
+  </table>
+
+- **[Using the Companion Software]()**  
+ Aside from the products, learn about the companion software that enable easy integration, management, and access to the Subutai platform’s rich features.
+
+    <table> 
+     <tr valign="top">
+      <td width="50%"><b>E2E Plugin</b>
+      <br>Facilitates working with peers by handling PGP key generation, including PGP-based encryption and authentication. Learn more. 
+      </td>
+      <td><b>Management Console</b>
+      <br>The online application for peer administration and creation of private cloud environments, with easy integration with Bazaar to make peers available to other users. <a href="https://github.com/MarilizaC/doc_v2/wiki/Using-the-Management-Console">Learn more.</a>
+      </td>
+     <tr valign="top">
+      <td width="50%"><b>P2P Daemon</b>
+      <br>Program that runs in the background to handle intra-environment connectivity and communication between 
+      containers, primarily enabling peers to join the swarm. Learn more.
+      </td>
+      <td><b>Control Center</b>
+      <br>Convenient desktop application for setting up peers, components, and environments, with seamless Bazaar and P2P 
+      Daemon integration. Learn more. 
+      </td> 
+     </tr>
+    </table>
+
+
 
 ### Subutai Components
 
