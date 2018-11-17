@@ -10,7 +10,7 @@ child_type: docs
 
 <p align="middle"><i>Welcome! This is the end user documentation for Subutai, the world’s first intelligent P2P cloud computing platform.</i></p>  
 
-The following topics describe what you can expect from the topics in this documentation and introduce you to Subutai, the project and the platform.
+The following topics describe what you can expect from this documentation and introduce you to Subutai, the project and the platform.
 
 **[About this Subutai Documentation](https://github.com/subutai-io/documentation/wiki/About-this-Subutai-Documentation)**  
 
