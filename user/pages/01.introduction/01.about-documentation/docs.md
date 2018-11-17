@@ -23,13 +23,13 @@ Here you can find the instructions and guidelines on installing, running, and ma
 - **[Using the Companion Software]()**  
 Aside from the products, learn about the companion software that enable easy integration, management, and access to the Subutai platform’s rich features.
 
-  |**[E2E Plugin](../software-components/e2e-plugin)**|**[Management Console](../software-components/management-console)**|
+  |**E2E Plugin**|**Management Console**|
 |--------------|----------------------|
-|Facilitates working with peers by handling PGP key generation, including PGP-based encryption and authentication.|The online application for peer administration and creation of private cloud environments, with easy integration with Bazaar to make peers available to other users. [Learn more](../software-components/using-management-console).|
-|**[P2P Daemon](../software-components/p2p-daemon)**||**[Control Center](../software-components/control-center)**|
-|Program that runs in the background to handle intra-environment connectivity and communication between containers, primarily enabling peers to join the swarm.|Convenient desktop application for setting up peers, components, and environments, with seamless Bazaar and P2P Daemon integration.|
+|Facilitates working with peers by handling PGP key generation, including PGP-based encryption and authentication. [Learn more]((../software-components/e2e-plugin)).|The online application for peer administration and creation of private cloud environments, with easy integration with Bazaar to make peers available to other users. [Learn more](../software-components/using-management-console).|
+|**P2P Daemon**||**Control Center**|
+|Program that runs in the background to handle intra-environment connectivity and communication between containers, primarily enabling peers to join the swarm. [Learn more](../software-components/p2p-daemon).|Convenient desktop application for setting up peers, components, and environments, with seamless Bazaar and P2P Daemon integration. [Learn more](../software-components/control-center).|
 
-- **Subutai 101**
+- **Subutai 101**   
   Get a quick overview of the Subutai platform from this video:
 
   [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)
