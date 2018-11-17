@@ -17,7 +17,7 @@ Here you can find the instructions and guidelines on installing, running, and ma
   
   |**[PeerOS](../working-with-subutai/using-peeros)**|**[Bazaar](../working-with-subutai/using-bazaar)**|**Blockchain Router**|**[Blueprints](../working-with-subutai/blueprints)**|
 |:----------------:|:----------------:|:-------------------------------:|:-------------------------------:|
-|![PeerOS](../01.about-documentation/icon_peerOS.png)|![Bazaar](icon_bazaar.png)|![Blockchain Router](icon_brouter.png)|![Blueprints](icon_blueprints.png)|
+|![PeerOS](../../about-documentation/icon_peerOS.png)|![Bazaar](icon_bazaar.png)|![Blockchain Router](icon_brouter.png)|![Blueprints](icon_blueprints.png)|
 |Open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software|Global marketplace to buy/sell/exchange/barter computing resources and applications online|Broadband cloud router and </br> open hardware IoT gateway that serves as a plug-and-play cryptocurrency wallet and mining device|Enhanced templates to quickly deploy applications within cloud environments.|
 
 - **[Using the Companion Software]()**  
