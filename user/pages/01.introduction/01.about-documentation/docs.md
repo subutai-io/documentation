@@ -1,13 +1,11 @@
 ---
 title: 'About this Documentation'
 visible: true
-menu: About this Documentation
+menu: About this Subutai Documentation
 taxonomy:
     category:
         - docs
 ---
-
-## About this Subutai Documentation
 
 Here you can find the instructions and guidelines on installing, running, and making the best possible use of the Subutai products and components.
 
