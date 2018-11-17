@@ -1,7 +1,7 @@
 ---
-title: 'About this Documentation'
+title: 'About this Subutai Documentation'
 visible: true
-menu: About this Subutai Documentation
+menu: About this Documentation
 taxonomy:
     category:
         - docs
