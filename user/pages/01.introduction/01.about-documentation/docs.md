@@ -17,16 +17,16 @@ Here you can find the instructions and guidelines on installing, running, and ma
   
   <table> 
   <tr align="center" valign="top">
-    <td><a href="https://github.com/MarilizaC/doc_v2/wiki/Using-PeerOS"><b>Using PeerOS</b></a> 
+    <td><a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/01.introduction/icon_peerOS.png"><b>Using PeerOS</b></a> 
      <p><img src="https://github.com/MarilizaC/doc-files/blob/master/icon_peerOS.png"></img> </p>
      Find out more about PeerOS, the open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software
     </td>
     <td><b>Using Bazaar</b>
-     <p><img src="https://github.com/MarilizaC/doc-files/blob/master/icon_bazaar.png"></img></p> 
+     <p><img src="https://github.com/subutai-io/documentation/blob/dev/user/pages/01.introduction/icon_bazaar.png"></img></p> 
      Learn about the features of Bazaar, the global marketplace to buy/sell/exchange/barter computing resources and applications online
     </td>
     <td><b>Using the Blockchain Router</b>
-     <p><img src="https://github.com/MarilizaC/doc-files/blob/master/icon_brouter.png"></img></p> 
+     <p><img src="https://github.com/subutai-io/documentation/blob/dev/user/pages/01.introduction/icon_brouter.png"></img></p> 
      Get to know the Blockchain Router, the broadband cloud router and </br> open hardware IoT gateway </br> that serves as a plug-and-play cryptocurrency wallet and mining device
     </td> 
     <td><b>Using Blueprints</b>
