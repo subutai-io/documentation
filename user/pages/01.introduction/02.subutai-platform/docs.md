@@ -1,7 +1,7 @@
 ---
 title: 'About the Subutai Platform'
 visible: true
-menu: Subutai Platform
+menu: About the Subutai Platform
 taxonomy:
     category:
         - docs
