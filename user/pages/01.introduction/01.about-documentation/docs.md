@@ -15,26 +15,10 @@ Here you can find the instructions and guidelines on installing, running, and ma
 - **[Working with Subutai](https://github.com/MarilizaC/doc_v2/wiki/Working-with-Subutai#working-with-subutai)**  
   Learn about the products and how to use their features.
   
-  <table> 
-  <tr align="center" valign="top">
-    <td><a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/01.introduction/icon_peerOS.png"><b>Using PeerOS</b></a> 
-     <p><img src="https://github.com/MarilizaC/doc-files/blob/master/icon_peerOS.png"></img> </p>
-     Find out more about PeerOS, the open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software
-    </td>
-    <td><b>Using Bazaar</b>
-     <p><img src="https://github.com/subutai-io/documentation/blob/dev/user/pages/01.introduction/icon_bazaar.png"></img></p> 
-     Learn about the features of Bazaar, the global marketplace to buy/sell/exchange/barter computing resources and applications online
-    </td>
-    <td><b>Using the Blockchain Router</b>
-     <p><img src="https://github.com/subutai-io/documentation/blob/dev/user/pages/01.introduction/icon_brouter.png"></img></p> 
-     Get to know the Blockchain Router, the broadband cloud router and </br> open hardware IoT gateway </br> that serves as a plug-and-play cryptocurrency wallet and mining device
-    </td> 
-    <td><b>Using Blueprints</b>
-     <p><br><img src="">insert BP logo here</img></p> 
-     Learn to use Subutai Blueprints, the enhanced templates that enable quick deployment of applications within cloud environments.
-    </td>   
-  </tr>
-  </table>
+  |**[PeerOS](../working-with-subutai/using-peeros)**|**[Bazaar](../working-with-subutai/using-bazaar)**|**Blockchain Router**|**[Blueprints](../working-with-subutai/blueprints)**|
+|:----------------:|:----------------:|:-------------------------------:|:-------------------------------:|
+|![PeerOS](icon_peerOS.png)|![Bazaar](icon_bazaar.png)|![Blockchain Router](icon_brouter.png)|![Blueprints](icon_blueprints.png)|
+|Open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software|Global marketplace to buy/sell/exchange/barter computing resources and applications online|Broadband cloud router and </br> open hardware IoT gateway that serves as a plug-and-play cryptocurrency wallet and mining device|Enhanced templates to quickly deploy applications within cloud environments.|
 
 - **[Using the Companion Software]()**  
  Aside from the products, learn about the companion software that enable easy integration, management, and access to the Subutai platform’s rich features.
