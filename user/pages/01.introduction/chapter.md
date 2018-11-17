@@ -1,6 +1,5 @@
 	---
 title: Introduction
-media_order: SubutaiHeroImageV7.jpg
 taxonomy:
     category:
         - docs
