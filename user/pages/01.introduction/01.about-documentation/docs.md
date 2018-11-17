@@ -29,9 +29,9 @@ Aside from the products, learn about the companion software that enable easy int
 |**[P2P Daemon](../software-components/p2p-daemon)**||**[Control Center](../software-components/control-center)**|
 |Program that runs in the background to handle intra-environment connectivity and communication between containers, primarily enabling peers to join the swarm.|Convenient desktop application for setting up peers, components, and environments, with seamless Bazaar and P2P Daemon integration.|
 
-### Subutai 101
+- **Subutai 101**
 
-Get a quick overview from our Subutai 101 video:
+Get a quick overview of the Subutai platform from this video:
 
 [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)
 
