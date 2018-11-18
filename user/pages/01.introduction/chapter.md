@@ -1,5 +1,6 @@
 ---
 title: Introduction to this Documentation
+visible: true
 menu: Introduction
 taxonomy:
     category:
