@@ -46,8 +46,7 @@ default: ----------------------------------------------
 default:
 default: Next steps ...
 default: Make sure Subutai's E2E Extension/Plugin is installed in your browser
-default: Search for 'Subutai' in your browser's extension/plugin store to find 
-it and install.
+default: Search for 'Subutai' in your browser's extension/plugin store to find it and install.
 default:
 default: Console URL: https://172.16.1.121:8443
 default: Default u/p: 'admin' / 'secret'
