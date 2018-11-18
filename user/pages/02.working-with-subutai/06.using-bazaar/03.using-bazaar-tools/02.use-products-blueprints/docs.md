@@ -27,9 +27,11 @@ To install blueprints or products:
    The following steps and screenshots are taken from the Blockchain in a Box blueprint.      
    ✔️ On the product’s specific page, you can view more details about the application. On a blueprint’s page, click View to review the code. 
 2. Click **Build** to open the Blueprint Wizard.
+
    ![Blueprint page](bazaar-useproduct01.png)
 3. Fill out the form on each tab. 
    💡 Form details and tabs vary depending on the requirements to install and configure an application. 
+   
    ![Blueprint wizard](bazaar-useproduct02.png)
 4. After filling out all required fields, click **Start** or **Next** to proceed to succeeding tabs.
 5. When you reach the last tab, click **Finish** to start the build.
