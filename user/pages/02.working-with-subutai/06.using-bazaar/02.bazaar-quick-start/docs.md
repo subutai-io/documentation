@@ -18,7 +18,9 @@ Ready to join and experience the Bazaar? Follow the steps below to register and 
    You will receive an email with the confirmation link.
 
 3. Confirm your registration by clicking the email link.   
-   This redirects you to the short registration form. 
+   This redirects you to the short registration form.   
+   
+4. On the Sign up form,
 
 4. On the Sign up form, enter your username, full name, and password, and then click **Save**.
 
