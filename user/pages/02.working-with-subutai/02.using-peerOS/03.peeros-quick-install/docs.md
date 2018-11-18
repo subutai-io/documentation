@@ -6,7 +6,6 @@ taxonomy:
         - docs
 ---
 
-## Quick PeerOS Install
 The following quick install methods use Vagrant with VirtualBox or other supported hypervisors: 
   
 * [Basic setup using Vagrant with VirtualBox](virtualbox)
