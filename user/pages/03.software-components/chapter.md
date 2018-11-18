@@ -1,5 +1,5 @@
 ---
-title: Using Companion Software
+title: 'Using Companion Software'
 taxonomy:
     category:
         - docs
