@@ -1,5 +1,5 @@
 ---
-title: 'Use Account Tools'
+title: 'Use the Account Tools'
 visible: true
 taxonomy:
     category:
