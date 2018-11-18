@@ -1,3 +1,11 @@
+---
+title: 'Quick Start for Bazaar'
+visible: true
+taxonomy:
+    category:
+        - docs
+---
+
 ## Quick Start for Bazaar
 This guide contains the initial procedures for setting up a Subutai Bazaar account. If you need information about the Bazaar and its features, see [Subutai Bazaar](https://subutai.io/bazaar.html).
 
