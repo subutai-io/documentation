@@ -6,7 +6,6 @@ taxonomy:
         - docs
 ---
 
-## Quick Start for Bazaar
 This guide contains the initial procedures for setting up a Subutai Bazaar account. If you need information about the Bazaar and its features, see [Subutai Bazaar](https://subutai.io/bazaar.html).
 
 ### Create a Subutai Bazaar account
