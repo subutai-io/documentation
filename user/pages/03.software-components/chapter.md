@@ -6,7 +6,9 @@ taxonomy:
 child_type: docs
 ---
 
-The following companion software are designed primarily for peer owners, <br> administrators, or operators, to facilitate management and monitoring of <br> peers, environments, and containers:
+# Using Companion Software
+
+The following companion software are designed primarily for <br> peer owners, administrators, or operators, to facilitate management <br> and monitoring of peers, environments, and containers:
 
 **[Using the E2E Plugin](e2e-plugin)**
 
