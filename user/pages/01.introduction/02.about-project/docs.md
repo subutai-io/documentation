@@ -41,7 +41,7 @@ For developers, a Blueprint is a simple JSON based templating format. Use bluepr
 
 **Get involved.** Developers and engineers are welcome to contribute! We need Ethereum blockchain and Solidity savvy engineers, P2P researchers to help us experiment and optimize DHT and Gossip protocols. We need C/C++, Java, Javascript, Golang programmers. If you want to get involved as a developer, first *[give Subutai a try](https://subutai.io/getting-started.html)* as a user. Then, take a look at our list of *[GitHub projects](https://github.com/subutai-io/)* to get an idea of which area you could focus on. Come onto our *[Slack channel](https://slack.subutai.io)* and let us know if you need help diving in. We’re here and waiting for you! Register on the *[Subutai Bazaar](https://bazaar.subutai.io/)*, and we’ll give you some GoodWill to trade cloud resources with others on the system.
 
-### <a name="goodwill"></a> Earn GoodWill
+### <a id="goodwill"></a> Earn GoodWill
 The diagram below illustrates the various ways of earning GoodWill.
 
 ![Earning GoodWill](earning_goodwill.jpg?cropResize=775,1150)
@@ -56,7 +56,7 @@ Earn GoodWill from or through a bank when you:
 
 For more details, see [Helping Spread GoodWill](https://subutai.io/subutai-foss.html).  
 
-### <a name="community"></a> Join the Community  
+### <a id="community"></a> Join the Community  
 Join our social media channels to get updates on the latest release, news, and activities:  
 * <a href="https://slack.subutai.io">Slack</a>
 * <a href="https://twitter.com/Subutai_KHAN"> Twitter</a>
