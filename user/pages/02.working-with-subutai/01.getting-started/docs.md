@@ -23,7 +23,7 @@ Use enhanced templates that we call “Blueprints” to create cloud environment
 **⤿ [Install the software components](../../software-components)**   
 Peer owners, managers, and administrators can start using the software components built to easily access and manage peers, environments, and containers.
 
-* **[Using the E2E Plugin](../../software-components/e2e-plugin)** 
+* **[Using the E2E Plugin](../../software-components/e2e-plugin)**   
   Using this browser plugin facilitates working with peers by managing PGP-based authentication and encryption. Tasks requiring authentication need PGP keys that can be generated and managed by the E2E plugin.
 * **[Using the Control Center](../../software-components/control-center)**  
   This convenient desktop application is designed for working with Subutai Bazaar and PeerOS. Users can create and manage peers, environments, and containers using the features of the Control Center.
