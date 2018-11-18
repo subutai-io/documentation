@@ -22,7 +22,7 @@ Learn about the Subutai products and how to use their features.
   * [Manage Peers](using-peeros/manage-peers)
 
 **[Using Bazaar](using-bazaar)**
-  * [The Subutai Bazaar: An Overview](using-bazaar/bazaar-overview)
+  * [The Subutai Bazaar: An Overview](using-bazaar#bazaar-overview)
   * [Get to Know Subutai Bazaar](using-bazaar/get-to-know)
   * [Quick Start for Subutai Bazaar](using-bazaar/bazaar-quick-start)
   * [Use the Bazaar Tools](using-bazaar/using-bazaar-tools)
