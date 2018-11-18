@@ -9,12 +9,12 @@ taxonomy:
 
 This section provides information about the Control Center and how to use its features. It contains a reference guide that describes the features, as well as several topics with procedures and guidelines for using them.
 
-* **[The Subutai Control Center: An Overview](#The-Subutai-Control-Center-An-Overview)**
+* **[The Subutai Control Center: An Overview](#overview)**
 * **[Get to Know the Control Center](get-to-know)**
 
 ***
 
-### The Subutai Control Center: An Overview
+### <a id="overview"> </a> The Subutai Control Center: An Overview
 
 <img align="left" src="icon_peerOS.png" /> A convenient desktop application for working with peers and environments. Designed for peer owners and administrators of environments, it provides quick access to the platform’s major features, with enhanced capabilities for desktop or shell access to a peer and its environments.
 
