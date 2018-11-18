@@ -86,21 +86,19 @@ To set up environments:
 
    * **Destroy environments**    
      In the Actions column, click **X** next to the environment you want to destroy. Take note that the process cannot be reversed: all contents and settings are deleted. Confirm that you want continue.    
-   
+
    You can perform these tasks only on environments created through the Console. Those created through Bazaar can be updated only through Bazaar.  
 
    * **Add/Remove SSH key**   
      Click the Add or Remove link accordingly. 
-     
-    * To deploy an SSH key to the environment, enter or upload the SSH key file, and then click **Save**.    
+     * To deploy an SSH key to the environment, enter or upload the SSH key file, and then click **Save**.    
      ![Add SSH](console-env_addSSH1.png)
-    * To remove a deployed SSH key from an environment, click **X** next to the key that you want to delete.   
+     * To remove a deployed SSH key from an environment, click **X** next to the key that you want to delete.   
     
    * **[Configure domains](#configure-domains)**
-   
    * **Edit container size**
-      In the Actions column, click the edit icon. Click **+** on the container that you want edit to display the Settings box. From the list, select the new size of the container.
-      ![Edit container](console-env_editcontainter.png)
+     In the Actions column, click the edit icon. Click **+** on the container that you want edit to display the Settings box. From the list, select the new size of the container.
+     ![Edit container](console-env_editcontainter.png)
 
    ❗️ Don’t forget to save and apply your changes. 
 
