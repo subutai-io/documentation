@@ -16,6 +16,8 @@ This section contains the instructions for installing and setting up Subutai Pee
 * **[Advanced PeerOS Install](peeros-advanced-install)**
 * **[Manage Peers](manage-peers)**
 
+***
+
 ### <a name="peeros"> </a> The Subutai PeerOS: An Overview
 
 #### What is it?
