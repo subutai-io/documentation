@@ -54,13 +54,13 @@ For peer users:
 For peer owners, operators, or administrators:
 <table>
  <tr rowspan="2" align="center">
-  <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/02.bazaar-quick-start/docs.md"> Create a Subutai <br> Bazaar Account </a> 
+  <td> <a href="../../working-with-subutai/using-bazaar/bazaar-quick-start"> Create a Subutai <br> Bazaar Account </a> 
   </td>
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/03.software-components/01.e2e-plugin/docs.md">Install <br> E2E Plugin </a>
+  <td> <a href="../../software-components/e2e-plugin">Install <br> E2E Plugin </a>
   </td>
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/03.using-bazaar-tools/01.select-peers/docs.md#search-for-peers"> View Your <br> Registered Peers </a>
+  <td> <a href="../../using-bazaar/using-bazaar-tools/select-peers#search-for-peers"> View Your <br> Registered Peers </a>
   </td>
  </tr>
 </table>
