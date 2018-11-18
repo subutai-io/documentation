@@ -26,7 +26,6 @@ Use the Search tool on the Peers page to look for a peer by its partial or full 
 * **Disk** - Adjust the scale to specify the range (between 10 GB to 4436 GB).
 
 Other search options include the following:
-
 * **Including offline peers** - Add offline peers to the list.
 
    💡 You can add offline peers to your Favorites list, but you cannot set them up with an environment or application until they become online.
