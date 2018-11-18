@@ -1,5 +1,5 @@
 ---
-title: 'Blueprints'
+title: 'All About Blueprints'
 visible: true
 taxonomy:
     category:
