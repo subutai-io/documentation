@@ -24,9 +24,7 @@ At the top right corner of the main page are the following account tools and det
   ![Console submenu](console-bazaar-tools.png)
 
   * **Go to Bazaar** - Redirects you to the Bazaar site.
-  
   * **Send Heartbeat** - Manually sends a heartbeat from your peer to Bazaar to verify that your peer is up and running. A confirmation     message is displayed to notify you of the successful transmission.
-  
   * **Register/Unregister**
 
 * **Notifications and logs**   
