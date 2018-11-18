@@ -1,5 +1,5 @@
 ---
-title: Software Components
+title: Using Software Components
 taxonomy:
     category:
         - docs
