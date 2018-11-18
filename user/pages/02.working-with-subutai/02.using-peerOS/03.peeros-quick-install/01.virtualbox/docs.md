@@ -41,18 +41,18 @@ At the end of processing, you should see the following message indicating that t
 
 ```
 default:
-default: SUCCESS: Your peer is up. Welcome to the Horde!
-default: ----------------------------------------------
-default:
-default: Next steps ...
-default: Make sure Subutai's E2E Extension/Plugin is installed in your browser
-default: Search for 'Subutai' in your browser's extension/plugin store to find it and install.
-default:
-default: Console URL: https://172.16.1.121:8443
-default: Default u/p: 'admin' / 'secret'
-default:
-default: Vagrant ssh and change the default 'subutai'/'ubuntai' user password!
-default: If you forget the url, just take a look in .vagrant/generated.yml
+ default: SUCCESS: Your peer is up. Welcome to the Horde!
+ default: ----------------------------------------------
+ default:
+ default: Next steps ...
+ default: Make sure Subutai's E2E Extension/Plugin is installed in your browser
+ default: Search for 'Subutai' in your browser's extension/plugin store to find it and install.
+ default:
+ default: Console URL: https://172.16.1.121:8443
+ default: Default u/p: 'admin' / 'secret'
+ default:
+ default: Vagrant ssh and change the default 'subutai'/'ubuntai' user password!
+ default: If you forget the url, just take a look in .vagrant/generated.yml
 ``` 
 
 #### What's Next?
