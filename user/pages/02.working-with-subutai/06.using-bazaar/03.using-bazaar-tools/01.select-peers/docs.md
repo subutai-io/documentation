@@ -16,6 +16,8 @@ Whether buying, renting, or sharing peers, use Subutai Bazaar to find compute re
 #### Search for peers
 Use the Search tool on the Peers page to look for a peer by its partial or full name. You can also use the filters at the top of the page to narrow down the list of peers.
 
+![Search Peers](bazaar-search-peer.png)
+
 * **Country** - Select from the list of countries where available peers are located.
 * **CPU** - Select from the list of CPUs used by peers.
 * **ISP** - Select from the list of ISPs associated with existing peers.
@@ -34,6 +36,8 @@ After selecting or entering your filtering criteria, click **Search** to apply t
 
 #### Add peers to Favorites
 From the list on the Peers page, select each peer by clicking **Add to Favorites**. 
+
+![Add Peers](bazaar-add-peer.png)
 
 To view your Favorites list, click **My Peers**, and then go to the Favorites tab. 
 
