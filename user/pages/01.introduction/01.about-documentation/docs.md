@@ -9,10 +9,10 @@ taxonomy:
 
 Here you can find the instructions and guidelines on installing, running, and making the best possible use of the Subutai products and components.
 
-- **[Getting Started with Subutai](https://github.com/MarilizaC/doc_v2/wiki/Working-with-Subutai#getting-started-with-subutai)**  
+- **[Getting Started with Subutai](../working-with-subutai#getting-started-with-subutai)**  
   Your quick guide to setting up the Subutai products and components.
 
-- **[Working with Subutai](https://github.com/MarilizaC/doc_v2/wiki/Working-with-Subutai#working-with-subutai)**  
+- **[Working with Subutai](../working-with-subutai)**  
   Learn about the products and how to use their features.
   
   |**[PeerOS](../working-with-subutai/using-peeros)**|**[Bazaar](../working-with-subutai/using-bazaar)**|**Blockchain Router**|**[Blueprints](../working-with-subutai/blueprints)**|
@@ -20,7 +20,7 @@ Here you can find the instructions and guidelines on installing, running, and ma
 |![PeerOS](../icon_peerOS.png)|![Bazaar](../icon_bazaar.png)|![Blockchain Router](../icon_brouter.png)|![Blueprints](../icon_blueprints.png)|
 |Find out more about PeerOS, the open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software.|Learn about the features of Bazaar, the global marketplace to buy/sell/exchange/barter computing resources and applications online.|Get to know the Blockchain Router, the broadband cloud router and open hardware IoT gateway that serves as a plug-and-play cryptocurrency wallet and mining device.|Learn to use Subutai Blueprints, the enhanced templates that enable quick deployment of applications within cloud environments.|
 
-- **[Using the Companion Software]()**  
+- **[Using the Companion Software](../using-companion-software)**  
 Aside from the products, learn about the companion software that enable easy integration, management, and access to the Subutai platform’s rich features.
 
   |**E2E Plugin**|**Management Console**|
