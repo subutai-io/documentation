@@ -1,5 +1,5 @@
 ---
-title: 'Using Bazaar Tools'
+title: 'Use the Bazaar Tools'
 visible: true
 menu: Select Peers
 taxonomy:
