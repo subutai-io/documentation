@@ -1,5 +1,5 @@
 ---
-title: 'Other Hypervisors'
+title: 'Using Vagrant with Other Hypervisors'
 visible: true
 taxonomy:
     category:
