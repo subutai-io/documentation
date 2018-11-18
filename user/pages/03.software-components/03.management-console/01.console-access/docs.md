@@ -22,10 +22,12 @@ Here are several ways to access the Console:
   From the Tools menu, go to Peers. On the Peers page, select the peer that you want to access to open its details page. On this page, click the Open Subutai Console icon to log in to the Console.
 
   💡 If you want to access a shared peer, click My Peers and then go to the Shared peers tab. 
+  
+  ![Bazaar access](console-bazaar-access.png)
 
 * **From Control Center**
 
-  From the menu, go to Peers and then select the peer that you want to access. On the Peer page, click Open Console to access the Login page.
+  From the menu, go to Peers and then select the peer that you want to access. On the Peer page, click **Open Console** to access the Login page.
 
 Regardless of how you access Console, you are redirected to its Login page.
 
