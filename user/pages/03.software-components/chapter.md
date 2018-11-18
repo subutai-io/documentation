@@ -8,24 +8,17 @@ child_type: docs
 
 The following companion software are designed primarily for peer owners, <br> administrators, or operators, to facilitate management and monitoring of <br> peers, environments, and containers:
 
-### E2E Plugin
+### [Using the E2E Plugin](e2e-plugin)
 
-- [Using the E2E Plugin](e2e-plugin)
-
-### Management Console
-
-- [Using the Management Console](management-console)
+### [Using the Management Console](management-console)
 - [The Management Console: An Overview](management-console#overview) 
 - [How to Access the Management Console](management-console#access)    
 - [Get to Know the Management Console](management-console#know)    
 - [Working with the Management Console](management-console-use)    
 
-#### P2P Daemon
+### About the P2P Daemon
 
-
-
-#### Control Center
-
+### Using the Control Center
 - [Control Center: An Overview](control-center)
 - [Download, install and access](download-install)
 - [Get to Know](get-to-know)
