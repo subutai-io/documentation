@@ -12,9 +12,9 @@ taxonomy:
 In this section, peer owners and users can find out how to create a Subutai Bazaar account and use its features.
 
 * **[The Subutai Bazaar: An Overview](#Subutai-Bazaar-Overview)**
-* **[Get to Know Subutai Bazaar](https://github.com/subutai-io/documentation/wiki/Get-to-Know-Subutai-Bazaar)**
-* **[Quick Start for Subutai Bazaar](https://github.com/subutai-io/documentation/wiki/Quick-Start-for-Bazaar)**
-* **[Use the Bazaar Tools](https://github.com/subutai-io/documentation/wiki/Use-the-Bazaar-Tools)**
+* **[Get to Know Subutai Bazaar](get-to-know)**
+* **[Quick Start for Subutai Bazaar](bazaar-quick-start)**
+* **[Use the Bazaar Tools](using-bazaar-tools)**
 * **[Use the Bazaar Account Tools](https://github.com/subutai-io/documentation/wiki/Use-the-Bazaar-Account-Tools)**
 
 ***
