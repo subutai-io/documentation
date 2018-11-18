@@ -9,7 +9,7 @@ taxonomy:
 
 This section contains the instructions for installing and setting up Subutai PeerOS. As beginners or advanced users, you can learn how to create and run your own peers.
 
-* **[The Subutai PeerOS: An Overview](#subutai-peeros)**
+* **[The Subutai PeerOS: An Overview](#peeros-overview)**
 * **[Get to Know the PeerOS Components](peeros-components)**
 * **[Quick PeerOS Install](peeros-quick-install)**
   * [Basic setup using Vagrant with VirtualBox](peeros-vagrant-virtualbox)
@@ -19,7 +19,7 @@ This section contains the instructions for installing and setting up Subutai Pee
 
 ***
 
-### <a name="subutai-peeros"> </a> The Subutai PeerOS: An Overview
+### <a name="peeros-overview"> </a> The Subutai PeerOS: An Overview
 
 #### What is it?
 
