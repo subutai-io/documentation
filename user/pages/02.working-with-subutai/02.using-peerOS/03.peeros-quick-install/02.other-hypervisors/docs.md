@@ -62,16 +62,16 @@ For this commercial desktop hypervisor, only Parallels version 10 and above are 
 
 To install and use the provider (on Mac only):
 
- 1. Install the [Parallels Desktop for Mac](https://www.parallels.com/products/desktop/).
+  1. Install the [Parallels Desktop for Mac](https://www.parallels.com/products/desktop/).
 
- 2. Install the Vagrant Parallels Provider plugin.   
- `vagrant plugin install vagrant-parallels`
+  2. Install the Vagrant Parallels Provider plugin.   
+  `vagrant plugin install vagrant-parallels`
  
- For more information about this provider, see the documentation [here](https://github.com/Parallels/vagrant-parallels).
+  For more information about this provider, see the documentation [here](https://github.com/Parallels/vagrant-parallels).
 
- 3. Launch a Subutai Peer using the Stretch box for the Parallels provider.   
- `vagrant init subutai/stretch`   
- `vagrant up --provider parallels`
+  3. Launch a Subutai Peer using the Stretch box for the Parallels provider.   
+  `vagrant init subutai/stretch`   
+  `vagrant up --provider parallels`
 
 ### VMware Fusion and Workstation setup
 
