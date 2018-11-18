@@ -15,7 +15,7 @@ Users who want to rent compute resources or those who are new to the Subutai pla
 Peer owners or administrators can get started through these methods:
 
 * Do a quick install of PeerOS, using Vagrant with VirtualBox or other hypervisors, and then get a peer running in no time. Your journey begins [here](../../working-with-subutai/using-peeros/peeros-quick-install).   
-* Those who need a user interface can create peers using the Control Center desktop application. You need a Bazaar account, which is used to log in to the Control Center. Get more information and instructions here.
+* Those who need a user interface can create peers using the Control Center desktop application. You need a Bazaar account, which is used to log in to the Control Center. Get more information and instructions [here](../../software-components/control-center).
 
 **⤿ [Use a Subutai Blueprint](../../working-with-subutai/blueprints)**   
 Use enhanced templates that we call “Blueprints” to create cloud environments and install applications at the same time. Using blueprints is a quick way of deploying applications within a cloud environment, on a peer that you own or rent from another user. Check our growing collection of Blueprints: file hosting (Nextcloud); CMS (WordPress, Grav); smart contract development (Blockchain in a Box); gaming (Minecraft Server), and lots more. Install a blueprint.
