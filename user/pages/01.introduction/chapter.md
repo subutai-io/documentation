@@ -4,6 +4,8 @@ taxonomy:
     category:
         - docs
 child_type: docs
+toc:
+	headinglevel: 4
 ---
 
 # Introduction
