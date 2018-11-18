@@ -1,6 +1,7 @@
 ---
 title: 'Quick PeerOS Install'
 visible: true
+menu: Using Vagrant with other hypervisors
 taxonomy:
     category:
         - docs
@@ -43,18 +44,19 @@ Between Libvirt's QEMU and KVM hypervisors with remote management capabilities, 
 
 To install and use the provider (on Linux variants only):   
 
- 1. Install the KVM hypervisor on your local machine.  
- * For instructions on Ubuntu, visit the [Ubuntu wiki site](https://help.ubuntu.com/community/KVM/Installation).
- * For instructions on Debian, visit the [Debian wiki site](https://wiki.debian.org/KVM).
+1. Install the KVM hypervisor on your local machine.  
+   * For instructions on Ubuntu, visit the [Ubuntu wiki site](https://help.ubuntu.com/community/KVM/Installation).
+   * For instructions on Debian, visit the [Debian wiki site](https://wiki.debian.org/KVM).
    
  2. Install the Vagrant Libvirt provider plugin.     
- ❗️ Before installing the provider, be sure that you have all the build dependencies for your Linux distribution. Refer to the detailed instructions [here](https://github.com/vagrant-libvirt/vagrant-libvirt#installation).
+    ❗️ Before installing the provider, be sure that you have all the build dependencies for your Linux distribution. Refer to the detailed instructions [here](https://github.com/vagrant-libvirt/vagrant-libvirt#installation).
  
- `vagrant plugin install vagrant-libvirt`
+    `vagrant plugin install vagrant-libvirt`
    
  3. Launch a Subutai Peer using the Stretch box with the Libvirt provider.   
- `vagrant init subutai/stretch`   
- `vagrant up --provider libvirt`
+    
+    `vagrant init subutai/stretch`   
+    `vagrant up --provider libvirt`
 
 ### Parallels Desktop setup
 
