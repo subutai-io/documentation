@@ -11,15 +11,15 @@ taxonomy:
 
 In this section, peer owners and users can find out how to create a Subutai Bazaar account and use its features.
 
-* **[The Subutai Bazaar: An Overview](#Subutai-Bazaar-Overview)**
+* **[The Subutai Bazaar: An Overview](#bazaar-overview)**
 * **[Get to Know Subutai Bazaar](get-to-know)**
 * **[Quick Start for Subutai Bazaar](bazaar-quick-start)**
 * **[Use the Bazaar Tools](using-bazaar-tools)**
-* **[Use the Bazaar Account Tools](https://github.com/subutai-io/documentation/wiki/Use-the-Bazaar-Account-Tools)**
+* **[Use the Bazaar Account Tools](use-account-tools)**
 
 ***
 
-### <a name="Subutai-Bazaar-Overview"> </a> Subutai Bazaar: An Overview
+### <a name="bazaar-overview"> </a> Subutai Bazaar: An Overview
 
 #### What is it?
 
@@ -46,7 +46,7 @@ For peer users:
   <td> <a href="https://github.com/subutai-io/documentation/wiki/Select-Peers"> Select Peers </a>
   </td> 
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Use-Products-or-Blueprints"> Use Blueprints</a> or <br> Create Environments
+  <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/03.using-bazaar-tools/02.use-products-blueprints/docs.md"> Use Blueprints </a> or <br> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/03.using-bazaar-tools/03.create-environments/docs.md"> Create Environments </a>
   </td> 
  </tr>
 </table>
@@ -54,10 +54,10 @@ For peer users:
 For peer owners, operators, or administrators:
 <table>
  <tr rowspan="2" align="center">
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Quick-Start-for-Bazaar"> Create a Subutai <br> Bazaar Account </a> 
+  <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/02.bazaar-quick-start/docs.md"> Create a Subutai <br> Bazaar Account </a> 
   </td>
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Using-the-E2E-Plugin#how-to-install-the-e2e-plugin">Install <br> E2E Plugin </a>
+  <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/03.software-components/01.e2e-plugin/docs.md">Install <br> E2E Plugin </a>
   </td>
   <td>➭</td>
   <td> View Your <br> Registered Peers
