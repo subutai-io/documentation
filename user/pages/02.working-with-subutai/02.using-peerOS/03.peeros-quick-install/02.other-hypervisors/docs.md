@@ -37,7 +37,7 @@ In case you encounter an error during installation, see [Common errors encounter
 
 <details><summary><strong> Libvirt setup </strong></summary>
 
-<p> Between Libvirt's QEMU and KVM hypervisors with remote management capabilities, the Vagrant Subutai plugin currently supports only the local KVM hypervisor.  
+Between Libvirt's QEMU and KVM hypervisors with remote management capabilities, the Vagrant Subutai plugin currently supports only the local KVM hypervisor.  
 
 !!! Vagrant modifications can be made to create remote KVM-based virtual machines, but that is beyond the scope of this guide.
 
@@ -52,7 +52,7 @@ To install and use the provider (on Linux variants only):
 3. Launch a Subutai Peer using the Stretch box with the Libvirt provider.   
    `vagrant init subutai/stretch`   
    `vagrant up --provider libvirt`
-</p>
+
 
 </details> 
 
