@@ -1,5 +1,5 @@
 ---
-title: 'Using Vagrant with Virtualbox'
+title: 'Quick PeerOS Install'
 visible: true
 taxonomy:
     category:
