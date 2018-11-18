@@ -1,10 +1,12 @@
 ---
-title: 'Create Environments'
+title: 'Use the Bazaar Tools'
 visible: true
 taxonomy:
     category:
         - docs
 ---
+
+### What is an Environment?
 
 An Environment is a logically grouped set of containers distributed across one or multiple peers that share the same network (they belong to the same p2p swarm - see more on [p2p](../../../../glossary#p2p-private-network)). An environment can host a number of applications.
 
