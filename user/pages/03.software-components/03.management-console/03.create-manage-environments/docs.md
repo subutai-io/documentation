@@ -83,6 +83,7 @@ To set up environments:
      💡 Click **X** if you want to remove the user from the Trusted users list.     
    * **Destroy environments**    
      In the Actions column, click **X** next to the environment you want to destroy. Take note that the process cannot be reversed: all contents and settings are deleted. Confirm that you want continue.    
+
    You can perform these tasks only on environments created through the Console. Those created through Bazaar can be updated only through Bazaar.  
    * **Add/Remove SSH key**   
      Click the Add or Remove link accordingly.   
