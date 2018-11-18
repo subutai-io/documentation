@@ -72,7 +72,6 @@ To set up environments:
 1. From the menu, go to Environment > Environments. 
 
 2. On the Environments list, you can perform the following tasks on an environment:   
-
    * **View the number of containers and other details**   
      Containers are numbered in order of creation and colored based on size. Hover over a container to display the template name and container size.   
      ![View containers](console-containerdetails.png)   
@@ -84,9 +83,7 @@ To set up environments:
      💡 Click **X** if you want to remove the user from the Trusted users list.     
    * **Destroy environments**    
      In the Actions column, click **X** next to the environment you want to destroy. Take note that the process cannot be reversed: all contents and settings are deleted. Confirm that you want continue.    
-
    You can perform these tasks only on environments created through the Console. Those created through Bazaar can be updated only through Bazaar.  
-
    * **Add/Remove SSH key**   
      Click the Add or Remove link accordingly.   
      * To deploy an SSH key to the environment, enter or upload the SSH key file, and then click **Save**.    
