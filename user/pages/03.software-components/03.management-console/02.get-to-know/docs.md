@@ -27,6 +27,8 @@ At the top right corner of the main page are the following account tools and det
   
   * **Send Heartbeat** - Manually sends a heartbeat from your peer to Bazaar to verify that your peer is up and running. A confirmation message is displayed to notify you of the successful transmission.
   
+  * **Send Heartbeat** - Manually
+  
   * **Register/Unregister** - Opens the Peer Registration form or unregisters the peer from Bazaar.
 
 * **Notifications and logs**   
