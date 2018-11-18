@@ -1,14 +1,14 @@
 ---
-title: Using Components
+title: Using Companion Software
 taxonomy:
     category:
         - docs
 child_type: docs
 ---
 
-# Using the Software Components
+# Using Companion Software
 
-The following components are designed primarily for peer owners, administrators, or operators, to facilitate management and monitoring of peers, environments, and containers:
+The following companion software are designed primarily for peer owners, administrators, or operators, to facilitate management and monitoring of peers, environments, and containers:
 
 ### E2E Plugin
 
