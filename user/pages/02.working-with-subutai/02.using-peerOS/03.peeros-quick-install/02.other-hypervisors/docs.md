@@ -102,6 +102,7 @@ To install and use the provider:
    `vagrant plugin install vagrant-vmware-desktop`
 
 3. Launch a Subutai Peer using the Stretch box for the VMWare Desktop provider.   
+
    `vagrant init subutai/stretch`   
    `vagrant up --provider vmware_desktop`
 
@@ -110,12 +111,13 @@ To install and use the provider:
 Vagrant comes ready with a built-in provider for Hyper-V and VirtualBox, so you do not need to install one. The Hyper-V provider is compatible with Windows Enterprise, Professional, or Education 8.1 and higher versions only. 
 
 1. Install Hyper-V or VirtualBox on your machine.   
-    ❗️ Hyper-V requires that you execute Vagrant with Administrative privileges. The same privileges are required when creating and managing virtual machines with Hyper-V. Vagrant displays an error if you do not have the proper permissions.
 
+   ❗️ Hyper-V requires that you execute Vagrant with Administrative privileges. The same privileges are required when creating and managing virtual machines with Hyper-V. Vagrant displays an error if you do not have the proper permissions.
+   
    * For Hyper-V on Windows 10, follow the detailed procedures on any of these sites:
      * [Enable Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
      * [Enabling Hyper-V on Windows 10](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/)
-
+     
    * To install VirtualBox, go [here](https://www.virtualbox.org/wiki/Downloads).    
      If you encounter errors when installing VirtualBox on MacOS, you may refer to the guide [here](https://github.com/subutai-io/control-center/wiki/Troubleshooting-VirtualBox).
 
