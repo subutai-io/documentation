@@ -93,9 +93,9 @@ To install and use the provider:
 
    Before installing, be sure to do the following first:
    
-   a. Install the Vagrant VMware Utility, a system installation package available for download [here](https://www.vagrantup.com/docs/vmware/vagrant-vmware-utility.html).   
+     a. Install the Vagrant VMware Utility, a system installation package available for download [here](https://www.vagrantup.com/docs/vmware/vagrant-vmware-utility.html).   
    
-   b. Initiate the Vagrant VMware Desktop provider plugin installation.     
+     b. Initiate the Vagrant VMware Desktop provider plugin installation.     
    
    ✔️ Go [here](https://www.vagrantup.com/docs/vmware/installation.html) for detailed instructions about the installation and license setup.   
    
