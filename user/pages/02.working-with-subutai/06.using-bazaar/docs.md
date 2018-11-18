@@ -40,13 +40,13 @@ This global marketplace enables users to sell, rent, or trade compute resources 
 For peer users:
 <table>
  <tr rowspan="2" align="center"> 
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Quick-Start-for-Bazaar"> Create a Subutai <br> Bazaar Account </a>
+  <td> <a href="../../working-with-subutai/using-bazaar/bazaar-quick-start"> Create a Subutai <br> Bazaar Account </a>
   </td>
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Select-Peers"> Select Peers </a>
+  <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/select-peers"> Select Peers </a>
   </td> 
   <td>➭</td>
-  <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/use-products-blueprints"> Use Blueprints </a> or <br> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/03.using-bazaar-tools/03.create-environments/docs.md"> Create Environments </a>
+  <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/use-products-blueprints"> Use Blueprints </a> or <br> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/create-environments"> Create Environments </a>
   </td> 
  </tr>
 </table>
