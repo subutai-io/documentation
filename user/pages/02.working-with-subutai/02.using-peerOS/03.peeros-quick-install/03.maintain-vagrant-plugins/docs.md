@@ -102,7 +102,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: Installing Vagrant provider on a machine that does not have enough available RAM.     
 * Action: Verify that your system has the minimum required RAM size for guests. You may check the requirements at <requirements link>
 
-!! - **Error:** Failed to build gem native extension
+!! **Error:** Failed to build gem native extension
 
     Bundler, the underlying system Vagrant uses to install plugins, reported
     an error. The error is shown below...
