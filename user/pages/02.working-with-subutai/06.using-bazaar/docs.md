@@ -60,7 +60,7 @@ For peer owners, operators, or administrators:
   <td> <a href="../../software-components/e2e-plugin">Install <br> E2E Plugin </a>
   </td>
   <td>➭</td>
-  <td> <a href="../../using-bazaar/using-bazaar-tools/select-peers#search-for-peers"> View Your <br> Registered Peers </a>
+  <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/select-peers#search-for-peers"> View Your <br> Registered Peers </a>
   </td>
  </tr>
 </table>
