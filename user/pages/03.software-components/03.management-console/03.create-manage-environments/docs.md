@@ -18,7 +18,7 @@ View the instructions and guidelines on using these features to perform the foll
 * [Set up environments](#setup-environments)
 * [Configure domains]()
 
-### <a href="create-environments"> </a> Create environments
+### <a id="create-environments"> </a> Create environments
 Follow these instructions to create an environment via the Simple mode. It creates an environment based on a template of your choice within a container that you can set up.
  
 To create environments:
@@ -64,45 +64,49 @@ Take note that creation of environments might take a few minutes to complete, ba
 
 At the end of processing, you are notified that the environment has been created. The new environment is added to the Environments list. 
 
-### <a href="setup-environments"> </a> Set up environments
+### <a id="setup-environments"> </a> Set up environments
 After creating an environment, you can add applications to containers and set up domains. You can view all environments on the peer, including those created through Bazaar by your tenants, for instance. However, you cannot manage or perform certain tasks on these environments. 
 
 To set up environments:
 
-From the menu, go to Environment > Environments. 
+1. From the menu, go to Environment > Environments. 
 
-On the Environments list, you can perform the following tasks on an environment:
+2. On the Environments list, you can perform the following tasks on an environment:
  
-View the number of containers and other details
-Containers are numbered in order of creation and colored based on size. Hover over a container to display the template name and container size. 
-		
-Share environments
-In the Actions column, click the share  icon. On the Share Environment box, click + next to the user. 
+   * **View the number of containers and other details**  
+     Containers are numbered in order of creation and colored based on size. Hover over a container to display the template name and container size. 
+     ![View containers](console-containerdetails.png)
+   * **Share environments**   
+     In the Actions column, click the share icon. On the Share Environment box, click **+** next to the user. 
+     ![Share environments](console-env_share.png)
+     Your selected user is added to the Trusted users list. 
 
-Your selected user is added to the Trusted users list. 
+     On the Trusted users section, check the box for the permissions you want to assign to the user. Click **Save**.
+     ![Trusted users](console-env_permissions.png)
+     
+     💡 Click **X** if you want to remove the user from the Trusted users list. 
 
-On the Trusted users section, check the box for the permissions you want to assign to the user. Click Save.
+   * **Destroy environments**    
+   In the Actions column, click **X** next to the environment you want to destroy. Take note that the process cannot be reversed: all contents and settings are deleted. Confirm that you want continue.  
 
-Tip: Click X if you want to remove the user from the Trusted users list. 
+   You can perform these tasks only on environments created through the Console. Those created through Bazaar can be updated only through Bazaar. 
 
-Destroy environments 
-In the Actions column, click X next to the environment you want to destroy. Take note that the process cannot be reversed: all contents and settings are deleted. Confirm that you want continue.  
+   * **Add/Remove SSH key**   
+   Click the Add or Remove link accordingly.
+   
+     * To deploy an SSH key to the environment, enter or upload the SSH key file, and then click **Save**.  
+       ![Add SSH](console-env_addSSH1.png)
+     * To remove a deployed SSH key from an environment, click **X** next to the key that you want to delete.  	
 
-You can perform these tasks only on environments created through the Console. Those created through Bazaar can be updated only through Bazaar. 
+   * **[Configure domains](#configure-domains)** 
 
-Add/Remove SSH key
-Click the Add or Remove link accordingly.
-To deploy an SSH key to the environment, enter or upload the SSH key file, and then click Save.  
-			
-To remove a deployed SSH key from an environment, click X next to the key that you want to delete.  	
+   * **Edit container size**
+   In the Actions column, click the editicon. Click + on the container that you want edit to display the Settings box. From the list, select the new size of the container.
+   ![Edit container](console-env_editcontainter.png)
 
-Configure domains <link to section below>
+   ❗️ Don’t forget to save and apply your changes. 
 
-Edit container size
-In the Actions column, click the editicon. Click + on the container that you want edit to display the Settings box. From the list, select the new size of the container.
-
-Don’t forget to save and apply your changes. 
-Configure domains
+#### <a id="configure-domains"> </a> Configure domains
 Domain configuration is a two-step process. You have to add a domain to the environment, and then assign it to one or more containers within the same environment. 
 
 📝 Important|Before configuring domains, be sure that the environment is healthy and running. 
