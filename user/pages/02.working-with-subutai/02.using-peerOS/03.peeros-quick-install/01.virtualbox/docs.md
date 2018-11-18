@@ -1,5 +1,5 @@
 ---
-title: 'Virtualbox'
+title: 'Using Vagrant with Virtualbox'
 visible: true
 taxonomy:
     category:
