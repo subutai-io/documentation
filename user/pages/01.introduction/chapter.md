@@ -1,7 +1,5 @@
 ---
-title: Introduction to this Documentation
-visible: true
-menu: Introduction
+title: Introduction
 taxonomy:
     category:
         - docs
@@ -9,6 +7,8 @@ child_type: docs
 toc:
 	headinglevel: 4
 ---
+
+# Introduction to this Documentation
 
 _Welcome! This is the end user documentation for Subutai,    
 the world’s first intelligent P2P cloud computing platform._ 
