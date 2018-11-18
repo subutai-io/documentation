@@ -72,10 +72,10 @@ To set up environments:
 1. From the menu, go to Environment > Environments. 
 
 2. On the Environments list, you can perform the following tasks on an environment:
- 
-   * **View the number of containers and other details**  
-     Containers are numbered in order of creation and colored based on size. Hover over a container to display the template name and container size. 
-     ![View containers](console-containerdetails.png)
+   
+   * **View the number of containers and other details**   
+   Containers are numbered in order of creation and colored based on size. Hover over a container to display the template name and container size.   
+   ![View containers](console-containerdetails.png)
      
    * **Share environments**   
      In the Actions column, click the share icon. On the Share Environment box, click **+** next to the user. 
