@@ -60,7 +60,7 @@ For peer owners, operators, or administrators:
   <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/03.software-components/01.e2e-plugin/docs.md">Install <br> E2E Plugin </a>
   </td>
   <td>➭</td>
-  <td> View Your <br> Registered Peers
+  <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/03.using-bazaar-tools/01.select-peers/docs.md#search-for-peers"> View Your <br> Registered Peers </a>
   </td>
  </tr>
 </table>
