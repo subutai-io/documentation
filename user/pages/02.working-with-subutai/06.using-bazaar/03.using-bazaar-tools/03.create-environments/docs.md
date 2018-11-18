@@ -1,7 +1,7 @@
 ---
 title: 'Use the Bazaar Tools'
 visible: true
-menu: Create environments
+menu: Create Environments
 taxonomy:
     category:
         - docs
