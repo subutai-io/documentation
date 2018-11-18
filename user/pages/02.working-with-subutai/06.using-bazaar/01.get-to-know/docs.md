@@ -1,3 +1,11 @@
+---
+title: 'Get to Know Subutai Bazaar'
+visible: true
+taxonomy:
+    category:
+        - docs
+---
+
 ## Get to Know Subutai Bazaar
 The features and functionalities in Bazaar are organized in two main menus: Tools and Account.
 
