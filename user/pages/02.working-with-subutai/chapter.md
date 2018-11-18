@@ -28,5 +28,7 @@ Learn about the Subutai products and how to use their features.
   * [Use the Bazaar Tools](using-bazaar/using-bazaar-tools)
   * [Use the Bazaar Account Tools](using-bazaar/use-account-tools)
 
+**[All About Blueprints](blueprints)
+
 **[Get to Know the Blockchain Router](https://subutai.io/router.html)**
 
