@@ -20,7 +20,7 @@ Peer owners or administrators can get started through these methods:
 **⤿ [Use a Subutai Blueprint](../../working-with-subutai/blueprints)**   
 Use enhanced templates that we call “Blueprints” to create cloud environments and install applications at the same time. Using blueprints is a quick way of deploying applications within a cloud environment, on a peer that you own or rent from another user. Check our growing collection of Blueprints: file hosting (Nextcloud); CMS (WordPress, Grav); smart contract development (Blockchain in a Box); gaming (Minecraft Server), and lots more. Install a blueprint.
 
-**⤿ [Install the software components](../software-components)**   
+**⤿ [Install the software components](../../software-components)**   
 Peer owners, managers, and administrators can start using the software components built to easily access and manage peers, environments, and containers.
 
 * **[Using the E2E Plugin](../../software-components/e2e-plugin)** 
