@@ -18,7 +18,7 @@ The following companion software are designed primarily for <br> peer owners, ad
  - [Get to Know the Management Console](management-console#know)    
  - [Working with the Management Console](management-console-use)    
 
-**About the P2P Daemon**
+**Get to Know the P2P Daemon**
 
 **[Using the Control Center](control-center)**
  - [Control Center: An Overview](control-center#overview)
