@@ -1,14 +1,11 @@
 ---
-title: PeerOS Components
+title: Get to Know the PeerOS Components
 visible: true
 menu: PeerOS Components
 taxonomy:
     category:
         - docs
 ---
-
-
-### Get to Know the PeerOS Components
 
 Here are the integrated components behind the Subutai PeerOS:
 
