@@ -1,6 +1,7 @@
 ---
 title: 'Using PeerOS'
 visible: true
+menu: Using PeerOS
 taxonomy:
     category:
         - docs
