@@ -8,8 +8,6 @@ taxonomy:
 
 An Environment is a logically grouped set of containers distributed across one or multiple peers that share the same network (they belong to the same p2p swarm - see more on [p2p](../../../../glossary#p2p-private-network)). An environment can host a number of applications.
 
-### Templates
-
 Environments are based on templates - basic software packages that provide a set of functionalities and can be extended to whatever you may need. For instance, there are templates that allow you to deploy a Debian server image to a Subutai Environment. You can use the templates already available in the PeerOS and Bazaar, or you an even [create your own](../../../using-peeros/create-templates).
 
 ### Create an Environment
@@ -44,9 +42,7 @@ This is how it should look like if you have properly configured port mapping:
 
 And if you click your domain name, you will have your container (Apache in the example) opened in browser under previously specified domain:
 
-!!! Congrats! You are now ready to use your environment!
-
-### Using Environments
+#### Congratulations! You are now ready to use your environment!
 
 What now? You can access your environment straight from your desktop! For this, you need to install and set up the following components: Subutai P2P daemon and Subutai Control Center. After installing them, please log into the Control Center using your Bazaar website’s account. Then, to access your Environment, you need to generate SSH keys, or add existing SSH keys to your environments:
 
