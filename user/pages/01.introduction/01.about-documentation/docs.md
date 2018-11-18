@@ -12,7 +12,7 @@ Here you can find the instructions and guidelines on installing, running, and ma
 - **[Getting Started with Subutai](https://subutai.io/getting-started.html)**  
   Your quick guide to setting up the Subutai products and components.
 
-- **[Working with Subutai](../working-with-subutai)**  
+- **[Working with Subutai](../../working-with-subutai)**  
   Learn about the products and how to use their features.
   
   |**[PeerOS](working-with-subutai/using-peeros)**|**[Bazaar](working-with-subutai/using-bazaar)**|**Blockchain Router**|**[Blueprints](../working-with-subutai/blueprints)**|
