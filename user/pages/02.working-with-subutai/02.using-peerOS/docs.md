@@ -34,7 +34,16 @@ To learn more, see [Subutai PeerOS](https://subutai.io/peer-os.html).
 |[Quick Install](peeros-quick-install)|[Advanced Install](peeros-advanced-install)|
 ||| 
    
-
+<table>
+ <tr rowspan="2" align="center"> 
+  <td> 🔻 <br>
+   <a href="https://github.com/MarilizaC/doc_v2/wiki/Quick-PeerOS-Install"> Quick Install </a>    
+  </td>
+  <td> 🔻 <br>
+   <a href="https://github.com/MarilizaC/doc_v2/wiki/Advanced-PeerOS-Install"> Advanced Install </a>
+  </td>
+ </tr>
+</table>
 
 
 
