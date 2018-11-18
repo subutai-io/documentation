@@ -9,7 +9,7 @@ taxonomy:
 
 Here you can find the instructions and guidelines on installing, running, and making the best possible use of the Subutai products and components.
 
-- **[Getting Started with Subutai](../working-with-subutai#getting-started-with-subutai)**  
+- **[Getting Started with Subutai](https://subutai.io/getting-started.html)**  
   Your quick guide to setting up the Subutai products and components.
 
 - **[Working with Subutai](../working-with-subutai)**  
