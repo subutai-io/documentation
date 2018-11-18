@@ -80,8 +80,7 @@ To set up environments:
    * **Share environments**   
    In the Actions column, click the share icon. On the Share Environment box, click **+** next to the user.   
    ![Share environments](console-env_share.png)   
-   Your selected user is added to the Trusted users list.   
-   On the Trusted users section, check the box for the permissions you want to assign to the user. Click **Save**.   
+   Your selected user is added to the Trusted users list. On the Trusted users section, check the box for the permissions you want to assign to the user. Click **Save**.   
    ![Trusted users](console-env_permissions.png)   
    💡 Click **X** if you want to remove the user from the Trusted users list.     
    
