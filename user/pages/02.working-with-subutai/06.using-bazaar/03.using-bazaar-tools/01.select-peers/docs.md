@@ -43,7 +43,7 @@ To view your Favorites list, click **My Peers**, and then go to the Favorites ta
 
 Take note of the following key points when adding peers:
 
-* Before adding a peer, review its details to verify that it suits your requirements. Details tagged with the ![info icon](bazaar-info-icon.png) icon, including price and CPU, display more information when you hover over them. To refine the list of peers, see Search for peers.
+* Before adding a peer, review its details to verify that it suits your requirements. Details tagged with the Info icon, including price and CPU, display more information when you hover over them. To refine the list of peers, see Search for peers.
 * You can add offline peers or those that are not updated to your list; however, you cannot use them for your environments and applications until they become online,  active, or updated.
 * When adding Free peers, be aware that they can be changed to Paid by the owner, and vice versa.
 
