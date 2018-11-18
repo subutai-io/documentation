@@ -35,7 +35,7 @@ Here are the boxes to choose from, two versions for each supported Vagrant provi
 
 In case you encounter an error during installation, see [Common errors encountered when using Vagrant plugins](https://github.com/MarilizaC/doc_v2/wiki/Maintain-your-Vagrant-plugins#-common-errors-encountered-when-using-vagrant-plugins).
 
-<details><summary><strong> Libvirt setup </strong></summary>
+### Libvirt setup
 
 Between Libvirt's QEMU and KVM hypervisors with remote management capabilities, the Vagrant Subutai plugin currently supports only the local KVM hypervisor.     
 
@@ -56,36 +56,33 @@ To install and use the provider (on Linux variants only):
    `vagrant init subutai/stretch`   
    `vagrant up --provider libvirt`
 
+### Parallels Desktop setup
 
-</details> 
-
-<details><summary><strong> Parallels Desktop setup </strong></summary>
-
-<p>
 For this commercial desktop hypervisor, only Parallels version 10 and above are supported and only the Pro and Business editions can be used with the Vagrant Parallels provider.
 
 To install and use the provider (on Mac only):
+
 1. Install the [Parallels Desktop for Mac](https://www.parallels.com/products/desktop/).
+
 2. Install the Vagrant Parallels Provider plugin.   
    `vagrant plugin install vagrant-parallels`
 
    For more information about this provider, see the documentation [here](https://github.com/Parallels/vagrant-parallels).
+
 3. Launch a Subutai Peer using the Stretch box for the Parallels provider.   
    `vagrant init subutai/stretch`   
    `vagrant up --provider parallels`
-</p>
 
-</details>  
+### VMware Fusion and Workstation setup
 
-<details><summary><strong> VMware Fusion and Workstation setup </strong></summary>
-
-<p>
 The Vagrant VMware plugin, a commercial product provided by [HashiCorp](https://www.hashicorp.com), requires the purchase of a provider license to operate. To purchase a license, visit the [Vagrant VMware provider](https://www.vagrantup.com/vmware/#buy-now) page. The Vagrant VMware plugin is compatible with both the regular and Pro versions of VMware Fusion and VMware Workstation.
 
 To install and use the provider:
+
 1. Make sure that you have installed either one of these supported hypervisors:    
    * [VMware Workstation](https://kb.vmware.com/s/article/2057907) (Linux and Windows)
    * [VMware Fusion](https://kb.vmware.com/s/article/2014097) (Mac OS) 
+
 2. Install the Vagrant VMware Desktop Provider plugin.
 
    1. Install the Vagrant VMware Utility, a system installation package available for download [here](https://www.vagrantup.com/docs/vmware/vagrant-vmware-utility.html).
@@ -96,13 +93,9 @@ To install and use the provider:
 3. Launch a Subutai Peer using the Stretch box for the VMWare Desktop provider.   
    `vagrant init subutai/stretch`   
    `vagrant up --provider vmware_desktop`
-</p>
 
-</details>
+### Hyper-V and VirtualBox setup
 
-<details><summary><strong> Hyper-V and VirtualBox setup </strong></summary>  
-
-<p>
 Vagrant comes ready with a built-in provider for Hyper-V and VirtualBox, so you do not need to install one. The Hyper-V provider is compatible with Windows Enterprise, Professional, or Education 8.1 and higher versions only. 
 
 1. Install Hyper-V or VirtualBox on your machine.   
@@ -127,6 +120,3 @@ Vagrant comes ready with a built-in provider for Hyper-V and VirtualBox, so you 
      `vagrant plugin install vagrant-vbguest`   
      `vagrant init subutai/stretch`   
      `vagrant up --provider virtualbox`   
-</p>
-
-</details>
