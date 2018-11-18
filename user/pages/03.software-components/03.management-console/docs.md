@@ -1,6 +1,6 @@
 ---
 title: 'Using the Management Console'
-menu: Using the Management Console
+menu: Using the Console
 visible: true
 taxonomy:
     category:
@@ -10,7 +10,10 @@ taxonomy:
 Find out how to use the features of the Management Console, from monitoring to maintenance of peers, environments, and containers. 
 
 * **[The Management Console: An Overview](#overview)**
-* **[]()**
+* **[Access the Management Console](console-access)**
+* **[Get to Know the Management Console](get-to-know)**
+* **[Create and Manage Environments](create-manage-environments)**
+* **[Monitor Peers and Environments](monitor-peers-envs)**
 
 ***
 
