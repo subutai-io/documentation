@@ -29,5 +29,7 @@ Here are several ways to access the Console:
 
 Regardless of how you access Console, you are redirected to its Login page.
 
+![Console login](console-login.png)
+
 After your initial login to a peer’s Console, you are prompted to replace the password and assign your own.
 
