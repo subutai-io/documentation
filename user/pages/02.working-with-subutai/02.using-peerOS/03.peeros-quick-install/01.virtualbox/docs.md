@@ -1,6 +1,7 @@
 ---
 title: 'Quick PeerOS Install'
 visible: true
+menu: Using Vagrant with VirtualBox
 taxonomy:
     category:
         - docs
