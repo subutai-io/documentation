@@ -31,12 +31,12 @@ At the top right corner of the main page are the following account tools and det
   * **Send Heartbeat** - Manually sends a heartbeat from your peer to Bazaar to verify that your peer is up and running. A confirmation message is displayed to notify you of the successful transmission. If the peer is down, the status shows ...
 Register/Unregister - Opens the Peer Registration form or unregisters the peer from Bazaar. For more information about peer registration, see Register peers with Bazaar (Using peeros topic link).
 
-  * **Notifications and logs**
-    The Notification bell with a number indicates the presence of notifications or logs. These notify you of available updates, task status, and change in Console settings or components.
+  * **Register/Unregister** - Opens the Peer Registration form or unregisters the peer from Bazaar.
+
+* **Notifications and logs**
+  The Notification bell with a number indicates the presence of notifications or logs. These notify you of available updates, task status, and change in Console settings or components.
 
     💡 If you want to view log details, go to System > Updates. 
 
     Click the bell to display the list of notifications.
-
-
 
