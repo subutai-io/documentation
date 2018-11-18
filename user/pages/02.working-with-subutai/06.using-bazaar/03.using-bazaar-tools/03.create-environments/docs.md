@@ -28,8 +28,6 @@ Check your Peer(s) and press the “next” button.
 
 Then, you will be directed to the Template selection page. There you will have the option to choose one or more system templates for your Environment. Please note that you can add your own template and use it - you can do this in the [CDN section](../../user-menu#cdn).
 
-![Templates](environments-select-template.png)
-
 You can also choose the size of your container - tiny, small, medium, large or huge. And you can easily rename the container’s default name. After you added the template(s) you want, click “save” button, select the name for your environment, press “save” again and at the last step press “build” button.
 
 Next step you have is “under modification” state, which means that your environment is being created. It make take some time before the environment is built as some templates are big.
