@@ -67,32 +67,22 @@ For peer owners, operators, or administrators:
 
 
 
-/**
-
-[Subutai Bazaar](https://bazaar.subutai.io) is the P2P cloud market and social environment for the
+<!--[Subutai Bazaar](https://bazaar.subutai.io) is the P2P cloud market and social environment for the
 Subutai Platform. These documentation pages have instructions on what it
 can do and how. Through the Bazaar users can sell, barter, share or hire
 computational resources and server applications from other users.
-
-The Bazaar congregates Peers provided by the community of users running
+ The Bazaar congregates Peers provided by the community of users running
 Subutai PeerOS. Anyone can create Environments on these Peers, based on
 diverse templates that range from simple containerized linux servers to
 more complex applications such as Cassandra, Apache, Wordpress, Jetty or
 even a full-fledged GNU-Linux Operating System with a Graphic User
 Interface.
-
 ###Sign up
-
 Sign up to the Bazaar by accessing the [register page](https://bazaar.subutai.io/register). You can either inform your e-mail and click "Sign up", or choose one of the options of external authentication (Facebook, Google or GitHub).
-
 [plugin:youtube](https://www.youtube.com/watch?v=70BsnBbT-YQ)
-
 ###Bazaar Interface
-
-Bazaar's user interface is organized around three menus. The top menu provides access to communication and status tools. THe right sidebar shows the User menu and contextual information, and the left one leads to the Bazaar tools.
-
+ Bazaar's user interface is organized around three menus. The top menu provides access to communication and status tools. THe right sidebar shows the User menu and contextual information, and the left one leads to the Bazaar tools.
 ![Bazaar Interface](bazaar-interface-areas.png)
-
 - [Top menu](top-menu)
   - [Balance](top-menu#balance)
   - [Notifications](top-menu#notifications)
@@ -120,4 +110,5 @@ Bazaar's user interface is organized around three menus. The top menu provides a
   - [Map of Peers](bazaar-tools/map-of-peers)
   - [Organizations](bazaar-tools/organizations)
   - [Users](bazaar-tools/users)
-  **/
+-->
+
