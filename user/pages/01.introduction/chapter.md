@@ -14,15 +14,15 @@ The following topics describe what you can expect from this documentation and in
 
 **[About this Subutai Documentation](about-documentation)**
 
-**[About the Subutai Open Source Project](https://github.com/subutai-io/documentation/wiki/About-the-Subutai-Open-Source-Project)**
-* [Contribute to the Subutai Cloud](https://github.com/subutai-io/documentation/wiki/About-the-Subutai-Open-Source-Project#-contribute-to-the-subutai-cloud)
-* [Earn GoodWill](https://github.com/subutai-io/documentation/wiki/About-the-Subutai-Open-Source-Project#-earn-goodwill)
-* [Join the Community](https://github.com/subutai-io/documentation/wiki/About-the-Subutai-Open-Source-Project#-join-the-community)
+**[About the Subutai Open Source Project](about-project)**
+* [Contribute to the Subutai Cloud](about-project#contribute-to-the-subutai-cloud)
+* [Earn GoodWill](about-project#earn-goodwill)
+* [Join the Community](about-project#join-the-community)
 
-**[About the Subutai Platform](https://github.com/subutai-io/documentation/wiki/About-the-Subutai-Platform)**
-   * [Glossary](https://github.com/subutai-io/documentation/wiki/Glossary)
-   * [FAQs](https://github.com/subutai-io/documentation/wiki/FAQs)
-   * [Get Support](https://github.com/subutai-io/documentation/wiki/Get-Support)
+**[About the Subutai Platform](about-platform)**
+   * [Glossary](../glossary)
+   * [FAQs](../faqs)
+   * [Get Support](../get-support)
 
 
 
