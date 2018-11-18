@@ -7,8 +7,6 @@ taxonomy:
         - docs
 ---
 
-[TOC]
-
 Find out how to use the features of the Management Console, from monitoring to maintenance of peers, environments, and containers. 
 
 * **[The Management Console: An Overview](#overview)**
