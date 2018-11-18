@@ -27,5 +27,5 @@ Peer owners, managers, and administrators can start using the software component
   This browser plugin facilitates working with peers by managing PGP-based authentication and encryption. Tasks requiring authentication need PGP keys that can be generated and managed by the E2E plugin.
 * **Using the Control Center**  
   This convenient desktop application is designed for working with Subutai Bazaar and PeerOS. Users can create and manage peers, environments, and containers using the features of the Control Center.
-* **Using the Management Console**     
+* **[Using the Management Console](../../software-components/management-console)**     
   This online application exposes PeerOS functionality to enable creation and management of peers, environments, and containers. It is automatically installed and set up during peer creation.
