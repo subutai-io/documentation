@@ -25,11 +25,13 @@ Before installing a blueprint, be sure that you have added peers to your Favorit
 To install blueprints or products:
 1. From the Application Blueprints or My Products tab, select the application that you want to use.   
    The following steps and screenshots are taken from the Blockchain in a Box blueprint.      
+   
    ✔️ On the product’s specific page, you can view more details about the application. On a blueprint’s page, click View to review the code. 
 2. Click **Build** to open the Blueprint Wizard.   
 
    ![Blueprint page](bazaar-useproduct01.png)
 3. Fill out the form on each tab.   
+   
    💡 Form details and tabs vary depending on the requirements to install and configure an application.   
    
    ![Blueprint wizard](bazaar-useproduct02.png)
