@@ -15,9 +15,9 @@ The following topics describe what you can expect from this documentation and in
 **[About this Subutai Documentation](about-documentation)**
 
 **[About the Subutai Open Source Project](about-project)**
-* [Contribute to the Subutai Cloud](about-project?id=contribute-to-the-subutai-cloud)
-* [Earn GoodWill](about-project?id=earn-goodwill)
-* [Join the Community](about-project??id=join-the-community)
+* [Contribute to the Subutai Cloud](about-project?name=contribute)
+* [Earn GoodWill](about-project?name=goodwill)
+* [Join the Community](about-project?name=community)
 
 **[About the Subutai Platform](about-platform)**
    * [Glossary](../glossary)
