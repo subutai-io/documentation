@@ -16,7 +16,7 @@ This section provides information about the Control Center and how to use its fe
 
 ### <a id="overview"> </a> The Subutai Control Center: An Overview
 
-<img align="left" src="icon_peerOS.png" /> A convenient desktop application for working with peers and environments. Designed for peer owners and administrators of environments, it provides quick access to the platform’s major features, with enhanced capabilities for desktop or shell access to a peer and its environments.
+A convenient desktop application for working with peers and environments. Designed for peer owners and administrators of environments, it provides quick access to the platform’s major features, with enhanced capabilities for desktop or shell access to a peer and its environments.
 
 #### Key features
 
