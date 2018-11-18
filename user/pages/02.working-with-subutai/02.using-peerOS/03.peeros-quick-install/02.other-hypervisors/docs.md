@@ -1,21 +1,21 @@
 ---
-title: 'Using Vagrant with Other Hypervisors'
+title: 'Quick PeerOS Install'
 visible: true
 taxonomy:
     category:
         - docs
 ---
 
-# Basic setup using Vagrant with other supported hypervisors
+### Basic setup using Vagrant with other supported hypervisors
 
 You can launch your own peers using Vagrant and the hypervisor of your choice. This guide shows you how to set up the supported Vagrant provider and use a Vagrant box created by Subutai to launch your peer. 
 
-### Prerequisites
-
+***
+**_Prerequisites_**  
 Before installing a provider, it is important that you have configured [Vagrant](https://www.vagrantup.com/downloads.html) and the hypervisor of your choice. Some hypervisors may require additional configuration, which is outside the scope of this guide. You also need the [Vagrant Subutai plugin](https://github.com/subutai-io/vagrant) installed on your system. 
 ***
 
-### Supported providers
+#### Supported providers
 
 At Subutai, we have built Vagrant boxes, available on Vagrant Cloud, for the following Vagrant providers:
 
@@ -39,7 +39,7 @@ In case you encounter an error during installation, see [Common errors encounter
 
 Between Libvirt's QEMU and KVM hypervisors with remote management capabilities, the Vagrant Subutai plugin currently supports only the local KVM hypervisor.     
 
-!!! Vagrant modifications can be made to create remote KVM-based virtual machines, but that is beyond the scope of this guide.   
+✔️ Vagrant modifications can be made to create remote KVM-based virtual machines, but that is beyond the scope of this guide. 
 
 To install and use the provider (on Linux variants only):   
 
@@ -48,7 +48,7 @@ To install and use the provider (on Linux variants only):
    * For instructions on Debian, visit the [Debian wiki site](https://wiki.debian.org/KVM).
    
 2. Install the Vagrant Libvirt provider plugin.     
-   :heavy_exclamation_mark: Before installing the provider, be sure that you have all the build dependencies for your Linux distribution. Refer to the detailed instructions [here](https://github.com/vagrant-libvirt/vagrant-libvirt#installation).
+   ❗️ Before installing the provider, be sure that you have all the build dependencies for your Linux distribution. Refer to the detailed instructions [here](https://github.com/vagrant-libvirt/vagrant-libvirt#installation).
 
    `vagrant plugin install vagrant-libvirt`
    
@@ -85,9 +85,9 @@ To install and use the provider:
 
 2. Install the Vagrant VMware Desktop Provider plugin.
 
-   1. Install the Vagrant VMware Utility, a system installation package available for download [here](https://www.vagrantup.com/docs/vmware/vagrant-vmware-utility.html).
-   2. Initiate the Vagrant VMware Desktop provider plugin installation.   
-   Go [here](https://www.vagrantup.com/docs/vmware/installation.html) for detailed instructions about the installation and license setup.   
+   a. Install the Vagrant VMware Utility, a system installation package available for download [here](https://www.vagrantup.com/docs/vmware/vagrant-vmware-utility.html).
+   b. Initiate the Vagrant VMware Desktop provider plugin installation.   
+   ✔️ Go [here](https://www.vagrantup.com/docs/vmware/installation.html) for detailed instructions about the installation and license setup.   
    `vagrant plugin install vagrant-vmware-desktop`
 
 3. Launch a Subutai Peer using the Stretch box for the VMWare Desktop provider.   
@@ -99,7 +99,7 @@ To install and use the provider:
 Vagrant comes ready with a built-in provider for Hyper-V and VirtualBox, so you do not need to install one. The Hyper-V provider is compatible with Windows Enterprise, Professional, or Education 8.1 and higher versions only. 
 
 1. Install Hyper-V or VirtualBox on your machine.   
-   :heavy_exclamation_mark: Hyper-V requires that you execute Vagrant with Administrative privileges. The same privileges are required when creating and managing virtual machines with Hyper-V. Vagrant displays an error if you do not have the proper permissions.
+    ❗️ Hyper-V requires that you execute Vagrant with Administrative privileges. The same privileges are required when creating and managing virtual machines with Hyper-V. Vagrant displays an error if you do not have the proper permissions.
 
    * For Hyper-V on Windows 10, follow the detailed procedures on any of these sites:
      * [Enable Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
@@ -114,7 +114,7 @@ Vagrant comes ready with a built-in provider for Hyper-V and VirtualBox, so you 
      `vagrant init subutai/stretch`    
      `vagrant up --provider hyperv`   
    
-!!!! After running vagrant up, when asked to choose a switch, select the option for vagrant-subutai.
+   ✔️ After running vagrant up, when asked to choose a switch, select the option for vagrant-subutai.
 
    * Vagrant VirtualBox provider   
      `vagrant plugin install vagrant-vbguest`   
