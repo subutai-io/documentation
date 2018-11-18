@@ -1,6 +1,6 @@
 ---
 title: 'About the Subutai Open Source Project'
-menu: Open Source Project
+menu: About the Project
 visible: true
 taxonomy:
     category:
@@ -29,7 +29,9 @@ For renters or users, you can increase your computing power, choose from the ava
 
 **Give feedback.** We welcome your feedback! Tell us how we can improve the user experience for everyone. Your helpful feedback, suggestions, and comments are extremely valuable to us.  
 
-![](subutai_globe.png?classes=float-left) Plus, we want to light up that globe at [Subutai Bazaar](https://bazaar.subutai.io). With peers all around the world, the power of the P2P cloud community increases. </p> 
+![](subutai_globe.png?classes=float-left) 
+
+Plus, we want to light up that globe at [Subutai Bazaar](https://bazaar.subutai.io). With peers all around the world, the power of the P2P cloud community increases. </p> 
 
 Connect with us on [Subutai Slack](https://slack.subutai.io) to contribute or discuss your ideas.
 
@@ -46,7 +48,7 @@ For developers, a Blueprint is a simple JSON based templating format. Use bluepr
 ### <a name="goodwill"></a> Earn GoodWill
 The diagram below illustrates the various ways of earning GoodWill.
 
-![Earning GoodWill](earning-goodwill-01.jpg)
+![Earning GoodWill](earning_goodwill.jpg?cropResize=775,1150)
  
 Earn GoodWill from other users by selling or renting your idle compute resources.    
 
