@@ -1,5 +1,5 @@
 ---
-title: 
+title: PeerOS Components
 visible: true
 menu: PeerOS Components
 taxonomy:
