@@ -7,6 +7,68 @@ taxonomy:
         - docs
 ---
 
+## Using Bazaar
+
+In this section, peer owners and users can find out how to create a Subutai Bazaar account and use its features.
+
+* **[The Subutai Bazaar: An Overview](#Subutai-Bazaar-Overview)**
+* **[Get to Know Subutai Bazaar](https://github.com/subutai-io/documentation/wiki/Get-to-Know-Subutai-Bazaar)**
+* **[Quick Start for Subutai Bazaar](https://github.com/subutai-io/documentation/wiki/Quick-Start-for-Bazaar)**
+* **[Use the Bazaar Tools](https://github.com/subutai-io/documentation/wiki/Use-the-Bazaar-Tools)**
+* **[Use the Bazaar Account Tools](https://github.com/subutai-io/documentation/wiki/Use-the-Bazaar-Account-Tools)**
+
+***
+
+### <a name="Subutai-Bazaar-Overview"> </a> Subutai Bazaar: An Overview
+
+#### What is it?
+
+This global marketplace enables users to sell, rent, or trade compute resources and applications online. Commonly described as “the Airbnb of cloud and IoT computing resources”, Subutai Bazaar serves as a blockchain-based resource and device commodity exchange.
+
+#### Key features
+
+* Management and listing of Subutai Blueprints and applications
+* Environment management that includes peer and template selection, container configuration, and environment telemetry, among others
+* Search and selection of peers manually or automatically through intelligent analytics
+* Access to operator management console for peers and their environments and containers
+* Management of domain name assignments
+* Setup and management of organizations for collaboration on projects and resource sharing among members
+* Subutai Control Center and E2E plugin integration
+
+#### Get started
+
+For peer users:
+<table>
+ <tr rowspan="2" align="center"> 
+  <td> <a href="https://github.com/subutai-io/documentation/wiki/Quick-Start-for-Bazaar"> Create a Subutai <br> Bazaar Account </a>
+  </td>
+  <td>➭</td>
+  <td> <a href="https://github.com/subutai-io/documentation/wiki/Select-Peers"> Select Peers </a>
+  </td> 
+  <td>➭</td>
+  <td> <a href="https://github.com/subutai-io/documentation/wiki/Use-Products-or-Blueprints"> Use Blueprints</a> or <br> Create Environments
+  </td> 
+ </tr>
+</table>
+
+For peer owners, operators, or administrators:
+<table>
+ <tr rowspan="2" align="center">
+  <td> <a href="https://github.com/subutai-io/documentation/wiki/Quick-Start-for-Bazaar"> Create a Subutai <br> Bazaar Account </a> 
+  </td>
+  <td>➭</td>
+  <td> <a href="https://github.com/subutai-io/documentation/wiki/Using-the-E2E-Plugin#how-to-install-the-e2e-plugin">Install <br> E2E Plugin </a>
+  </td>
+  <td>➭</td>
+  <td> View Your <br> Registered Peers
+  </td>
+ </tr>
+</table>
+
+
+
+/**
+
 [Subutai Bazaar](https://bazaar.subutai.io) is the P2P cloud market and social environment for the
 Subutai Platform. These documentation pages have instructions on what it
 can do and how. Through the Bazaar users can sell, barter, share or hire
@@ -58,4 +120,4 @@ Bazaar's user interface is organized around three menus. The top menu provides a
   - [Map of Peers](bazaar-tools/map-of-peers)
   - [Organizations](bazaar-tools/organizations)
   - [Users](bazaar-tools/users)
-  
+  **/
