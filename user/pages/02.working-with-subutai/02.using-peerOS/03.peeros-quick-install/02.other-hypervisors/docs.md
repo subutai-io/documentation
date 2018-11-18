@@ -119,6 +119,7 @@ Vagrant comes ready with a built-in provider for Hyper-V and VirtualBox, so you 
      * [Enabling Hyper-V on Windows 10](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/)
    
    * To install VirtualBox, go [here](https://www.virtualbox.org/wiki/Downloads).    
+   
    If you encounter errors while installing VirtualBox on MacOS, you may refer to the guide [here](https://github.com/subutai-io/control-center/wiki/Troubleshooting-VirtualBox).
 
 2. Now, let’s launch a peer using the Stretch box with the provider:
