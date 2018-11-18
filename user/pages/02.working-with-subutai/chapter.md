@@ -15,11 +15,11 @@ Learn about the Subutai products and how to use their features.
 **[Getting Started with Subutai](getting-started)**
 
 **[Using PeerOS](using-peerOS)**
-  * [Subutai PeerOS: An Overview](using-peeros#overview)    
-  * [Get to Know the PeerOS Components](using-peeros/peeros-components)    
-  * [Quick PeerOS Install](using-peeros/peeros-quick-install)
-  * [Advanced PeerOS Install](using-peeros/peeros-advanced-install)
-  * [Manage Peers](using-peeros/manage-peers)
+  * [Subutai PeerOS: An Overview](using-peerOS/overview)    
+  * [Get to Know the PeerOS Components](using-peerOS/peeros-components)    
+  * [Quick PeerOS Install](using-peerOS/peeros-quick-install)
+  * [Advanced PeerOS Install](using-peerOS/peeros-advanced-install)
+  * [Manage Peers](using-peerOS/manage-peers)
 
 **[Using Bazaar](using-bazaar)**
   * [The Subutai Bazaar: An Overview]()
