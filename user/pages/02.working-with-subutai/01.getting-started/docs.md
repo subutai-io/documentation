@@ -14,7 +14,7 @@ Users who want to rent compute resources or those who are new to the Subutai pla
 **⤿ [Create and run peers](../../working-with-subutai/using-peeros)**   
 Peer owners or administrators can get started through these methods:
 
-* Do a quick install of PeerOS, using Vagrant with VirtualBox or other hypervisors, and then get a peer running in no time. Your journey begins here.   
+* Do a quick install of PeerOS, using Vagrant with VirtualBox or other hypervisors, and then get a peer running in no time. Your journey begins [here](../../working-with-subutai/using-peeros/peeros-quick-install).   
 * Those who need a user interface can create peers using the Control Center desktop application. You need a Bazaar account, which is used to log in to the Control Center. Get more information and instructions here.
 
 **⤿ [Use a Subutai Blueprint](../../working-with-subutai/blueprints)**   
