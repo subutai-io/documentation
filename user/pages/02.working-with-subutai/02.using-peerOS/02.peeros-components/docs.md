@@ -1,6 +1,7 @@
 ---
-title: 'PeerOS components'
+title: 
 visible: true
+menu: PeerOS Components
 taxonomy:
     category:
         - docs
