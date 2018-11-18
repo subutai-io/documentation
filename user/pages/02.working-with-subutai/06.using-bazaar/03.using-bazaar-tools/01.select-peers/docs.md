@@ -13,7 +13,7 @@ Whether buying, renting, or sharing peers, use Subutai Bazaar to find compute re
 * **Free** - peers available to all users for free
 * **Shared** - peers shared to select users for free
 
-#### Search for peers
+#### <a id="search-for-peers"> </a> Search for peers
 Use the Search tool on the Peers page to look for a peer by its partial or full name. You can also use the filters at the top of the page to narrow down the list of peers.
 
 ![Search Peers](bazaar-search-peer.png)
