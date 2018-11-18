@@ -19,7 +19,7 @@ This section contains the instructions for installing and setting up Subutai Pee
 
 ***
 
-### <a name="peeros"> </a> The Subutai PeerOS: An Overview
+### <a name="subutai-peeros"> </a> The Subutai PeerOS: An Overview
 
 #### What is it?
 
