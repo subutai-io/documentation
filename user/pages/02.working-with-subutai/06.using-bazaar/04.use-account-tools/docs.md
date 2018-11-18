@@ -1,5 +1,5 @@
 ---
-title: 'User Menu'
+title: 'Use Account Tools'
 visible: true
 taxonomy:
     category:
