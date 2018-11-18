@@ -19,9 +19,9 @@ Find out the various ways of getting involved with the project:
 * [Earn GoodWill](#goodwill)
 * [Join the Community](#community)
 
-### <a name="contribute"></a> Contribute to the Subutai Cloud
+### <a id="contribute"></a> Contribute to the Subutai Cloud
 
-**There are many ways to contribute to the Subutai crowd cloud or, <br> shall we say, _many ways to join the horde!_**
+_There are many ways to contribute to the Subutai crowd cloud or, shall we say, many ways to join the horde!_
 
 **Start using Subutai.** Use Subutai to start renting or sharing your computing resources. With PeerOS, you can create peers and fire them up using Subutai Vagrant boxes. Once up and running, register them with Bazaar where other users and renters can select them according to their requirements.   
 
