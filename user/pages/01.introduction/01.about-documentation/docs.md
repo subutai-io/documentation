@@ -32,6 +32,6 @@ Aside from the products, learn about the companion software that enable easy int
 - **Subutai 101**   
   Get a quick overview of the Subutai platform from this video:
 
-  [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)
+  [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU?resize=560,315)
 
   Watch more of our [video resources](../../videos).
