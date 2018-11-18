@@ -11,7 +11,7 @@ There are different ways to get started using Subutai, whether you want to set u
 **⤿ Create a Bazaar account**   
 Users who want to rent compute resources or those who are new to the Subutai platform could start with the basic Bazaar account. In Bazaar, check out the available peers and apps, like Blueprints or plugins that you can use. Create environments where you can set up and access those apps. Learn how create your account.
 
-**⤿ [Create and run peers](../../working-with-subutai/using-peerOS)**   
+**⤿ [Create and run peers](../working-with-subutai/using-peerOS)**   
 Peer owners or administrators can get started through these methods:
 
 * Do a quick install of PeerOS, using Vagrant with VirtualBox or other hypervisors, and then get a peer running in no time. Your journey begins here.   
