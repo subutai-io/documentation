@@ -18,9 +18,9 @@ The following companion software are designed primarily for peer owners, <br> ad
 
 ### About the P2P Daemon
 
-### Using the Control Center
-- [Control Center: An Overview](control-center)
+### [Using the Control Center](control-center)
+- [Control Center: An Overview](control-center#overview)
 - [Download, install and access](download-install)
-- [Get to Know](get-to-know)
+- [Get to Know the Control Center](get-to-know)
 - [Configure Control Center Settings](configure-settings)
 - [Create a Peer](create-peer)
