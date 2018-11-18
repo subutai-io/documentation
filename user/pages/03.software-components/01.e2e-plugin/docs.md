@@ -1,5 +1,5 @@
 ---
-title: 'E2E Plugin'
+title: 'Using the E2E Plugin'
 visible: true
 taxonomy:
     category:
