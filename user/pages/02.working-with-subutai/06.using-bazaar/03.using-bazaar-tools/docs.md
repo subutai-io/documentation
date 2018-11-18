@@ -1,5 +1,5 @@
 ---
-title: 'Get to Know Subutai Bazaar'
+title: 'Using the Bazaar Tools'
 visible: true
 taxonomy:
     category:
