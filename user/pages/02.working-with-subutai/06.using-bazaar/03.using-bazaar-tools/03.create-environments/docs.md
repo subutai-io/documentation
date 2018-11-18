@@ -18,11 +18,11 @@ The first thing you need in order to create an Environment is to sign in to the 
 
 Go to Subutai Bazaar, click the “Environments” button in the left sidebar, then click “create environment”:
 
-![Create Environment](environments.png)
+![Create Environment](environments.png?cropResize=810,392)
 
 After, that, you will be redirected to the Peer selection page, where you can pick one ore more Peers to host your Environment. The list shows whatever resources (RAM, CPU, HDD) they have to offer. You can pick from: your own Peers, favorites or ones shared with you by friends or colleagues.
 
-![Select Peers](environments-create.png)
+![Select Peers](environments-create.png?cropResize=810,392)
 
 Check your Peer(s) and press the “next” button.
 
@@ -34,7 +34,7 @@ Next step you have is “under modification” state, which means that your envi
 
 If all the steps are done properly, containers are built. You will see “ready” in state field and your environment will be “healthy”:
 
-![Environment Ready](environment-ready.png)
+![Environment Ready](environment-ready.png?cropResize=810,392)
 
 So, now you have your environment and you are ready now to install software you like there. Then, to make it accessible by a [domain name](../../user-menu#domains), please go to the “Container Port Mapping” page and press “Add new port” button. There you can specify protocol, ports, domain name, proxy (if it’s behind NAT) and pick container:
 
