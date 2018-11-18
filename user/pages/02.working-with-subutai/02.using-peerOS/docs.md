@@ -30,9 +30,6 @@ The first thing to do is install PeerOS on each of your bare metal Debian server
 To learn more, see [Subutai PeerOS](https://subutai.io/peer-os.html).
 
 #### Get started with PeerOS
-
-|[Quick Install](peeros-quick-install)|[Advanced Install](peeros-advanced-install)|
-||| 
    
 <table>
  <tr rowspan="2" align="center"> 
