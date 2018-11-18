@@ -19,7 +19,7 @@ In this section, peer owners and users can find out how to create a Subutai Baza
 
 ***
 
-### Subutai Bazaar: An Overview
+### <a name="bazaar-overview"> </a> Subutai Bazaar: An Overview
 
 #### What is it?
 
