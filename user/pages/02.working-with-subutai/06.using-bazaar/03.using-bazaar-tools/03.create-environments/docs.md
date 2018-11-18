@@ -11,7 +11,7 @@ taxonomy:
 
 An Environment is a logically grouped set of containers distributed across one or multiple peers that share the same network (they belong to the same p2p swarm - see more on [p2p](../../../../glossary#p2p-private-network)). An environment can host a number of applications.
 
-Environments are based on templates - basic software packages that provide a set of functionalities and can be extended to whatever you may need. For instance, there are templates that allow you to deploy a Debian server image to a Subutai Environment. You can use the templates already available in the PeerOS and Bazaar, or you an even [create your own](../../../using-peeros/create-templates).
+Environments are based on templates - basic software packages that provide a set of functionalities and can be extended to whatever you may need. For instance, there are templates that allow you to deploy a Debian server image to a Subutai Environment. You can use the templates already available in the PeerOS and Bazaar, or you can even create your own: [create templates from CLI](https://github.com/subutai-io/peer-os/wiki/Create-Templates-from-CLI) or [create templates from the Management Console](https://github.com/subutai-io/peer-os/wiki/Create-Templates-from-Console).
 
 ### Create an Environment
 
