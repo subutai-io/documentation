@@ -30,7 +30,12 @@ At the top right corner of the main page are the following account tools and det
 * **Notifications and logs**   
   The Notification bell with a number indicates the presence of notifications or logs. These notify you of available updates, task status, and change in Console settings or components.
 
-    💡 If you want to view log details, go to System > Updates. 
+  💡 If you want to view log details, go to System > Updates. 
 
-    Click the bell to display the list of notifications.
+  Click the bell to display the list of notifications.
+    
+  A few notes about managing notifications:
+  * For notifications that provide options or controls, like the image above, you may choose your preferred action as necessary.
+  * Click Clear to remove all notifications displayed in the list.
+
 
