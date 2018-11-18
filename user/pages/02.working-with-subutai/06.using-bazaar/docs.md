@@ -46,7 +46,7 @@ For peer users:
   <td> <a href="https://github.com/subutai-io/documentation/wiki/Select-Peers"> Select Peers </a>
   </td> 
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/03.using-bazaar-tools/02.use-products-blueprints/docs.md"> Use Blueprints </a> or <br> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/03.using-bazaar-tools/03.create-environments/docs.md"> Create Environments </a>
+  <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/use-products-blueprints"> Use Blueprints </a> or <br> <a href="https://github.com/subutai-io/documentation/blob/dev/user/pages/02.working-with-subutai/06.using-bazaar/03.using-bazaar-tools/03.create-environments/docs.md"> Create Environments </a>
   </td> 
  </tr>
 </table>
