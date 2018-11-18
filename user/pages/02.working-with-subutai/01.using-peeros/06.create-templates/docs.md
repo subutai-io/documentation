@@ -1,5 +1,6 @@
 ---
 title: Create your own Templates
+visible: false
 taxonomy:
     category:
         - docs
