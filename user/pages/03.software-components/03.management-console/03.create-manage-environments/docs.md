@@ -122,7 +122,6 @@ To configure domains:
    d. Click **Save**.   
 
    On the Environments list, you can also perform other domain tasks:   
-   
    * **Update a domain**    
    Click Configure for the environment’s domain. On the Domain box, you can set or update the strategy or SSL certificate for the domain.   
    
