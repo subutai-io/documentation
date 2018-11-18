@@ -34,4 +34,4 @@ Aside from the products, learn about the companion software that enable easy int
 
   [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)
 
-  Watch more of our [video resources](../videos).
+  Watch more of our [video resources](../../videos).
