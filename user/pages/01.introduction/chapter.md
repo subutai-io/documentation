@@ -12,7 +12,7 @@ child_type: docs
 
 The following topics describe what you can expect from this documentation and introduce you to Subutai, the project and the platform.
 
-**[About this Subutai Documentation](https://github.com/subutai-io/documentation/wiki/About-this-Subutai-Documentation)**
+**[About this Subutai Documentation](about-documentation)**
 
 **[About the Subutai Open Source Project](https://github.com/subutai-io/documentation/wiki/About-the-Subutai-Open-Source-Project)**
 * [Contribute to the Subutai Cloud](https://github.com/subutai-io/documentation/wiki/About-the-Subutai-Open-Source-Project#-contribute-to-the-subutai-cloud)
