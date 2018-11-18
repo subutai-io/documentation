@@ -8,7 +8,7 @@ taxonomy:
 
 There are different ways to get started using Subutai, whether you want to set up peers and rent your compute resources or you want to look for available resources to rent.
 
-**⤿ Create a Bazaar account**   
+**⤿ [Create a Bazaar account](../../../working-with-subutai/using-peeros/bazaar-quick-start)**   
 Users who want to rent compute resources or those who are new to the Subutai platform could start with the basic Bazaar account. In Bazaar, check out the available peers and apps, like Blueprints or plugins that you can use. Create environments where you can set up and access those apps. Learn how create your account.
 
 **⤿ [Create and run peers](../../working-with-subutai/using-peeros)**   
