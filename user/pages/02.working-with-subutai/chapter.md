@@ -15,7 +15,7 @@ Learn about the Subutai products and how to use their features.
 **[Getting Started with Subutai](getting-started)**
 
 **[Using PeerOS](using-peeros)**
-  * [Subutai PeerOS: An Overview](using-peeros/peeros-overview)    
+  * [Subutai PeerOS: An Overview](using-peeros#peeros-overview)    
   * [Get to Know the PeerOS Components](using-peeros/peeros-components)    
   * [Quick PeerOS Install](using-peeros/peeros-quick-install)
   * [Advanced PeerOS Install](using-peeros/peeros-advanced-install)
