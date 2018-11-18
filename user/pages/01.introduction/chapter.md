@@ -1,4 +1,4 @@
-	---
+---
 title: Introduction
 taxonomy:
     category:
@@ -10,7 +10,7 @@ toc:
 
 # Introduction
 
-<p align="middle"><i>Welcome! This is the end user documentation for Subutai, the world’s first intelligent P2P cloud computing platform.</i></p>  
+_Welcome! This is the end user documentation for Subutai, the world’s first intelligent P2P cloud computing platform._ 
 
 The following topics describe what you can expect from this documentation and introduce you to Subutai, the project and the platform.
 
