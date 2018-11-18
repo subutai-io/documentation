@@ -1,6 +1,6 @@
 ---
 title: 'Top Menu'
-visible: true
+visible: false
 taxonomy:
     category:
         - docs
