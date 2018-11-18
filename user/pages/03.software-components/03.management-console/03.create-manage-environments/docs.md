@@ -105,6 +105,7 @@ Domain configuration is a two-step process. You have to add a domain to the envi
 To configure domains:
 
 1. Add a domain to your environment.    
+
    a. From the menu, go to Environment > Environments.   
    b. On the Environments list, click **Configure** for the environment where you want to add the domain.    
    c. On the Set Domain box, enter a unique domain name.   
@@ -113,10 +114,11 @@ To configure domains:
    e. Click **Save**.   
       A confirmation message is displayed once the domain has been successfully added to the environment.
 2. Assign the domain to a container.
-   a. Click the environment name to display its containers.
-   b. Click **Configure** for the container where you want to assign the domain. 
-   c. On the Domain box, check the box for Add domain to container, and then enter the port number.
-      ![Add Domain](console-add-domain.png)
+
+   a. Click the environment name to display its containers.   
+   b. Click **Configure** for the container where you want to assign the domain.    
+   c. On the Domain box, check the box for Add domain to container, and then enter the port number.    
+      ![Add Domain](console-add-domain.png)    
    d. Click **Save**.   
 
    On the Environments list, you can also perform other domain tasks:   
