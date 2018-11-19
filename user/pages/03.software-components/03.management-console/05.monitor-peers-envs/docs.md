@@ -24,14 +24,11 @@ Use the filters on each tab to select the specific component that you want to vi
 	
 Hover over a graph or chart to view actual figures. The following images are from Peer metrics:
 
-CPU - percentage of usage for system and user -- idle, iowait, nice
-	
-	
-Network - incoming (in) and outgoing (out) data transmission metrics 
-	
-
-Memory - cache and other RAM metrics
-
-	
-Disk - used and total disk space (in GB), with breakdown of usage per directory
-	
+* **CPU** - percentage of usage for system and user    
+  ![CPU metrics](Console - metric_CPU.png)		
+* **Network** - incoming (in) and outgoing (out) data transmission metrics    
+  ![Network metrics](Console - metric_net.png)    
+* **Memory** - cache and other RAM metrics    
+  ![Memory metrics](Console - metric_memory.png)	
+* **Disk** - used and total disk space (in GB), with breakdown of usage per directory    
+  ![Disk metrics](Console - metric_disk.png)	
