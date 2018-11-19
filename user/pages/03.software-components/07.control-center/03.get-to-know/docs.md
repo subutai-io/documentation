@@ -75,7 +75,7 @@ The management screen provides several controls for peer administration:
 #### Settings
 Preferences and settings for working with the Control Center are displayed and grouped according to the following tabs:
 
-* **Common** - Preferences for language, notifications, browser, logs, and SSH key.
+* **Common** - Preferences for language, notifications, browser, logs, and SSH key.   
   💡 Take note that after generating an SSH key pair, you must not change the directory anymore. 
 * **Commands** - Settings for default paths of components and the terminal to be used by the Control Center.
 * **RH**  - Settings for the default resource host configuration, including the port number and credentials.
