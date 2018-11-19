@@ -29,14 +29,18 @@ To install:
 #### How to access the Control Center
 
 After installing the application, you can access it through the Control Center icon, usually displayed on the desktop.
+![CC icon](cc-icon.png)
 
-On the Login screen, sign in to the Control Center using your credentials for [Subutai Bazaar](https://bazaar.subutai.io). Users without a Bazaar account have to click Register first to create one. 
+On the Login screen, sign in to the Control Center using your credentials for [Subutai Bazaar](https://bazaar.subutai.io). Users without a Bazaar account have to click **Register** first to create one. 
+![CC login](cc-login.png)
 
 Once logged in, you can click the tray icon from your desktop’s system tray to access the menu. 
+![CC tray icon](cc-icon.png)
 
 There are two ways to exit the Control Center:
 
 * **Logout** - Logs you out of the Bazaar account. This opens the Login screen, allowing you to use another Bazaar account to access the Control Center.
 * **Quit** - Logs you out of the Control Center. 
+  ![CC logout](cc-logout.png)
 
 Both ways allow you to exit without stopping the P2P daemon and peers running in the background. This keeps the connection active between the Control Center and Bazaar. Also, the tray icon is removed. 
