@@ -106,8 +106,8 @@ To configure domains:
 
 1. Add a domain to your environment.    
 
-   a. From the menu, go to Environment > Environments.   
-   b. On the Environments list, click **Configure** for the environment where you want to add the domain.    
+   1. From the menu, go to Environment > Environments.   
+   2. On the Environments list, click **Configure** for the environment where you want to add the domain.    
    c. On the Set Domain box, enter a unique domain name.   
       ![Set Domain](console-set-domain.png)
    d. Optionally, you can select a strategy (i.e., Round robin, Load balance, Sticky session) and upload the SSL certificate.   		
