@@ -79,8 +79,10 @@ Firefox, Safari, and Edge browsers are also supported.
 On the second column, you can check the current version of software installed on your system and update them as necessary.
 
 To install or update software components: 
-1. From the menu, go to Components. 
+1. From the menu, go to Components.   
+![Components menu](cc-about.png) 
 2. On the Components screen, click **Install** for the corresponding component that you want to download.   
+![CC Install](cc-install.png)
 
    💡 If you are going to install all components, you can follow the order of the components as listed. You will not be able to successfully install components with dependencies on software listed above them. For example, you must install VirtualBox before the VirtualBox plugin. 
 
@@ -88,7 +90,8 @@ To install or update software components:
 
    ✔️ The Control Center checks for updates each time you open the Components screen for the first time. If you want to do a manual check right away, click **Check for updates**. If you want to specify the frequency of checking for updates, refer to the Updating section under Configure Control Center Settings.
 
-   You can monitor the installation through the progress bar of the component. 
+   You can monitor the installation through the progress bar of the component.    
+   ![Progress bar](cc-progress.png)
 
 #### Handling errors or failures
 In case you encounter an error, go to Notifications history to review the details. If you need to retry an installation, go back to the Components screen.   
