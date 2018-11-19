@@ -61,8 +61,7 @@ The My Peers submenu displays your list of peers and their status: Running peer 
 From the list, you can select a peer to open its management screen used for viewing or editing peer settings and SSH details. You can also view the current list of environments on a registered peer, if any.    
 ![Peers screen](cc-peerscreen.png)
 
-The management screen provides several controls for peer administration:
-
+The management screen provides several controls for peer administration:    
 💡 Except for Open Peer in Bazaar, the rest of the operations are available only for peers on your local machine.
 
 * **Open Peer in Bazaar** - Opens the peer’s details page in Bazaar.   
