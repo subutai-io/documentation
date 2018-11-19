@@ -1,13 +1,11 @@
 ---
-title: 'Download, Install and Access the Control Center'
-menu: Download and Access
+title: 'Download and Access the Control Center'
+menu: Download and Access the Control Center
 visible: true
 taxonomy:
     category:
         - docs
 ---
-
-### Download and Access the Control Center
 
 #### Requirements 
 
@@ -26,7 +24,7 @@ To install:
 
   `apt install /path/to/subutai-control-center.deb`   
 
-! You may use your preferred install method such as aptitude or gdebi, depending on your system setup.
+  ✔️ You may use your preferred install method such as `aptitude` or `gdebi`, depending on your system setup.
 
 #### How to access the Control Center
 
