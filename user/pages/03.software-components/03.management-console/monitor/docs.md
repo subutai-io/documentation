@@ -1,7 +1,7 @@
 ---
 title: 'Monitor Peers, Environments, and Management Host'
 menu: Monitoring
-visible: true
+visible: false
 taxonomy:
     category:
         - docs

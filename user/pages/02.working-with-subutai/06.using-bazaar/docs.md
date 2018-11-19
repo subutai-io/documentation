@@ -11,15 +11,15 @@ taxonomy:
 
 In this section, peer owners and users can find out how to create a Subutai Bazaar account and use its features.
 
-* **[The Subutai Bazaar: An Overview](#Subutai-Bazaar-Overview)**
+* **[The Subutai Bazaar: An Overview](#bazaar-overview)**
 * **[Get to Know Subutai Bazaar](get-to-know)**
 * **[Quick Start for Subutai Bazaar](bazaar-quick-start)**
 * **[Use the Bazaar Tools](using-bazaar-tools)**
-* **[Use the Bazaar Account Tools](https://github.com/subutai-io/documentation/wiki/Use-the-Bazaar-Account-Tools)**
+* **[Use the Bazaar Account Tools](use-account-tools)**
 
 ***
 
-### <a name="Subutai-Bazaar-Overview"> </a> Subutai Bazaar: An Overview
+### <a name="bazaar-overview"> </a> Subutai Bazaar: An Overview
 
 #### What is it?
 
@@ -40,13 +40,13 @@ This global marketplace enables users to sell, rent, or trade compute resources 
 For peer users:
 <table>
  <tr rowspan="2" align="center"> 
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Quick-Start-for-Bazaar"> Create a Subutai <br> Bazaar Account </a>
+  <td> <a href="../../working-with-subutai/using-bazaar/bazaar-quick-start"> Create a Subutai <br> Bazaar Account </a>
   </td>
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Select-Peers"> Select Peers </a>
+  <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/select-peers"> Select Peers </a>
   </td> 
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Use-Products-or-Blueprints"> Use Blueprints</a> or <br> Create Environments
+  <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/use-products-blueprints"> Use Blueprints </a> or <br> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/create-environments"> Create Environments </a>
   </td> 
  </tr>
 </table>
@@ -54,13 +54,13 @@ For peer users:
 For peer owners, operators, or administrators:
 <table>
  <tr rowspan="2" align="center">
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Quick-Start-for-Bazaar"> Create a Subutai <br> Bazaar Account </a> 
+  <td> <a href="../../working-with-subutai/using-bazaar/bazaar-quick-start"> Create a Subutai <br> Bazaar Account </a> 
   </td>
   <td>➭</td>
-  <td> <a href="https://github.com/subutai-io/documentation/wiki/Using-the-E2E-Plugin#how-to-install-the-e2e-plugin">Install <br> E2E Plugin </a>
+  <td> <a href="../../software-components/e2e-plugin">Install <br> E2E Plugin </a>
   </td>
   <td>➭</td>
-  <td> View Your <br> Registered Peers
+  <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/select-peers#search-for-peers"> View Your <br> Registered Peers </a>
   </td>
  </tr>
 </table>

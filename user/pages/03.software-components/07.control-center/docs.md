@@ -1,6 +1,6 @@
 ---
 title: 'Using the Control Center'
-menu: Control Center
+menu: Using the Control Center
 visible: true
 taxonomy:
     category:
@@ -9,14 +9,16 @@ taxonomy:
 
 This section provides information about the Control Center and how to use its features. It contains a reference guide that describes the features, as well as several topics with procedures and guidelines for using them.
 
-* **[The Subutai Control Center: An Overview](#The-Subutai-Control-Center-An-Overview)**
+* **[The Subutai Control Center: An Overview](#overview)**
 * **[Get to Know the Control Center](get-to-know)**
 
 ***
 
-### The Subutai Control Center: An Overview
+### <a id="overview"> </a> The Subutai Control Center: An Overview
 
-<img align="left" src="icon_peerOS.png" /> A convenient desktop application for working with peers and environments. Designed for peer owners and administrators of environments, it provides quick access to the platform’s major features, with enhanced capabilities for desktop or shell access to a peer and its environments.
+#### What is it?
+
+A convenient desktop application for working with peers and environments. Designed for peer owners and administrators of environments, it provides quick access to the platform’s major features, with enhanced capabilities for desktop or shell access to a peer and its environments.
 
 #### Key features
 
@@ -31,7 +33,23 @@ This section provides information about the Control Center and how to use its fe
 
 #### Get started
 
-Start by downloading the Control Center and learning about its features and user interface.
+Start by downloading the Control Center and learning about its features and user interface. Then, you can install the software components to complete your setup and use the features.
 
-|[Download & Access the Control Center](download-install)|[Get to Know the Control Center](get-to-know)|[Install the Software Components](install-components)|
-|----|----|----|
+<table>
+ <tr rowspan="2" align="center"> 
+  <td> 
+  <a href="https://github.com/subutai-io/documentation/wiki/Download-and-Access-the-Control-Center"> Download & Access <br>
+the Control Center </a>
+  </td>
+  <td>➭</td>
+  <td> 
+  <a href="https://github.com/subutai-io/documentation/wiki/Get-to-Know-the-Control-Center"> Get to Know <br> the
+Control Center </a>
+  </td>
+  <td>➭</td>
+  <td>
+  <a href="https://github.com/subutai-io/documentation/wiki/Install-or-Update-Software-Components"> Install the <br> Software Components </a>
+  </td>
+ </tr>
+</table>
+
