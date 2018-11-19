@@ -45,7 +45,61 @@ a:active, a:hover, #body-inner a:hover {
     text-decoration: none;
 }
 
+/* top bar - menu */
+#topMenu {
+    width: 100%;
+    height: 65px;
+    padding: 0 65px;
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mainLogo {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menuList {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menuList li {
+    list-style: none;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.menuList li a, .dropdown-menu li a {
+    color: #FFF;
+}
+.menuList li a:hover, .dropdown-menu li a:hover {
+    color: #078DD0;
+}
+/* dropdown items */
+.dropdown-menu {
+    z-index: 999;
+    padding: 0 25px 10px 25px;
+    margin-left: -40px;
+    position: absolute;
+    display: none;
+    background: #000;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* body navigation  */
+#body .nav {
+    top: 65px;
+}
 /* sidebar */
+#sidebar {
+    top: 65px;
+}
 /* header */
 #header {
     width: 100%;
@@ -189,7 +243,7 @@ h2 {
     font-size: 1rem;
 }
 ul li, ol li {
-    margin: 20px 0;   
+    margin: 20px 0;
 }
 .chapter2 #body-inner ul {
     padding-left: 0;
@@ -206,7 +260,7 @@ ul li, ol li {
     flex-wrap: wrap;
     -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center; 
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;

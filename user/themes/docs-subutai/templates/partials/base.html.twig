@@ -42,12 +42,14 @@
     {% endblock %}
 </head>
 <body class="searchbox-hidden {{ page.header.body_classes }}" data-url="{{ page.route }}">
+    {% include 'partials/top-menu.html.twig' %}
+    {# <div style="width: 100%; height: 100px; background: #F1F1F1; color: 333; font-size: 2rem;">menu</div> #}
     {% block sidebar %}
     <nav id="sidebar">
         <div id="header-wrapper">
             <div id="header">
                 {# <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}"><img class="logoTxt" src="/user/themes/mytheme/images/logo-subutai-txt.png"></a> #}
-                <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}"><img class="logoTxt" src="{{ base_url }}/user/themes/docs-subutai/images/logo-subutai-txt.png"></a>
+                <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}"><img class="logoTxt" src="{{ base_url }}/user/themes/docs-subutai/images/logo-subutai-documentation.png"></a>
                 {% include 'partials/search.html.twig' %}
                 {# {% include 'partials/tntsearch.html.twig' with { in_page: true }%} #}
                 <a class="advancedSearch" href="{{ base_url }}/search/">Advanced Search</a>
