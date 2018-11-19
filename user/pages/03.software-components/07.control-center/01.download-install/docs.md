@@ -29,7 +29,7 @@ To install:
 #### How to access the Control Center
 
 After installing the application, you can access it through the Control Center icon, usually displayed on the desktop.    
-![CC icon](cc-icon.png)
+![CC icon](cc-access.png)
 
 On the Login screen, sign in to the Control Center using your credentials for [Subutai Bazaar](https://bazaar.subutai.io). Users without a Bazaar account have to click **Register** first to create one.    
 ![CC login](cc-login.png)
