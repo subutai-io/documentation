@@ -113,6 +113,7 @@ To configure domains:
    d. Optionally, you can select a strategy (i.e., Round robin, Load balance, Sticky session) and upload the SSL certificate.   		
    e. Click **Save**.   
       A confirmation message is displayed once the domain has been successfully added to the environment.
+      
 2. Assign the domain to a container.
 
    a. Click the environment name to display its containers.   
