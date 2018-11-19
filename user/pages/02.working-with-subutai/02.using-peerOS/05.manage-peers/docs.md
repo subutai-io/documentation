@@ -54,4 +54,4 @@ Other maintenance tasks within PeerOS include performing updates to resource hos
 * Update packages within your peer   
   `apt-get dist-upgrade`
 
-If you have the Control Center installed, you can perform updates from the Updates tab under Menu > Settings. Check for available updates and then perform them one at a time. For detailed instructions, see [Control Center Updates](../../software-components/control-center/install-update-components).
+If you have the Control Center installed, you can perform updates from the Updates tab under Menu > Settings. Check for available updates and then perform them one at a time. For detailed instructions, see [Control Center Updates](../../../software-components/control-center/install-update-components).
