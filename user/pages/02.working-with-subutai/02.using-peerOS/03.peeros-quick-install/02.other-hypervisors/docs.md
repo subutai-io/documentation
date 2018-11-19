@@ -29,7 +29,7 @@ At Subutai, we have built Vagrant boxes, available on Vagrant Cloud, for the fol
 |VMware Fusion (regular and Pro)| |✅| |
 |Parallels Desktop (10 or higher; only Pro and Business editions)| |✅| |
 
-Here are the boxes to choose from, two versions for each supported Vagrant provider. The boxes use a different Linux OS flavor for the guest virtual machine OS.
+You can use the following boxes with the respective Vagrant provider.
 
 * [Debian 9.x (Stretch)](https://app.vagrantup.com/subutai/boxes/stretch) 
 * [Ubuntu 16.04 (Xenial)](https://app.vagrantup.com/subutai/boxes/xenial) 

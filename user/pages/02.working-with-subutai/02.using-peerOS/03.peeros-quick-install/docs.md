@@ -14,7 +14,7 @@ The following quick install methods use Vagrant with VirtualBox or other support
 Choose the hypervisor of your choice or based on your system requirements. Be sure that your system can accommodate the default settings assigned to a peer, including the following:
 
 * RAM size: 4098 MB
-* Disk storage size: 50 GB
+* Disk storage size: 100 GB
 * CPU quantity: 2 (cores)
 
 To troubleshoot installation errors, see [Common errors encountered when using Vagrant plugins](maintain-vagrant-plugins).
