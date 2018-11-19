@@ -1,6 +1,6 @@
 ---
 title: 'Download and Access the Control Center'
-menu: Download and Access the Control Center
+menu: Download & Access the Control Center
 visible: true
 taxonomy:
     category:
