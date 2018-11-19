@@ -112,7 +112,8 @@ To configure domains:
       ![Set Domain](console-set-domain.png)
    d. Optionally, you can select a strategy (i.e., Round robin, Load balance, Sticky session) and upload the SSL certificate.   		
    e. Click **Save**.    
-        A confirmation message is displayed once the domain has been successfully added to the environment.
+      
+      A confirmation message is displayed once the domain has been successfully added to the environment.
       
 2. Assign the domain to a container.
 
@@ -124,10 +125,9 @@ To configure domains:
 
    On the Environments list, you can also perform other domain tasks:   
    * **Update a domain**    
-   Click Configure for the environment’s domain. On the Domain box, you can set or update the strategy or SSL certificate for the domain.   
+   Click **Configure** for the environment’s domain. On the Domain box, you can set or update the strategy or SSL certificate for the domain.   
    * **Delete a domain**   
-   If you want to replace a domain, you have to delete the existing one first, and then add the new one to the environment. To do so, click Configure for the environment where the domain is added to. The current domain name is displayed at the top of the Domain box. Click **Remove Domain** and then confirm that you want to delete it.      
-   
+   If you want to replace a domain, you have to delete the existing one first, and then add the new one to the environment. To do so, click **Configure** for the environment where the domain is added to. The current domain name is displayed at the top of the Domain box. Click **Remove Domain** and then confirm that you want to delete it.      
    💡 Deleting a domain from the environment also removes it from the associated container.     
    * **Remove domain from container**    
    Click the environment name to display its containers. Click **Configure** for the container associated with the domain you want to remove. On the Domain box, uncheck the Add domain to container box, and then click **Save**. 
