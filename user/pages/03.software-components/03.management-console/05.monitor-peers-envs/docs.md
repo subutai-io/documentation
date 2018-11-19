@@ -25,10 +25,10 @@ Use the filters on each tab to select the specific component that you want to vi
 Hover over a graph or chart to view actual figures. The following images are from Peer metrics:
 
 * **CPU** - percentage of usage for system and user    
-  ![CPU metrics](Console - metric_CPU.png)		
+  ![CPU metrics](console-metric-CPU.png)		
 * **Network** - incoming (in) and outgoing (out) data transmission metrics    
-  ![Network metrics](Console - metric_net.png)    
+  ![Network metrics](console-metric-net.png)    
 * **Memory** - cache and other RAM metrics    
-  ![Memory metrics](Console - metric_memory.png)	
+  ![Memory metrics](console-metric-memory.png)	
 * **Disk** - used and total disk space (in GB), with breakdown of usage per directory    
-  ![Disk metrics](Console - metric_disk.png)	
+  ![Disk metrics](console-metric-disk.png)	
