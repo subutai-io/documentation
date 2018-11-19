@@ -26,7 +26,7 @@ Here are some peer admin tasks that you can perform on the Management Console:
 For instructions on how to perform these tasks, see [Using the Management Console](#Manage-peers-using-Control-Center)
 
 #### <a name="Manage-peers-using-Control-Center"></a> Manage peers using the Subutai Control Center 
-Compared with the Subutai Console, the Control Center application provides you with tools that you can install and access from your desktop. You can create and manage peers, as well as maintain environments and their containers. Get more information about the Control Center [here](link). 
+Compared with the Subutai Console, the Control Center application provides you with tools that you can install and access from your desktop. You can create and manage peers, as well as maintain environments and their containers. Get more information about the Control Center [here](../../../software-components/control-center). 
 
 #### <a name="Register-peers-with-Bazaar"></a> Register peers with Bazaar
 Peer registration can be done with the REST API request:
@@ -54,4 +54,4 @@ Other maintenance tasks within PeerOS include performing updates to resource hos
 * Update packages within your peer   
   `apt-get dist-upgrade`
 
-If you have the Control Center installed, you can perform updates from the Updates tab under Menu > Settings. Check for available updates and then perform them one at a time. For detailed instructions, see [Control Center Updates]().
+If you have the Control Center installed, you can perform updates from the Updates tab under Menu > Settings. Check for available updates and then perform them one at a time. For detailed instructions, see [Control Center Updates](../../software-components/control-center/install-update-components).
