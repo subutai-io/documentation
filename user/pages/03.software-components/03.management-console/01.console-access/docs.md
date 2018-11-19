@@ -1,6 +1,6 @@
 ---
 title: 'Access the Management Console'
-menu: Access the Management Console
+menu: Access the Console
 visible: true
 taxonomy:
     category:
