@@ -7,7 +7,7 @@ taxonomy:
         - docs
 ---
 
-Before creating a peer from the Control Center, be sure to download the components for handling and managing of peers. For advanced users who prefer manual peer creation, you may refer to the quick install or advanced install guides. Peer creation through the Control Center uses the same requirements and settings as the [quick install](working-with-subutai/using-peeros/peeros-quick-install/virtualbox) method.
+Before creating a peer from the Control Center, be sure to download the components for handling and managing of peers. For advanced users who prefer manual peer creation, you may refer to the quick install or advanced install guides. Peer creation through the Control Center uses the same requirements and settings as the [quick install](../../working-with-subutai/using-peeros/peeros-quick-install/virtualbox) method.
 
 To create a peer from the Control Center:
 
