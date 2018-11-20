@@ -3,6 +3,7 @@ title: 'FAQs'
 taxonomy:
     category:
         - docs
+child_type: docs
 ---
 
 # Frequently Asked Questions
@@ -105,11 +106,8 @@ Log in to the Console, and then from the System menu, select Updates. On the Upd
 * From a CLI terminal
 From a terminal, you can perform updates for resource hosts, management host, and P2P daemon. On your open CLI terminal, connect to the peer via SSH. Then, execute any of the following commands:
   * Resource host update
-  `subutai update rh`
   * Resource host management update
-  `subutai update management`
   * Update packages inside a peer
-  `apt-get dist-upgrade`
 
 #### <a name="How-to-export-Karaf-Logs"></a>_How to export Karaf Logs from the Subutai Console?_
 From the Subutai Console, go to System > Advanced > Logs. On the Logs page, click **Export**. 
