@@ -10,7 +10,11 @@ taxonomy:
 This section provides information about the Control Center and how to use its features. It contains a reference guide that describes the features, as well as several topics with procedures and guidelines for using them.
 
 * **[The Subutai Control Center: An Overview](#overview)**
+* **[Download and Access the Control Center](download-install)**
 * **[Get to Know the Control Center](get-to-know)**
+* **[Install or Update Software Components](install-update-components)**
+* **[Configure Control Center Settings](configure-settings)**
+* **[Create a Peer](create-peer)**
 
 ***
 
@@ -38,17 +42,17 @@ Start by downloading the Control Center and learning about its features and user
 <table>
  <tr rowspan="2" align="center"> 
   <td> 
-  <a href="https://github.com/subutai-io/documentation/wiki/Download-and-Access-the-Control-Center"> Download & Access <br>
+  <a href="../../software-components/control-center/download-install"> Download & Access <br>
 the Control Center </a>
   </td>
   <td>▶️</td>
   <td> 
-  <a href="https://github.com/subutai-io/documentation/wiki/Get-to-Know-the-Control-Center"> Get to Know <br> the
+  <a href="../../software-components/control-center/get-to-know"> Get to Know <br> the
 Control Center </a>
   </td>
   <td>▶️</td>
   <td>
-  <a href="https://github.com/subutai-io/documentation/wiki/Install-or-Update-Software-Components"> Install the <br> Software Components </a>
+  <a href="../../software-components/control-center/install-update-components"> Install the <br> Software Components </a>
   </td>
  </tr>
 </table>
