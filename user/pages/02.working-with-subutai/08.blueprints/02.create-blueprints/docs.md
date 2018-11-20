@@ -139,7 +139,7 @@ The __version__ and __author__ attributes are pretty self-explanatory.
 ### SSH Access Control
 
 In the Subutai Bazaar, users can
-associate [public SSH keys](../../using-bazaar/user-menu#ssh-key-management) with their accounts. The __ssh-key__
+associate [public SSH keys](../../using-bazaar/use-account-tools#ssh-key-management) with their accounts. The __ssh-key__
 blueprint attribute is a reference to a user profile SSH key to use. This
 way, blueprints can reference a key, and the platform substitutes the
 user's profile key for it and injects it into the authorized_keys file
@@ -163,12 +163,12 @@ with a brief description in the table below:
 ### External Ports
 
 The **port-mapping** attribute is a an array of port and [DNS name
-mapping](../../using-bazaar/user-menu#domains) settings. Here we're mapping service ports to be exposed by the
+mapping](../../using-bazaar/use-account-tools#domains) settings. Here we're mapping service ports to be exposed by the
 container: both HTTP and SSH are exposed to the outside world.
 
 !!! **NOTE**: all Subutai Containers templates are required to have at
 least SSH installed and available even if not exposed outside of a
-[Subutai Environment](../../glossary#environment).
+[Subutai Environment](../../../glossary#environment).
 
 ### Peer Criteria
 
@@ -203,7 +203,7 @@ adding the GitHub Repository you just forked to your account.
 To add the repository, right click on your user profile in
 the upper right hand corner. You'll see a popup menu drop down to manage
 various settings. You'll see a '*My Blueprints*' menu item as seen on
-the image to the right. Select it to go to the [GitHub](../../using-bazaar/user-menu#my-blueprints) area where you can
+the image to the right. Select it to go to the [GitHub](../../using-bazaar/use-account-tools#my-blueprints) area where you can
 authorize your GitHub account. In the upper left hand corner you'll see
 the '*Authorize*' button.
 
@@ -327,7 +327,7 @@ necessary since these are the only options presented.
 The **domain** variable type is very special. It will only accept
 domains by pulling them in from the Bazaar user's profile. Bazaar users
 can add their own domains or use Subutai subdomains offered for free using the
-Bazaar. Learn more about domains [here](../../using-bazaar/user-menu#domains).
+Bazaar. Learn more about domains [here](../../using-bazaar/use-account-tools#domains).
 
 You can change the original blueprint and press reload in the GitHub
 Projects view to see your changes. You used the GitHub Projects view
