@@ -47,11 +47,10 @@ Sure. Subutai runs on anything that has resources. OpenStack is a virtualization
 ##### <a name="How-does-Subutai-protect-me"></a>_How does Subutai protect me from cyberattacks or viruses?_
 Subutai offers several layers of isolation between your computer and containers it rents out to tenants who use your hardware. Your host machine is protected from the containers of your tenants. Those containers could be infected with malicious software, but they won’t have a chance to jump out of that sandbox. We do various other things to also make sure the root in a container never maps to a privileged user in the host running them.
 
-We’re working on additional enhancements both in hardware and in software to improve security. 
-
-* For one is the use of Trusted Platform Modules (TPM), and Hardware Security Modules (HSM) if available. The Subutai Blockchain Router has a TPM that it uses to secure boot the router to make sure no critical software running on it has been compromised.
-* We’re also doing research into a hardware Dynamic Information Flow Tracking system that introspects each operation the router’s CPU takes using debugging interfaces with other real time processors and the FPGA.
-* We’re very proud to have implemented a hardware based variant of the Aho-Corasick pattern matching algorithm to use fuzzy hashing to locate viruses in streams coming in and going out of the router.
+We’re working on additional enhancements both in hardware and in software to improve security.   
+- For one is the use of Trusted Platform Modules (TPM), and Hardware Security Modules (HSM) if available. The Subutai Blockchain Router has a TPM that it uses to secure boot the router to make sure no critical software running on it has been compromised.
+- We’re also doing research into a hardware Dynamic Information Flow Tracking system that introspects each operation the router’s CPU takes using debugging interfaces with other real time processors and the FPGA.
+- We’re very proud to have implemented a hardware based variant of the Aho-Corasick pattern matching algorithm to use fuzzy hashing to locate viruses in streams coming in and going out of the router.
 
 ##### <a name="How-is-Subutai-different-from-Golem-or-SONM"></a> _How is Subutai different from Golem or SONM?_
 There seems to be some similar blockchain projects, however, Subutai stands alone with regard to its function, architectural robustness, and ecosystem readiness.
@@ -70,10 +69,10 @@ Yes, you can use the Subutai PeerOS independently. Users are free to choose to u
 [KHAN™](https://subutai.io/khan.html) is an Ethereum blockchain-based reserve currency token that is the default and ubiquitous currency across the Subutai Platform. KHAN’s reserve currency used across ISPs is similar to USD across countries; as a utility token (vs. security token), KHAN can be reliably used without restriction worldwide, independently of the Subutai platform.
 
 ##### _<a name="Who-is-behind-Subutai"></a>Who is behind Subutai?_
-Subutai is a product of OptDyn, Inc., a five year old company with a multinational, globally-distributed team. OptDyn leadership includes Open Source trailblazers:
-* Founder and CEO Alex Karasulu    
+Subutai is a product of OptDyn, Inc., a five year old company with a multinational, globally-distributed team. OptDyn leadership includes Open Source trailblazers:   
+- Founder and CEO Alex Karasulu    
 Original author of the Apache Directory Server, the foundation of IBM’s Rational Directory Server and Websphere Application Server; founder of Safehaus, whose Open Source low-resource mobile OTP algorithms have been adopted by Google Authenticator; developed software products that power solutions by Atlassian, Cisco, and Polycom; and
-* Founder and Director of Marketing & Media Sally Khudairi    
+- Founder and Director of Marketing & Media Sally Khudairi    
 Apache Software Foundation VP Marketing & Publicity; former W3C Head of Communications; launched Creative Commons
 
 To better know our leaders and advisors, click [here](https://optdyn.com/about).
@@ -110,12 +109,12 @@ Log in to the Console, and then from the System menu, select Updates. On the Upd
 
 * From a CLI terminal   
 From a terminal, you can perform updates for resource hosts, management host, and P2P daemon. On your open CLI terminal, connect to the peer via SSH. Then, execute any of the following commands:   
-  * Resource host update   
-    `subutai update rh`
-  * Resource host management update   
-    `subutai update management`
-  * Update packages inside a peer   
-    `apt-get dist-upgrade`
+  - Resource host update   
+    `subutai update rh`   
+  - Resource host management update   
+    `subutai update management`   
+  - Update packages inside a peer     
+    `apt-get dist-upgrade`   
 
 #### _<a name="How-to-export-Karaf-Logs">How to export Karaf Logs from the Subutai Console?</a>_
 From the Subutai Console, go to System > Advanced > Logs. On the Logs page, click **Export**. 
