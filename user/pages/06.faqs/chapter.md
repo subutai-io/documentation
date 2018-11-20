@@ -1,11 +1,8 @@
-	---
+---
 title: 'FAQs'
 taxonomy:
     category:
         - docs
-child_type: docs
-toc:
-  headinglevel: 3
 ---
 
 # Frequently Asked Questions
@@ -102,11 +99,9 @@ To better know our leaders and advisors, click [here](https://optdyn.com/about).
 #### PeerOS and Console
 
 ##### _<a name="How-do-I-update-a-peer"></a> How do I update a peer?_
-You can update peers through the following ways:
-
+You can update peers through the following ways:   
 * From the peer’s Management Console   
-Log in to the Console, and then from the System menu, select Updates. On the Updates page, click **Check**. If there is no available update, you will see the message, “Your system is already up-to-date”, and if an update is available, you will see the message, “Update is available.” Click **Update** to start it. 
-
+Log in to the Console, and then from the System menu, select Updates. On the Updates page, click **Check**. If there is no available update, you will see the message, “Your system is already up-to-date”, and if an update is available, you will see the message, “Update is available.” Click **Update** to start it.   
 * From a CLI terminal   
 From a terminal, you can perform updates for resource hosts, management host, and P2P daemon. On your open CLI terminal, connect to the peer via SSH. Then, execute any of the following commands:   
   - Resource host update   
