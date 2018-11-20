@@ -29,10 +29,9 @@ Additional components include third-party applications and plugins for managing 
    </td>
  </tr>
  <tr>
-   <td> <a href="https://docs.subutai.io/Products/Bazaar/27_E2E_plugin.html">Subutai E2E</a> 
+   <td> <a href="../e2e-plugin">Subutai E2E</a> 
    </td>
-   <td> Generates and manages PGP keys <br>
-This installation currently supports Chrome only. Manual installation can be done for other browsers.
+   <td> Generates and manages PGP keys.<br>
    </td>
  </tr>
  <tr>
