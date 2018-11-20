@@ -11,7 +11,7 @@ Options for settings and working with the Control Center can be configured on th
 * [Preferences on Settings screen](#preferences-settings)
 * [Preferences on Notifications history screen](#preferences-notifications)
 
-#### <a name="preferences-settings"> </a> Preferences on Settings screen
+#### <a name="preferences-settings"></a> Preferences on Settings screen
 On the Settings screen, you can configure Control Center settings and preferences on the following tabs:
 
 ##### Common or General Settings
@@ -57,14 +57,13 @@ View or specify the frequency of checking updates for the Control Center and P2P
 * Select a frequency option such as Never or Daily, or select the time in hours or minutes. 
 * Perform automatic updates by checking the Automatic box next to the component. The Control Center will start an update as soon as it has been verified that one is available.
 
-#### <a name="preferences-notifications"> </a>Preferences on Notifications
+#### <a name="preferences-notifications"></a> Preferences on Notifications
 
 On the Notifications history screen, you can set your view preference:
 
 * **Default view** - When the **Full info** box is not checked, the table displays the instance count, notification level, message, and Ignore option. 	  
 ![Default view](cc-defaultview.png)    
-Under the Ignore column, check the **true** or **false** box next to a message to hide or display it, respectively. Notifications remain on display for seven days and are automatically removed after this period. You may still access notification logs from the storage folder. For information about logs storage, see Configure Control Center Settings.  
-
+Under the Ignore column, check the **true** or **false** box next to a message to hide or display it, respectively. Notifications remain on display for seven days and are automatically removed after this period. You may still access notification logs from the storage folder.   
 * **Full info view** - When you check the Full info box, the date, notification level, and message are displayed.   
 ![Full info view](cc-fullinfoview.png)   
 For more information about Notifications history, see [Get to Know the Control Center](../get-to-know).
