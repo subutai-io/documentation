@@ -29,7 +29,7 @@ To deploy SSH keys to environments:
    💡 Keys that you deploy to an environment are also listed on the Environments page in Bazaar, under the SSH Keys tab.
 
 #### How to establish container connection
-After deploying an SSH key to your environment, you can now access the container to perform your tasks. If you are using remote desktop, be sure that you also have installed and set up the X2Go client. For instructions, see Install or Update Software Components.
+After deploying an SSH key to your environment, you can now access the container to perform your tasks. If you are using remote desktop, be sure that you also have installed and set up the X2Go client. For instructions, see [Install or Update Software Components](../../control-center/install-update-components).
 
 To access and manage containers within an environment:
 
