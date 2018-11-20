@@ -21,9 +21,9 @@ In the SSH Info section, check the **Modify SSH info** box to update the host an
 ![]()
 
 * **Update peer settings**
-In the Peer Info section, check the **Modify peer info** box, and then adjust or change the settings for the bridge interface, disk space, RAM, and CPU. Uncheck the box, once done, to save the new settings.  Click **Reload peer** to apply the changes.   
+  In the Peer Info section, check the **Modify peer info** box, and then adjust or change the settings for the bridge interface, disk space, RAM, and CPU. Uncheck the box, once done, to save the new settings.  Click **Reload peer** to apply the changes.   
 
-💡 You can only add more disk space to the peer. The current Max disk GB setting of a peer cannot be decreased.
+  💡 You can only add more disk space to the peer. The current Max disk GB setting of a peer cannot be decreased.
 
 * **Use peer controls**
 At the bottom of the screen are options to change the peer state from running to not running, destroy, or reload it.
