@@ -62,7 +62,7 @@ After deploying an SSH key to your environment, you can transfer files from your
    Use the controls for the Local or Remote directory to perform the following:
    * **Upload** - Click the upward arrow to start uploading files from the local to the remote folder..
   
-   ✔️ Before initiating a transfer, you can check the More info box to display the SSH and remote machine parameters.
+     ✔️ Before initiating a transfer, you can check the More info box to display the SSH and remote machine parameters.
   
    * **Download** - Click the downward arrow to start downloading files from the remote to the local folder.
    Check the progress in the Operation Status column.
