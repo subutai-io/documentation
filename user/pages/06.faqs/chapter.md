@@ -104,11 +104,11 @@ You can update peers through the following ways:
 Log in to the Console, and then from the System menu, select Updates. On the Updates page, click Check. If there is no available update, you will see the message, “Your system is already up-to-date”, and if an update is available, you will see the message, “Update is available.” Click Update to start it.
 * From a CLI terminal
 From a terminal, you can perform updates for resource hosts, management host, and P2P daemon. On your open CLI terminal, connect to the peer via SSH. Then, execute any of the following commands:
-- Resource host update
+- Resource host update   
   `subutai update rh`
-- Resource host management update
+- Resource host management update   
   `subutai update management`
-- Update packages inside a peer
+- Update packages inside a peer   
   `apt-get dist-upgrade`
 
 #### <a name="How-to-export-Karaf-Logs"></a>_How to export Karaf Logs from the Subutai Console?_
