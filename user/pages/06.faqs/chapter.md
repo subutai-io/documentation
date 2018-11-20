@@ -9,7 +9,7 @@ taxonomy:
 
 Here are answers to frequently asked questions about Subutai, the open source project and the platform.
 
-## General Questions
+## **General Questions**
 * _[What is Subutai PeerOS?](#What-is-Subutai-PeerOS)_   
 * _[Does Subutai have anything to do with cloud storage such as iCloud or Google Cloud?](#Does-Subutai-have-anything-to-do-with-cloud-storage)_   
 * _[Is Subutai only for individual home users? Do you have an enterprise edition for businesses?](#Is-Subutai-only-for-individual-home-users)_   
@@ -73,7 +73,7 @@ Apache Software Foundation VP Marketing & Publicity; former W3C Head of Communic
 
 To better know our leaders and advisors, click [here](https://optdyn.com/about).
 
-## Technical Questions
+## **Technical Questions**
 
 #### PeerOS and Console
 * _[How do I update a peer?](#How-do-I-update-a-peer)_    
