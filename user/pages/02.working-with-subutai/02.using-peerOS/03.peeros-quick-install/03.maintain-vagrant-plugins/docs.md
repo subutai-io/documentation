@@ -42,7 +42,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
     are VirtualBox, VMware, Hyper-V.
 
 * Issue: Setting up Vagrant with a provider that is not supported.    
-* Action: Use any of the supported Vagrant providers and their versions from the table here.
+* Action: Use any of the supported Vagrant providers and their versions from the [table here](../other-hypervisors).
 
 !! **Error:** There are errors in the configuration of this machine
 
@@ -130,7 +130,7 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
     at line 152 of file VBoxManageMisc.cpp
 
 * Issue: The version of the hypervisor is not or no longer supported.
-* Action: Refer the table [here](https://github.com/MarilizaC/doc_v2/wiki/Basic-setup-using-Vagrant-with-other-supported-hypervisors#supported-providers) for the current supported versions of Vagrant providers. 
+* Action: Refer the table [here](../other-hypervisors) for the current supported versions of Vagrant providers. 
 
 !! **Error:** Peer finished to up with the following errors...
 
