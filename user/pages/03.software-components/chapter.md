@@ -25,7 +25,7 @@ and monitoring of peers, environments, and containers:
 
 **[Using the Control Center](control-center)**
  - [Control Center: An Overview](control-center#overview)
- - [Download, install and access](control-center/download-install)
+ - [Download and Access the Control Center](control-center/download-install)
  - [Get to Know the Control Center](control-center/get-to-know)
  - [Configure Control Center Settings](control-center/configure-settings)
  - [Create a Peer from the Control Center](control-center/create-peer)
