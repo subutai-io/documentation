@@ -88,7 +88,7 @@ To install or update software components:
 
    Installed components will show the **Update** button, which is enabled automatically when an update becomes available.   
 
-   ✔️ The Control Center checks for updates each time you open the Components screen for the first time. If you want to do a manual check right away, click **Check for updates**. If you want to specify the frequency of checking for updates, refer to the Updating section under Configure Control Center Settings.
+   ✔️ The Control Center checks for updates each time you open the Components screen for the first time. If you want to do a manual check right away, click **Check for updates**. If you want to specify the frequency of checking for updates, refer to the Updating section under[Configure Control Center Settings](../../control-center/configure-settings).
 
    You can monitor the installation through the progress bar of the component.    
    ![Progress bar](cc-progress.png)
