@@ -31,4 +31,4 @@ and monitoring of peers, environments, and containers:
  - [Create a Peer from the Control Center](create-peer)
  - [Configure and Manage Peers](configure-manage-peers)
  - [Access and Manage Environments](access-manage-envs)
- - [Control P2P Daemon](control-p2p)**
+ - [Control P2P Daemon](control-p2p)
