@@ -41,7 +41,7 @@ Start by downloading the Control Center and learning about its features and user
   <a href="https://github.com/subutai-io/documentation/wiki/Download-and-Access-the-Control-Center"> Download & Access <br>
 the Control Center </a>
   </td>
-  <td>➭</td>
+  <td><strong style="font-size: 20px;">➭</strong></td>
   <td> 
   <a href="https://github.com/subutai-io/documentation/wiki/Get-to-Know-the-Control-Center"> Get to Know <br> the
 Control Center </a>
