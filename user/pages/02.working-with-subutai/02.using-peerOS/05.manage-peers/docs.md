@@ -22,7 +22,7 @@ Here are some peer admin tasks that you can perform on the Management Console:
 * Create and monitor environments and containers on your peers
 * Modify resource host parameters
 
-For instructions on how to perform these tasks, see [Management Console](../../software-components/management-console)
+For instructions on how to perform these tasks, see [Management Console](../software-components/management-console).
 
 #### <a name="Manage-peers-using-Control-Center"></a> Manage peers using the Subutai Control Center 
 Compared with the Subutai Console, the Control Center application provides you with tools that you can install and access from your desktop. You can create and manage peers, as well as maintain environments and their containers. Get more information about the Control Center [here](../../../software-components/control-center). 
