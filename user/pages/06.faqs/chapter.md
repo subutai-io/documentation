@@ -67,9 +67,9 @@ Yes, you can use the Subutai PeerOS independently. Users are free to choose to u
 
 ##### <a name="Who-is-behind-Subutai"></a>_Who is behind Subutai?_
 Subutai is a product of OptDyn, Inc., a five year old company with a multinational, globally-distributed team. OptDyn leadership includes Open Source trailblazers:   
-- Founder and CEO Alex Karasulu    
+-Founder and CEO Alex Karasulu    
 Original author of the Apache Directory Server, the foundation of IBM’s Rational Directory Server and Websphere Application Server; founder of Safehaus, whose Open Source low-resource mobile OTP algorithms have been adopted by Google Authenticator; developed software products that power solutions by Atlassian, Cisco, and Polycom; and
-- Founder and Director of Marketing & Media Sally Khudairi    
+-Founder and Director of Marketing & Media Sally Khudairi    
 Apache Software Foundation VP Marketing & Publicity; former W3C Head of Communications; launched Creative Commons
 
 To better know our leaders and advisors, click [here](https://optdyn.com/about).
@@ -102,7 +102,6 @@ To better know our leaders and advisors, click [here](https://optdyn.com/about).
 You can update peers through the following ways:   
 * From the peer’s Management Console
 Log in to the Console, and then from the System menu, select Updates. On the Updates page, click Check. If there is no available update, you will see the message, “Your system is already up-to-date”, and if an update is available, you will see the message, “Update is available.” Click Update to start it.
-
 * From a CLI terminal
 From a terminal, you can perform updates for resource hosts, management host, and P2P daemon. On your open CLI terminal, connect to the peer via SSH. Then, execute any of the following commands:
   * Resource host update
