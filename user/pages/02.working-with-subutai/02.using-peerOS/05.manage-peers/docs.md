@@ -14,7 +14,7 @@ Once you have installed PeerOS and created peers, you can access them through a 
 * [Update resource hosts and other components](#Update-resource-hosts)
 
 #### <a name="Access-and-manage-peers"></a> Access and manage peers through the Management Console 
-During peer creation, the modules of the Management software and its Console are installed and set up. At the end of peer creation, the default Console credentials are displayed: Console IP address or URL, login ID, and password. Use the IP address and port number to access from a browser. After your initial login, you are prompted to assign a password of your choice. For detailed instructions, see [How to access the Management Console](../../software-components/management-console/console-access)
+During peer creation, the modules of the Management software and its Console are installed and set up. At the end of peer creation, the default Console credentials are displayed: Console IP address or URL, login ID, and password. Use the IP address and port number to access from a browser. After your initial login, you are prompted to assign a password of your choice. For detailed instructions, see [How to access the Management Console](../../software-components/management-console/console-access).
 
 Here are some peer admin tasks that you can perform on the Management Console:
 * Register peers with Bazaar
