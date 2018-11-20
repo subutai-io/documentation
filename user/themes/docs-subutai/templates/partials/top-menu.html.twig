@@ -1,9 +1,9 @@
-<nav id="topMenu">
+<nav id="topMenu" class="topNav">
     <a class="mainLogo" href="https://subutai.io/" target="_blank">
         <img alt="logo" src="{{ base_url }}/user/themes/docs-subutai/images/logo-subutai.png" width="160">
     </a>
-    <div class="mobileMenu-icon">
-        <i class="fas fa-bars"></i>
+    <div class="iconBar">
+        <a href="javascript:void(0);" onclick="mobileMenu()"><i class="fas fa-bars"></i></a>
     </div>
     <ul class="menuList">
         <li class="menuItem">
@@ -139,6 +139,9 @@
                 </li>
             </ul>
         </li>
+        {# <li class="iconBar">
+            <a href="javascript:void(0);" onclick="mobileMenu()"><i class="fas fa-bars"></i></a>
+        </li> #}
     </ul>
     {# <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav scrollable-menu">

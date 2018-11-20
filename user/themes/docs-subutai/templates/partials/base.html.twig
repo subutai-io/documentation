@@ -105,5 +105,15 @@
         {% include 'partials/analytics.html.twig' %}
         {% endif %}
     {% endblock %}
+    <script>
+        function mobileMenu() {
+            var mainmenu = document.getElementById("topMenu");
+            if (mainmenu.className === "topNav") {
+                mainmenu.className += " responsive";
+            } else {
+                mainmenu.className = "topNav";
+            }
+        }
+    </script>
  </body>
 </html>

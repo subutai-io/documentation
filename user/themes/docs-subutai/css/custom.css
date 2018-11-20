@@ -57,13 +57,48 @@ a:active, a:hover, #body-inner a:hover {
     justify-content: space-between;
     z-index: 1;
 }
+/* .topNav {
+    overflow: hidden;
+} */
+.topNav.responsive {
+    position: relative;
+}
+/* .topNav .menuList .menuItem {
+    display: none;
+}
+.topNav.responsive .menuList .menuItem {
+    display: block;
+} */
+.topNav .menuList {
+    display: none;
+}
+.topNav.responsive .menuList {
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+}
 .mainLogo {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-.mobileMenu-icon {
+.iconBar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+.iconBar a {
+    color: #FFF;
+    font-size: 1.85rem;
+}
+/* #topMenu .menuList .menuItem {
+    display: none;
+} */
+/* .mobileMenu-icon {
     padding-right: 16px;
     height: 100%;
     display: flex;
@@ -73,13 +108,17 @@ a:active, a:hover, #body-inner a:hover {
 .mobileMenu-icon i {
     color: #FFF;
     font-size: 1.85rem;
-}
+} */
 .menuList {
-    height: 100%;
+    background: #000;
+    height: auto;
+    /* width: 100%; */
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: none; */
+    /* display: flex;
     flex-wrap: wrap;
+    flex-direction: column; */
 }
 .menuList li {
     list-style: none;
@@ -95,16 +134,20 @@ a:active, a:hover, #body-inner a:hover {
 /* dropdown items */
 .dropdown-menu {
     z-index: 999;
-    padding: 0 25px 10px 25px;
-    margin-left: -40px;
+    padding: 0 25px 10px 0;
+    /* margin-left: -40px; */
     position: absolute;
     display: none;
-    background: #000;
+    background: #282828;
+    width: 100%;
 }
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-
+/* chapter */
+#chapter {
+    padding-top: 0;
+}
 /* body navigation  */
 #body .nav {
     top: 65px;
@@ -160,7 +203,7 @@ a:active, a:hover, #body-inner a:hover {
 a#sidebar-toggle {
     font-family: MavenPro;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 80px;
     line-height: 1;
 }
 /* menu */
@@ -313,14 +356,42 @@ pre .copy-to-clipboard:hover {
 }
 
 @media (min-width: 992px) {
-    #topMenu {
-        padding: 0 65px;
-    }
-    .mobileMenu-icon {
-        display: none;
-    }
+
 }
 
 @media (min-width: 1200px) {
-
+    #topMenu {
+        padding: 0 65px;
+    }
+    .menuList {
+        height: 100%;
+        flex-direction: row;
+    }
+    .iconBar {
+        display: none;
+    }
+    #topMenu .menuList .menuItem {
+        display: block;
+    }
+    .menuList li:nth-child(8) {
+        padding-right: 0;
+    }
+    .dropdown-menu {
+        padding: 0 25px 10px 25px;
+        margin-left: -40px;
+        width: auto;
+        background: #000;
+    }
+    .dropdown-menu {
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .topNav .menuList {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #chapter {
+        padding-top: 2rem;
+    }
 }
