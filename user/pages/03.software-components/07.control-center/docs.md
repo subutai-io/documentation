@@ -15,6 +15,9 @@ This section provides information about the Control Center and how to use its fe
 * **[Install or Update Software Components](install-update-components)**
 * **[Configure Control Center Settings](configure-settings)**
 * **[Create a Peer from the Control Center](create-peer)**
+* **[Configure and Manage Peers](configure-manage-peers)**
+* **[Access and Manage Environments](access-manage-envs)**
+* **[Control P2P Daemon](control-p2p)**
 
 ***
 
