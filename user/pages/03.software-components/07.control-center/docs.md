@@ -14,11 +14,11 @@ This section provides information about the Control Center and how to use its fe
 * **[Get to Know the Control Center](get-to-know)**
 * **[Install or Update Software Components](install-update-components)**
 * **[Configure Control Center Settings](configure-settings)**
-* **[Create a Peer](create-peer)**
+* **[Create a Peer from the Control Center](create-peer)**
 
 ***
 
-### <a id="overview"> </a> The Subutai Control Center: An Overview
+### <a name="overview"> </a> The Subutai Control Center: An Overview
 
 #### What is it?
 
