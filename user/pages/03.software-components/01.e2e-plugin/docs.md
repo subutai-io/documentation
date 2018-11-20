@@ -6,8 +6,21 @@ taxonomy:
         - docs
 ---
 
-Using the E2E Plugin
-In Bazaar, when asked to set up a PGP key, you may set up one manually or use the E2E browser plugin. The plugin helps you generate PGP keys, manage them, and keep them secure. For more information about the plugin, see [E2E Plugin](https://docs.subutai.io/Products/Bazaar/27_E2E_plugin.html).
+### What is the E2E Browser Plugin?
+
+Subutai uses PGP key pairs to identify all entities, including users like
+cloud owners and Peer administrators. The default administrator account
+on the new Peer needs to be associated with the global identity of the
+peer owner to share or rent resources to others. The E2E plugin was created to ease the task of managing your PGP key pairs. It is mandatory to access the [Management Console](../management-console) if you plan to have your own [Peer](../../glossary#Peer), and it is also needed to perform some sensitive operations in the [Subutai Bazaar](https://bazaar.subutai.io). 
+
+#### Manually managing PGP keys
+
+Advanced users who know how to manage their own keys can use their preferred
+tools to do so. That is only recommended to those who are PGP savvy, understand PKI and know how to secure their keys. Even people expert in PGP will be
+annoyed having to deal manually with frequent challenge and
+response authorization operations.
+
+This is why we created the browser plugins. The Subutai E2E browser plugins are an alternative to take care of users' PGP keys from end to end. It is installed in your browser and allows you to either upload an existing key, or generate a new pair if you don't have one, directly from the browser window.
 
 ### How to install the E2E Plugin
 
