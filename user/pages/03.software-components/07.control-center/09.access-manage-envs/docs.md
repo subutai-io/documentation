@@ -17,6 +17,7 @@ To deploy SSH keys to environments:
 ❗️ This operation updates the environment and places it on Under Modification state during processing.
 
 1. From the menu, go to SSH-keys management. 
+
 2. On the SSH Key Manager screen, select the key that you want to deploy from the Existing Keys list.   
 
    💡 Click **Generate New Key Pair** to add a key if you don’t have any or want to have one for specific purposes. 
