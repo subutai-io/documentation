@@ -40,28 +40,31 @@ To access and manage containers within an environment:
   
    💡 If you have multiple containers and you want to access them all, check the Select All box. 
     * **SSH** - Access the container via a CLI to perform updates or maintenance tasks.
-    * **Remote Desktop** - For desktop environments, access the container via a remote desktop.
+    * **Remote Desktop** - For desktop environments, access the container via a remote desktop.   
+    ![Access environment](console-manage-env.png)
 
 #### How to transfer files to or from containers
 
 After deploying an SSH key to your environment, you can transfer files from your local machine to a remote one, or vice versa.
 
-1. On the Transfer File screen, double-click the folders on the Local or Remote directory until you reach the files to be transferred.
-   As you click on folders, the path field is updated.
+1. On the Transfer File screen, double-click the folders on the Local or Remote directory until you reach the files to be transferred.   
+   As you click on folders, the path field is updated.   
+   ![Transfer files](console-manage-transfer.png)
 
 2. Double-click the files to select and add them to the Source file table located below the directories. 
   
    ✔️ To remove files from the table, click to select the file, and then click Clear files.
+   ![Start transfer](console-manage-starttransfer.png)
 
 3. To transfer files, do either of the following:
    
    **Single file transfers**   
    Use the controls for the Local or Remote directory to perform the following:
-   * **Upload** - Click  to start uploading files from the local to the remote folder..
+   * **Upload** - Click the upward arrow to start uploading files from the local to the remote folder..
   
    ✔️ Before initiating a transfer, you can check the More info box to display the SSH and remote machine parameters.
   
-   * **Download** - Click  to start downloading files from the remote to the local folder.
+   * **Download** - Click the downward arrow to start downloading files from the remote to the local folder.
    Check the progress in the Operation Status column.
  
    **Bulk transfers**
@@ -69,5 +72,5 @@ After deploying an SSH key to your environment, you can transfer files from your
    * Click **Start to Transfer Files** to begin the transfer. 
 
 4. Use the following controls for the folders and files:
-   * **Go to parent directory** - Click  to return to a previous directory. 
-   * **Refresh directory** - Click  to refresh the directory folders and files. Once a transfer has been successfully completed, you can refresh the folder to see the transferred file.
+   * **Go to parent directory** - Click the folder icon to return to a previous directory. 
+   * **Refresh directory** - Click refresh icon to refresh the directory folders and files. Once a transfer has been successfully completed, you can refresh the folder to see the transferred file.
