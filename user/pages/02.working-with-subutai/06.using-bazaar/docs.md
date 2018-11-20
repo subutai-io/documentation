@@ -42,10 +42,10 @@ For peer users:
  <tr rowspan="2" align="center"> 
   <td> <a href="../../working-with-subutai/using-bazaar/bazaar-quick-start"> Create a Subutai <br> Bazaar Account </a>
   </td>
-  <td>➭</td>
+  <td>▶️</td>
   <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/select-peers"> Select Peers </a>
   </td> 
-  <td>➭</td>
+  <td>▶️</td>
   <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/use-products-blueprints"> Use Blueprints </a> or <br> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/create-environments"> Create Environments </a>
   </td> 
  </tr>
@@ -56,10 +56,10 @@ For peer owners, operators, or administrators:
  <tr rowspan="2" align="center">
   <td> <a href="../../working-with-subutai/using-bazaar/bazaar-quick-start"> Create a Subutai <br> Bazaar Account </a> 
   </td>
-  <td>➭</td>
+  <td>▶️</td>
   <td> <a href="../../software-components/e2e-plugin">Install <br> E2E Plugin </a>
   </td>
-  <td>➭</td>
+  <td>▶️</td>
   <td> <a href="../../working-with-subutai/using-bazaar/using-bazaar-tools/select-peers#search-for-peers"> View Your <br> Registered Peers </a>
   </td>
  </tr>
