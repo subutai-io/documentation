@@ -45,9 +45,10 @@ Sure. Subutai runs on anything that has resources. OpenStack is a virtualization
 Subutai offers several layers of isolation between your computer and containers it rents out to tenants who use your hardware. Your host machine is protected from the containers of your tenants. Those containers could be infected with malicious software, but they won’t have a chance to jump out of that sandbox. We do various other things to also make sure the root in a container never maps to a privileged user in the host running them.
 
 We’re working on additional enhancements both in hardware and in software to improve security.
-- For one is the use of Trusted Platform Modules (TPM), and Hardware Security Modules (HSM) if available. The Subutai Blockchain Router has a TPM that it uses to secure boot the router to make sure no critical software running on it has been compromised.
-- We’re also doing research into a hardware Dynamic Information Flow Tracking system that introspects each operation the router’s CPU takes using debugging interfaces with other real time processors and the FPGA.
-- We’re very proud to have implemented a hardware based variant of the Aho-Corasick pattern matching algorithm to use fuzzy hashing to locate viruses in streams coming in and going out of the router.
+
++ For one is the use of Trusted Platform Modules (TPM), and Hardware Security Modules (HSM) if available. The Subutai Blockchain Router has a TPM that it uses to secure boot the router to make sure no critical software running on it has been compromised.
++ We’re also doing research into a hardware Dynamic Information Flow Tracking system that introspects each operation the router’s CPU takes using debugging interfaces with other real time processors and the FPGA.
++ We’re very proud to have implemented a hardware based variant of the Aho-Corasick pattern matching algorithm to use fuzzy hashing to locate viruses in streams coming in and going out of the router.
 
 ##### <a name="How-is-Subutai-different-from-Golem-or-SONM"></a>_How is Subutai different from Golem or SONM?_
 There seems to be some similar blockchain projects, however, Subutai stands alone with regard to its function, architectural robustness, and ecosystem readiness.

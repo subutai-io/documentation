@@ -35,7 +35,6 @@ body p {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: MavenPro;
-    letter-spacing: -1px;
 }
 a {
     color: #078DD0;
@@ -43,6 +42,10 @@ a {
 a:active, a:hover, #body-inner a:hover {
     color: #04346E;
     text-decoration: none;
+}
+
+#body-inner {
+    padding-top: 5rem;
 }
 
 /* top bar - menu */
@@ -220,8 +223,9 @@ a#sidebar-toggle {
 }
 /* page title */
 h1, #chapter h1, #chapter2 h1 {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     border-bottom: none !important;
+    letter-spacing: -1px;
 }
 .titleDivider {
     border-bottom: 4px solid #F0F2F4;
@@ -233,31 +237,50 @@ h1, #chapter h1, #chapter2 h1 {
 }
 /* chapters pages */
 /* main title home */
-#chapter h1, .chapter2 h1 {
+/* #chapter h1, .chapter2 h1 {
     font-size: 2.25rem;
-}
-h1 {
-    font-size: 2.25rem;
+} */
+h1, #chapter h1 {
+    font-size: 3rem;
+    margin: 40px 0;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     border-bottom: 1px solid #F0F2F4;
 }
-#chapter h2, .chapter2 h2 {
-    text-align: center;
-    font-size: 1.2rem;
-    letter-spacing: unset;
+h3, #chapter h3 {
+    font-size: 1.8rem;
+    text-align: left;
 }
+h4 {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+h5 {
+    font-size: 1.35rem;
+    margin-bottom: .25rem;
+}
+h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+/* #chapter h2, .chapter2 h2 { */
+    /* text-align: center; */
+    /* font-size: 1.2rem; */
+    /* letter-spacing: unset; */
+/* } */
 #chapter p, .chapter2 p {
     text-align: left;
 }
 #chapter ul li {
     line-height: 1.5;
     margin: 40px 0;
-    display: -webkit-flex;
+    /* display: -webkit-flex;
     display: flex;
     -webkit-align-items: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; */
 }
 #chapter ul li img {
     width: 40px;
@@ -349,11 +372,11 @@ pre .copy-to-clipboard:hover {
 
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     h1 {
         font-size: 3.25rem;
     }
-}
+} */
 
 @media (min-width: 992px) {
 
@@ -391,7 +414,7 @@ pre .copy-to-clipboard:hover {
         flex-wrap: wrap;
         flex-direction: row;
     }
-    #chapter {
+    /* #chapter {
         padding-top: 2rem;
-    }
+    } */
 }

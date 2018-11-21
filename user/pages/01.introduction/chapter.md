@@ -8,12 +8,12 @@ toc:
 	headinglevel: 4
 ---
 
-# Introduction  
+# Introduction
 
-_Welcome! This is the end user documentation for Subutai,  
-the world’s first intelligent P2P cloud computing platform._ 
+_Welcome! This is the end user documentation for Subutai,
+the world’s first intelligent P2P cloud computing platform._
 
-The following topics describe what you can expect from this documentation   
+The following topics describe what you can expect from this documentation
 and introduce you to Subutai, the project and the platform.
 
 **[About this Subutai Documentation](about-documentation)**
