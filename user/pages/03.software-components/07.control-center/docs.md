@@ -45,17 +45,17 @@ Start by downloading the Control Center and learning about its features and user
 <table>
  <tr rowspan="2" align="center"> 
   <td> 
-  <a href="../../software-components/control-center/download-install"> Download & Access <br>
+  <a href="../software-components/control-center/download-install"> Download & Access <br>
 the Control Center </a>
   </td>
   <td>▶️</td>
   <td> 
-  <a href="../../software-components/control-center/get-to-know"> Get to Know <br> the
+  <a href="../software-components/control-center/get-to-know"> Get to Know <br> the
 Control Center </a>
   </td>
   <td>▶️</td>
   <td>
-  <a href="../../software-components/control-center/install-update-components"> Install the <br> Software Components </a>
+  <a href="../software-components/control-center/install-update-components"> Install the <br> Software Components </a>
   </td>
  </tr>
 </table>
