@@ -10,7 +10,7 @@ taxonomy:
 
 
 ### Use Products or Blueprints
-Install blueprints or your products on peers that you own or rent. To install applications using a Subutai blueprint, go to the Application Blueprints tab. To know more about blueprints, see [Use Blueprints](../../blueprints).
+Install blueprints or your products on peers that you own or rent. To install applications using a Subutai blueprint, go to the Application Blueprints tab. To know more about blueprints, see [Use Blueprints](../../../blueprints).
 
 #### Search for blueprints or products
 On the Products page, you can search for blueprints or other products to install on peers. On the Application Blueprints or My Products tab, enter the full or partial name of the blueprint on the Search box. 
@@ -20,7 +20,7 @@ On the Products page, you can search for blueprints or other products to install
 #### Install blueprints or products
 Blueprints are installed on peers that you own, share, or rent from other users. If you are using a Paid peer, the rent starts after the environment is built. 
 
-Before installing a blueprint, be sure that you have added peers to your Favorites list. For instructions, see [Select Peers](select-peers).  
+Before installing a blueprint, be sure that you have added peers to your Favorites list. For instructions, see [Select Peers](../select-peers).  
 
 To install blueprints or products:
 

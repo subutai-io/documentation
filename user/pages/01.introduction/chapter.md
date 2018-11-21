@@ -19,14 +19,12 @@ and introduce you to Subutai, the project and the platform.
 **[About this Subutai Documentation](about-documentation)**
 
 **[About the Subutai Open Source Project](about-project)**
-* [Contribute to the Subutai Cloud](about-project?name=contribute)
-* [Earn GoodWill](about-project?name=goodwill)
-* [Join the Community](about-project?name=community)
+* [Contribute to the Subutai Cloud](about-project#contribute)
+* [Earn GoodWill](about-project#goodwill)
+* [Join the Community](about-project#community)
 
 **[About the Subutai Platform](about-platform)**
    * [Glossary](../glossary)
    * [FAQs](../faqs)
    * [Get Support](../support)
-
-
 

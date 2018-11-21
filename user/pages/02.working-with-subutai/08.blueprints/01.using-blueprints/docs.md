@@ -14,8 +14,8 @@ taxonomy:
 There are three ways in which you can trigger the installation of an
 application blueprint in [Subutai Bazaar](https://bazaar.subutai.io):
 
-1. From the **[Products](../../using-bazaar/bazaar-tools/products)** page
-2. From the **Blueprints** associated with [your profile](../../using-bazaar/user-menu#my-products)
+1. From the **[Products](../../using-bazaar/using-bazaar-tools/use-products-blueprints)** page
+2. From the **Blueprints** associated with [your profile](../../using-bazaar/use-account-tools#my-products)
 3. From an environment's **Applications** tab: the **Add Application**
    button
 
@@ -34,7 +34,7 @@ screenshot of the Bazaar's products page:
 
 Blueprint authors can _publish_ their application Blueprints on the
 Bazaar to be used for free or for some [Subutai™ 
-GoodWill](../../using-bazaar/goodwill). All the blueprints are open source so this is for sincerely rewarding good deeds. If you wanted to, you could still fork their
+GoodWill](../../../glossary#good-will). All the blueprints are open source so this is for sincerely rewarding good deeds. If you wanted to, you could still fork their
 public repository and use the blueprint privately, but why not
 contribute back? See the guide on [Writing Subutai
 Blueprints](../create-blueprints) to author and publish your own blueprints. Here's a view of the MatterMost blueprint view at the Bazaar once it is selected:
@@ -86,7 +86,7 @@ called **Application Settings**. The settings you used are remembered so
 the next time you install the application there's less work.
 
 You can navigate to your application settings and manage them through
-your profile's [drop down menu](../../using-bazaar/user-menu). The **Application Settings** menu item
+your profile's [drop down menu](../../using-bazaar/use-account-tools). The **Application Settings** menu item
 will take you there.
 
 ### Accessing Containers

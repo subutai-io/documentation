@@ -25,7 +25,10 @@ and monitoring of peers, environments, and containers:
 
 **[Using the Control Center](control-center)**
  - [Control Center: An Overview](control-center#overview)
- - [Download, install and access](download-install)
- - [Get to Know the Control Center](get-to-know)
- - [Configure Control Center Settings](configure-settings)
- - [Create a Peer](create-peer)
+ - [Download and Access the Control Center](control-center/download-install)
+ - [Get to Know the Control Center](control-center/get-to-know)
+ - [Configure Control Center Settings](control-center/configure-settings)
+ - [Create a Peer from the Control Center](control-center/create-peer)
+ - [Configure and Manage Peers](control-center/configure-manage-peers)
+ - [Access and Manage Environments](control-center/access-manage-envs)
+ - [Control P2P Daemon](control-center/control-p2p)

@@ -43,7 +43,7 @@ On the individual Peer page you can see useful information:
 - Access this Peer via Subutai Console (if you have the proper rights and credentials)
 - On the top right corner you can add or remove to/from your list of favorite peers.
 
-There is also information about the [Resource Host](../../../../glossary#resource-host):
+There is also information about the [Resource Host](../../../../glossary#resource-hosts-r-hs):
 
 - Name of Resource Host,
 - Resource Host ID (RH ID),

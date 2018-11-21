@@ -23,7 +23,7 @@ User settings will allow you to see and sometimes edit the following personal in
 - User guides (hints). Switch off or switch on the menu hints.
 - Reset user guides. Here you you can reset all completed user guides (if you do that,you will see all user guides again).
 - Change password. You will need your old password to create a new one.
-- PGP fingerprint (Pretty Good Privacy) is a special sort of encryption. PGP increases the security of communications between the user’s machine and servers. You can change it if you need at any time. The PGP key can be generated automatically by the Subutai [E2E extension](../../software-components), if you have it installed in your browser.
+- PGP fingerprint (Pretty Good Privacy) is a special sort of encryption. PGP increases the security of communications between the user’s machine and servers. You can change it if you need at any time. The PGP key can be generated automatically by the Subutai [E2E extension](../../../software-components), if you have it installed in your browser.
 - You can also delete your account, if you don’t need it anymore. Be careful: this operation is permanent.
 
 
@@ -42,7 +42,7 @@ Here you can map domain names to your environments and containers. To add domain
 - **Bazaar sub-domain** allows you to create free subdomains of `.envs.subut.ai`. Type your desired subdomain, click the green button to check whether it is available and click save.
 - **User managed domain** lets you use domain names or subdomains you already own. Please note you need to have access to a registrar where your domain was created in order to configure it. First, type your domain name or subdomain. You will see that the example below will be changed to reflect the CNAME record you will need to add to your registrar's DNS settings.
 
-Either way, from now on when you run a [Blueprint](../blueprints) or access an [Environment's](../bazaar-tools/environments) `Container Port Mapping` tab, this subdomain will be available to use.
+Either way, from now on when you run a [Blueprint](../../blueprints) or access an [Environment's](../using-bazaar-tools/create-environments) `Container Port Mapping` tab, this subdomain will be available to use.
 
 ### Products
 

@@ -8,7 +8,7 @@ taxonomy:
 
 Subutai Blueprints specify general instructions for installing, updating
 and maintaining P2P distributed cloud applications into [Subutai
-Environments](../glossary/#environment). The Subutai P2P
+Environments](../../glossary/#environment). The Subutai P2P
 Cloud combines these instructions with load and resource availability
 information to optimally place infrastructure resources in P2P cloud
 environments and run distributed applications. Blueprints can be published by authors on the [Subutai Bazaar](https://bazaar.subutai.io). The Bazaar is a marketplace for Subutai Products and Peers.

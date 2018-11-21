@@ -25,4 +25,4 @@ By clicking on the “Chat” button, you can see a list of Subutai Bazaar users
 
 ### User profile
 
-Click your username to show the [user menu](../user-menu), then click your avatar to see your public user profile.
+Click your username to show the [account tools](../use-account-tools), then click your avatar to see your public user profile.

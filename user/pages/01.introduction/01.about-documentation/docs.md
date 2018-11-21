@@ -15,7 +15,7 @@ Here you can find the instructions and guidelines on installing, running, and ma
 - **[Working with Subutai](../../working-with-subutai)**  
   Learn about the products and how to use their features.
   
-  |**[Using PeerOS](../../working-with-subutai/using-peeros)**|**[Using Bazaar](../../working-with-subutai/using-bazaar)**|**[Using the Blockchain Router](https://subutai.io/router.html)**|**[Using Blueprints](../../working-with-subutai/blueprints)**|
+  |**[Using PeerOS](../../working-with-subutai/using-peeros)**|**[Using Bazaar](../../working-with-subutai/using-bazaar)**|**[Introducing the Blockchain Router](https://subutai.io/router.html)**|**[All About Blueprints](../../working-with-subutai/blueprints)**|
 |:----------------:|:----------------:|:-------------------------------:|:-------------------------------:|
 |![PeerOS](icon_peerOS.png)|![Bazaar](icon_bazaar.png)|![Blockchain Router](icon_brouter.png)|![Blueprints](icon_blueprints.png)|
 |Find out more about PeerOS, the open source, container-based peer-to-peer (P2P) cloud and Internet of Things (IoT) software.|Learn about the features of Bazaar, the global marketplace to buy/sell/exchange/barter computing resources and applications online.|Get to know the Blockchain Router, the broadband cloud router and open hardware IoT gateway that serves as a plug-and-play cryptocurrency wallet and mining device.|Learn to use Subutai Blueprints, the enhanced templates that enable quick deployment of applications within cloud environments.|
@@ -29,7 +29,7 @@ Aside from the products, learn about the companion software that enable easy int
 |**P2P Daemon**||**Control Center**|
 |Program that runs in the background to handle intra-environment connectivity and communication between containers, primarily enabling peers to join the swarm. [Learn more](https://docs.subutai.io/Projects/p2p_toctree.html).|Convenient desktop application for setting up peers, components, and environments, with seamless Bazaar and P2P Daemon integration. [Learn more](../../software-components/control-center).|
 
-- **Subutai 101**   
+- **Watch the Subutai 101 Tutorial Series**   
   Get a quick overview of the Subutai platform from this video:
 
   [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)

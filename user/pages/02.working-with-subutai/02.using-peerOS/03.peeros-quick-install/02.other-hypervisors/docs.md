@@ -34,7 +34,7 @@ You can use the following boxes with the respective Vagrant provider.
 * [Debian 9.x (Stretch)](https://app.vagrantup.com/subutai/boxes/stretch) 
 * [Ubuntu 16.04 (Xenial)](https://app.vagrantup.com/subutai/boxes/xenial) 
 
-In case you encounter an error during installation, see [Common errors encountered when using Vagrant plugins](https://github.com/MarilizaC/doc_v2/wiki/Maintain-your-Vagrant-plugins#-common-errors-encountered-when-using-vagrant-plugins).
+In case you encounter an error during installation, see [Common errors encountered when using Vagrant plugins](../../manage-peers#Common-errors-Vagrant-plugins).
 
 ### Libvirt setup
 

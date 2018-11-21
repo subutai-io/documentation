@@ -15,7 +15,7 @@ Environments are based on templates - basic software packages that provide a set
 
 ### Create an Environment
 
-The first thing you need in order to create an Environment is to sign in to the [Subutai Bazaar](https://bazaar.subutai.io). Any Environment needs at least one Peer on which to run. You can lease or rent other people’s Peers (start by checking the [Peers](../peers)] page and adding some of them to your list of Favorites), or you can add your own Peers to Subutai Bazaar. If you want to have shell acces to your Environments, make sure you have the [Control Center](../../../../software-components/control-center) installed on your desktop system, and the [E2E plugin](../../../../software-components/e2e-plugin) for your browser with a properly configured PGP key. Once you have all of this - account on Bazaar, peer, and when needed control center, e2e plugin + pgp key setup and configured, you can start with the environment creation.
+The first thing you need in order to create an Environment is to sign in to the [Subutai Bazaar](https://bazaar.subutai.io). Any Environment needs at least one Peer on which to run. You can lease or rent other people’s Peers (start by checking the [Peers](../peers)) page and adding some of them to your list of Favorites), or you can add your own Peers to Subutai Bazaar. If you want to have shell acces to your Environments, make sure you have the [Control Center](../../../../software-components/control-center) installed on your desktop system, and the [E2E plugin](../../../../software-components/e2e-plugin) for your browser with a properly configured PGP key. Once you have all of this - account on Bazaar, peer, and when needed control center, e2e plugin + pgp key setup and configured, you can start with the environment creation.
 
 Go to Subutai Bazaar, click the “Environments” button in the left sidebar, then click “create environment”:
 
@@ -27,7 +27,7 @@ After, that, you will be redirected to the Peer selection page, where you can pi
 
 Check your Peer(s) and press the “next” button.
 
-Then, you will be directed to the Template selection page. There you will have the option to choose one or more system templates for your Environment. Please note that you can add your own template and use it - you can do this in the [CDN section](../../user-menu#cdn).
+Then, you will be directed to the Template selection page. There you will have the option to choose one or more system templates for your Environment. Please note that you can add your own template and use it - you can do this in the [CDN section](../../use-account-tools/#cdn).
 
 You can also choose the size of your container - tiny, small, medium, large or huge. And you can easily rename the container’s default name. After you added the template(s) you want, click “save” button, select the name for your environment, press “save” again and at the last step press “build” button.
 
@@ -37,7 +37,7 @@ If all the steps are done properly, containers are built. You will see “ready�
 
 ![Environment Ready](environment-ready.png?cropResize=810,392)
 
-So, now you have your environment and you are ready now to install software you like there. Then, to make it accessible by a [domain name](../../user-menu#domains), please go to the “Container Port Mapping” page and press “Add new port” button. There you can specify protocol, ports, domain name, proxy (if it’s behind NAT) and pick container:
+So, now you have your environment and you are ready now to install software you like there. Then, to make it accessible by a [domain name](../../use-account-tools/#domains), please go to the “Container Port Mapping” page and press “Add new port” button. There you can specify protocol, ports, domain name, proxy (if it’s behind NAT) and pick container:
 
 When all is ready, you will be able to access your container via its domain name.
 

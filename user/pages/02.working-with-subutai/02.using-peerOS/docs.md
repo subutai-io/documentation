@@ -12,8 +12,8 @@ This section contains the instructions for installing and setting up Subutai Pee
 * **[The Subutai PeerOS: An Overview](#peeros-overview)**
 * **[Get to Know the PeerOS Components](peeros-components)**
 * **[Quick PeerOS Install](peeros-quick-install)**
-  * [Basic setup using Vagrant with VirtualBox](peeros-vagrant-virtualbox)
-  * [Basic setup using Vagrant with other supported hypervisors](peeros-other-supervisors) 
+  * [Basic setup using Vagrant with VirtualBox](peeros-quick-install/virtualbox)
+  * [Basic setup using Vagrant with other supported hypervisors](peeros-quick-install/other-hypervisors) 
 * **[Advanced PeerOS Install](peeros-advanced-install)**
 * **[Manage Peers](manage-peers)**
 
@@ -35,10 +35,10 @@ To learn more, see [Subutai PeerOS](https://subutai.io/peer-os.html).
 <table>
  <tr rowspan="2" align="center"> 
   <td> 🔻 <br>
-   <a href="https://github.com/MarilizaC/doc_v2/wiki/Quick-PeerOS-Install"> Quick Install </a>    
+   <a href="using-peeros/peeros-quick-install"> Quick Install </a>    
   </td>
   <td> 🔻 <br>
-   <a href="https://github.com/MarilizaC/doc_v2/wiki/Advanced-PeerOS-Install"> Advanced Install </a>
+   <a href="using-peeros/peeros-advanced-install"> Advanced Install </a>
   </td>
  </tr>
 </table>

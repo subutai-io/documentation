@@ -43,7 +43,7 @@ You can access environments associated with the Bazaar account used to log in to
 
 Regardless of its state, you can select an environment from the list to open its management screen. On this screen, you can view the containers, resource hosts, and other related details. The last column shows the container’s current state: Initializing, Connecting, Ready, or Failed. When a container is Ready, you can select it to establish an SSH or remote desktop connection via the X2Go client.
 
-💡 Establishing container connection requires an SSH key.
+💡 Establishing container connection requires an SSH key. For more details, see [Access and Manage Environments](../../control-center/access-manage-envs).
 
 ![Environment screen](cc-env.png)
 
@@ -80,7 +80,7 @@ Preferences and settings for working with the Control Center are displayed and g
 * **RH**  - Settings for the default resource host configuration, including the port number and credentials.
 * **Updating** - Preferences for the frequency of component updates and automatic update.  
 
-To learn how to set or update each of these preferences, see Configure Control Center Settings.   
+To learn how to set or update each of these preferences, see [Configure Control Center Settings](../../control-center/configure-settings).   
 ![CC settings](cc-settings.png)
 
 #### SSH Key Manager
@@ -98,7 +98,7 @@ Here you can view all notifications for updates received by the Control Center. 
 Switching to Full info mode allows you to view all messages, including repeat ones, along with the display or receipt date. It hides the Count and Ignore columns.    
 ![Full mode](cc-notificationsfull.png)
 
-Notification settings such as the frequency and storage can be updated. For instructions, see Configure Control Center Settings.
+Notification settings such as the frequency and storage can be updated. For instructions, see [Configure Control Center Settings](../../control-center/configure-settings).
 
 #### Components
 Here you can see list of Control Center components and their versions for installation or update. Updates are checked automatically upon launching the Components screen. You can manually invoke the Control Center to get updates by clicking the **Check for updates** button at the top of the screen.    
