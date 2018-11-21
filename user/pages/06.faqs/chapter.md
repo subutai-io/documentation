@@ -40,7 +40,7 @@ Sure. Subutai runs on anything that has resources. OpenStack is a virtualization
 
 Subutai offers several layers of isolation between your computer and containers it rents out to tenants who use your hardware. Your host machine is protected from the containers of your tenants. Those containers could be infected with malicious software, but they won’t have a chance to jump out of that sandbox. We do various other things to also make sure the root in a container never maps to a privileged user in the host running them.
 
-We’re working on additional enhancements both in hardware and in software to improve security. 
+We’re working on additional enhancements both in hardware and in software to improve security.
 
 * For one is the use of Trusted Platform Modules (TPM), and Hardware Security Modules (HSM) if available. The Subutai Blockchain Router has a TPM that it uses to secure boot the router to make sure no critical software running on it has been compromised.
 * We’re also doing research into a hardware Dynamic Information Flow Tracking system that introspects each operation the router’s CPU takes using debugging interfaces with other real time processors and the FPGA.
@@ -60,7 +60,7 @@ Yes, you can use the Subutai PeerOS independently. Users are free to choose to u
 
 #### Is GoodWill a blockchain based currency, or is it handed out by the Bazaar?
 
-[GoodWill](https://subutai.io/goodwill.html) is the token currency used in Subutai Bazaar. It is a lightweight digital asset token used in the exchange and purchase of peer resources and other services. It is not blockchain based, and cannot be exchanged for value outside the Subutai platform. 
+[GoodWill](https://subutai.io/goodwill.html) is the token currency used in Subutai Bazaar. It is a lightweight digital asset token used in the exchange and purchase of peer resources and other services. It is not blockchain based, and cannot be exchanged for value outside the Subutai platform.
 
 #### What is KHAN?
 
@@ -69,9 +69,9 @@ Yes, you can use the Subutai PeerOS independently. Users are free to choose to u
 #### Who is behind Subutai?
 
 Subutai is a product of OptDyn, Inc., a five year old company with a multinational, globally-distributed team. OptDyn leadership includes Open Source trailblazers:
-* Founder and CEO Alex Karasulu    
+* Founder and CEO Alex Karasulu
 Original author of the Apache Directory Server, the foundation of IBM’s Rational Directory Server and Websphere Application Server; founder of Safehaus, whose Open Source low-resource mobile OTP algorithms have been adopted by Google Authenticator; developed software products that power solutions by Atlassian, Cisco, and Polycom; and
-* Founder and Director of Marketing & Media Sally Khudairi    
+* Founder and Director of Marketing & Media Sally Khudairi
 Apache Software Foundation VP Marketing & Publicity; former W3C Head of Communications; launched Creative Commons
 
 To better know our leaders and advisors, click [here](https://optdyn.com/about).
@@ -84,28 +84,28 @@ To better know our leaders and advisors, click [here](https://optdyn.com/about).
 
 You can update peers through the following ways:
 
-* From the peer’s Management Console   
-Log in to the Console, and then from the System menu, select Updates. On the Updates page, click **Check**. If there is no available update, you will see the message, “Your system is already up-to-date”, and if an update is available, you will see the message, “Update is available.” Click **Update** to start it. 
+* From the peer’s Management Console
+Log in to the Console, and then from the System menu, select Updates. On the Updates page, click **Check**. If there is no available update, you will see the message, “Your system is already up-to-date”, and if an update is available, you will see the message, “Update is available.” Click **Update** to start it.
 
-* From a CLI terminal   
+* From a CLI terminal
 From a terminal, you can perform updates for resource hosts, management host, and P2P daemon. On your open CLI terminal, connect to the peer via SSH. Then, execute any of the following commands:
 
-   * Resource host update   
+   * Resource host update
      `subutai update rh`
-   * Resource host management update   
+   * Resource host management update
      `subutai update management`
-   * Update packages inside a peer   
+   * Update packages inside a peer
      `apt-get dist-upgrade`
 
 #### How to export Karaf Logs from the Subutai Console?
 
-From the Subutai Console, go to System > Advanced > Logs. On the Logs page, click **Export**. 
+From the Subutai Console, go to System > Advanced > Logs. On the Logs page, click **Export**.
 
 ### Bazaar
 
 #### If I want to write an application that runs on Subutai, am I going to need more GoodWill?
 
-No GoodWill needed in this case. You may write Subutai plugins and applications as much as you want, and then publish them in Bazaar’s Products section. This will enable others to search and use them. In fact, if you want to develop and contribute Blueprints in particular, you might earn GoodWill by publishing them in Bazaar where others can freely use them. To know more about this exciting program, see [Blueprint Hackathon](https://github.com/subutai-blueprints/hackathon/). 
+No GoodWill needed in this case. You may write Subutai plugins and applications as much as you want, and then publish them in Bazaar’s Products section. This will enable others to search and use them. In fact, if you want to develop and contribute Blueprints in particular, you might earn GoodWill by publishing them in Bazaar where others can freely use them. To know more about this exciting program, see [Blueprint Hackathon](https://github.com/subutai-blueprints/hackathon/).
 
 #### The template is something you can make a container out of when building an environment, correct?
 
@@ -125,21 +125,21 @@ Sort of. The Dynamic Match tab specifies governance rules for a cloud owner to c
 
 Peers that satisfy these governance rules or criteria are authorized to join the swarm. Then, as load changes, the environment can shift resources based on load and cost.
 
-With the complexity of such criteria and behavior required, this functionality is still under construction and is disabled. The statistics gathered around network tomography need to be improved to do this orchestration optimally. There’s some Bivg Data infrastructure we have for this, but there’s a lot of work that still needs to be done. 
+With the complexity of such criteria and behavior required, this functionality is still under construction and is disabled. The statistics gathered around network tomography need to be improved to do this orchestration optimally. There’s some Bivg Data infrastructure we have for this, but there’s a lot of work that still needs to be done.
 
 #### Is there any equivalent of a Docker-compose file? a template for multiple containers deployed together?
 
-Yes there is, and we call that a Blueprint. It can specify the containers to use for an entire stack. It can specify simple clustering requirements too. 
+Yes there is, and we call that a Blueprint. It can specify the containers to use for an entire stack. It can specify simple clustering requirements too.
 
 #### I have some GoodWill, but I can't figure out how to start a container on any peers.
 
-To start a container, you need to create an environment on the peer (whether your own peer or a rented one). To build an environment, select Environments from the Tools menu of Bazaar. When building an environment, you can specify the size, which template to use, and other container configurations. 
+To start a container, you need to create an environment on the peer (whether your own peer or a rented one). To build an environment, select Environments from the Tools menu of Bazaar. When building an environment, you can specify the size, which template to use, and other container configurations.
 
 #### How do I rent a peer?
 
 First, you have to add the peer to your Favorites list. To do this in Bazaar, from the Tools menu, go to Peers. Select the “Paid” peer of your choice by clicking Add to Favorites.
 
-Second, you need to create an environment on the peer. Building an environment signals the start of your peer usage, specifically, after you have successfully built the environment. To check your rent charges, select Billing from the Account menu or click your Balance at the top right corner of the page. 
+Second, you need to create an environment on the peer. Building an environment signals the start of your peer usage, specifically, after you have successfully built the environment. To check your rent charges, select Billing from the Account menu or click your Balance at the top right corner of the page.
 
 ### Control Center and P2P
 
@@ -159,7 +159,7 @@ Yes. Future releases will have ARM client and even peer support. To get updated 
  * <a href="https://twitter.com/Subutai_KHAN"> Twitter</a>
  * <a href="https://www.reddit.com/r/SubutaiKHAN/"> Reddit</a>
  * <a href="https://www.linkedin.com/company/subutai-social-cloud/"> LinkedIn</a>
- * <a href="https://www.facebook.com/SubutaiKHAN/"> Facebook</a> 
+ * <a href="https://www.facebook.com/SubutaiKHAN/"> Facebook</a>
  * <a href="https://t.me/SubutaiKHAN">Telegram</a>
  * <a href="https://slack.subutai.io">Slack</a>
 </p>
