@@ -360,7 +360,7 @@ ul li, ol li {
 /* copy to clipboard icon */
 .copy-to-clipboard {
     /* background-image: url(/documentation/docs-subutai/user/themes/mytheme/images/clippy.svg); */
-    background-image: url(/documentation/user/themes/docs-subutai/images/clippy.svg);
+    background-image: url(/user/themes/docs-subutai/images/clippy.svg);
     height: 26.38px;
     top: -2px;
 }
