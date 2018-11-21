@@ -175,22 +175,17 @@ a:active, a:hover, #body-inner a:hover {
     width: 50%;
 }
 /* images position */
-/* left */
-.image-left, #body .image-left {
-    max-width: 50%;
-    float: left;
-    box-sizing: border-box;
-    margin-right: 20px;
-    margin-top: 0;
-}
-/* left */
+/* left and right */
+.image-left, #body .image-left,
 .image-right, #body .image-right {
-    max-width: 50%;
-    float: right;
+    max-width: 100%;
+    float: none;
     box-sizing: border-box;
-    margin-left: 20px;
+    margin: 0;
     margin-top: 0;
+    margin-bottom: 0;
 }
+
 /********** SIDEBAR **********/
 /* search */
 .tntsearch-form {
@@ -433,6 +428,22 @@ ul li, ol li {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+    .image-left, #body .image-left {
+        max-width: 50%;
+        float: left;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .image-right, #body .image-right {
+        max-width: 50%;
+        float: right;
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     /* #chapter {
         padding-top: 2rem;
