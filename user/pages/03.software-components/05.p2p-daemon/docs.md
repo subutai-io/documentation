@@ -43,7 +43,6 @@ From now on, if you want to SSH into one of your containers you need to do the f
 If the P2P connection was successfully established, and you have calculated the right port number, you will see a standard SSH welcome message. If you were not able to log in due to authentication problems, you need to add your SSH key to the respective container in [Subutai Bazaar](https://bazaar.subutai.io): Environments -> your environment -> SSH Keys -> Add SSH Key.
 
 Finally, if you want to stop the P2P connection, execute the following command:
-
 ```
 p2p stop -hash <environment_hash>
 ```
@@ -54,5 +53,5 @@ Establishing a network connection can be hard sometimes because of many differen
 
 The usual way to solve common problems is to restart the P2P service both on your peer and your client machine. If that doesn't help, you may try the following:
 * Check that your Internet connection is working properly
-* Verify that Bazaar (https://bazaar.subutai.io) is reachable through your browser 
+* Verify that Bazaar (https://bazaar.subutai.io) is reachable through your browser    
   If you can't open the Bazaar website, but your Internet works fine, we can check the problem from our end. You may [contact us on Slack](https://slack.subutai.io/) and our team will be happy to help.
