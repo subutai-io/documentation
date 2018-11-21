@@ -22,11 +22,11 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 
 |Vagrant provider|Update command|
 |----------------|--------------|
-|VirtualBox|`vagrant box update --box subutai/stretch --provider virtualbox`|
-|Hyper-V|`vagrant box update --box subutai/stretch --provider hyperv`|
-|Libvirt|`vagrant box update --box subutai/stretch --provider libvirt`|
-|VMware Workstation or Fusion|`vagrant box update --box subutai/stretch --provider vmware_desktop`|
-|Parallels|`vagrant box update --box subutai/stretch --provider parallels`|
+|VirtualBox| `vagrant box update --box subutai/stretch --provider virtualbox` |
+|Hyper-V| `vagrant box update --box subutai/stretch --provider hyperv` |
+|Libvirt| `vagrant box update --box subutai/stretch --provider libvirt` |
+|VMware Workstation or Fusion| `vagrant box update --box subutai/stretch --provider vmware_desktop` |
+|Parallels| `vagrant box update --box subutai/stretch --provider parallels`|
 
 #### <a name="How-to-update-Vagrant-Subutai-plugin"></a> How to update the Vagrant Subutai plugin
 `vagrant plugin update vagrant-subutai `
