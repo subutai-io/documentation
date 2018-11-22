@@ -22,11 +22,11 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 
 |Vagrant provider|Update command|
 |----------------|--------------|
-|VirtualBox|`vagrant box update --box subutai/stretch --provider virtualbox`|
-|Hyper-V|`vagrant box update --box subutai/stretch --provider hyperv`|
-|Libvirt|`vagrant box update --box subutai/stretch --provider libvirt`|
-|VMware Workstation or Fusion|`vagrant box update --box subutai/stretch --provider vmware_desktop`|
-|Parallels|`vagrant box update --box subutai/stretch --provider parallels`|
+|VirtualBox| `vagrant box update --box subutai/stretch --provider virtualbox` |
+|Hyper-V| `vagrant box update --box subutai/stretch --provider hyperv` |
+|Libvirt| `vagrant box update --box subutai/stretch --provider libvirt` |
+|VMware Workstation or Fusion| `vagrant box update --box subutai/stretch --provider vmware_desktop` |
+|Parallels| `vagrant box update --box subutai/stretch --provider parallels`|
 
 #### <a name="How-to-update-Vagrant-Subutai-plugin"></a> How to update the Vagrant Subutai plugin
 `vagrant plugin update vagrant-subutai `
@@ -162,15 +162,14 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
 * Issue: Trying to SSH into a machine while other Vagrant processes are running.    
 * Action: Access System Monitor or Task Manager (for Windows), and then terminate all Ruby and Vagrant processes.
 
-!! Error: An error occurred while executing vmrun, a utility for controlling
-VMware machines. The command and output are below:
+!! Error: An error occurred while executing vmrun, a utility for controlling VMware machines
 
     Command: ["start", "/Users/admin/justatest/Subutai-peers/subutai-peer_vmwre/.vagrant/machines/default/vmware_desktop/6e1da1a7-6c3a-44c4-aee7-3dad3da14b13/stretch.vmx", "nogui", {:notify=>[:stdout, :stderr], :timeout=>45}]
 
     Stdout: 2018-10-31T15:07:02.423| ServiceImpl_Opener: PID 28249
     Error: The operation was canceled
 
-* Possible reasons:
+* Possible reasons with recommended actions:
   * Virtualization extensions aren't enabled on the CPU
   * The Vmware trial has expired or the application requires a license key
   * Permission problems on the install (corrupted install)

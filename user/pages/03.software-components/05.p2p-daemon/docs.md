@@ -16,44 +16,45 @@ As Subutai is a distributed, P2P cloud environment, every connection needs to go
 
 ## How to use the P2P Daemon
 
-The [Subutai Control Center](../control-center) manages P2P connections automatically with each environment, so the user doesn't need to use Subutai P2P Daemon directly. Please refere to its documentation if you are using a desktop environment.
+The [Subutai Control Center](../control-center) manages P2P connections automatically with each environment, so you don't need to use Subutai P2P Daemon directly. Please refer to the above link if you are using a desktop environment.
 
 ## Headless connection
 
-Alternatively, if you want to establish a connection with your environment from a headless machine you can do the following:
+Alternatively, if you want to establish a connection with your environment from a headless machine, you can do the following:
 
-1. Download and Install the [Subutai P2P Package](https://subutai.io/getting-started.html#P2P) from the website
-2. Make sure that P2P daemon is running by executing `p2p debug` command in a terminal
-3. Log in to Bazaar and visit https://bazaar.subutai.io/rest/v1/client/environments
+1. Download and install the [Subutai P2P Package](https://subutai.io/getting-started.html#P2P).
+
+2. Make sure that P2P daemon is running by executing the `p2p debug` command in a terminal.
+
+3. Log in to Bazaar and go to: https://bazaar.subutai.io/rest/v1/client/environments.
+
 4. Run your P2P connection by replacing data in <> from the page above: 
+   ```
+   p2p start -hash <environment_hash> -key <environment_key>
+   ```
 
-
-```
-p2p start -hash <environment_hash> -key <environment_key>
-```
-
-It may take up to 30 seconds for the connection to be established, and you can always check how it goes by using the `p2p status` command. 
+   It may take a few seconds for the connection to be established and you can always check how it goes by using the `p2p status` command. 
 
 From now on, if you want to SSH into one of your containers you need to do the following:
 
-1. On this page https://bazaar.subutai.io/rest/v1/client/environments locate <environment_containers> section and find a container of your interest. 
-2. Use the following command to connect to it: `ssh root@<rh_ip> -p<port_number>`
+1. On this page, https://bazaar.subutai.io/rest/v1/client/environments, locate the "environment_containers" section and find the container.
 
-! Note that `<port_number>` couldn't be found in the scheme above and you need to calculate it yourself. The formula is simple: `10000+<last_octet>`, which is the last octet of `<container_ip>`. For example, if your container IP is `172.16.143.103` - your port will be `10103` = `10000+103`. 
+2. Use the following command to connect to it: `ssh root@<rh_ip> -p <port_number>`
 
-If the P2P connection was successfully established, and you have calculated the right port number, you will see a standard SSH welcome message. If you were not able to log in due to authentication problems, you need to add your SSH key to the respective container in [Subutai Bazaar](https://bazaar.subutai.io): Environments -> YOUR ENV -> SSH Keys -> Add SSH Key.
+   💡 Note that `<port_number>` cannot be found in the scheme above: you need to calculate it yourself. The formula is simple: `10000+<last_octet>`, which is the last octet of `<container_ip>`. For example, if your container IP is `172.16.143.103` - your port will be `10103` = `10000+103`. 
 
-Finally, when you want to stop that P2P connection, just execute the following command:
+If the P2P connection has been successfully established, and you have calculated the right port number, you will see a standard SSH welcome message. If you were not able to log in due to authentication problems, you need to add your SSH key to the respective container in [Subutai Bazaar](https://bazaar.subutai.io): Environments -> your environment -> SSH Keys -> Add SSH Key.
 
+Finally, if you want to stop the P2P connection, execute the following command:
 ```
 p2p stop -hash <environment_hash>
 ```
 
 ## Troubleshooting
 
+Establishing a network connection can be hard sometimes because of many different factors that could affect the whole process. This is especially true when we talk about peer-to-peer connections. Subutai P2P is designed in such a way that it will try to recover automatically from any problems. But if you still run into any issues, please report the problem by visiting the [P2P Daemon issue tracker on GitHub](https://github.com/subutai-io/p2p/issues/new).
 
-Establishing a network connection can be hard sometimes because of many different factors that can affect the whole process. Especially when we talk about peer to peer connections. Subutai P2P was designed in way taht it will try to recover automatically from any problems, but if that does not happen please report the problem by visiting the [P2P Daemon issue tracker on GitHub}(https://github.com/subutai-io/p2p/issues/new) 
-
-The usual way to solve many common problems is to restart the p2p service both on your peer and your client machine. If that doesn't help please check that your Internet connection is working properly, and Bazaar (https://bazaar.subutai.io) is reachable in your browser. 
-
-If you can't open the Bazaar website, but the rest of Internet works fine that means that the problem is on our side. In that case, please, [contact us on Slack](https://slack.subutai.io/) and our team will be happy to help.
+The usual way to solve common problems is to restart the P2P service both on your peer and your client machine. If that doesn't help, you may try the following:
+* Check that your Internet connection is working properly
+* Verify that Bazaar (https://bazaar.subutai.io) is reachable through your browser    
+  If you can't open the Bazaar website, but your Internet works fine, we can check the problem from our end. You may [contact us on Slack](https://slack.subutai.io/) and our team will be happy to help.

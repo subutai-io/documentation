@@ -8,8 +8,6 @@ toc:
 	headinglevel: 4
 ---
 
-# Working with Subutai
-
 Learn about the Subutai products and how to use their features.
 
 **[Getting Started with Subutai](getting-started)**

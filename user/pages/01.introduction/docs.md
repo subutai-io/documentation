@@ -8,8 +8,6 @@ toc:
 	headinglevel: 4
 ---
 
-# Introduction
-
 _Welcome! This is the end user documentation for Subutai,
 the world’s first intelligent P2P cloud computing platform._
 

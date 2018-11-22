@@ -6,8 +6,6 @@ taxonomy:
 child_type: docs
 ---
 
-# Video Tutorials
-
 ### Subutai 101 series
 
 [plugin:youtube](https://www.youtube.com/watch?v=HzDoNvtWLjU)
