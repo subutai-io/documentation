@@ -23,8 +23,11 @@ The [Subutai Control Center](../control-center) manages P2P connections automati
 Alternatively, if you want to establish a connection with your environment from a headless machine, you can do the following:
 
 1. Download and install the [Subutai P2P Package](https://subutai.io/getting-started.html#P2P).
+
 2. Make sure that P2P daemon is running by executing the `p2p debug` command in a terminal.
+
 3. Log in to Bazaar and visit https://bazaar.subutai.io/rest/v1/client/environments.
+
 4. Run your P2P connection by replacing data in <> from the page above: 
 
    ```
@@ -36,7 +39,8 @@ Alternatively, if you want to establish a connection with your environment from 
 From now on, if you want to SSH into one of your containers you need to do the following:
 
 1. On this page https://bazaar.subutai.io/rest/v1/client/environments locate <environment_containers> section and find a container of your interest. 
-2. Use the following command to connect to it: `ssh root@<rh_ip> -p<port_number>`
+
+2. Use the following command to connect to it: `ssh root@<rh_ip> -p <port_number>`
 
    💡 Note that `<port_number>` couldn't be found in the scheme above and you need to calculate it yourself. The formula is simple: `10000+<last_octet>`, which is the last octet of `<container_ip>`. For example, if your container IP is `172.16.143.103` - your port will be `10103` = `10000+103`. 
 
