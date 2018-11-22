@@ -21,7 +21,7 @@ and monitoring of peers, environments, and containers:
  - [Create and Manage Environments](management-console/create-manage-environments)
  - [Monitor Peers and Environments](management-console/monitor-peers-envs)
 
-**Get to Know the P2P Daemon**
+**[Get to Know the P2P Daemon](p2p-daemon)**
 
 **[Using the Control Center](control-center)**
  - [Control Center: An Overview](control-center#overview)
