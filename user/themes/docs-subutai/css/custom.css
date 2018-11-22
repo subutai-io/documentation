@@ -44,6 +44,13 @@ a:active, a:hover, #body-inner a:hover {
     text-decoration: none;
 }
 
+/* anchor links */
+h3>a {
+    display: block;
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
 #body-inner {
     padding-top: 5rem;
 }
@@ -81,6 +88,7 @@ a:active, a:hover, #body-inner a:hover {
     top: 65px;
     left: 0;
     width: 100%;
+    overflow: auto;
 }
 .mainLogo {
     height: 100%;
@@ -124,9 +132,10 @@ a:active, a:hover, #body-inner a:hover {
     flex-direction: column; */
 }
 .menuList li {
+    width: fit-content;
     list-style: none;
     font-size: 16px;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 .menuList li a, .dropdown-menu li a {
     color: #FFF;
@@ -146,6 +155,9 @@ a:active, a:hover, #body-inner a:hover {
 }
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+.dropdown-menu li {
+    padding-left: 20px;
 }
 /* chapter */
 #chapter {
@@ -448,4 +460,11 @@ ul li, ol li {
     /* #chapter {
         padding-top: 2rem;
     } */
+}
+
+/* another media querie to opened menu don't break before 1230px */
+@media (min-width: 1229px) {
+    .menuList li {
+        padding: 0 15px;
+    }
 }
