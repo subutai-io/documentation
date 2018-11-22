@@ -26,25 +26,24 @@ Alternatively, if you want to establish a connection with your environment from 
 
 2. Make sure that P2P daemon is running by executing the `p2p debug` command in a terminal.
 
-3. Log in to Bazaar and visit https://bazaar.subutai.io/rest/v1/client/environments.
+3. Log in to Bazaar and go to: https://bazaar.subutai.io/rest/v1/client/environments.
 
 4. Run your P2P connection by replacing data in <> from the page above: 
-
    ```
    p2p start -hash <environment_hash> -key <environment_key>
    ```
 
-   It may take a few seconds for the connection to be established, and you can always check how it goes by using the `p2p status` command. 
+   It may take a few seconds for the connection to be established and you can always check how it goes by using the `p2p status` command. 
 
 From now on, if you want to SSH into one of your containers you need to do the following:
 
-1. On this page https://bazaar.subutai.io/rest/v1/client/environments locate <environment_containers> section and find a container of your interest. 
+1. On this page, https://bazaar.subutai.io/rest/v1/client/environments, locate the "environment_containers" section and find the container.
 
 2. Use the following command to connect to it: `ssh root@<rh_ip> -p <port_number>`
 
-   💡 Note that `<port_number>` couldn't be found in the scheme above and you need to calculate it yourself. The formula is simple: `10000+<last_octet>`, which is the last octet of `<container_ip>`. For example, if your container IP is `172.16.143.103` - your port will be `10103` = `10000+103`. 
+   💡 Note that `<port_number>` cannot be found in the scheme above: you need to calculate it yourself. The formula is simple: `10000+<last_octet>`, which is the last octet of `<container_ip>`. For example, if your container IP is `172.16.143.103` - your port will be `10103` = `10000+103`. 
 
-If the P2P connection was successfully established, and you have calculated the right port number, you will see a standard SSH welcome message. If you were not able to log in due to authentication problems, you need to add your SSH key to the respective container in [Subutai Bazaar](https://bazaar.subutai.io): Environments -> your environment -> SSH Keys -> Add SSH Key.
+If the P2P connection has been successfully established, and you have calculated the right port number, you will see a standard SSH welcome message. If you were not able to log in due to authentication problems, you need to add your SSH key to the respective container in [Subutai Bazaar](https://bazaar.subutai.io): Environments -> your environment -> SSH Keys -> Add SSH Key.
 
 Finally, if you want to stop the P2P connection, execute the following command:
 ```
