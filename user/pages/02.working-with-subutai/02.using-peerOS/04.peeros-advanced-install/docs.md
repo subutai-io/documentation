@@ -7,7 +7,7 @@ taxonomy:
 ---
 
 
-Users can manually install PeerOS through the Advanced Install option, which allows flexibility in that you can specify the configurations to be included in the setup. This guide describes the recommended way of installing Subutai PeerOS on a fresh Debian system. Alternatively, the [Quick Install]() option is also available, which uses the default setup and settings.
+Users can manually install PeerOS through the Advanced Install option, which allows flexibility in that you can specify the configurations to be included in the setup. This guide describes the recommended way of installing Subutai PeerOS on a fresh Debian system. Alternatively, the [Quick Install](../quick-install) option is also available, which uses the default setup and settings.
 
 Subutai, which is based on Debian, has its own Debian repository. Setting up the Debian system involves the following procedures:
 1. Installing Subutai to convert the host into a Subutai Resource Host (RH)
