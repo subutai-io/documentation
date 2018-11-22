@@ -6,8 +6,6 @@ taxonomy:
 child_type: docs
 ---
 
-# Frequently Asked Questions
-
 Here are answers to frequently asked questions about Subutai, the open source project and the platform.
 
 ## **General Questions**

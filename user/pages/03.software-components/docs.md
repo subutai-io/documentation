@@ -6,8 +6,6 @@ taxonomy:
 child_type: docs
 ---
 
-# Using Companion Software
-
 The following companion software are designed primarily for   
 peer owners, administrators, or operators, to facilitate management    
 and monitoring of peers, environments, and containers:
