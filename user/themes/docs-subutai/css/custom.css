@@ -19,6 +19,43 @@ Put your custom CSS in this file.
 }
 */
 
+.responsiveTable ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+}
+.responsiveTable>ul {
+    border: 1px solid #eaeaea;
+}
+.responsiveTable ul li {
+    /* margin-top: 0; */
+    height: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+}
+/* #body .responsiveTable ul img {
+    margin: 0;
+} */
+.responsiveTable>ul>li>strong>a,
+.responsiveTable>ul>li>a {
+    display: block;
+    padding: .5rem 0;
+}
+.responsiveTable>ul>li {
+    background: #F7F7F7;
+    /* padding: .5rem 0; */
+}
+.responsiveTable ul li ul {
+    background: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.responsiveTable ul li ul li {
+    border: 0.5px solid #eaeaea;
+}
+
 body {
     letter-spacing: normal;
 }
@@ -406,7 +443,9 @@ ul li, ol li {
 } */
 
 @media (min-width: 992px) {
-
+    .responsiveTable ul {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 1200px) {
