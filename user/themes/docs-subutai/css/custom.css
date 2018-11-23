@@ -28,10 +28,10 @@ Put your custom CSS in this file.
     content: "\2190 \00a0 \00a0 scroll \00a0 \2192";
     position: absolute;
     left: 50%;
-    margin-left: -20px;
+    margin-left: -50px;
     text-align: center;
     color: #078DD0;
-    opacity: .3;
+    opacity: .5;
     font-weight: 600;
 }
 .scrollTable table {
