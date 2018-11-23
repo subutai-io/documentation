@@ -32,13 +32,11 @@ through container-based virtualization.
 
 #### Container
 
-A Lightweight Linux Container host within the virtual
-private cloud (a building block of an environment).
+A Lightweight Linux Container host within the virtual private cloud (a building block of an environment).
 
 #### Control Center
 
-A desktop application to manage your GoodWill
-balance, environments, containers, Peers, etc.
+A desktop application to manage your GoodWill balance, environments, containers, Peers, etc.
 
 #### Environment
 
