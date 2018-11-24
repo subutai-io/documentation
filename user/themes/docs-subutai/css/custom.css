@@ -40,11 +40,22 @@ Put your custom CSS in this file.
     display: inline-block;
     white-space: normal;
 }
+.scrollTable thead th {
+    text-align: center;
+}
 .scrollTable table th, .scrollTable table td {
     width: 25%;
     box-sizing: border-box;
 }
-
+.scrollTable tr td {
+    text-align: center;
+}
+.scrollTable tr td:first-child {
+    text-align: left;
+}
+.scrollTable tr td {
+    text-align: center;
+}
 /*  */
 /* .responsiveTable ul {
     display: flex;

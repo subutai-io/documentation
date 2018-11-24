@@ -119,7 +119,7 @@ to an existing environment:
           ]
         }
       ],
-      "peer-criteria": [ 
+      "peer-criteria": [
         {
           "name": "HTTP-GROUP",
           "avg-cpu-load": "50",
@@ -152,6 +152,7 @@ objects. These are references to container templates to use to build
 container hosts within the P2P environment. The attributes are listed
 with a brief description in the table below:
 
+<div class="scrollTable" markdown="1">
 
 | Attribute           | Value Type   | Description|
 |---------------------|--------------|------------------------------------------------------------------------------------------|
@@ -159,6 +160,8 @@ with a brief description in the table below:
 | ``template``        | String       | the template to use from the template repository|
 | ``peer-criteria``   | String       | reference to the peer selection criteria section|
 | ``size``            | Enum         | the container size: TINY, MEDIUM, SMALL, LARGE, HUGE|
+
+</div>
 
 ### External Ports
 
@@ -180,6 +183,8 @@ criteria is used to offer the users of the blueprint an initial list of
 peers to select from which satisfy the blueprint author's suggested
 environmental conditions:
 
+<div class="scrollTable" markdown="1">
+
 | Attribute   | Value Type| Description|
 |-------------|----------|------------------------------------------------|
 | name        | String   | the name of the peer-criteria to reference it       |
@@ -187,6 +192,8 @@ environmental conditions:
 | avg-cpu-load | Integer  | the maximum cpu load on the peer as a percentage    |
 | min-free-ram | Integer  | the minimum RAM (in MB) that **MUST** be available per hour|
 | min-free-disk-space | Integer  | the minimum free disk (in GB) that **MUST** be available on the peer|
+
+</div>
 
 Using these and other parameters blueprint authors specify some basic
 environmental recommendations for the application's infrastructure stack
@@ -208,7 +215,7 @@ authorize your GitHub account. In the upper left hand corner you'll see
 the '*Authorize*' button.
 
 Press it to authorize you GitHub account. You should then see all with a
-Subutai.json file at the root will be loaded. 
+Subutai.json file at the root will be loaded.
 
 From here, an environment can be built with the blueprint or used to
 install it into an existing environment with the **Build** button. The
@@ -263,7 +270,7 @@ fields in JSON entities:
           ]
         }
       ],
-      "peer-criteria": [ 
+      "peer-criteria": [
         {
           "name": "HTTP-GROUP",
           "max-price": "5",
@@ -308,6 +315,7 @@ variable names in between ``${}``, i.e. ``${webContainerSize}``, to
 substitute values provided by users of the blueprint at installation
 time. Variable definitions have the following attributes:
 
+<!-- <div class="scrollTable" markdown="1"> -->
 
 | Attribute   | Value Type | Description                                        |
 | description | String     | a description to show the user at install time     |
@@ -315,6 +323,8 @@ time. Variable definitions have the following attributes:
 | type        | Enum       | ``enum``, ``int``, ``double``, ``domain`` ``string``|
 | default     | String     | the default value                                  |
 | validation  | String     | regex for strings, comma separated enum list, numeric ranges for int and double|
+
+<!-- </div> -->
 
 The fields are self explanatory perhaps with the exception of the
 **validation** attribute. This field allows the blueprint installation
@@ -409,7 +419,7 @@ course is all version controlled:
           ]
         }
       ],
-      "peer-criteria": [ 
+      "peer-criteria": [
         {
           "name": "HTTP-GROUP",
           "max-price": "5",
@@ -451,7 +461,7 @@ course is all version controlled:
         "extra-vars": [
           {
             "key": "foo",
-            "value": "bar"  
+            "value": "bar"
           }
         ],
         "groups": [
@@ -510,7 +520,7 @@ python-interpreter to use for a group like so:
             "hostnames": [
               "debianstretch"
             ]
-          }      
+          }
         ]
       },
 
@@ -524,7 +534,11 @@ Blueprints have branding attributes that allow authors, projects, and
 companies to help promote their brand. Brand information can be put into
 the following top level JSON Object attributes in the Subutai.json file:
 
+<div class="scrollTable" markdown="1">
+
 | Attribute   | Data Type   | Purpose                                            |
 |-------------|-------------|----------------------------------------------------|
 | author      | string      | the name, email, or GitHub account of the author   |
 | version     | string      | the version of the blueprint                       |
+
+</div>

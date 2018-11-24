@@ -9,6 +9,8 @@ taxonomy:
 
 Here are the integrated components behind the Subutai PeerOS:
 
+<div class="scrollTable" markdown="1">
+
 |Component|Description|
 |--------------|-------------------------------------------|
 |Debian package|Used to install PeerOS into resource hosts.|
@@ -16,3 +18,5 @@ Here are the integrated components behind the Subutai PeerOS:
 |P2P Daemon|For intra-environment connectivity between containers, we use our homegrown [P2P Cloud](https://github.com/subutai-io/p2p).|
 |Subutai Agent|We use <a href="https://github.com/subutai-io/agent"> Subutai Agent </a> on each resource host to expose its resources to the Console and Bazaar.|
 |Management Console|The [Subutai Management Console](../../../software-components/management-console) of the Management Software is an application that exposes peer functionality and allows it to be registered with Bazaar.|
+
+</div>
