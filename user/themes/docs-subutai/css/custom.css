@@ -121,9 +121,9 @@ h3>a {
     margin-top: -80px;
 }
 
-#body-inner {
+/* #body-inner {
     padding-top: 5rem;
-}
+} */
 
 /* top bar - menu */
 #topMenu {
@@ -467,11 +467,13 @@ ul li, ol li {
 
 /* @media (min-width: 480px) {
 
-}
+}*/
 
 @media (min-width: 768px) {
-
-} */
+    #body-inner {
+        padding-top: 5rem;
+    }
+}
 
 @media (min-width: 992px) {
     .responsiveTable ul {
