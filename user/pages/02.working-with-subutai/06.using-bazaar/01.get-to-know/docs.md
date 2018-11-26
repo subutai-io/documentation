@@ -10,7 +10,7 @@ taxonomy:
 The features and functionalities in Bazaar are organized in two main menus: Tools and Account.
 
 ### Tools menu
-Access Bazaar features such as peer selection, creation of environments, blueprint installation, and peer tracking.
+Access Bazaar features such as peer selection, creation of environments, application installation, and peer tracking.
 
 ![Tools menu](bazaar-menu-tools.png)
 

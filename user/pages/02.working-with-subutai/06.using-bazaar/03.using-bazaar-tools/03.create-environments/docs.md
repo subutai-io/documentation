@@ -37,18 +37,14 @@ If all the steps are done properly, containers are built. You will see “ready�
 
 ![Environment Ready](environment-ready.png?cropResize=810,392)
 
-So, now you have your environment and you are ready now to install software you like there. Then, to make it accessible by a [domain name](../../use-account-tools/#domains), please go to the “Container Port Mapping” page and press “Add new port” button. There you can specify protocol, ports, domain name, proxy (if it’s behind NAT) and pick container:
+So, now you have your environment and you are ready now to install software you like there. Then, to make it accessible by a [domain name](../../use-account-tools/#domains), please go to the “Container Port Mapping” page and press “Add new port” button. There you can specify protocol, ports, domain name and pick a container (if your peer is behind NAT, Bazaar will pick up a proxy automatically).
 
-When all is ready, you will be able to access your container via its domain name.
-
-This is how it should look like if you have properly configured port mapping:
-
-And if you click your domain name, you will have your container (Apache in the example) opened in browser under previously specified domain:
+When all is ready, you will be able to access your container via its domain name. If you click it, you will have your container (Apache in the example) opened in the browser.
 
 #### Congratulations! You are now ready to use your environment!
 
 What now? You can access your environment straight from your desktop! For this, you need to install and set up the following components: Subutai P2P daemon and Subutai Control Center. After installing them, please log into the Control Center using your Bazaar website’s account. Then, to access your Environment, you need to generate SSH keys, or add existing SSH keys to your environments:
 
-So when all is up and running, you can SSH into your container via Control Center, by opening its Environment menu, choosing the environment you like and clicking it. You will see this:
+So when all is up and running, you can SSH into your container via Control Center, by opening its Environment menu, choosing the environment you like and clicking it.
 
 Once your SSH button is active (white and clickable), you can click it and then a terminal will be opened and you will have access to your container!

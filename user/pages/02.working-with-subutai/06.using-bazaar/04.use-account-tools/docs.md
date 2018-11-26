@@ -13,7 +13,7 @@ The User menu is located in the right sidebar of [Subutai Bazaar](https://bazaar
 
 ### Settings
 
-User settings will allow you to see and sometimes edit the following personal information:
+User settings will allow you to see and edit some of the following personal information:
 
 - Name
 - Username
@@ -37,7 +37,7 @@ This page shows the Peers you use. You can view your own Peers; Peers that you h
 
 ### Domains
 
-Here you can map domain names to your environments and containers. To add domains to your list, click "Add new". There will be two options for you to choose:
+Here you can create and manage domain names which you can later use for port mappings. To add domains to your list, click "Add new". There will be two options for you to choose:
 
 - **Bazaar sub-domain** allows you to create free subdomains of `.envs.subut.ai`. Type your desired subdomain, click the green button to check whether it is available and click save.
 - **User managed domain** lets you use domain names or subdomains you already own. Please note you need to have access to a registrar where your domain was created in order to configure it. First, type your domain name or subdomain. You will see that the example below will be changed to reflect the CNAME record you will need to add to your registrar's DNS settings.
@@ -46,17 +46,17 @@ Either way, from now on when you run a [Blueprint](../../blueprints) or access a
 
 ### Products
 
-This page lists your accepted Blueprints. You can edit their name, category, version, price (in GoodWill), description and logo.
+This page lists your published Blueprints. You can edit their name, category, version, price (in GoodWill), description and logo.
 
 ### SSH key management
 
 Here you can easily manage your SSH keys - add, view, delete and edit keys. SSH keys are very important to gain terminal access to Environments and Containers on Subutai.
 
-To add your key, click the green Add button and paste your key in the appropriate field. Click add and your key will be successfully added to the Bazaar!
+To add your key, click the green Add button and paste your public key in the appropriate field. Click add and your key will be successfully added to the Bazaar!
 
 ### My Blueprints
 
-This section allows you to add your GitHub projects to the Subutai Bazaar Apps section. You can for instance create your own Blueprint in GitHub, then authorize it on the Subutai Bazaar and upload it. After that, you will be able to build Environments based on your Blueprint. You can also publish your blueprint to make it available to other Bazaar users.
+This section allows you to import your own Subutai Blueprint projects from GitHub into the Bazaar. You can for instance create your own Blueprint in GitHub, then authorize it on the Subutai Bazaar and upload it. After that, you will be able to build Environments based on your Blueprint. You can also publish your blueprint to make it available to other Bazaar users.
 
 ### Application settings
 
@@ -64,9 +64,9 @@ Here you can add the default variables to use in Blueprints. For instance, you c
 
 ### CDN
 
-Subutai CDN is a server where you can store your templates and also use find other users' templates to create your own Environments.
+Subutai CDN is a server where you can store your templates and also use other users' templates to create your own Environments. You can also upload and store raw files.
 
-You can upload and download your Subutai Templates (as tar.gz files), or any other RAW file. There is also a tab called "REST Token Management" to generate Bazaar tokens via REST.
+You can upload and download your Subutai Templates (as tar.gz files), or any other RAW file. There is also a tab called "REST Token Management" to generate Bazaar tokens via REST. A token will be needed if you want to upload a template via REST API.
 
 Please note that you need to have the E2E plugin and PGP key installed and configured in order to use the Subutai CDN. Press the authorize button and wait until your key is added. NOTE: the CDN token expires within one hour. After that, you will need to perform an authorization again.
 

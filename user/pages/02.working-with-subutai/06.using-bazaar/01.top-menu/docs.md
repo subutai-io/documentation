@@ -21,7 +21,7 @@ Bazaar notifies you whenever there are changes in your Peers or Environments; ne
 
 ### Chat
 
-By clicking on the “Chat” button, you can see a list of Subutai Bazaar users, both offline and online. You can choose a user and send them a private message. You can also create conversation rooms for groups and add other users to them. You can search by username. When the chat is active, you can turn off or turn on sound notifications.
+By clicking on the “Chat” button, you can see a list of Subutai Bazaar users, both offline and online. You can choose a user and send them a private message. You can search by username. When the chat is active, you can turn off or turn on sound notifications.
 
 ### User profile
 

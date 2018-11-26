@@ -36,9 +36,9 @@ On the individual Peer page you can see useful information:
 
 - Username of the Peer’s owner.
 - Location of the Peer.
-- Last heartbeat. This is the last ping (test reachability of host) > from the Peer, which shows that the Peer is online.
+- Last heartbeat. This is the last ping (test reachability of host) from the Peer, which shows that the Peer is online.
 - Name of the Peer’s internet provider.
-- Scope. Peer can be public (visible for everyone) or Private (visible > only for its owner).
+- Scope. The Peer can be Public (visible for everyone), Private (visible only for its owner) or Shared (visible by users with whom the owner shares the Peer).
 - See this Peer in the War Room.
 - Access this Peer via Subutai Console (if you have the proper rights and credentials)
 - On the top right corner you can add or remove to/from your list of favorite peers.
