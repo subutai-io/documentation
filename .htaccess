@@ -67,6 +67,9 @@ RewriteRule (^|/)\.(?!well-known) - [F]
 RewriteRule ^(LICENSE\.txt|composer\.lock|composer\.json|\.htaccess)$ error [F]
 ## End - Security
 
+## Redirecting anything formerly under "Projects" to /
+RewriteRule ^Projects/(.*)   / [R=301,L]
+
 </IfModule>
 
 # Begin - Prevent Browsing and Set Default Resources
@@ -75,3 +78,80 @@ DirectoryIndex index.php index.html index.htm
 # End - Prevent Browsing and Set Default Resources
 
 Redirect 301 /Blueprints/wordpress_toctree.html /working-with-subutai/blueprints
+Redirect 301 /Blueprints/blockchain-in-a-box/Introduction.html /working-with-subutai/blueprints/tutorials
+Redirect 301 /Blueprints/blockchain-in-a-box/Wizard-Configuration-Parameters.html /working-with-subutai/blueprints/tutorials
+Redirect 301 /Blueprints/blockchain-in-a-box_toctree.html /working-with-subutai/blueprints/tutorials
+Redirect 301 /Blueprints/FAQ_hackathon_toctree.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/wordpress-standalone_toctree.html /working-with-subutai/blueprints
+Redirect 301 /Blueprints/Guides_hackathon_toctree.html /working-with-subutai/blueprints/create-tutorials
+Redirect 301 /Blueprints/Guides_blockchain-in-a-box_toctree.html /working-with-subutai/blueprints/tutorials
+Redirect 301 /Blueprints/hackathon/What-is-a-blueprint.html /working-with-subutai/blueprints
+Redirect 301 /Blueprints/hackathon/Who-can-participate-and-when.html /working-with-subutai/blueprints/tutorials
+Redirect 301 /Blueprints/hackathon/What-is-the-Subutai-Horde.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/Why-are-blueprints-needed.html /working-with-subutai/blueprints
+Redirect 301 /Blueprints/hackathon/Using-Subutai-Blueprints.html /working-with-subutai/blueprints/using-blueprints
+Redirect 301 /Blueprints/hackathon/Writing-Subutai-Blueprints.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/How-does-it-work.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/Branding-Features.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/How-can-I-sign-up.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/What-is-a-Subutai-Peer.html /glossary#peer
+Redirect 301 /Blueprints/hackathon/Contest-Legal-Notice.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/What-is-the-hackathon-about.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/Contest-Rules.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/External-Resources.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/What-is-"GoodWill".html /glossary#good-will
+Redirect 301 /Blueprints/hackathon/What-is-the-Subutai-Snap.html /
+Redirect 301 /Blueprints/hackathon/Prizes.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /Blueprints/hackathon/What-is-a-Subutai-Environment.html /glossary#environment
+Redirect 301 /Blueprints/mattermost_toctree.html /working-with-subutai/blueprints
+Redirect 301 /Blueprints/hackathon_toctree.html /working-with-subutai/blueprints/create-blueprints
+Redirect 301 /search.html /search
+Redirect 301 /Subutai_Use_Cases.html /introduction/about-platform
+Redirect 301 /Glossary.html /glossary
+Redirect 301 /About.html /introduction/about-documentations
+Redirect 301 /Products/Bazaar/26_Users.html /working-with-subutai/using-bazaar/bazaar-tools/users
+Redirect 301 /Products/Bazaar/13_Cloud_accounts.html /working-with-subutai/using-bazaar/use-account-tools#cloud-accounts
+Redirect 301 /Products/Bazaar/27_E2E_plugin.html /software-components/e2e-plugin
+Redirect 301 /Products/Bazaar/03_Billing_Info.html /working-with-subutai/using-bazaar/use-account-tools#billing
+Redirect 301 /Products/Bazaar/18_How_to_create_and_use_environments.html /working-with-subutai/using-bazaar/using-bazaar-tools/create-environments
+Redirect 301 /Products/Bazaar/11_Organizations_user.html /working-with-subutai/using-bazaar/use-account-tools#organizations
+Redirect 301 /Products/Bazaar/08_Application_settings.html /working-with-subutai/using-bazaar/use-account-tools#application-settings
+Redirect 301 /Products/Bazaar/12_GitHub_Projects.html /working-with-subutai/using-bazaar/use-account-tools#my-blueprints
+Redirect 301 /Products/Bazaar/14_Friends_page.html /working-with-subutai/using-bazaar/use-account-tools#friends
+Redirect 301 /Products/Bazaar/10_CDN.html /working-with-subutai/using-bazaar/use-account-tools#cdn
+Redirect 301 /Products/Bazaar/05_Domains.html /working-with-subutai/using-bazaar/use-account-tools#domains
+Redirect 301 /Products/Bazaar/06_Products.html /working-with-subutai/using-bazaar/using-bazaar-tools/use-products-blueprints
+Redirect 301 /Products/Bazaar/09_Invitations_and_Coupons.html /working-with-subutai/using-bazaar/use-account-tools#invitations-and-coupons
+Redirect 301 /Products/Bazaar/24_Products.html /working-with-subutai/using-bazaar/using-bazaar-tools/use-products-blueprints
+Redirect 301 /Products/Bazaar/16_Chat_notifications_balance.html /working-with-subutai/using-bazaar/get-to-know
+Redirect 301 /Products/Bazaar/21_Peers.html /working-with-subutai/using-bazaar/using-bazaar-tools/select-peers
+Redirect 301 /Products/Bazaar/15_Application_logs.html /working-with-subutai/using-bazaar/using-bazaar-tools/use-products-blueprints
+Redirect 301 /Products/Bazaar/23_Remote_Desktop.html /working-with-subutai/using-bazaar
+Redirect 301 /Products/Bazaar/01_Subutai_Bazaar.html /working-with-subutai/using-bazaar
+Redirect 301 /Products/Bazaar/19_How_to_use_AppScale.html /working-with-subutai/using-bazaar
+Redirect 301 /Products/Bazaar/07_SSH_key_management.html /working-with-subutai/using-bazaar/use-account-tools#ssh-key-management
+Redirect 301 /Products/Bazaar/17_Environments.html /working-with-subutai/using-bazaar/using-bazaar-tools/create-environments
+Redirect 301 /Products/Bazaar/20_War_room.html /working-with-subutai/using-bazaar
+Redirect 301 /Products/Bazaar/04_Peers_page_user_menu.html /working-with-subutai/using-bazaar/use-account-tools#my-peers
+Redirect 301 /Products/Bazaar/02_User_Profile_Account_Settings.html /working-with-subutai/using-bazaar/use-account-tools#settings
+Redirect 301 /Products/Bazaar/25_Map_of_peers.html /working-with-subutai/using-bazaar
+Redirect 301 /Products/Bazaar_toctree.html /working-with-subutai/using-bazaar
+Redirect 301 /Products/Router/Cloud_Router_and_IoT_Gateway.html /
+Redirect 301 /Products/Router/Specifications.html /
+Redirect 301 /Products/Router/About_Blockchain_Router.html /
+Redirect 301 /Products/PeerOS_toctree.html /working-with-subutai/using-peeros
+Redirect 301 /Products/PeerOS/04_Post-installation.html /working-with-subutai/using-peeros
+Redirect 301 /Products/PeerOS/05_How_to_use_the_Subutai_Console.html /software-components/management-console
+Redirect 301 /Products/PeerOS/08_Using_Environments.html /working-with-subutai/using-peeros
+Redirect 301 /Products/PeerOS/02_Install_PeerOS.html /working-with-subutai/using-peeros/peeros-quick-install
+Redirect 301 /Products/PeerOS/07_How_to_update_Subutai_components.html /working-with-subutai/using-peeros/manage-peers#Update-resource-hosts
+Redirect 301 /Products/PeerOS/03_Run_PeerOS_with_Vagrant.html /working-with-subutai/using-peeros/peeros-quick-install
+Redirect 301 /Products/PeerOS/01_What_is_the_PeerOS.html /working-with-subutai/using-peeros
+Redirect 301 /Products/PeerOS/06_How_to_use_Control_Center_and_P2P.html /software-components
+Redirect 301 /Products/Router_toctree.html /
+Redirect 301 /Support.html /support
+Redirect 301 /Quick_Start.html /working-with-subutai
+Redirect 301 /Resources/Resources_toctree.html /
+Redirect 301 /Roadmap.html /
+Redirect 301 /Contributing.html /
+Redirect 301 /FAQ.html /faqs
