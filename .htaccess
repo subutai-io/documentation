@@ -68,7 +68,7 @@ RewriteRule ^(LICENSE\.txt|composer\.lock|composer\.json|\.htaccess)$ error [F]
 ## End - Security
 
 ## Redirecting anything formerly under "Projects" to /
-RewriteRule ^Projects/(.*)   / [R=301,L]
+RewriteRule ^Projects(.*)$ / [R=301,L]
 
 </IfModule>
 
