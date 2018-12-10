@@ -58,3 +58,23 @@ The usual way to solve common problems is to restart the P2P service both on you
 * Check that your Internet connection is working properly
 * Verify that Bazaar (https://bazaar.subutai.io) is reachable through your browser    
   If you can't open the Bazaar website, but your Internet works fine, we can check the problem from our end. You may [contact us on Slack](https://slack.subutai.io/) and our team will be happy to help.
+
+### Common problems
+
+
+**P2P stopped to work after OS upgrade**
+
+On Linux, if kernel was upgraded to a newer version reboot is required. On Windows updated might be required too after some updates, but not always.
+
+**On Windows, I see that container is READY in control-center, but when I click SSH I'm getting Connection timeout message**
+
+This may happen if you have OpenVPN software installed (or other software that works with TUNTAP interfaces on your machine). Currently there is no proper workaround for this, except disabling OpenVPN
+
+
+## Advanced documentation
+
+- [Collecting useful information](https://github.com/subutai-io/p2p/wiki/P2P-collecting-useful-information)
+- [Collecting debug information](https://github.com/subutai-io/p2p/wiki/Collecting-debug-information)
+- [Cookbook](https://github.com/subutai-io/p2p/wiki/Cookbook)
+- [Instance Creation Process](https://github.com/subutai-io/p2p/wiki/Instance-Creation-Process)
+
