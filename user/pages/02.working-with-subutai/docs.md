@@ -17,7 +17,9 @@ Learn about the Subutai products and how to use their features.
   * [Get to Know the PeerOS Components](using-peeros/peeros-components)    
   * [Quick PeerOS Install](using-peeros/peeros-quick-install)
   * [Advanced PeerOS Install](using-peeros/peeros-advanced-install)
+  * [Using the Console](using-peeros/management-console)
   * [Manage Peers](using-peeros/manage-peers)
+  * [Advanced PeerOS Documentation](using-peeros/advanced-users)
 
 **[Using Bazaar](using-bazaar)**
   * [The Subutai Bazaar: An Overview](using-bazaar#bazaar-overview)

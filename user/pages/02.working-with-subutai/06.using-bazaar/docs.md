@@ -37,7 +37,7 @@ This global marketplace enables users to sell, rent, or trade compute resources 
 
 #### Get started
 
-For peer users:
+**For peer users:**
 <table>
  <tr rowspan="2" align="center"> 
   <td> <a href="../working-with-subutai/using-bazaar/bazaar-quick-start"> Create a Subutai <br> Bazaar Account </a>
@@ -51,7 +51,7 @@ For peer users:
  </tr>
 </table>
 
-For peer owners, operators, or administrators:
+**For peer owners, operators, or administrators:**
 <table>
  <tr rowspan="2" align="center">
   <td> <a href="../working-with-subutai/using-bazaar/bazaar-quick-start"> Create a Subutai <br> Bazaar Account </a> 
@@ -65,7 +65,7 @@ For peer owners, operators, or administrators:
  </tr>
 </table>
 
-
+**Advanced users and developers** will find documentation about the Subutai Bazaar Client API [here](https://github.com/subutai-io/bazaar/wiki/Subutai-Bazaar-Client-API).
 
 <!--[Subutai Bazaar](https://bazaar.subutai.io) is the P2P cloud market and social environment for the
 Subutai Platform. These documentation pages have instructions on what it
