@@ -11,7 +11,7 @@ taxonomy:
 Subutai uses PGP key pairs to identify all entities, including users like
 cloud owners and Peer administrators. The default administrator account
 on the new Peer needs to be associated with the global identity of the
-peer owner to share or rent resources to others. The E2E plugin was created to ease the task of managing your PGP key pairs. It is mandatory to access the [Management Console](../management-console) if you plan to have your own [Peer](../../glossary#Peer), and it is also needed to perform some sensitive operations in the [Subutai Bazaar](https://bazaar.subutai.io). 
+peer owner to share or rent resources to others. The E2E plugin was created to ease the task of managing your PGP key pairs. It is mandatory to access the [Management Console](../../working-with-subutai/using-peerOS/management-console) if you plan to have your own [Peer](../../glossary#Peer), and it is also needed to perform some sensitive operations in the [Subutai Bazaar](https://bazaar.subutai.io). 
 
 #### Manually managing PGP keys
 
