@@ -43,3 +43,29 @@ Advanced users can find technical documentation about PeerOS in our wiki pages. 
 -   [update](https://github.com/subutai-io/agent/wiki/update)    
 -   [vxlan](https://github.com/subutai-io/agent/wiki/vxlan)   
 
+## PeerOS
+
+### User and Developer Guides
+
+- [Configure domain for environment](https://github.com/subutai-io/peer-os/wiki/Configure-domain-for-environment)
+- [Create Templates from CLI](https://github.com/subutai-io/peer-os/wiki/Create-Templates-from-CLI)
+- [Create Templates from Console](https://github.com/subutai-io/peer-os/wiki/Create-Templates-from-Console)
+- [Adding domain name to etc hosts (Linux)](https://github.com/subutai-io/peer-os/wiki/%5BLinux%5D-Adding-domain-name-to-etc-hosts)
+- [Adding domain name to etc hosts (Windows)](https://github.com/subutai-io/peer-os/wiki/%5BWindows%5D-Adding-domain-name-to-etc-hosts)
+- [General Security Architecture](https://github.com/subutai-io/peer-os/wiki/General-Security-Architecture)
+- [Security Developer Guide](https://github.com/subutai-io/peer-os/wiki/Security-Developer-Guide)
+- [Jenkinsfile](https://github.com/subutai-io/peer-os/wiki/Jenkinsfile)
+
+### REST API
+
+-    [Login](https://github.com/subutai-io/peer-os/wiki/Login)    
+-   [List Environments](https://github.com/subutai-io/peer-os/wiki/List-Environments)    
+-   [Manage environments](https://github.com/subutai-io/peer-os/wiki/-Manage-environments)  
+-   [Destroy environment or container](https://github.com/subutai-io/peer-os/wiki/Destroy-environment-or-container)    
+-   [Updates](https://github.com/subutai-io/peer-os/wiki/Updates-API) 
+
+### Automation
+
+-   [Environment management](https://github.com/subutai-io/peer-os/wiki/Environment-management)    
+-   [Register Peer  with  Bazaar](https://github.com/subutai-io/peer-os/wiki/Register-Peer--with--Bazaar)    
+-   [Register Resource Host with Peer](https://github.com/subutai-io/peer-os/wiki/Register-Resource-Host-with-Peer)  
