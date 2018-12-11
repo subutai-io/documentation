@@ -17,10 +17,10 @@ limit: 20
 min: 3
 snippet: 300
 index_page_by_default: true
-# filter:
-#   items:
-#     'taxonomy@':
-#         category: [news]
+filter:
+  items:
+    'taxonomy@':
+        category: [news]
 # filter:
 #   items:
 #     - root@.descendants
