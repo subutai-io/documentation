@@ -4,6 +4,7 @@ namespace Grav\Plugin\TNTSearch;
 use Grav\Common\Grav;
 use Grav\Common\Page\Page;
 use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Yaml\Parser;
 
 class GravConnector extends \PDO
 {
@@ -27,7 +28,11 @@ class GravConnector extends \PDO
         $default_process = $config->get('plugins.tntsearch.index_page_by_default');
         $gtnt = new GravTNTSearch();
 
-
+        //dirty fix for not parsing YAML properly
+        if(is_string($filter['items'])) {
+            $yaml = new Parser();
+            $filter['items'] = $yaml->parse($filter['items']);
+        }
 
         if ($filter && array_key_exists('items', $filter)) {
 

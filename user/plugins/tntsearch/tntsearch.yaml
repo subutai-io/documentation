@@ -19,10 +19,6 @@ snippet: 300
 index_page_by_default: true
 # filter:
 #   items:
-#     'taxonomy@':
-#         category: [news]
-# filter:
-#   items:
 #     - root@.descendants
 powered_by: true
 search_object_type: Grav
