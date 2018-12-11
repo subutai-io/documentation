@@ -15,7 +15,9 @@ This section contains the instructions for installing and setting up Subutai Pee
   * [Basic setup using Vagrant with VirtualBox](peeros-quick-install/virtualbox)
   * [Basic setup using Vagrant with other supported hypervisors](peeros-quick-install/other-hypervisors) 
 * **[Advanced PeerOS Install](peeros-advanced-install)**
+* **[Using the Console](management-console)**
 * **[Manage Peers](manage-peers)**
+* **[Advanced PeerOS Documentation](advanced-users)**
 
 ***
 

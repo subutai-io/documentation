@@ -54,7 +54,7 @@ Aside from the products, learn about the companion software that enable easy int
 
 |**E2E Plugin**|**Management Console**|
 |--------------|----------------------|
-|Facilitates working with peers by handling PGP key generation, including PGP-based encryption and authentication. [Learn more](../../software-components/e2e-plugin).|The online application for peer administration and creation of private cloud environments, with easy integration with Bazaar to make peers available to other users. [Learn more](../../software-components/management-console).|
+|Facilitates working with peers by handling PGP key generation, including PGP-based encryption and authentication. [Learn more](../../software-components/e2e-plugin).|The online application for peer administration and creation of private cloud environments, with easy integration with Bazaar to make peers available to other users. [Learn more](../../working-with-subutai/using-peerOS/management-console).|
 |**P2P Daemon**||**Control Center**|
 |Program that runs in the background to handle intra-environment connectivity and communication between containers, primarily enabling peers to join the swarm. [Learn more](../../software-components/p2p-daemon).|Convenient desktop application for setting up peers, components, and environments, with seamless Bazaar and P2P Daemon integration. [Learn more](../../software-components/control-center).|
 

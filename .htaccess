@@ -2,6 +2,9 @@
 
 RewriteEngine On
 
+## Redirecting anything formerly under "Projects" to /
+RewriteRule ^Projects(.*)$ / [R=301,L]
+
 ## Begin RewriteBase
 # If you are getting 500 or 404 errors on subpages, you may have to uncomment the RewriteBase entry
 # You should change the '/' to your appropriate subfolder. For example if you have
@@ -67,8 +70,6 @@ RewriteRule (^|/)\.(?!well-known) - [F]
 RewriteRule ^(LICENSE\.txt|composer\.lock|composer\.json|\.htaccess)$ error [F]
 ## End - Security
 
-## Redirecting anything formerly under "Projects" to /
-RewriteRule ^Projects/(.*)   / [R=301,L]
 
 </IfModule>
 
