@@ -540,6 +540,6 @@ ul li, ol li {
 /* another media querie to opened menu don't break before 1230px */
 @media (min-width: 1229px) {
     .menuList li {
-        padding: 0 15px;
+        padding: 0 14px;
     }
 }
