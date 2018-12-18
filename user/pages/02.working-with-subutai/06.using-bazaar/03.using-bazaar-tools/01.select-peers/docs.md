@@ -16,7 +16,7 @@ Whether buying, renting, or sharing peers, use Subutai Bazaar to find compute re
 
 ### Pricing of Paid Peers - Container Size
 
-Pricing of the paid Peers is defined in [GoodWill](../../../glossary/good-will) per hour, according to the desired size of the containers. The platform has preset container types:
+Pricing of the paid Peers is defined in [GoodWill](../../../../glossary/good-will) per hour, according to the desired size of the containers. The platform has preset container types:
 
 | Type | RAM | DISK | CPU |
 | ---- | --- | ---- | --- |
