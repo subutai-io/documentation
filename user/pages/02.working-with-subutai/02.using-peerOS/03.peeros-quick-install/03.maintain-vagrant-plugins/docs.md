@@ -178,3 +178,53 @@ When updating Vagrant boxes, make sure that you specify the provider in the comm
   * The Vmware trial has expired or the application requires a license key
   * Permission problems on the install (corrupted install)
   * You need to fill out some form data in the GUI.
+
+!! Error: The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+	/sbin/ifdown 'enp0s8' || true
+	/sbin/ip addr flush dev 'enp0s8'
+	# Remove any previous network modifications from the interfaces file
+	sed -e '/^#VAGRANT-BEGIN/,$ d' /etc/network/interfaces > /tmp/vagrant-network-interfaces.pre
+	sed -ne '/^#VAGRANT-END/,$ p' /etc/network/interfaces | tac | sed -e '/^#VAGRANT-END/,$ d' | tac > /tmp/vagrant-network-interfaces.post
+	cat \
+	  /tmp/vagrant-network-interfaces.pre \
+	  /tmp/vagrant-network-entry \
+	  /tmp/vagrant-network-interfaces.post \
+	  > /etc/network/interfaces
+	rm -f /tmp/vagrant-network-interfaces.pre
+	rm -f /tmp/vagrant-network-entry
+	rm -f /tmp/vagrant-network-interfaces.post
+
+	/sbin/ifup 'enp0s8'
+
+	Stdout from the command:
+
+
+
+	Stderr from the command:
+
+	ifdown: interface enp0s8 not configured
+	Internet Systems Consortium DHCP Client 4.3.5
+	Copyright 2004-2016 Internet Systems Consortium.
+	All rights reserved.
+	For info, please visit https://www.isc.org/software/dhcp/
+
+	Listening on LPF/enp0s8/08:00:27:07:1d:cb
+	Sending on   LPF/enp0s8/08:00:27:07:1d:cb
+	Sending on   Socket/fallback
+	DHCPDISCOVER on enp0s8 to 255.255.255.255 port 67 interval 6
+	DHCPDISCOVER on enp0s8 to 255.255.255.255 port 67 interval 15
+	DHCPDISCOVER on enp0s8 to 255.255.255.255 port 67 interval 15
+	DHCPDISCOVER on enp0s8 to 255.255.255.255 port 67 interval 10
+	Terminated
+	ifup: failed to bring up enp0s8	
+
+**Recommended action:** Please choose bridge interface with state _UP_. For example, one whose output of the command `ip a` is similar to this:
+
+	enp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+	link/ether 60:a4:4c:b0:51:d6 brd ff:ff:ff:ff:ff:ff
+	inet 192.168.77.21/24 brd 192.168.77.255 scope global dynamic enp3s0
+       valid_lft 35559sec preferred_lft 35559sec
+    inet6 fe80::62a4:4cff:feb0:51d6/64 scope link 
+       valid_lft forever preferred_lft forever
