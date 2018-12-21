@@ -8,9 +8,7 @@ taxonomy:
 
 One of the most exciting features of Subutai is the ability to run complete remote desktop environments on P2P cloud containers. By using X2Go integrated with the [Subutai Control Center](../../../../software-components/control-center), you can easily access a graphical user interface (MATE desktop environment) to install and run applications remotely in a Debian container.
 
-![Install X2Go](x2go-cc.png)
-
-! Before running the Blueprint, make sure you have added your SSH key to Subutai Control Center and installed the X2Go client from its "components" section; and added at least one Peer to your Favorites List (or registered your own Peer in the Bazaar).
+! ![Install X2Go](x2go-cc.png?classes=image-right) Before running the Blueprint, make sure you have added your SSH key to Subutai Control Center and installed the X2Go client from its "components" section; and [added at least one Peer](../select-peers) to your Favorites List (or registered your own Peer in the Bazaar).
 
 1. To start installing your remote desktop environment, access the [Products page](https://bazaar.subutai.io/products) in Subutai Bazaar. Click the Mate2Go icon, then click "build".
 
