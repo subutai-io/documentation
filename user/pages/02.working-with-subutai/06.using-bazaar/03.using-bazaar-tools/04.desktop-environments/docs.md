@@ -10,7 +10,7 @@ One of the most exciting features of Subutai is the ability to run complete remo
 
 ![Install X2Go](x2go-cc.png)
 
-!! Before running the Blueprint, make sure you have added your SSH key to Subutai Control Center and installed the X2Go client from its "components" section; and added at least one Peer to your Favorites List (or registered your own Peer in the Bazaar).
+! Before running the Blueprint, make sure you have added your SSH key to Subutai Control Center and installed the X2Go client from its "components" section; and added at least one Peer to your Favorites List (or registered your own Peer in the Bazaar).
 
 1. To start installing your remote desktop environment, access the [Products page](https://bazaar.subutai.io/products) in Subutai Bazaar. Click the Mate2Go icon, then click "build".
 
@@ -39,7 +39,7 @@ One of the most exciting features of Subutai is the ability to run complete remo
 
 ![Building Environment](building.png)
 
-!! Congratulations, you have set up and built your remote desktop environment!
+!!!! Congratulations, you have set up and built your remote desktop environment!
 
 7. As soon as the environment is built, add your SSH key to it. You can either use Subutai Control Center to do that that, or add it straight from the "SSH Keys" tab in the Environment's page on Subutai Bazaar as shown below.
 
