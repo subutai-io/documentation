@@ -80,6 +80,7 @@ To install and use the provider (on Mac only):
 3. Launch a Subutai Peer using the Stretch box for the Parallels provider.
 
    `vagrant init subutai/stretch`
+   
    `vagrant up --provider parallels`
 
 ### VMware Fusion and Workstation setup
