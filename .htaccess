@@ -144,7 +144,7 @@ Redirect 301 /Products/PeerOS_toctree.html /working-with-subutai/using-peeros
 Redirect 301 /Products/PeerOS/04_Post-installation.html /working-with-subutai/using-peeros
 Redirect 301 /Products/PeerOS/05_How_to_use_the_Subutai_Console.html /software-components/management-console
 Redirect 301 /Products/PeerOS/08_Using_Environments.html /working-with-subutai/using-peeros
-Redirect 301 /Products/PeerOS/02_Install_PeerOS.html /working-with-subutai/using-peeros/peeros-quick-install
+Redirect 301 /Products/PeerOS/02_Install_PeerOS.html /working-with-subutai/using-peeros/peeros-advanced-install
 Redirect 301 /Products/PeerOS/07_How_to_update_Subutai_components.html /working-with-subutai/using-peeros/manage-peers#Update-resource-hosts
 Redirect 301 /Products/PeerOS/03_Run_PeerOS_with_Vagrant.html /working-with-subutai/using-peeros/peeros-quick-install
 Redirect 301 /Products/PeerOS/01_What_is_the_PeerOS.html /working-with-subutai/using-peeros
