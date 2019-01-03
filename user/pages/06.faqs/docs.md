@@ -6,7 +6,7 @@ taxonomy:
 child_type: docs
 ---
 
-Here are answers to frequently asked questions about Subutai, the open source project and the platform.
+Here are answers to frequently asked questions about Subutai, the open source project and the platform. You can find below answers for [General Questions](#general-questions) as well as for [Technical Questions](#technical-questions).
 
 ## **General Questions**
 * _[What is Subutai PeerOS?](#What-is-Subutai-PeerOS)_
@@ -84,7 +84,7 @@ To better know our leaders and advisors, click [here](https://optdyn.com/about).
 * _[If I want to write an application that runs on Subutai, am I going to need more GoodWill?](#If-I-want-to-write-an-application)_
 * _[The template is something you can make a container out of when building an environment, correct?](#The-template-is-something)_
 * _[I got error “Proxy required but not found" when trying to create a new port under Container Port Mapping, to access my environment. What do I do?](#I-got-error-Proxy-required-but-not-found)_
-* _[Is a template the same thing as a "product" as listed on the Hub? And, are those the same things that are available in the "Bazaar"?](#Is-a-template-the-same-thing-as-a-product)_
+* _[Is a template the same thing as a "product" as listed on the Bazaar?](#Is-a-template-the-same-thing-as-a-product)_
 * _[Is the "Dynamic Match" tab inside an environment a feature that allows you to move your containers around as needed for replication, failover, etc.?](#Is-the-Dynamic-Match-tab)_
 * _[Is there any equivalent of a Docker-compose file? a template for multiple containers deployed together?](#Is-there-any-equivalent-of-a-Docker-compose-file)_
 * _[I have some GoodWill, but I can't figure out how to start a container on any peers.](#I-have-some-GoodWill)_
@@ -125,8 +125,9 @@ No GoodWill needed in this case. You may write Subutai plugins and applications 
 ##### <a name="The-template-is-something"></a>_The template is something you can make a container out of when building an environment, correct?_
 Yes, we have templates and they can be hierarchical just like Docker images. In fact we can convert Docker images into our templates. So we can use a template when creating a container. We can then change that container and publish it again as a different template. So we can technically make containers using templates and make templates using containers.
 
-##### <a name="Is-a-template-the-same-thing-as-a-product"></a>_Is a template the same thing as a "product" as listed on the Hub? And, are those the same things that are available in the "Bazaar"?_
-“Hub” is the former name of “Bazaar”. A template is one type of product that is offered in Bazaar. Really, the ideas are just coming together and they keep growing. We want people to make GoodWill with anything that benefits others through the apps in Bazaar. So yes, a template, a blueprint, a plugin, or any other artifact that benefits others is a viable product whether free, exchanged with GoodWill, or anything else. We leave it up to the people, those in the ecosystem and within the collaborative consumption economy to decide.
+##### <a name="Is-a-template-the-same-thing-as-a-product"></a>_Is a template the same thing as a "product" as listed on the Bazaar?
+
+A template is one type of product that is offered in Bazaar. Really, the ideas are just coming together and they keep growing. We want people to make GoodWill with anything that benefits others through the apps in Bazaar. So yes, a template, a blueprint, a plugin, or any other artifact that benefits others is a viable product whether free, exchanged with GoodWill, or anything else. We leave it up to the people, those in the ecosystem and within the collaborative consumption economy to decide.
 
 ##### <a name="I-got-error-Proxy-required-but-not-found"></a>_I got error “Proxy required but not found" when trying to create a new port under Container Port Mapping, to access my environment. What do I do?_
 This error about proxy says there are no proxy peers available, which can be used as reverse proxy for domain & port mapping that you’ve created. Proxies are needed when your peer is behind a NAT and you want external users from the Internet to access services, like a web server. A server accessible from the open Internet can forward traffic to your peer’s services by tunneling through the P2P protocol. In this case the peer proxies your services. When no such peers are available you cannot expose services from your peer to the open Internet.
