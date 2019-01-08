@@ -15,7 +15,7 @@ Subutai, which is based on Debian, has its own Debian repository. Setting up the
 
 #### Before you start
 
-❗️ Don’t forget to set aside extra disk, partition, or volume.
+❗Don’t forget to set aside extra disk, partition, or volume.
 
 * Extra disk, partition, or volume
 Whether you plan to install Subutai in a virtual machine or a fresh server, it is mandatory to have a separate disk, partition, or logical volume. It will serve as storage for your resource host. Refer to the hardware requirements and the rest of this section before initiating your installation.
@@ -67,14 +67,14 @@ Using a guest virtual machine allows for maximum flexibility to install a stock 
 Virtual or not, desktop editions should be avoided. Besides unnecessarily wasting resources for the windowing system, they use NetworkManager that installs dnsmasq on port 53. If you do need to use a desktop operating system, here are the procedures to ensure that dnsmasq is disabled:
 
 1. Check if port 53 is already bound:
-   `~$ sudo lsof -i :53`
+   `sudo lsof -i :53`
 
    Any output from `lsof` means that port 53 is being used.
 
 2. After verifying that port 53 is already bound, you must stop dnsmasq permanently. Doing so is safe and won’t affect the general use of your system. Here’s how you do that::
 
-   `~$ sudo systemctl disable systemd-resolved.service`
-   `~$ sudo service systemd-resolved stop`
+   `sudo systemctl disable systemd-resolved.service`
+   `sudo service systemd-resolved stop`
 
 3. Edit `/etc/NetworkManager/NetworkManager.conf` and then change the DNS property in the `[main]` section so that it is set to `default: dns=default`.
 
@@ -89,9 +89,9 @@ Virtual or not, desktop editions should be avoided. Besides unnecessarily wastin
    ```
 
 4. Remove `resolv.conf` and then restart NetworkManager:
-   `~$ sudo rm /etc/resolv.conf`
-   `~$ sudo service network-manager restart`
-   `~$ sudo killall dnsmasq`
+   `sudo rm /etc/resolv.conf`
+   `sudo service network-manager restart`
+   `sudo killall dnsmasq`
 
    The last `killall` command is just a precaution, don't worry if it says, “no such process”. Another `lsof` for port 53
    should not produce any output now, which means you’re ready to go on.

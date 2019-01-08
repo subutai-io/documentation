@@ -21,16 +21,16 @@ With the prerequisite software installed, you can proceed to the steps below:
 
 1. Create the Vagrantfile with the subutai/stretch box (Debian-based)   
 
-   `$ vagrant init --minimal subutai/stretch`
+   `vagrant init --minimal subutai/stretch`
 
 2. Install the subutai and vbguest vagrant plugins   
 
-   `$ vagrant plugin install vagrant-subutai`   
-   `$ vagrant plugin install vagrant-vbguest`   
+   `vagrant plugin install vagrant-subutai`   
+   `vagrant plugin install vagrant-vbguest`   
 
 3. Create and start running the Subutai peer   
 
-   `$ vagrant up`
+   `vagrant up`
 
 During processing, if asked for the bridge interface you want to use, the first option provided by Vagrant is usually the right one. This is the network interface that is actively used to connect to the Internet.
 
