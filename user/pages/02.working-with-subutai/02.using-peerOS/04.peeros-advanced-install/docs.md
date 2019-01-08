@@ -43,7 +43,7 @@ Review these general caveats and requirements for the operating system on which 
   ✔️ In case the kernel has been upgraded, be sure to reboot your system before starting the installation. Otherwise, ZFS, in particular, might not install properly.
 * Avoid installing additional components on the system.
 * Avoid desktop distributions due to NetworkManager’s dnsmasq running on port 53.
-  ❗️ If not possible, be sure to disable dnsmasq on desktop editions. Refer to the instructions below, [Using a desktop operating system](#Using-desktop-operating-system).
+  !  If not possible, be sure to disable dnsmasq on desktop editions. Refer to the instructions below, [Using a desktop operating system](#Using-desktop-operating-system).
 * Ensure that the system has network connectivity (via a bridge if virtual), either with a static IP or one provided by DHCP.
 * Before installing Subutai, verify that the required network ports listed below are not used:
   * udp/53 - DNS service port
@@ -97,10 +97,10 @@ Virtual or not, desktop editions should be avoided. Besides unnecessarily wastin
    The last `killall` command is just a precaution, don't worry if it says, “no such process”. Another `lsof` for port 53
    should not produce any output now, which means you’re ready to go on.
 
-   ❗️ If NetworkManager is not configured properly, after restart, you may need to add your nameserver into the `/etc/resolv.conf` file it generates. It’s best to add this to the NetworkManager connection configuration if you don’t want the `resolv.conf` file to be overwritten.
+   !  If NetworkManager is not configured properly, after restart, you may need to add your nameserver into the `/etc/resolv.conf` file it generates. It’s best to add this to the NetworkManager connection configuration if you don’t want the `resolv.conf` file to be overwritten.
 
 ### Install Subutai PeerOS
-❗️ All files must be run as root or sudo user.
+!  All files must be run as root or sudo user.
 
 1. Add the `contrib` and `non-free` components from both stretch and stretch-updates.
 

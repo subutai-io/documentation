@@ -17,7 +17,7 @@ Here are several ways to access the Console:
 
 * **From Bazaar**
 
-  ❗️ This option is available only for peers registered with Bazaar and if the Tunnel feature is enabled for the peer. For more information, see Setting Up Peers in Bazaar.
+  !  This option is available only for peers registered with Bazaar and if the Tunnel feature is enabled for the peer. For more information, see Setting Up Peers in Bazaar.
 
   From the Tools menu, go to Peers. On the Peers page, select the peer that you want to access to open its details page. On this page, click the Open Subutai Console icon to log in to the Console.
 
