@@ -15,7 +15,7 @@ Subutai, which is based on Debian, has its own Debian repository. Setting up the
 
 #### Before you start
 
-❗Don’t forget to set aside extra disk, partition, or volume.
+! Don’t forget to set aside extra disk, partition, or volume.
 
 * Extra disk, partition, or volume
 Whether you plan to install Subutai in a virtual machine or a fresh server, it is mandatory to have a separate disk, partition, or logical volume. It will serve as storage for your resource host. Refer to the hardware requirements and the rest of this section before initiating your installation.
@@ -74,6 +74,7 @@ Virtual or not, desktop editions should be avoided. Besides unnecessarily wastin
 2. After verifying that port 53 is already bound, you must stop dnsmasq permanently. Doing so is safe and won’t affect the general use of your system. Here’s how you do that::
 
    `sudo systemctl disable systemd-resolved.service`
+   
    `sudo service systemd-resolved stop`
 
 3. Edit `/etc/NetworkManager/NetworkManager.conf` and then change the DNS property in the `[main]` section so that it is set to `default: dns=default`.
@@ -152,11 +153,11 @@ To recover from an error during installation, you can manually run:
 
 Now that you have successfully installed Subutai, and have an active RH, you can import the management software and its console to convert this host into a peer:
 
-   `# subutai import management`
+   `subutai import management`
 
 Restart services to make sure all goes smoothly:
 
-   `# systemctl stop nginx && systemctl disable nginx && apt-get update && apt-get upgrade && systemctl restart subutai-nginx && systemctl status subutai-nginx`
+   `systemctl stop nginx && systemctl disable nginx && apt-get update && apt-get upgrade && systemctl restart subutai-nginx && systemctl status subutai-nginx`
 
 #### Troubleshooting a CDN unreachable error
 
