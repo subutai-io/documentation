@@ -95,12 +95,12 @@ To set up environments:
      In the Actions column, click the edit icon. Click **+** on the container that you want edit to display the Settings box. From the list, select the new size of the container.
      ![Edit container](console-env_editcontainter.png)
 
-   ❗️ Don’t forget to save and apply your changes. 
+   !  Don’t forget to save and apply your changes. 
 
 #### <a id="configure-domains"> </a> Configure domains
 Domain configuration is a two-step process. You have to add a domain to the environment, and then assign it to one or more containers within the same environment. 
 
-❗️ Before configuring domains, be sure that the environment is healthy and running. 
+!  Before configuring domains, be sure that the environment is healthy and running. 
 
 To configure domains:
 

@@ -14,7 +14,7 @@ For authentication, you need to deploy an SSH key to the environment first befor
 
 To deploy SSH keys to environments:
 
-❗️ This operation updates the environment and places it on Under Modification state during processing.
+!  This operation updates the environment and places it on Under Modification state during processing.
 
 1. From the menu, go to SSH-keys management. 
 

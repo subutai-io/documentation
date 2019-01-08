@@ -54,7 +54,7 @@ To install and use the provider (on Linux variants only):
 
 2. Install the Vagrant Libvirt provider plugin.
 
-   ❗️ Before installing the provider, be sure that you have all the build dependencies for your Linux distribution. Refer to the detailed instructions [here](https://github.com/vagrant-libvirt/vagrant-libvirt#installation).
+   !  Before installing the provider, be sure that you have all the build dependencies for your Linux distribution. Refer to the detailed instructions [here](https://github.com/vagrant-libvirt/vagrant-libvirt#installation).
 
    `vagrant plugin install vagrant-libvirt`
 
@@ -117,7 +117,7 @@ Vagrant comes ready with a built-in provider for Hyper-V and VirtualBox, so you 
 
 1. Install Hyper-V or VirtualBox on your machine.
 
-   ❗️ Hyper-V requires that you execute Vagrant with Administrative privileges. The same privileges are required when creating and managing virtual machines with Hyper-V. Vagrant displays an error if you do not have the proper permissions.
+   !  Hyper-V requires that you execute Vagrant with Administrative privileges. The same privileges are required when creating and managing virtual machines with Hyper-V. Vagrant displays an error if you do not have the proper permissions.
 
    * For Hyper-V on Windows 10, follow the detailed procedures on any of these sites:
      * [Enable Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
