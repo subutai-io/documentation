@@ -73,13 +73,14 @@ Subutai is a product of OptDyn, Inc., a five year old company with a multination
 
 To better know our leaders and advisors, click [here](https://optdyn.com/about).
 
-## **Technical Questions**
+## <a name="technical-questions"></a>**Technical Questions**
 
-#### PeerOS and Console
+### PeerOS and Console
 * _[How do I update a peer?](#How-do-I-update-a-peer)_
 * _[How to export Karaf Logs from the Subutai Console?](#How-to-export-Karaf-Logs)_
+* _[Subutai does not come up after a power failure](#Subutai-does-not-come-up-after-a-power-failure)_
 
-#### Bazaar
+### Bazaar
 * _[The info icon beside my peer is telling me about a pending update. How do I perform the update?](#The-info-icon-beside-my-peer)_
 * _[If I want to write an application that runs on Subutai, am I going to need more GoodWill?](#If-I-want-to-write-an-application)_
 * _[The template is something you can make a container out of when building an environment, correct?](#The-template-is-something)_
@@ -90,14 +91,14 @@ To better know our leaders and advisors, click [here](https://optdyn.com/about).
 * _[I have some GoodWill, but I can't figure out how to start a container on any peers.](#I-have-some-GoodWill)_
 * _[How do I rent a peer?](#How-do-I-rent-a-peer)_
 
-#### Control Center and P2P
+### Control Center and P2P
 * _[I’m not clear about using the Subutai Control Center and Subutai P2P. Do I have to use them both?](#not-clear-about-using-the-Subutai-Control-Center)_
 * _[How do I SSH into containers from the Control Center?](#How-do-I-SSH-into-containers)_
 * _[Does Subutai work on mobile CPU architecture as Raspberry Pi?](#Does-Subutai-work-on-mobile-CPU-architecture)_
 
-#### PeerOS and Console
+### PeerOS and Console
 
-##### <a name="How-do-I-update-a-peer"></a>_How do I update a peer?_
+#### <a name="How-do-I-update-a-peer"></a>_How do I update a peer?_
 You can update peers through the following ways:
 * From the peer’s Management Console
 Log in to the Console, and then from the System menu, select Updates. On the Updates page, click Check. If there is no available update, you will see the message, “Your system is already up-to-date”, and if an update is available, you will see the message, “Update is available.” Click Update to start it.
@@ -110,7 +111,19 @@ From a terminal, you can perform updates for resource hosts, management host, an
 #### <a name="How-to-export-Karaf-Logs"></a>_How to export Karaf Logs from the Subutai Console?_
 From the Subutai Console, go to System > Advanced > Logs. On the Logs page, click **Export**.
 
-#### Bazaar
+#### <a name="Subutai-does-not-come-up-after-a-power-failure"></a>Subutai does not come up after a power failure
+
+Occasionally (trigger unknown) subutai/fs will fail to mount on /var/lib/lxc after a power cycle because the mountpoint /var/lib/lxc already exists.
+
+It is unknown what triggers this behaviour, but it is an OS level bug and should be fixed at OS level.
+
+**Detection:** type `mount` and check if subutai/fs is mounted on /var/ilb/lxc. If not - move on to fix
+
+**Fix:** `rmdir /var/lib/lxc && reboot` and the peer should come up fine.
+
+_See [discussion on GitHub](https://github.com/subutai-io/peer-os/issues/2786)._ 
+
+### Bazaar
 
 ##### <a name="The-info-icon-beside-my-peer"></a>_The info icon beside my peer is telling me about a pending update. How do I perform the update?_
 There are several ways to update a peer: via CLI, the Management Console, or the Control Center. For instructions, see [How do I update a peer?](#How-do-I-update-a-peer)
@@ -154,7 +167,7 @@ First, you have to add the peer to your Favorites list. To do this in Bazaar, fr
 
 Second, you need to create an environment on the peer. Building an environment signals the start of your peer usage, specifically, after you have successfully built the environment. To check your rent charges, select Billing from the Account menu or click your Balance at the top right corner of the page.
 
-#### Control Center and P2P
+### Control Center and P2P
 
 ##### <a name="not-clear-about-using-the-Subutai-Control-Center"></a>_I’m not clear about using the Subutai Control Center and Subutai P2P. Do I have to use them both?_
 With the Control Center, you can easily access and manage peers and environments, as well as perform SSH into containers, all from your desktop. If you want your peers to join the swarm and to enable communications via SSH or remote desktop, install the P2P daemon, which you can do within the Control Center.
@@ -163,7 +176,11 @@ With the Control Center, you can easily access and manage peers and environments
 Performing an SSH into containers requires an SSH key to the environment. You can assign SSH keys from the SSH-keys management screen of the Control Center. Once you have assigned the keys, you can go to the Environments screen where you can select the container you want to access. Detailed instructions for deploying SSH keys and accessing containers are available in the [Access and Manage Environments](../../software-components/control-center/access-manage-envs).
 
 ##### <a name="Does-Subutai-work-on-mobile-CPU-architecture"></a>_Does Subutai work on mobile CPU architecture as Raspberry Pi?_
-Yes. Future releases will have ARM client and even peer support. To get updated with the latest releases and upcoming features, connect with us at any of our social channels:
+Yes. Future releases will have ARM client and even peer support.
+
+## How can I learn more about Subutai?
+
+To get updated with the latest releases and upcoming features, connect with us at any of our social channels:
 
  * [Twitter](https://twitter.com/Subutai_KHAN)
  * [Reddit](https://www.reddit.com/r/SubutaiKHAN/)
