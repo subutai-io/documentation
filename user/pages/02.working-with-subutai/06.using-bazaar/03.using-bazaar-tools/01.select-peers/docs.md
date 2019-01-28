@@ -14,7 +14,6 @@ Whether buying, renting, or sharing peers, use Subutai Bazaar to find compute re
 * **Free** - peers available to all users for free
 * **Shared** - peers shared to select users
 
-<<<<<<< HEAD
 #### Pricing - Container Size
 
 Pricing of paid Peers is defined in [GoodWill](../../../glossary/good-will) per hour, according to the desired size of the Containers to be used. The platform has preset container types as described in the following list:
@@ -22,7 +21,6 @@ Pricing of paid Peers is defined in [GoodWill](../../../glossary/good-will) per 
 ### Pricing of Paid Peers - Container Size
 
 Pricing of the paid Peers is defined in [GoodWill](../../../../glossary#good-will) per hour, according to the desired size of the containers. The platform has preset container types:
->>>>>>> 08e0740a289a26abe929fed37d960b425acf57c1
 
 | Type | RAM | DISK | CPU |
 | ---- | --- | ---- | --- |
@@ -32,13 +30,11 @@ Pricing of the paid Peers is defined in [GoodWill](../../../../glossary#good-wil
 |LARGE|2048M|40G|75%|
 |HUGE|4096M|100G|100%|
 
-<<<<<<< HEAD
 > Disk and RAM are self-explanatory. CPU is the percentage that the container is allowed to consume with all cores on the machine it runs on.
 =======
 > `Disk` and `RAM` are self-explanatory. `CPU` is the percentage that the container is allowed to consume with all cores on the machine it runs on.
 
 Current market prices can be checked on the right sidebar of the War Room page of the [Subutai Bazaar](https://bazaar.subutai.io).
->>>>>>> 08e0740a289a26abe929fed37d960b425acf57c1
 
 #### <a id="search-for-peers"> </a> Search for peers
 Use the Search tool on the Peers page to look for a peer by its partial or full name. You can also use the filters at the top of the page to narrow down the list of peers.
