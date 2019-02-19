@@ -39,6 +39,8 @@ If all the steps are done properly, containers are built. You will see “ready�
 
 So, now you have your environment and you are ready now to install software you like there. Then, to make it accessible by a [domain name](../../use-account-tools/#domains), please go to the “Container Port Mapping” page and press “Add new port” button. There you can specify protocol, ports, domain name and pick a container (if your peer is behind NAT, Bazaar will pick up a proxy automatically).
 
+If you are creating a web port mapping, you can choose between plain HTTP or SSL-based HTTPS (either using an automatically generated Let's Encrypt certificate or adding your own). There are also options to direct any HTTP traffic to HTTPS. If your application is listening on port 443, you should also check the "SSL Backend" option.
+
 When all is ready, you will be able to access your container via its domain name. If you click it, you will have your container (Apache in the example) opened in the browser.
 
 #### Congratulations! You are now ready to use your environment!
