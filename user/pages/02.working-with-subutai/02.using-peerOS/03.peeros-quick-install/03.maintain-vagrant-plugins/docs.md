@@ -228,3 +228,9 @@ Vagrant assumes that this means the command failed!
        valid_lft 35559sec preferred_lft 35559sec
     inet6 fe80::62a4:4cff:feb0:51d6/64 scope link 
        valid_lft forever preferred_lft forever
+
+!! **Error:** Network errors prevent access to Peer
+
+    Peer is unreachable via Console UI, or accuses networking/DNS errors such as "Temporary failure resolving 'httpredir.debian.org'"
+
+* Action: reload your Peer from the Resource Host: ```vagrant reload```
