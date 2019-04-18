@@ -33,7 +33,7 @@ A convenient desktop application for working with peers and environments. Design
 * Ultimate PeerOS manager 
 * Access and management of cloud environments 
 * Remote desktop or shell access to containers, with built-in file transfer utility
-* Subutai Bazaar integration and account monitoring, including GoodWill balance (digital wallet functionality)
+* Subutai Bazaar integration and account monitoring, including GoodWill balance
 * Event notification for tracking changes in peer or environment status and peer operations
 * Management of software components
 * Cross-platform support: Windows, Mac, and Linux (Debian based distributions)

@@ -59,7 +59,7 @@ More importantly, unlike other products that are at the very early stages of pro
 Yes, you can use the Subutai PeerOS independently. Users are free to choose to utilize one, some, or all Subutai products. You do not need to join the Bazaar or use the Blockchain Router in order to benefit from the PeerOS features.
 
 ##### <a name="Is-GoodWill-a-blockchain-based-currency"></a>_Is GoodWill a blockchain based currency, or is it handed out by Bazaar?_
-[GoodWill](https://subutai.io/goodwill.html) is the token currency used in Subutai Bazaar. It is a lightweight digital asset token used in the exchange and purchase of peer resources and other services. It is not blockchain based, and cannot be exchanged for value outside the Subutai platform.
+Short answer: yes to both. [GoodWill](https://subutai.io/goodwill.html) is the exchange currency of the Subutai Bazaar that enables users to buy and sell resources from each other. It is now blockchain based as an ERC20 token on our own private blockchain network. The Bazaar can mint and give out GoodWill to those performing "good deeds" on the platform or users can [purchase GoodWill](https://goodwill.subutai.io).
 
 ##### <a name="What-is-KHAN"></a>_What is KHAN?_
 [KHAN™](https://subutai.io/khan.html) is an Ethereum blockchain-based reserve currency token that is the default and ubiquitous currency across the Subutai Platform. KHAN’s reserve currency used across ISPs is similar to USD across countries; as a utility token (vs. security token), KHAN can be reliably used without restriction worldwide, independently of the Subutai platform.
