@@ -24,37 +24,34 @@ This is why we created the browser plugins. The Subutai E2E browser plugins are 
 
 ### How to install the E2E Plugin
 
-To install the E2E browser plugin:
+To install the E2E browser plugin, simply go to your browser's store, look for the Subutai E2E plugin and install it. You can also use the links below:
 
-1. Download and add the E2E plugin for your browser through the links below:
    * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/subutai-e2e-plugin/)
    * [Chrome](https://chrome.google.com/webstore/detail/subutai-e2e-plugin/ffddnlbamkjlbngpekmdpnoccckapcnh)
    * For other supported browsers, go to [https://github.com/subutai-io/browser-plugins/releases](https://github.com/subutai-io/browser-plugins/releases). From a particular browser's page, you may search for instructions on installing plugins or extensions.
 
-    After adding the plugin, you will be prompted to generate the key.  
+### <a name="create-wallet"> </a> Create your Wallet/PGP keys
 
-2. On the Generate key popup, enter your email address, and then click **Generate**.   
+1. Go to the E2E plugin options page by clicking its icon in your browser
+1. Click the "+ Create" button on the top right corner
+1. Insert your email address and desired password, then click "Create"
+1. Your [GoodWill](../../working-with-subutai/goodwill) wallet and keys are now created. _Do not forget to [back them up](#backup)!_
 
-   ![E2E plugin](e2e-generate-key.png)
- 
-3. On the plugin page, click the  icon to access the key.   
 
-4. In the Fingerprint field of the Main key tab, copy the entire key.
+### <a name="backup"> </a> IMPORTANT: Back up your keys/wallet
 
-   ✔️ If you are not logged in to Subutai Bazaar, you can do so now to set up the key.
-   
-   ![Upload key](e2e-upload-key.png)
+!! Note: this is mandatory! If you don't have a backup and something happens to your computer, you will not be able to recover the contents of your wallet!
 
-5. On the Bazaar page, click your account name located at the upper right corner.   
+1. Click the "Export" button on your key
+1. Choose a file name (the default is ok) and insert a password
+1. Save the file somewhere safe, and make sure you have at least one copy of this file in places other than this computer
 
-   This displays the Account settings popup.    
+### <a name="associate-wallet"> </a> Associate your wallet with your account in Subutai Bazaar
 
-   💡 If you have the Set PGP key message displayed, click the link to access Account settings. 
 
-6. On Account settings, paste the PGP key in the PGP Key fingerprint field, and then click **Upload**.   
+1. Log in to the [Subutai Bazaar](https://bazaar.subutai.io)
+1. On the top right corner of Bazaar, click your username, then open the "Settings" menu item
+1. To the right of the "PGP key fingerprint", click the "Change button"
+1. The E2E plugin will ask for your password, and insert the proper values automatically
+1. Click "Save" and you're done
 
-   The Owner PGP Key field is populated automatically. You must not edit or modify this field.   
-
-7. Click **Save**.    
-
-   💡 If you encounter an error when entering or saving this key, you can delete it from the plugin page, and then generate a new key. You only need one PGP key for your Bazaar account.
