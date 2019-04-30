@@ -24,7 +24,7 @@ In this section, peer owners and users can learn what is GoodWill, and how to us
 
 GoodWill is the exchange currency of the Subutai Peer-to-Peer platform that enables users to buy and sell compute resources from each other. GoodWill is a pure utility token with a fixed price relative to the US dollar (100 GoodWill = 1 US Dollar). Essentially, one GoodWill on the Subutai Platform represents a virtualized US penny. By using GoodWill to exchange resources participants can fluidly trade computing resources across national borders without having to rely on the exchange of cumbersome fiat currencies.
 
-[Learn more] about the development of GoodWill.
+[Learn more](https://subutai.blog/2019/04/29/introducing-goodwill-on-the-blockchain) about the development of GoodWill.
 
 
 #### Key features
@@ -44,14 +44,13 @@ GoodWill is the exchange currency of the Subutai Peer-to-Peer platform that enab
 
 ### <a name="buy"> </a> Buy GoodWill
 
-1. Go to the [GoodWill page](https://goodwill.subutaio.io)
+1. Go to the [GoodWill page](https://goodwill.subutaio.io) on Subutai BAzaar
 1. Insert the amount of GoodWill you want to buy
-1. Insert the address of your GoodWill wallet (copy it from the E2E plugin page)
 1. Choose your payment method
 1. Proceed to payment. Subutai will add the desired amount of GoodWill to your wallet. 
 
 ### <a name="transfer"> </a> Transfer GoodWill to other users
 
-1. Open the [Transfer GoodWill page](https://bazaar.subutai.io/users/goodwill/transfer) on Subutai Bazaar. Alternatively, you can open the E2E plugin on your browser and click the "Transfer GoodWill button"
+1. Open the Transfer GoodWill page on Subutai Bazaar. Alternatively, you can open the E2E plugin on your browser and click the "Transfer GoodWill button"
 1. Type the name of the user you want to transfer GoodWill to. Double check that you are selecting the proper user, as this operation is irreversible.
 1. Click "Send GoodWill". The transfer will happen immediatley. 
