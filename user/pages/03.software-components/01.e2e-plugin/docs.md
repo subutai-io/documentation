@@ -33,6 +33,7 @@ To install the E2E browser plugin, simply go to your browser's store, look for t
 ### <a name="create-wallet"> </a> Create your Wallet/PGP keys
 
 1. Go to the E2E plugin options page by clicking its icon in your browser
+1. _Note:_ if you already had the E2E plugin installed prior to version 6.x, you may have created a PGP key pair already. If that is so, you will need to remove the existing keys before creating new ones, compatible with the GoodWill wallet. To do that, click the Trash icon beside the obsolete keys.
 1. Click the "+ Create" button on the top right corner
 1. Insert your email address and desired password, then click "Create"
 1. Your [GoodWill](../../working-with-subutai/goodwill) wallet and keys are now created. _Do not forget to [back them up](#backup)!_
