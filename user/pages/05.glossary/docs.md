@@ -59,7 +59,7 @@ cloud, and IoT gateway.
 #### GoodWill
 
 A platform asset in the Subutai Bazaar used for
-exchanging resources and services. [Learn more](https://subutai.io/goodwill.html) about GoodWill.
+exchanging resources and services. [Learn more](../working-with-subutai/goodwill) about GoodWill.
 
 #### Google App Engine (GAE)
 

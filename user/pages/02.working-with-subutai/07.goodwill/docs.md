@@ -44,10 +44,10 @@ GoodWill is the exchange currency of the Subutai Peer-to-Peer platform that enab
 
 ### <a name="buy"> </a> Buy GoodWill
 
-1. Go to the [GoodWill page](https://goodwill.subutaio.io) on Subutai BAzaar
+1. Go to the [GoodWill page](https://goodwill.subutaio.io) on Subutai Bazaar
 1. Insert the amount of GoodWill you want to buy
 1. Choose your payment method
-1. Proceed to payment. Subutai will add the desired amount of GoodWill to your wallet. 
+1. Proceed to payment. Subutai will add the desired amount of GoodWill to your wallet
 
 ### <a name="transfer"> </a> Transfer GoodWill to other users
 
