@@ -1,0 +1,32 @@
+[Agent]
+Debug = false
+GpgUser =
+GpgPassword = 12345678
+GpgHome =
+DataPrefix = /var/lib/subutai/
+LxcPrefix = /var/lib/lxc/
+Dataset = subutai/fs
+CacheDir = /var/cache/subutai
+SshJumpServer = tun.subutai.io
+LeStaging=@leStaging@
+
+[Management]
+Host =
+Port = 8443
+Secret = secret
+GpgUser =
+RestPublicKey = /rest/v1/security/keyman/getpublickeyring
+Fingerprint =
+AllowInsecure = true
+
+[Influxdb]
+Db = metrics
+User = root
+Pass = root
+
+[CDN]
+URL = bazaar.subutai.io
+SslPort = 443
+IpfsPath = /var/lib/ipfs/node
+TemplateDownloadUrl = http://ipfs.subutai.io/ipfs/{ID}
+AllowInsecure = false
