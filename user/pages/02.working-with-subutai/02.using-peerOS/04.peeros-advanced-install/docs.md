@@ -28,7 +28,7 @@ Unlimited hardware configuration options are possible. However, when setting up 
 * 2 or more CPU cores
 * 4 GB of RAM (8 GB or more is best)
 * 2 disks or partitions - one for the operating system (more than 10 GB), and one for container storage (more than 100 GB)
-* 1 network adapter - preferably 1 Gbit (bridged)
+* 1 network adapter - preferably 1 Gbit (bridged if stationary, NAT if on a machine, i.e. laptop, moving across different networks)
 
 When running Subutai on a virtual machine, take note of the following guidelines with regard to hardware:
 * Peers can run on Hyper-V, GCE, AWS, KVM, VirtualBox, VMware, and Parallels. Make sure that these virtual hardware resources are available to the guest operating system.
@@ -139,6 +139,8 @@ Virtual or not, desktop editions should be avoided. Besides unnecessarily wastin
 11. Update `apt` and install Subutai:
 
    `apt update && apt install subutai`
+   
+12. Reboot
 
 ✔️ Make sure `/etc/subutai/agent.conf` has the appropriate CDN URL. If not, edit and restart: `systemctl restart subutai.service`.
 
