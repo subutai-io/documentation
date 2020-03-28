@@ -142,7 +142,7 @@ Virtual or not, desktop editions should be avoided. Besides unnecessarily wastin
    
 12. Reboot
 
-✔️ Make sure `/etc/subutai/agent.conf` has the appropriate CDN URL. If not, edit and restart: `systemctl restart subutai.service`.
+✔️ Make sure `/etc/subutai/agent.conf` has the appropriate CDN URL and step #8 above use the proper `master`/`dev` string in place of `prod` in the sources.list file. If not, edit and restart: `systemctl restart subutai.service`.
 
 In case you notice a failed status for setting up rng-tools, take note that this is due to the original rng-tools.service requiring a hardware random generator installed. This is handled automatically by the installer, by starting an instance of subutai-rng.service when a generator is not present in your system.
 
