@@ -120,7 +120,7 @@ Virtual or not, desktop editions should be avoided. Besides unnecessarily wastin
 
 6. Create your mountpoint:
 
-   `zfs create -o mountpoint="/var/lib/lxc" subutai/fs`
+   `zfs create -o mountpoint="/var/lib/lxc" -o acltype=posixacl subutai/fs`
 
 7. Install `lxc`: `apt install lxc`
 
