@@ -19,9 +19,9 @@ Download the latest [Vagrant 2.0.1](https://www.vagrantup.com/downloads.html) an
 
 With the prerequisite software installed, you can proceed to the steps below:
 
-1. Create the Vagrantfile with the subutai/stretch box (Debian-based)   
+1. Create the Vagrantfile with the subutai/buster box (Debian-based)   
 
-   `vagrant init --minimal subutai/stretch`
+   `vagrant init --minimal subutai/buster`
 
 2. Install the subutai and vbguest vagrant plugins   
 
