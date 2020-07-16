@@ -11,3 +11,4 @@ The topics in this section show you how to use the features on Bazaar’s Tools 
 * [Select Peers](select-peers)
 * [Use Products or Blueprints](use-products-blueprints)
 * [Create Environments](create-environments)
+* [Access Control](access-control)
