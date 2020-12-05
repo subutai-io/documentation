@@ -104,13 +104,13 @@ Virtual or not, desktop editions should be avoided. Besides unnecessarily wastin
 
 1. Add the `contrib` and `non-free` components from both stretch and stretch-updates.
 
-  For example, `sed -i ‘s/main/main contrib non-free/g’ /etc/apt/sources.list`
+  For example, `sed -i 's/main/main contrib non-free/g' /etc/apt/sources.list`
 
 2. Run: `apt update`
 
-3. Install `zfsutils`:
+3. Install `zfs-dkms`:
 
-   `apt install spl-dkms && apt install zfsutils-linux && apt install zfs-dkms`
+   `apt install zfs-dkms`
 
 4. Run: `/sbin/modprobe zfs`
 
