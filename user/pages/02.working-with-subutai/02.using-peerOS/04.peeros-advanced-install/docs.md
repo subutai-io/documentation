@@ -111,6 +111,10 @@ Virtual or not, desktop editions should be avoided. Besides unnecessarily wastin
 3. Install `zfs-dkms`:
 
    `apt install zfs-dkms`
+   
+> **WARNING**: The `apt nstall zfs-dkms` command may partially fail on the first try. Dependencies from **zfs-dkms** require loading the zfs module. Loading the zfs module does not occur resulting in a failure to build dependencies. As a result, the install reports a failure. Issuing a `/sbin/modprobe zfs` right after this failed attempt succeeds. The zfs module builds successfully on the failing first install. Another `apt install zfs-dkms` after loading the zfs module will succeed building all dependencies properly. If you encounter a failure on the first try, use this workaround to fix it:
+
+   `/sbin/modprobe zfs && apt install zfs-dkms`
 
 4. Run: `/sbin/modprobe zfs`
 
